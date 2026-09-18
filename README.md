@@ -1,6 +1,6 @@
 # 全球金属供给图谱
 
-Phase 1A 验证一个可运行的数据闭环：Excel 模板、上传预览、确认导入、人工审核并发布，以及公开铜项目列表和详情。
+Phase 1A 验证 Excel 导入与发布闭环；Phase 1B.1 在此基础上增加人工发起的官方资料研究、证据候选、单次确认发布和公开来源展示。
 
 ## 项目状态
 
@@ -16,6 +16,14 @@ Phase 1A 已完成并通过最终验证：
 - 当前铜矿文件只有 `projects` 主数据，不包含产量、指引、储量等观察记录；
 - 因此本次导入创建 0 条待审核观察记录，且不会令公开项目页面新增项目，这是预期行为。项目会在管理端 `/admin/projects` 中显示，只有具备已审核且已发布观察数据的项目才会进入公开页面。
 
+**Phase 1B.1 — Completed（2026-09-18）**
+
+- 已完成单项目、单来源、单候选的最小纵向闭环：人工创建研究任务 → 提交官方 URL → 安全获取并保存文档 → 提取证据候选 → 自动标准化与校验 → 管理员一次确认发布 → 公开来源抽屉；
+- Kansanshi 首条官方真实数据已由管理员确认发布：First Quantum 2025 Q4 铜产量 47.655 kt；
+- 本条记录的 `extraction_method=deterministic`，期间和数据口径经过管理员确认；
+- AI 候选不会直接进入公开观察表，`ready / needs_attention / ignored / published` 是当前候选状态；
+- 在线模型 API 尚未配置。ChatGPT/Codex 订阅不等于网站 API 凭据；在线模型和自动发现属于 Phase 1B.2。
+
 ## 快速开始
 
 1. 复制 `.env.example` 为 `.env`，更换数据库密码、管理员密码和 `SESSION_SECRET`。
@@ -25,6 +33,8 @@ Phase 1A 已完成并通过最终验证：
 5. 运行 `docker compose exec api python -m app.cli seed-countries`。
 6. 运行 `docker compose exec api python -m app.cli create-admin`。
 7. 打开 `http://localhost:3000/admin/login`。
+
+资料研究入口为 `http://localhost:3000/admin/research`。Phase 1B.1 由管理员人工发起研究和提交 URL，不包含无人值守任务。
 
 已有管理员需要重置密码时，运行 `docker compose exec api python -m app.cli reset-admin-password`。命令默认隐藏输入并要求确认；私人本地终端可添加 `--show-input` 显示输入。不要把密码作为命令参数、环境变量或文件内容传入。
 
@@ -42,6 +52,7 @@ Phase 1A 已完成并通过最终验证：
 docker compose exec api pytest
 cd apps/web
 npm ci
+npm run test:unit
 npm run typecheck
 npm run build
 docker compose build web
@@ -65,4 +76,4 @@ python scripts/verify_http_flow.py --workbook ../../fixtures/demo/phase1a-demo.x
 - [部署与故障排查](docs/deployment.md)
 - [后续路线图](docs/roadmap.md)
 
-Phase 1A 不包含地图、采集器、任务队列、完整 RBAC、审计系统或发布批次。
+Phase 1B.1 不包含搜索引擎自动发现、在线模型调用、定时任务、批量发布、可信来源自动发布、地图或项目比较。

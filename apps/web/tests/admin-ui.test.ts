@@ -15,6 +15,7 @@ import {
 import type { PreviewRow } from "../lib/admin-preview.ts";
 import { adminProjectsQuery } from "../lib/admin-projects.ts";
 import { requiresAdminLogin } from "../lib/admin-route.ts";
+import { periodContext, periodHeading } from "../lib/period-label.ts";
 
 
 function row(overrides: Partial<PreviewRow> = {}): PreviewRow {
@@ -174,4 +175,12 @@ test("admin project query includes all directory filters", () => {
   assert.equal(params.get("completeness"), "only_project_master");
   assert.equal(params.get("sort"), "name_asc");
   assert.equal(params.get("page"), "2");
+});
+
+
+test("calendar quarter uses a concise heading while preserving exact dates", () => {
+  const period = { start: "2025-10-01", end: "2025-12-31", type: "quarter" };
+  assert.equal(periodHeading(period, "CY2025"), "2025 Q4");
+  assert.equal(periodContext("calendar_year", period), "自然年｜2025-10-01 至 2025-12-31");
+  assert.equal(period.type, "quarter");
 });

@@ -21,6 +21,9 @@ export type Observation = {
   fiscal_year_label: string | null;
   ownership_basis: string;
   production_stage: string;
+  is_current?: boolean;
+  supersedes_id?: string | null;
+  confirmed_at?: string | null;
   source: Source;
   guidance_low?: string | null;
   guidance_high?: string | null;
@@ -45,4 +48,3 @@ export type ProjectDetail = ProjectSummary & {
   guidance: Observation[];
   reserves: Observation[];
 };
-

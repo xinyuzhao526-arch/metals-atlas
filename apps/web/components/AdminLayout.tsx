@@ -108,6 +108,7 @@ export function AdminLayout({ children }: { children: ReactNode }) {
         <nav className="admin-nav" aria-label="管理后台导航">
           <Link className={pathname === "/admin" ? "active" : ""} href="/admin">概览</Link>
           <Link className={pathname.startsWith("/admin/projects") ? "active" : ""} href="/admin/projects">项目</Link>
+          <Link className={pathname.startsWith("/admin/research") ? "active" : ""} href="/admin/research">资料研究</Link>
           <Link href="/admin#excel-import">Excel 导入</Link>
           <Link href="/admin#reviews">待审核</Link>
         </nav>
