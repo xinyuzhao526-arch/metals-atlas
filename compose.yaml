@@ -24,11 +24,13 @@ services:
       ADMIN_EMAIL: ${ADMIN_EMAIL:-admin@example.com}
       ADMIN_PASSWORD: ${ADMIN_PASSWORD:-development-only-password}
       UPLOAD_DIR: /data/uploads
+      SOURCE_STORAGE_DIR: /data/sources
       WEB_ORIGIN: ${WEB_ORIGIN:-http://localhost:3000}
     ports:
       - "8000:8000"
     volumes:
       - uploads_data:/data/uploads
+      - sources_data:/data/sources
     depends_on:
       postgres:
         condition: service_healthy
@@ -55,4 +57,4 @@ services:
 volumes:
   postgres_data:
   uploads_data:
-
+  sources_data:
