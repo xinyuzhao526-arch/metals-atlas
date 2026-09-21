@@ -5,8 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "test:unit": "node --test --experimental-strip-types tests/admin-ui.test.ts",
+    "test:unit": "node --test --experimental-strip-types tests/admin-ui.test.ts tests/public-data.test.ts",
     "build": "next build",
+    "build:pages": "node scripts/build-pages.mjs",
     "start": "next start",
     "typecheck": "tsc --noEmit"
   },

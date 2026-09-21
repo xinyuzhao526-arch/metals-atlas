@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-18",
+  "items": [
+    {
+      "id": "reserve-las-bambas-2026-06-30",
+      "observation_id": "f4770fa0-2fb7-4996-8b2e-4d6314604766",
+      "project_id": "project-las-bambas",
+      "metal_id": "metal-cu",
+      "ore_tonnage": 880,
+      "ore_tonnage_unit": "Mt",
+      "grade_pct": 0.53,
+      "contained_metal_value": null,
+      "contained_metal_unit": "kt",
+      "missing_reason": "not_disclosed",
+      "classification": "proved_and_probable",
+      "ownership_basis": "project_100",
+      "production_stage": "mine_contained_metal",
+      "effective_date": "2026-06-30",
+      "source_id": "src-mmg-mror-2026"
+    },
+    {
+      "id": "reserve-kansanshi-2024-12-31",
+      "observation_id": "static-public-fqm-kansanshi-reserve-2024",
+      "project_id": "project-kansanshi",
+      "metal_id": "metal-cu",
+      "ore_tonnage": 1070.4,
+      "ore_tonnage_unit": "Mt",
+      "grade_pct": 0.52,
+      "contained_metal_value": null,
+      "contained_metal_unit": "Mt",
+      "missing_reason": "not_disclosed",
+      "classification": "proved_and_probable",
+      "ownership_basis": "project_100",
+      "production_stage": "mine_contained_metal",
+      "effective_date": "2024-12-31",
+      "source_id": "src-fqm-aif-2025"
+    }
+  ]
+}

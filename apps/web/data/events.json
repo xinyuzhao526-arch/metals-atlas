@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-18",
+  "items": [
+    {
+      "id": "event-las-bambas-2026-08-accident-restart",
+      "project_id": "project-las-bambas",
+      "metal_id": "metal-cu",
+      "event_type": "operational_disruption",
+      "severity": "high",
+      "status": "resolved_operations_resumed",
+      "event_start_date": "2026-08-18",
+      "operations_suspended_date": "2026-08-19",
+      "operations_resumed_date": "2026-08-21",
+      "reported_date": "2026-08-24",
+      "headline_zh": "事故后短暂停产，矿山与选矿厂已复产",
+      "summary_zh": "Las Bambas 于 8 月 18 日发生致命作业事故，造成两名工人死亡、三人受伤；公司随后临时停产并启动调查。MMG 确认矿山和选矿厂自 8 月 21 日起恢复运营。",
+      "source_id": "src-mmg-hkex-restart-2026-08-24",
+      "source_ids": [
+        "src-mmg-hkex-incident-2026-08-19",
+        "src-mmg-hkex-restart-2026-08-24",
+        "src-reuters-las-bambas-restart-2026-08-24",
+        "src-miningweekly-las-bambas-restart-2026-08-24"
+      ]
+    }
+  ]
+}

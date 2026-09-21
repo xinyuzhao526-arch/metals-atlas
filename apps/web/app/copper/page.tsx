@@ -1,5 +1,5 @@
 import { PublicDataProduct } from "@/components/PublicDataProduct";
 
-export default function HomePage() {
+export default function CopperPage() {
   return <PublicDataProduct />;
 }
