@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-21",
+  "metal_id": "metal-cu",
+  "project_count": 44,
+  "mapped_count": 44,
+  "location_precision": { "exact": 0, "approximate": 44, "pending": 0 },
+  "production_project_count": 2,
+  "current_guidance_project_count": 2,
+  "reserve_project_count": 2,
+  "recent_event_count_30d": 1,
+  "guidance_coverage_pct": 4.5,
+  "production_aggregate": null,
+  "production_aggregate_missing_reason": "已披露值跨季度/年度、生产环节和所有权口径，不作不兼容汇总",
+  "supply_summary_zh": "当前可核验事实集中在 Las Bambas 与 Kansanshi；其余项目已进入地图与主数据矩阵，但产量、指引和储量仍按来源逐项补齐。"
+}

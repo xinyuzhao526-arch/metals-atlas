@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-18",
+  "items": [
+    {
+      "id": "guidance-las-bambas-2026",
+      "observation_id": "c642b016-fb33-42bc-91b6-7526fd64fc16",
+      "project_id": "project-las-bambas",
+      "metal_id": "metal-cu",
+      "low": 380,
+      "high": 400,
+      "unit": "kt",
+      "missing_reason": null,
+      "period": { "start": "2026-01-01", "end": "2026-12-31", "type": "annual", "label": "2026 全年" },
+      "calendar_basis": "calendar_year",
+      "production_stage": "concentrate_contained_metal",
+      "ownership_basis": "project_100",
+      "guidance_kind": "maintained",
+      "effective_date": "2026-06-30",
+      "source_id": "src-mmg-q2-2026"
+    },
+    {
+      "id": "guidance-kansanshi-2026",
+      "observation_id": "static-public-fqm-kansanshi-guidance-2026",
+      "project_id": "project-kansanshi",
+      "metal_id": "metal-cu",
+      "low": 175,
+      "high": 205,
+      "unit": "kt",
+      "missing_reason": null,
+      "period": { "start": "2026-01-01", "end": "2026-12-31", "type": "annual", "label": "2026 全年" },
+      "calendar_basis": "calendar_year",
+      "production_stage": "mine_contained_metal",
+      "ownership_basis": "consolidated",
+      "guidance_kind": "current",
+      "effective_date": "2025-12-31",
+      "source_id": "src-fqm-2025-production-2026-guidance"
+    }
+  ]
+}

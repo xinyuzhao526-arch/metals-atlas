@@ -1,7 +1,11 @@
-import { ProjectDetailView } from "@/components/ProjectDetailView";
+import { PublicProjectDetail } from "@/components/PublicProjectDetail";
+import { publicData } from "@/lib/public-data";
+
+export function generateStaticParams() {
+  return publicData.projects.map((project) => ({ slug: project.slug }));
+}
 
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  return <ProjectDetailView slug={slug} />;
+  return <PublicProjectDetail slug={slug} />;
 }
-
