@@ -120,6 +120,9 @@ export function PublicDataProduct() {
     ?? exchangeRecords.find((item) => item.normalized_value !== null)
     ?? exchangeRecords[0];
   const trendRecords = latestInventory ? exchangeRecords.filter((item) => item.inventory_type === latestInventory.inventory_type) : [];
+  const streamEvents = [...publicData.events]
+    .sort((a, b) => b.reported_date.localeCompare(a.reported_date))
+    .slice(0, 3);
 
   const exportMatrix = () => downloadCsv("metals-atlas-copper-research-matrix.csv", filteredRows.map(({ project, quarter, annual, guidance, reserve, event, latestDate }) => ({
     project_id: project.id,
@@ -182,7 +185,8 @@ export function PublicDataProduct() {
       <aside className="event-stream">
         <div className="section-heading"><div><span>02 / 供给动态</span><h2>时间流</h2></div><p>按披露日期倒序</p></div>
         <div className="event-type-key"><span>事故</span><span>停产</span><span>复产</span><span>指引</span><span>扩产</span><span>许可</span></div>
-        {publicData.events.sort((a,b) => b.reported_date.localeCompare(a.reported_date)).map((event) => {
+        <div className="event-stream-list">
+        {streamEvents.map((event) => {
           const project = publicData.projects.find((item) => item.id === event.project_id);
           const active = selectedProjectId === event.project_id;
           return <article key={event.id} className={`stream-event ${active ? "active" : ""}`} onClick={() => setSelectedProjectId(event.project_id)}>
@@ -196,7 +200,7 @@ export function PublicDataProduct() {
             <div className="event-sources">{event.source_ids.map((id) => <SourceLink key={id} id={id} onOpen={setSource} />)}</div>
           </article>;
         })}
-        <div className="stream-empty"><b>其余类型暂无已核验事件</b><p>不使用新闻标题或演示事件填充时间流。</p></div>
+        </div>
       </aside>
     </section>
 
