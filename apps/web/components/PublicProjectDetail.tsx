@@ -16,7 +16,6 @@ export function PublicProjectDetail({ slug }: { slug: string }) {
   if (!project) return <main className="detail-terminal"><div className="detail-empty">项目不存在。</div></main>;
   const facts = projectFacts(project.id);
   const guidance = facts.guidance[0];
-  const reserve = facts.reserves[0];
   const latestQuarter = facts.production.find((item) => item.period.type === "quarter");
   const annual = facts.production.find((item) => item.period.type === "annual");
   const event = facts.events[0];
@@ -45,17 +44,18 @@ export function PublicProjectDetail({ slug }: { slug: string }) {
     <section className="detail-factline">
       <article><span>最新季度产量</span><strong>{latestQuarter?.value !== null && latestQuarter ? `${latestQuarter.value.toFixed(3)} ${latestQuarter.unit}` : "待补"}</strong><p>{latestQuarter ? `${latestQuarter.period.label} · ${latestQuarter.production_stage} · ${latestQuarter.ownership_basis}` : "尚无已核验季度观察"}</p>{latestQuarter && <button type="button" onClick={() => setSource(sourceById(latestQuarter.source_id) ?? null)}>证据定位 ↗</button>}</article>
       <article><span>年度累计 / 全年</span><strong>{annual?.value !== null && annual ? `${annual.value.toFixed(3)} ${annual.unit}` : "待补"}</strong><p>{annual ? `${annual.period.label} · 自然年` : "尚无已核验年度观察"}</p>{annual && <button type="button" onClick={() => setSource(sourceById(annual.source_id) ?? null)}>证据定位 ↗</button>}</article>
-      <article><span>当前年度指引</span><strong>{guidance ? `${guidance.low}–${guidance.high} ${guidance.unit}` : "待补"}</strong><p>{guidance ? `${guidance.period.label} · ${guidance.guidance_kind === "maintained" ? "维持不变" : guidance.guidance_kind}` : "尚无已核验指引"}</p>{guidance && <button type="button" onClick={() => setSource(sourceById(guidance.source_id) ?? null)}>证据定位 ↗</button>}</article>
+      <article><span>当前年度指引</span><strong>{guidance ? `${guidance.low}–${guidance.high} ${guidance.unit}` : "待补"}</strong><p>{guidance ? `${guidance.period.label} · ${guidance.guidance_kind === "maintained" ? "维持不变" : guidance.guidance_kind === "tightened" ? "区间收窄" : guidance.guidance_kind}` : "尚无已核验指引"}</p>{guidance && <button type="button" onClick={() => setSource(sourceById(guidance.source_id) ?? null)}>证据定位 ↗</button>}</article>
     </section>
 
     <section className="detail-columns">
       <article className="detail-reserve">
-        <div className="detail-section-title"><span>01 / 储量</span><h2>矿体证据</h2></div>
-        {reserve ? <>
-          <div className="reserve-numbers"><div><strong>{reserve.ore_tonnage}</strong><span>{reserve.ore_tonnage_unit} ore</span></div><div><strong>{reserve.grade_pct}%</strong><span>Cu grade</span></div><div className="reserve-missing"><strong>{formatMissing(reserve.missing_reason)}</strong><span>contained metal · 不自行计算</span></div></div>
-          <dl><div><dt>分类</dt><dd>Proved + Probable</dd></div><div><dt>有效日期</dt><dd>{reserve.effective_date}</dd></div><div><dt>口径</dt><dd>项目 100%</dd></div></dl>
-          <button type="button" onClick={() => setSource(sourceById(reserve.source_id) ?? null)}>查看储量原文定位 ↗</button>
-        </> : <div className="detail-missing-block"><b>待补</b><p>该项目尚无已核验储量观察；未以第三方估算填充。</p></div>}
+        <div className="detail-section-title"><span>01 / 储量与资源量</span><h2>矿体证据</h2></div>
+        {facts.reserves.length ? facts.reserves.map((reserve) => <div className="reserve-record" key={reserve.id}>
+          <h3>{reserve.classification === "proved_and_probable" ? "Proved + Probable" : reserve.classification === "probable_mineral_reserve" ? "Probable Mineral Reserve" : reserve.classification === "indicated_mineral_resource_inclusive_of_reserves" ? "Indicated Mineral Resource（含储量）" : reserve.classification}</h3>
+          <div className="reserve-numbers"><div><strong>{reserve.ore_tonnage ?? "待补"}</strong><span>{reserve.ore_tonnage_unit} ore</span></div><div><strong>{reserve.grade_pct === null ? "待补" : `${reserve.grade_pct}%`}</strong><span>Cu grade</span></div><div className={reserve.contained_metal_value === null ? "reserve-missing" : ""}><strong>{reserve.contained_metal_value === null ? formatMissing(reserve.missing_reason) : reserve.contained_metal_value}</strong><span>{reserve.contained_metal_value === null ? "contained metal · 不自行计算" : `${reserve.contained_metal_unit} contained Cu`}</span></div></div>
+          <dl><div><dt>有效日期</dt><dd>{reserve.effective_date}</dd></div><div><dt>口径</dt><dd>{reserve.ownership_basis === "project_100" ? "项目 100%" : reserve.ownership_basis}</dd></div><div><dt>生产环节</dt><dd>{reserve.production_stage}</dd></div></dl>
+          <button type="button" onClick={() => setSource(sourceById(reserve.source_id) ?? null)}>查看原文定位 ↗</button>
+        </div>) : <div className="detail-missing-block"><b>待补</b><p>该项目尚无已核验储量或资源量观察；未以第三方估算填充。</p></div>}
       </article>
       <article className="detail-ownership">
         <div className="detail-section-title"><span>02 / 运营与股权</span><h2>控制关系</h2></div>
@@ -67,7 +67,11 @@ export function PublicProjectDetail({ slug }: { slug: string }) {
 
     {event && <section className="detail-event">
       <div className="detail-section-title"><span>03 / 重大事件</span><h2>{event.headline_zh}</h2></div>
-      <div className="detail-event-layout"><div><time>{event.event_start_date} → {event.operations_resumed_date}</time><p>{event.summary_zh}</p></div><ol><li><b>{event.event_start_date}</b>事故</li><li><b>{event.operations_suspended_date}</b>临时停产</li><li><b>{event.operations_resumed_date}</b>矿山与选矿厂复产</li></ol></div>
+      <div className="detail-event-layout"><div><time>{event.event_start_date}{event.operations_resumed_date ? ` → ${event.operations_resumed_date}` : ""}</time><p>{event.summary_zh}</p></div><ol>
+        {event.event_type === "guidance_adjustment" ? <li><b>{event.event_start_date}</b>指引更新</li> : <li><b>{event.event_start_date}</b>事故</li>}
+        {event.operations_suspended_date && <li><b>{event.operations_suspended_date}</b>临时停产</li>}
+        {event.operations_resumed_date && <li><b>{event.operations_resumed_date}</b>矿山与选矿厂复产</li>}
+      </ol></div>
       <div className="detail-source-tags">{event.source_ids.map((id) => { const item = sourceById(id); return item ? <button key={id} type="button" onClick={() => setSource(item)}><span>{item.tier} 级</span>{item.organization}</button> : null; })}</div>
     </section>}
 

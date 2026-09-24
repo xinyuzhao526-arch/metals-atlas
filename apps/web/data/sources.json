@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-09-21",
+  "updated_at": "2026-09-24",
   "items": [
     {
       "id": "src-mmg-q2-2026",
@@ -117,7 +117,7 @@
       "organization": "OpenStreetMap contributors / Wikidata contributors",
       "title": "公开地理资料矿区定位",
       "publication_date": null,
-      "verification_date": "2026-09-21",
+      "verification_date": "2026-09-24",
       "url": "https://www.openstreetmap.org/copyright",
       "locator": "各项目 location.locator 与 location.basis；全部标记 approximate",
       "short_excerpt": null
@@ -129,7 +129,7 @@
       "organization": "上海期货交易所",
       "title": "日周数据 — 库存周报",
       "publication_date": null,
-      "verification_date": "2026-09-21",
+      "verification_date": "2026-09-24",
       "url": "https://www.shfe.com.cn/reports/tradedata/dailyandweeklydata/?query_params=weeklystock",
       "locator": "统计数据 · 日周数据 · 库存周报",
       "short_excerpt": null
@@ -228,6 +228,90 @@
       "verification_date": "2026-09-21",
       "url": "https://market.cnal.com/shfe/2026/09-18/1789716721669843.shtml",
       "locator": "铜 · 单位吨 · 总计：上周库存 72,965 / 本周库存 69,280 / 增减 -3,685",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-meiyuanhuanliu-comex-copper-2026-09-22",
+      "tier": "B",
+      "source_type": "secondary_exchange_report_republication",
+      "organization": "美元环流（原始数据：CME Group）",
+      "title": "CME COMEX 铜库存—注册仓与合格仓",
+      "publication_date": "2026-09-22",
+      "verification_date": "2026-09-24",
+      "url": "https://www.meiyuanhuanliu.com/copper_stocks/",
+      "locator": "2026-09-22 行及 HTML data-*：Registered 478,907、Eligible 290,154、Total 769,061 short tons；官方报告入口 https://www.cmegroup.com/delivery_reports/Copper_Stocks.xls",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-vaultreport-lme-copper-2026-09-22",
+      "tier": "B",
+      "source_type": "secondary_exchange_report_republication",
+      "organization": "The Vault Report（原始数据：LME）",
+      "title": "LME Copper Warehouse Inventory · September 22, 2026",
+      "publication_date": "2026-09-22",
+      "verification_date": "2026-09-24",
+      "url": "https://thevaultreport.com/charts/lme/copper",
+      "locator": "LME Copper · Total Warehouse Stocks · 2026-09-22 · 254.3K mt；仅作单点快照",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-reuters-lme-on-warrant-2026-09-21",
+      "tier": "B",
+      "source_type": "news_report",
+      "organization": "Reuters / Business Recorder",
+      "title": "Copper rises as Chinese demand expectations add to speculative momentum",
+      "publication_date": "2026-09-21",
+      "verification_date": "2026-09-24",
+      "url": "https://www.brecorder.com/news/40440514/",
+      "locator": "正文：LME available copper stocks 133,725 tonnes；当日新增取消仓单 9,600 tonnes，不是 cancelled warrants 总存量",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-ivanhoe-kamoa-profile",
+      "tier": "A",
+      "source_type": "official_project_page",
+      "organization": "Ivanhoe Mines",
+      "title": "Kamoa-Kakula Copper Complex",
+      "publication_date": null,
+      "verification_date": "2026-09-24",
+      "url": "https://www.ivanhoemines.com/operations/kamoa-kakula-mining-complex/",
+      "locator": "项目页：DRC；距 Kolwezi 约 25 km；Ownership 39.6% / 39.6% / 0.8% / 20%；Kamoa Copper 运营",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-ivanhoe-kamoa-q2-2026",
+      "tier": "A",
+      "source_type": "official_quarterly_results",
+      "organization": "Ivanhoe Mines",
+      "title": "2026 Second-Quarter Financial Results, Overview of Operations and Exploration Activities",
+      "publication_date": "2026-07-29",
+      "verification_date": "2026-09-24",
+      "url": "https://www.ivanhoemines.com/news-stories/news-release/ivanhoe-mines-issues-2026-second-quarter-financial-results-overview-of-operations-and-exploration-activities/",
+      "locator": "HTML：Operational Highlights；Kamoa-Kakula summary table；Copper Production, Cash Cost and Capital Expenditure Guidance；项目 100% 口径说明",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-ivanhoe-kamoa-2025-production",
+      "tier": "A",
+      "source_type": "official_production_release",
+      "organization": "Ivanhoe Mines",
+      "title": "2025 Production Results, 2026 Production Guidance",
+      "publication_date": "2026-01-15",
+      "verification_date": "2026-09-24",
+      "url": "https://www.ivanhoemines.com/wp-content/uploads/20260115-2025-production-and-2026-guidance-vf.pdf",
+      "locator": "PDF 第 1–2 页：2025 全年 388,838 t copper in concentrate；第 10 页：项目 100% 及精矿含铜口径",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-ivanhoe-kamoa-mre-2026",
+      "tier": "A",
+      "source_type": "ni_43_101_technical_report_release",
+      "organization": "Ivanhoe Mines / AMC Mining Consultants / MSA Group",
+      "title": "Kamoa-Kakula 2025 Mineral Reserve and Mineral Resource Estimate",
+      "publication_date": "2026-03-31",
+      "verification_date": "2026-09-24",
+      "url": "https://www.ivanhoemines.com/news-stories/news-release/ivanhoe-mines-announces-updated-independent-study-results-for-the-kamoa-kakula-copper-complex/",
+      "locator": "HTML Table 1：Indicated Resource 1,272 Mt @ 2.65% Cu、34 Mt contained Cu；Table 2：Probable Reserve 466 Mt @ 2.82% Cu、13.1 Mt contained Cu；effective 2025-12-31；100% basis",
       "short_excerpt": null
     }
   ]

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-09-18",
+  "updated_at": "2026-09-24",
   "items": [
     {
       "id": "guidance-las-bambas-2026",
@@ -35,6 +35,23 @@
       "guidance_kind": "current",
       "effective_date": "2025-12-31",
       "source_id": "src-fqm-2025-production-2026-guidance"
+    },
+    {
+      "id": "guidance-kamoa-kakula-2026",
+      "observation_id": "static-public-ivanhoe-kamoa-guidance-2026",
+      "project_id": "project-kamoa-kakula",
+      "metal_id": "metal-cu",
+      "low": 290,
+      "high": 310,
+      "unit": "kt",
+      "missing_reason": null,
+      "period": { "start": "2026-01-01", "end": "2026-12-31", "type": "annual", "label": "2026 全年" },
+      "calendar_basis": "calendar_year",
+      "production_stage": "contained_copper_in_anode_blister_and_saleable_slag_concentrate",
+      "ownership_basis": "project_100",
+      "guidance_kind": "tightened",
+      "effective_date": "2026-07-29",
+      "source_id": "src-ivanhoe-kamoa-q2-2026"
     }
   ]
 }

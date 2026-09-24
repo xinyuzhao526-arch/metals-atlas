@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-09-18",
+  "updated_at": "2026-09-24",
   "items": [
     {
       "id": "event-las-bambas-2026-08-accident-restart",
@@ -22,6 +22,22 @@
         "src-reuters-las-bambas-restart-2026-08-24",
         "src-miningweekly-las-bambas-restart-2026-08-24"
       ]
+    },
+    {
+      "id": "event-kamoa-kakula-guidance-tightened-2026-07-29",
+      "project_id": "project-kamoa-kakula",
+      "metal_id": "metal-cu",
+      "event_type": "guidance_adjustment",
+      "severity": "medium",
+      "status": "current_guidance",
+      "event_start_date": "2026-07-29",
+      "operations_suspended_date": null,
+      "operations_resumed_date": null,
+      "reported_date": "2026-07-29",
+      "headline_zh": "2026 年铜产量指引收窄至 290–310 kt",
+      "summary_zh": "Ivanhoe 将 Kamoa-Kakula 2026 年项目 100% 口径产量指引由 290–330 kt 收窄至 290–310 kt；口径为阳极铜、粗铜或可销售炉渣精矿中的含铜量。",
+      "source_id": "src-ivanhoe-kamoa-q2-2026",
+      "source_ids": ["src-ivanhoe-kamoa-q2-2026"]
     }
   ]
 }

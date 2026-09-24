@@ -32,6 +32,14 @@ const inventoryLabel: Record<string, string> = {
   registered: "Registered",
   eligible: "Eligible",
 };
+const eventLabel: Record<string, string> = {
+  operational_disruption: "事故 · 停产 · 复产",
+  guidance_adjustment: "指引调整",
+};
+const guidanceLabel: Record<string, string> = {
+  maintained: "维持不变",
+  tightened: "区间收窄",
+};
 
 function SourceLink({ id, onOpen }: { id: string | null; onOpen: (source: PublicSource) => void }) {
   const source = sourceById(id);
@@ -108,7 +116,10 @@ export function PublicDataProduct() {
   const selected = publicData.projects.find((item) => item.id === selectedProjectId) ?? null;
   const selectedFacts = selected ? projectFacts(selected.id) : null;
   const exchangeRecords = publicData.inventories.filter((item) => item.exchange === exchange);
-  const latestInventory = exchangeRecords.find((item) => item.normalized_value !== null) ?? exchangeRecords[0];
+  const latestInventory = exchangeRecords.find((item) => item.inventory_type === "total" && item.normalized_value !== null)
+    ?? exchangeRecords.find((item) => item.normalized_value !== null)
+    ?? exchangeRecords[0];
+  const trendRecords = latestInventory ? exchangeRecords.filter((item) => item.inventory_type === latestInventory.inventory_type) : [];
 
   const exportMatrix = () => downloadCsv("metals-atlas-copper-research-matrix.csv", filteredRows.map(({ project, quarter, annual, guidance, reserve, event, latestDate }) => ({
     project_id: project.id,
@@ -142,7 +153,9 @@ export function PublicDataProduct() {
       <p className="supply-thesis"><b>供给判断</b>{publicData.coverage.supply_summary_zh}</p>
       <div className="inventory-ticker" aria-label="最新三大交易所库存">
         {(["LME","SHFE","COMEX"] as const).map((name) => {
-          const item = publicData.inventories.find((record) => record.exchange === name && record.normalized_value !== null);
+          const records = publicData.inventories.filter((record) => record.exchange === name);
+          const item = records.find((record) => record.inventory_type === "total" && record.normalized_value !== null)
+            ?? records.find((record) => record.normalized_value !== null);
           return <span key={name}><b>{name}</b>{item ? `${item.normalized_value?.toLocaleString()} t · ${item.data_date}` : "待补 · 授权/获取待确认"}</span>;
         })}
       </div>
@@ -150,15 +163,15 @@ export function PublicDataProduct() {
 
     <section className="supply-workbench">
       <div className="map-workspace">
-        <div className="section-heading"><div><span>01 / 全球项目面</span><h2>矿山分布与数据密度</h2></div><p>点大小固定，不暗示产量；红色外圈代表近期重大事件。</p></div>
+        <div className="section-heading"><div><span>01 / 全球项目面</span><h2>矿山分布与数据密度</h2></div><p>点大小固定，不暗示产量；红色外圈代表已核验供给事件。</p></div>
         <div className="map-filterbar">
           <select aria-label="地图国家筛选" value={country} onChange={(e) => setCountry(e.target.value)}><option value="all">全部国家</option>{countries.map((item) => <option key={item.iso3} value={item.iso3}>{item.name_zh}</option>)}</select>
           <select aria-label="地图状态筛选" value={status} onChange={(e) => setStatus(e.target.value)}><option value="all">全部状态</option><option value="operating">运营中</option><option value="development">开发中</option><option value="suspended">暂停</option><option value="closed">关闭</option><option value="unknown">待核验</option></select>
-          <select aria-label="地图数据完整度筛选" value={coverage} onChange={(e) => setCoverage(e.target.value)}><option value="all">全部完整度</option><option value="production">有产量</option><option value="guidance">有指引</option><option value="reserves">有储量</option><option value="event">有近期事件</option></select>
+          <select aria-label="地图数据完整度筛选" value={coverage} onChange={(e) => setCoverage(e.target.value)}><option value="all">全部完整度</option><option value="production">有产量</option><option value="guidance">有指引</option><option value="reserves">有储量</option><option value="event">有已核验事件</option></select>
           <span>{mapProjects.length} 个项目点</span>
         </div>
         <ProjectMap projects={mapProjects} selectedProjectId={selectedProjectId} eventProjectIds={publicData.events.map((item) => item.project_id)} onSelect={setSelectedProjectId} />
-        <div className="map-legend"><span><i className="operating" />运营中</span><span><i className="development" />开发中</span><span><i className="suspended" />暂停</span><span><i className="closed" />关闭</span><span><i className="unknown" />待核验</span><span><i className="event-ring" />近期事件</span></div>
+        <div className="map-legend"><span><i className="operating" />运营中</span><span><i className="development" />开发中</span><span><i className="suspended" />暂停</span><span><i className="closed" />关闭</span><span><i className="unknown" />待核验</span><span><i className="event-ring" />已核验事件</span></div>
         {selected && <div className="map-selection">
           <div><span>{selected.country.name_zh} · {statusLabel[selected.status]}</span><h3>{selected.name}</h3><p>{selected.operator ?? formatMissing(selected.operator_missing_reason)}</p></div>
           <dl><div><dt>产量</dt><dd>{selectedFacts?.production.length ? "已披露" : "待补"}</dd></div><div><dt>指引</dt><dd>{selectedFacts?.guidance.length ? "已披露" : "待补"}</dd></div><div><dt>储量</dt><dd>{selectedFacts?.reserves.length ? "已披露" : "待补"}</dd></div><div><dt>定位</dt><dd>{selected.location.precision === "approximate" ? "近似" : selected.location.precision}</dd></div></dl>
@@ -173,8 +186,13 @@ export function PublicDataProduct() {
           const project = publicData.projects.find((item) => item.id === event.project_id);
           const active = selectedProjectId === event.project_id;
           return <article key={event.id} className={`stream-event ${active ? "active" : ""}`} onClick={() => setSelectedProjectId(event.project_id)}>
-            <time>{event.reported_date}</time><div className="event-kind">事故 · 停产 · 复产</div><h3>{project?.name}</h3><h4>{event.headline_zh}</h4><p>{event.summary_zh}</p>
-            <div className="event-milestones"><span>{event.event_start_date} 事故</span><span>{event.operations_suspended_date} 停产</span><span>{event.operations_resumed_date} 复产</span></div>
+            <time>{event.reported_date}</time><div className="event-kind">{eventLabel[event.event_type] ?? event.event_type}</div><h3>{project?.name}</h3><h4>{event.headline_zh}</h4><p>{event.summary_zh}</p>
+            <div className="event-milestones">
+              {event.event_type === "guidance_adjustment" && <span>{event.event_start_date} 指引更新</span>}
+              {event.event_type !== "guidance_adjustment" && <span>{event.event_start_date} 事故</span>}
+              {event.operations_suspended_date && <span>{event.operations_suspended_date} 停产</span>}
+              {event.operations_resumed_date && <span>{event.operations_resumed_date} 复产</span>}
+            </div>
             <div className="event-sources">{event.source_ids.map((id) => <SourceLink key={id} id={id} onOpen={setSource} />)}</div>
           </article>;
         })}
@@ -187,7 +205,7 @@ export function PublicDataProduct() {
       <div className="exchange-tabs">{(["LME","SHFE","COMEX"] as const).map((item) => <button key={item} className={exchange === item ? "active" : ""} type="button" onClick={() => setExchange(item)}>{item}</button>)}</div>
       <div className="inventory-body">
         <div className="inventory-latest"><span>最新可展示值</span><strong>{latestInventory?.normalized_value !== null && latestInventory?.normalized_value !== undefined ? latestInventory.normalized_value.toLocaleString() : "待补"} <small>{latestInventory?.normalized_value !== null ? "metric tonnes" : ""}</small></strong><p>数据日：{latestInventory?.data_date ?? "待补"}<br />环比：{latestInventory?.change_pct !== null && latestInventory?.change_pct !== undefined ? `${latestInventory.change_pct > 0 ? "+" : ""}${latestInventory.change_pct}%` : "待补"}<br />更新：{latestInventory?.published_at ?? "待补"}</p>{latestInventory && <SourceLink id={latestInventory.source_id} onOpen={setSource} />}</div>
-        <InventoryPlot records={exchangeRecords} />
+        <InventoryPlot records={trendRecords} />
         <div className="inventory-definitions">{exchangeRecords.map((item) => <article key={item.id}><div><b>{inventoryLabel[item.inventory_type] ?? item.inventory_type}</b><span>{item.frequency}</span></div><strong>{item.value === null ? "待补" : `${item.value.toLocaleString()} ${item.original_unit}`}</strong><p>{item.notes}</p><small>{item.license_status}</small><SourceLink id={item.source_id} onOpen={setSource} /></article>)}</div>
       </div>
     </section>
@@ -207,7 +225,7 @@ export function PublicDataProduct() {
         <td><FactValue value={quarter?.value ?? null} suffix={quarter?.unit} /><small>{quarter?.period.label ?? "季度产量尚无已核验来源"}</small>{quarter && <SourceLink id={quarter.source_id} onOpen={setSource} />}</td>
         <td><FactValue value={annual?.value ?? null} suffix={annual?.unit} /><small>{annual?.period.label ?? "年度产量尚无已核验来源"}</small>{annual && <SourceLink id={annual.source_id} onOpen={setSource} />}</td>
         <td>{guidance ? <><b>{guidance.low}–{guidance.high} {guidance.unit}</b><small>{guidance.period.label}</small><SourceLink id={guidance.source_id} onOpen={setSource} /></> : <span className="missing-value">待补 / 指引未录入</span>}</td>
-        <td>{guidance?.guidance_kind === "maintained" ? "维持不变" : guidance ? "当前指引" : "待补"}</td>
+        <td>{guidance ? (guidanceLabel[guidance.guidance_kind] ?? "当前指引") : "待补"}</td>
         <td>{reserve ? <><b>{reserve.ore_tonnage} {reserve.ore_tonnage_unit} @ {reserve.grade_pct}% Cu</b><small>{reserve.classification}</small><SourceLink id={reserve.source_id} onOpen={setSource} /></> : <span className="missing-value">待补 / 储量未录入</span>}</td>
         <td>{event?.headline_zh ?? "待补 / 无近期已核验事件"}{event && <SourceLink id={event.source_id} onOpen={setSource} />}</td><td>{latestDate}</td><td><span className={`coverage-dot ${completeness.production ? "verified" : ""}`}>{completeness.production ? "事实已核验" : "主数据已录入"}</span></td>
       </tr>)}</tbody></table></div>

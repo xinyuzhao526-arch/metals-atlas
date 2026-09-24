@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-09-18",
+  "updated_at": "2026-09-24",
   "items": [
     {
       "id": "reserve-las-bambas-2026-06-30",
@@ -35,6 +35,40 @@
       "production_stage": "mine_contained_metal",
       "effective_date": "2024-12-31",
       "source_id": "src-fqm-aif-2025"
+    },
+    {
+      "id": "reserve-kamoa-kakula-2025-12-31",
+      "observation_id": "static-public-ivanhoe-kamoa-reserve-2025",
+      "project_id": "project-kamoa-kakula",
+      "metal_id": "metal-cu",
+      "ore_tonnage": 466,
+      "ore_tonnage_unit": "Mt",
+      "grade_pct": 2.82,
+      "contained_metal_value": 13.1,
+      "contained_metal_unit": "Mt Cu",
+      "missing_reason": null,
+      "classification": "probable_mineral_reserve",
+      "ownership_basis": "project_100",
+      "production_stage": "in_situ_mineral_reserve",
+      "effective_date": "2025-12-31",
+      "source_id": "src-ivanhoe-kamoa-mre-2026"
+    },
+    {
+      "id": "resource-kamoa-kakula-indicated-2025-12-31",
+      "observation_id": "static-public-ivanhoe-kamoa-resource-2025",
+      "project_id": "project-kamoa-kakula",
+      "metal_id": "metal-cu",
+      "ore_tonnage": 1272,
+      "ore_tonnage_unit": "Mt",
+      "grade_pct": 2.65,
+      "contained_metal_value": 34,
+      "contained_metal_unit": "Mt Cu",
+      "missing_reason": null,
+      "classification": "indicated_mineral_resource_inclusive_of_reserves",
+      "ownership_basis": "project_100",
+      "production_stage": "in_situ_mineral_resource",
+      "effective_date": "2025-12-31",
+      "source_id": "src-ivanhoe-kamoa-mre-2026"
     }
   ]
 }

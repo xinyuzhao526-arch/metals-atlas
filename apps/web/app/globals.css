@@ -11,6 +11,12 @@
   --danger: #a4483d;
 }
 
+.reserve-record+.reserve-record{margin-top:28px;padding-top:24px;border-top:1px solid var(--graphite)}
+.reserve-record>h3{margin:20px 0 0;font:700 15px Georgia,serif}
+.reserve-record>dl{display:flex;margin:0 0 18px}
+.reserve-record>dl div{margin-right:28px}
+.reserve-record>button{padding:0;border:0;background:transparent;color:var(--verdigris-dark);cursor:pointer;font-size:9px;font-weight:800}
+
 * { box-sizing: border-box; }
 html { background: var(--paper); }
 body { margin: 0; color: var(--ink); background: var(--paper); font: 14px/1.55 Aptos, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
