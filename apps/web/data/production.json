@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-09-21",
+  "updated_at": "2026-09-24",
   "items": [
     {
       "id": "production-las-bambas-2026-q2",
@@ -61,6 +61,36 @@
       "ownership_basis": "consolidated",
       "effective_date": "2025-12-31",
       "source_id": "src-fqm-2025-production-2026-guidance"
+    },
+    {
+      "id": "production-kamoa-kakula-2026-q2",
+      "observation_id": "static-public-ivanhoe-kamoa-2026-q2",
+      "project_id": "project-kamoa-kakula",
+      "metal_id": "metal-cu",
+      "value": 64.328,
+      "unit": "kt",
+      "missing_reason": null,
+      "period": { "start": "2026-04-01", "end": "2026-06-30", "type": "quarter", "label": "2026 Q2" },
+      "calendar_basis": "calendar_year",
+      "production_stage": "contained_copper_in_anode_blister_and_saleable_slag_concentrate",
+      "ownership_basis": "project_100",
+      "effective_date": "2026-06-30",
+      "source_id": "src-ivanhoe-kamoa-q2-2026"
+    },
+    {
+      "id": "production-kamoa-kakula-2025-fy",
+      "observation_id": "static-public-ivanhoe-kamoa-2025-fy",
+      "project_id": "project-kamoa-kakula",
+      "metal_id": "metal-cu",
+      "value": 388.838,
+      "unit": "kt",
+      "missing_reason": null,
+      "period": { "start": "2025-01-01", "end": "2025-12-31", "type": "annual", "label": "2025 全年" },
+      "calendar_basis": "calendar_year",
+      "production_stage": "copper_in_concentrate",
+      "ownership_basis": "project_100",
+      "effective_date": "2025-12-31",
+      "source_id": "src-ivanhoe-kamoa-2025-production"
     }
   ]
 }
