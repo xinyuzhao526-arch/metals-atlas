@@ -72,6 +72,14 @@
     {
       "id":"guidance-los-pelambres-2026","observation_id":"static-public-antofagasta-los-pelambres-guidance-2026","project_id":"project-los-pelambres","metal_id":"metal-cu","low":340,"high":360,"unit":"kt","missing_reason":null,
       "period":{"start":"2026-01-01","end":"2026-12-31","type":"annual","label":"2026 全年"},"calendar_basis":"calendar_year","production_stage":"concentrate_contained_metal","ownership_basis":"project_100","guidance_kind":"maintained","effective_date":"2026-07-15","source_id":"src-antofagasta-q2-2026"
+    },
+    {
+      "id":"guidance-quellaveco-2026","observation_id":"static-public-anglo-quellaveco-guidance-2026","project_id":"project-quellaveco","metal_id":"metal-cu","low":310,"high":340,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-01-01","end":"2026-12-31","type":"annual","label":"2026 全年"},"calendar_basis":"calendar_year","production_stage":"concentrate_contained_metal","ownership_basis":"project_100_consolidated","guidance_kind":"maintained","effective_date":"2026-06-30","source_id":"src-anglo-q2-2026"
+    },
+    {
+      "id":"guidance-sentinel-2026","observation_id":"static-public-fqm-sentinel-guidance-2026","project_id":"project-sentinel","metal_id":"metal-cu","low":190,"high":220,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-01-01","end":"2026-12-31","type":"annual","label":"2026 全年"},"calendar_basis":"calendar_year","production_stage":"mine_contained_metal","ownership_basis":"project_100_consolidated","guidance_kind":"maintained","effective_date":"2026-06-30","source_id":"src-fqm-sentinel-q2-2026"
     }
   ]
 }

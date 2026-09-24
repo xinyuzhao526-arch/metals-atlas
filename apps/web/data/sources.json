@@ -203,8 +203,8 @@
       "publication_date": "2026-01-15",
       "verification_date": "2026-09-21",
       "url": "https://www.first-quantum.com/news/first-quantum-minerals-announces-2025-preliminary-production-and-2026-2028-guidance/",
-      "locator": "2025 Production · Kansanshi 181 kt；Production guidance by operation · 2026 Kansanshi 175–205 kt",
-      "short_excerpt": "Kansanshi 2025 copper production was reported at 181 kt; 2026 copper guidance was 175–205 kt."
+      "locator": "2025 Production / Production guidance by operation：Kansanshi 2025 181 kt、2026 指引 175–205 kt；Sentinel 2025 189 kt、2026 指引 190–220 kt",
+      "short_excerpt": "Kansanshi 与 Sentinel 的 2025 项目产量及 2026 项目指引。"
     },
     {
       "id": "src-fqm-aif-2025",
@@ -371,7 +371,7 @@
       "publication_date": "2026-08-07",
       "verification_date": "2026-09-24",
       "url": "https://www.sec.gov/Archives/edgar/data/1001838/000110465926089169/scco-20260630x10q.htm",
-      "locator": "MD&A 第 43 页铜矿产量表：Buenavista Q2 2026 为 232.8 million pounds，项目矿山产量口径",
+      "locator": "MD&A 第 43 页铜矿产量表：Q2 2026 Toquepala 121.9、Cuajone 82.1、Buenavista 232.8 million pounds；项目矿山产量口径",
       "short_excerpt": null
     },
     {
@@ -395,7 +395,7 @@
       "publication_date": "2026-02-27",
       "verification_date": "2026-09-24",
       "url": "https://southerncoppercorp.com/eng/wp-content/uploads/sites/2/2026/04/10k2025.pdf",
-      "locator": "PDF 第 69 页：Buenavista 截至 2025-12-31 的 leachable ore probable reserve 2,118 Mt @ 0.27% Cu、12,389 million lb contained copper；项目与运营说明",
+      "locator": "PDF 第 47–52、101 页：Cuajone 与 Toquepala 截至 2025-12-31 的铜储量表及 2025 项目矿山产量；第 69 页 Buenavista 储量；项目与运营说明",
       "short_excerpt": null
     },
     {
@@ -407,7 +407,7 @@
       "publication_date": "2026-07-23",
       "verification_date": "2026-09-24",
       "url": "https://www.angloamerican.com/~/media/Files/A/Anglo-American-Group-v9/PLC/media/press-release/releases/2026pr/q2-2026-production-report.pdf",
-      "locator": "PDF 第 5–6 页：Collahuasi Q2 2026 Anglo American 44% 应占铜产量 42,600 t；低品位库存矿与海水淡化许可影响说明",
+      "locator": "PDF 第 5–6 页铜业务表：Q2 2026 Los Bronces 46.0 kt、Collahuasi 42.6 kt（44% 应占）、Quellaveco 75.0 kt；Peru 2026 指引 310–340 kt 维持",
       "short_excerpt": null
     },
     {
@@ -419,7 +419,7 @@
       "publication_date": "2026-02-05",
       "verification_date": "2026-09-24",
       "url": "https://www.angloamerican.com/~/media/Files/A/Anglo-American-Group-v9/PLC/media/press-release/releases/2026pr/q4-2025-production-report.pdf",
-      "locator": "Copper operating table：Collahuasi 2025 全年 Anglo American 44% 应占铜产量 177,800 t",
+      "locator": "Copper operating table：2025 全年 Los Bronces 164.6 kt、Collahuasi 177.8 kt（44% 应占）、Quellaveco 310.2 kt；Los Bronces 与 Quellaveco 为项目 100% 口径",
       "short_excerpt": null
     },
     {
@@ -516,6 +516,174 @@
       "verification_date": "2026-09-24",
       "url": "https://www.antofagasta.co.uk/investors/news/2026/los-pelambres-operational-update/",
       "locator": "HTML 正文：极端降雨后有序停产并于 2026-07-23 恢复运营；全年集团指引当时维持",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-codelco-results-2025",
+      "tier": "A",
+      "source_type": "official_annual_results",
+      "organization": "Codelco",
+      "title": "Full Year 2025 Results",
+      "publication_date": "2026-03-26",
+      "verification_date": "2026-09-24",
+      "url": "https://www.codelco.com/prontus_codelco/site/docs/20260326/20260326101502/resultados_2025.pdf",
+      "locator": "PDF 第 5 页：Chuquicamata 2025 年 266 kt、El Teniente 310 kt；均为 fine copper，El Teniente 同比下降与事故限制有关",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-codelco-annual-2025",
+      "tier": "A",
+      "source_type": "official_annual_report",
+      "organization": "Codelco",
+      "title": "Memoria Anual Integrada 2025",
+      "publication_date": "2026-03-30",
+      "verification_date": "2026-09-24",
+      "url": "https://www.codelco.com/prontus_codelco/site/docs/20260330/20260330133750/codelco_memoria2025.pdf",
+      "locator": "PDF 第 17、49 页：两矿运营概况；截至 2025-12-31，Chuquicamata P+P 1,238 Mt @ 0.63% Cu（7.8 Mt contained），El Teniente P+P 928 Mt @ 0.77% Cu（7.1 Mt contained）；Codelco 矿业权",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-codelco-el-teniente-restart-2025",
+      "tier": "A",
+      "source_type": "official_operational_update",
+      "organization": "Codelco",
+      "title": "Codelco reports progress following the El Teniente accident",
+      "publication_date": "2025-08-09",
+      "verification_date": "2026-09-24",
+      "url": "https://www.codelco.com/en/prensa/2025/codelco-informa-avances-en-apoyo-a-personas-estado-operacional-e",
+      "locator": "HTML 正文：2025-07-31 事故后，Sernageomin 授权部分区域逐步复产",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-anglo-rnr-2025",
+      "tier": "A",
+      "source_type": "official_reserves_resources_report",
+      "organization": "Anglo American",
+      "title": "Ore Reserves and Mineral Resources Report 2025",
+      "publication_date": "2026-02-20",
+      "verification_date": "2026-09-24",
+      "url": "https://www.angloamerican.com/~/media/Files/A/Anglo-American-Group-v9/PLC/investors/annual-reporting/2025/anglo-american-ore-reserves-and-mineral-resources-report-2025.pdf",
+      "locator": "PDF 铜业务储量表：Los Bronces sulphide flotation P+P 1,327.5 Mt @ 0.50% Cu、6,661 kt contained；Quellaveco P+P（含 stockpile）1,487.8 Mt @ 0.49% Cu、7,305 kt contained；均为项目 100% 口径",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-fqm-sentinel-q2-2026",
+      "tier": "A",
+      "source_type": "official_quarterly_results",
+      "organization": "First Quantum Minerals",
+      "title": "Second Quarter 2026 Results",
+      "publication_date": "2026-07-28",
+      "verification_date": "2026-09-24",
+      "url": "https://www.first-quantum.com/news/first-quantum-minerals-reports-second-quarter-2026-results/",
+      "locator": "HTML Operational highlights / Sentinel：Q2 2026 含铜产量 50,335 t；2026 指引维持 190,000–220,000 t；披露年度停机与球磨机法兰螺栓疲劳管理",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-fqm-aif-2026",
+      "tier": "A",
+      "source_type": "official_annual_information_form",
+      "organization": "First Quantum Minerals",
+      "title": "Annual Information Form 2025",
+      "publication_date": "2026-02-10",
+      "verification_date": "2026-09-24",
+      "url": "https://www.first-quantum.com/wp-content/uploads/2026/02/260210-FQM-AIF-2026-FINAL.pdf",
+      "locator": "PDF Sentinel 章节：截至 2025-12-31，in-pit P+P 486.9 Mt @ 0.44% TCu；另有 probable stockpile 54.7 Mt @ 0.22% TCu；项目由 First Quantum 100% 持有",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-vale-q2-2026",
+      "tier": "A",
+      "source_type": "official_production_report",
+      "organization": "Vale",
+      "title": "Production and Sales in 2Q26",
+      "publication_date": "2026-07-21",
+      "verification_date": "2026-09-24",
+      "url": "https://vale.com/check-out-the-production-and-sales-in-2q26/-/categories/5",
+      "locator": "HTML Copper：Salobo Q2 2026 铜产量 52.4 kt，为该矿二季度最高纪录",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-vale-20f-2025",
+      "tier": "A",
+      "source_type": "regulatory_annual_filing",
+      "organization": "Vale / U.S. SEC",
+      "title": "2025 Form 20-F",
+      "publication_date": "2026-03-27",
+      "verification_date": "2026-09-24",
+      "url": "https://www.sec.gov/Archives/edgar/data/917851/000129281426001844/valeform20f_2025.htm",
+      "locator": "HTML 第 81、84、88 页：Salobo Metais 运营；VBM 由 Vale 90%、Manara 10% 持有；2025 finished copper production 218.7 kt；90% 权益口径 P+P 921.2 Mt @ 0.60% Cu",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-glencore-h1-2026",
+      "tier": "A",
+      "source_type": "official_production_report",
+      "organization": "Glencore",
+      "title": "Half-Year Production Report 2026",
+      "publication_date": "2026-07-29",
+      "verification_date": "2026-09-24",
+      "url": "https://www.glencore.com/.rest/api/v1/documents/static/e44bf57f-8768-4b27-8a33-39087d02d00a/GLEN_2026-H1ProductionReport.pdf",
+      "locator": "PDF African Copper quarterly table：KCC Q2 2026 copper metal 54.5 kt，H1 106.4 kt；controlled assets 100% basis",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-glencore-fy-2025",
+      "tier": "A",
+      "source_type": "official_production_report",
+      "organization": "Glencore",
+      "title": "Full Year Production Report 2025",
+      "publication_date": "2026-01-29",
+      "verification_date": "2026-09-24",
+      "url": "https://www.glencore.com/.rest/api/v1/documents/static/a8114247-02e8-4bd8-bc04-81f411ba631c/GLEN_2025-FY-Production-Report.pdf",
+      "locator": "PDF Production by quarter：KCC 2025 copper metal 188.7 kt，项目 100% 生产口径",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-glencore-rnr-2025",
+      "tier": "A",
+      "source_type": "official_reserves_resources_report",
+      "organization": "Glencore",
+      "title": "Resources and Reserves Report 2025",
+      "publication_date": "2026-01-29",
+      "verification_date": "2026-09-24",
+      "url": "https://www.glencore.com/.rest/api/v1/documents/static/a17cc44b-7947-4169-9b6b-b882403fb42b/GLENCORE-Resources-and-Reserves-report-2025.pdf",
+      "locator": "PDF African Copper / KCC：2025 total ore reserve 137 Mt @ 3.83% Cu；权益列 70%，吨位与品位按报告资产总量表展示",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-glencore-kcc-due-diligence-2024",
+      "tier": "A",
+      "source_type": "official_due_diligence_report",
+      "organization": "Kamoto Copper Company / Glencore",
+      "title": "2024 Responsible Supply Chain Due Diligence Report",
+      "publication_date": "2025-05-21",
+      "verification_date": "2026-09-24",
+      "url": "https://www.glencore.com/.rest/api/v1/documents/b6865610f23c9bb307697aa655435163/2024%2BKCC%2BResponsible%2BSupply%2BChain%2BDue%2BDiligence%2BReport.pdf",
+      "locator": "PDF 第 1 页：KCC 坐标 10.714798°S, 25.385542°E；Katanga Mining/Glencore 70%、Gécamines 20%、SIMCO 5%、DRC State 5%；产品为铜阴极和氢氧化钴",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-cmoc-drc-profile-2025",
+      "tier": "A",
+      "source_type": "official_operation_profile",
+      "organization": "CMOC Group",
+      "title": "The DRC — Copper and Cobalt",
+      "publication_date": "2026-03-27",
+      "verification_date": "2026-09-24",
+      "url": "https://en.cmoc.com/html/Business/Congo-Cu-Co/",
+      "locator": "HTML TFM：Fungurume / Kolwezi / Lualaba，CMOC 80%，在产，主要产品铜与钴，铜资源量含铜 29.57 Mt @ 2.25%",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-cmoc-annual-2025",
+      "tier": "A",
+      "source_type": "official_annual_report",
+      "organization": "CMOC Group / HKEX",
+      "title": "2025 Annual Report",
+      "publication_date": "2026-03-27",
+      "verification_date": "2026-09-24",
+      "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0327/2026032703784.pdf",
+      "locator": "PDF 第 44 页：TFM copper resource 1,316.0 Mt @ 2.25%（2,957.3 × 10,000 t contained）；reserve 220.4 Mt @ 2.88%（635.0 × 10,000 t contained）；子公司表列 CMOC 间接持股 80%",
       "short_excerpt": null
     }
   ]

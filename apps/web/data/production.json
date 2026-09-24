@@ -171,6 +171,70 @@
     {
       "id":"production-los-pelambres-2025-fy","observation_id":"static-public-antofagasta-los-pelambres-2025-fy","project_id":"project-los-pelambres","metal_id":"metal-cu","value":295.3,"unit":"kt","missing_reason":null,
       "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"concentrate_contained_metal","ownership_basis":"project_100","effective_date":"2025-12-31","source_id":"src-antofagasta-annual-2025"
+    },
+    {
+      "id":"production-chuquicamata-2025-fy","observation_id":"static-public-codelco-chuquicamata-2025-fy","project_id":"project-chuquicamata","metal_id":"metal-cu","value":266,"unit":"kt","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"fine_copper","ownership_basis":"project_100","effective_date":"2025-12-31","source_id":"src-codelco-results-2025"
+    },
+    {
+      "id":"production-el-teniente-2025-fy","observation_id":"static-public-codelco-el-teniente-2025-fy","project_id":"project-el-teniente","metal_id":"metal-cu","value":310,"unit":"kt","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"fine_copper","ownership_basis":"project_100","effective_date":"2025-12-31","source_id":"src-codelco-results-2025"
+    },
+    {
+      "id":"production-los-bronces-2026-q2","observation_id":"static-public-anglo-los-bronces-2026-q2","project_id":"project-los-bronces","metal_id":"metal-cu","value":46,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"2026 Q2"},"calendar_basis":"calendar_year","production_stage":"contained_copper_in_concentrate_and_cathode","ownership_basis":"project_100","effective_date":"2026-06-30","source_id":"src-anglo-q2-2026"
+    },
+    {
+      "id":"production-los-bronces-2025-fy","observation_id":"static-public-anglo-los-bronces-2025-fy","project_id":"project-los-bronces","metal_id":"metal-cu","value":164.6,"unit":"kt","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"contained_copper_in_concentrate_and_cathode","ownership_basis":"project_100","effective_date":"2025-12-31","source_id":"src-anglo-q4-2025"
+    },
+    {
+      "id":"production-quellaveco-2026-q2","observation_id":"static-public-anglo-quellaveco-2026-q2","project_id":"project-quellaveco","metal_id":"metal-cu","value":75,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"2026 Q2"},"calendar_basis":"calendar_year","production_stage":"concentrate_contained_metal","ownership_basis":"project_100_consolidated","effective_date":"2026-06-30","source_id":"src-anglo-q2-2026"
+    },
+    {
+      "id":"production-quellaveco-2025-fy","observation_id":"static-public-anglo-quellaveco-2025-fy","project_id":"project-quellaveco","metal_id":"metal-cu","value":310.2,"unit":"kt","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"concentrate_contained_metal","ownership_basis":"project_100_consolidated","effective_date":"2025-12-31","source_id":"src-anglo-q4-2025"
+    },
+    {
+      "id":"production-toquepala-2026-q2","observation_id":"static-public-scc-toquepala-2026-q2","project_id":"project-toquepala","metal_id":"metal-cu","value":55.29291,"unit":"kt","original_value":121.9,"original_unit":"million_lb","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"2026 Q2"},"calendar_basis":"calendar_year","production_stage":"mine_recoverable_copper","ownership_basis":"project_100","effective_date":"2026-06-30","source_id":"src-scc-q2-2026","normalization_note":"121.9 million lb × 0.45359237 = 55.292910 kt"
+    },
+    {
+      "id":"production-toquepala-2025-fy","observation_id":"static-public-scc-toquepala-2025-fy","project_id":"project-toquepala","metal_id":"metal-cu","value":248.387182,"unit":"kt","original_value":547.6,"original_unit":"million_lb","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"mine_recoverable_copper","ownership_basis":"project_100","effective_date":"2025-12-31","source_id":"src-scc-10k-2025","normalization_note":"547.6 million lb × 0.45359237 = 248.387182 kt；包含选矿与 SX-EW 矿端产量"
+    },
+    {
+      "id":"production-cuajone-2026-q2","observation_id":"static-public-scc-cuajone-2026-q2","project_id":"project-cuajone","metal_id":"metal-cu","value":37.239934,"unit":"kt","original_value":82.1,"original_unit":"million_lb","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"2026 Q2"},"calendar_basis":"calendar_year","production_stage":"mine_recoverable_copper","ownership_basis":"project_100","effective_date":"2026-06-30","source_id":"src-scc-q2-2026","normalization_note":"82.1 million lb × 0.45359237 = 37.239934 kt"
+    },
+    {
+      "id":"production-cuajone-2025-fy","observation_id":"static-public-scc-cuajone-2025-fy","project_id":"project-cuajone","metal_id":"metal-cu","value":162.748942,"unit":"kt","original_value":358.8,"original_unit":"million_lb","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"mine_recoverable_copper","ownership_basis":"project_100","effective_date":"2025-12-31","source_id":"src-scc-10k-2025","normalization_note":"358.8 million lb × 0.45359237 = 162.748942 kt"
+    },
+    {
+      "id":"production-sentinel-2026-q2","observation_id":"static-public-fqm-sentinel-2026-q2","project_id":"project-sentinel","metal_id":"metal-cu","value":50.335,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"2026 Q2"},"calendar_basis":"calendar_year","production_stage":"mine_contained_metal","ownership_basis":"project_100_consolidated","effective_date":"2026-06-30","source_id":"src-fqm-sentinel-q2-2026"
+    },
+    {
+      "id":"production-sentinel-2025-fy","observation_id":"static-public-fqm-sentinel-2025-fy","project_id":"project-sentinel","metal_id":"metal-cu","value":189,"unit":"kt","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"mine_contained_metal","ownership_basis":"project_100_consolidated","effective_date":"2025-12-31","source_id":"src-fqm-2025-production-2026-guidance"
+    },
+    {
+      "id":"production-salobo-2026-q2","observation_id":"static-public-vale-salobo-2026-q2","project_id":"project-salobo","metal_id":"metal-cu","value":52.4,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"2026 Q2"},"calendar_basis":"calendar_year","production_stage":"concentrate_contained_metal","ownership_basis":"project_100_consolidated","effective_date":"2026-06-30","source_id":"src-vale-q2-2026"
+    },
+    {
+      "id":"production-salobo-2025-fy","observation_id":"static-public-vale-salobo-2025-fy","project_id":"project-salobo","metal_id":"metal-cu","value":218.7,"unit":"kt","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"finished_copper_by_ore_source","ownership_basis":"project_100_consolidated","effective_date":"2025-12-31","source_id":"src-vale-20f-2025"
+    },
+    {
+      "id":"production-kcc-2026-q2","observation_id":"static-public-glencore-kcc-2026-q2","project_id":"project-kcc","metal_id":"metal-cu","value":54.5,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"2026 Q2"},"calendar_basis":"calendar_year","production_stage":"copper_metal","ownership_basis":"project_100_controlled_asset","effective_date":"2026-06-30","source_id":"src-glencore-h1-2026"
+    },
+    {
+      "id":"production-kcc-2025-fy","observation_id":"static-public-glencore-kcc-2025-fy","project_id":"project-kcc","metal_id":"metal-cu","value":188.7,"unit":"kt","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"copper_metal","ownership_basis":"project_100_controlled_asset","effective_date":"2025-12-31","source_id":"src-glencore-fy-2025"
     }
   ]
 }

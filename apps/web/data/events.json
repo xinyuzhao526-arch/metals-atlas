@@ -62,6 +62,12 @@
       "headline_zh":"极端降雨后完成有序停产并恢复运营",
       "summary_zh":"科金博大区遭遇异常强降雨并进入灾害状态后，Los Pelambres 有序停产；公司确认 7 月 23 日恢复运营，当时全年集团产量指引保持不变。",
       "source_id":"src-antofagasta-los-pelambres-weather-2026","source_ids":["src-antofagasta-los-pelambres-weather-2026"]
+    },
+    {
+      "id":"event-el-teniente-accident-partial-restart-2025","project_id":"project-el-teniente","metal_id":"metal-cu","event_type":"accident_and_restart","severity":"high","status":"partial_restart_with_restrictions","event_start_date":"2025-07-31","operations_suspended_date":"2025-07-31","operations_resumed_date":"2025-08-09","reported_date":"2026-03-26",
+      "headline_zh":"致命岩爆事故后分区、逐步复产",
+      "summary_zh":"El Teniente 于 2025 年 7 月 31 日发生致命事故并限制生产；Sernageomin 随后授权部分地下区域逐步复产。Codelco 披露 2025 年产量降至 310 kt，事故限制是同比下降的主要原因之一。",
+      "source_id":"src-codelco-el-teniente-restart-2025","source_ids":["src-codelco-el-teniente-restart-2025","src-codelco-results-2025"]
     }
   ]
 }

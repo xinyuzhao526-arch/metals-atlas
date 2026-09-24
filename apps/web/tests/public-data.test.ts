@@ -37,9 +37,10 @@ test("copper atlas contains 46 verified public projects with valid coordinates",
   for (const project of projects) {
     assert.ok(project.location.latitude >= -90 && project.location.latitude <= 90, project.slug);
     assert.ok(project.location.longitude >= -180 && project.location.longitude <= 180, project.slug);
-    assert.equal(project.location.precision, "approximate");
+    assert.ok(["exact", "approximate"].includes(project.location.precision), `${project.slug} has declared precision`);
     assert.ok(project.location.source_id, `${project.slug} has a location source`);
   }
+  assert.equal(projects.find((item: { slug: string }) => item.slug === "kcc").location.precision, "exact");
 });
 
 test("inventory records keep definitions, units, dates and licensing state separate", () => {
@@ -70,9 +71,10 @@ test("coverage metrics match public facts without incompatible aggregation", () 
   const coverage = data("coverage");
   assert.equal(coverage.project_count, 46);
   assert.equal(coverage.mapped_count, 46);
-  assert.deepEqual(coverage.location_precision, { exact: 0, approximate: 46, pending: 0 });
-  assert.equal(coverage.production_project_count, 13);
-  assert.equal(coverage.current_guidance_project_count, 8);
+  assert.deepEqual(coverage.location_precision, { exact: 1, approximate: 45, pending: 0 });
+  assert.equal(coverage.production_project_count, 22);
+  assert.equal(coverage.current_guidance_project_count, 10);
+  assert.equal(coverage.reserve_project_count, 23);
   assert.equal(coverage.production_aggregate, null);
   assert.ok(coverage.production_aggregate_missing_reason);
 });

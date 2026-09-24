@@ -108,6 +108,42 @@
     },
     {
       "id":"reserve-los-pelambres-2025-12-31","observation_id":"static-public-antofagasta-los-pelambres-reserve-2025","project_id":"project-los-pelambres","metal_id":"metal-cu","ore_tonnage":716,"ore_tonnage_unit":"Mt","grade_pct":0.58,"contained_metal_value":null,"contained_metal_unit":"Mt Cu","missing_reason":"not_disclosed_in_project_summary","classification":"proved_and_probable_ore_reserves","ownership_basis":"project_100","production_stage":"in_situ_mineral_reserve","effective_date":"2025-12-31","source_id":"src-antofagasta-annual-2025"
+    },
+    {
+      "id":"reserve-chuquicamata-2025-12-31","observation_id":"static-public-codelco-chuquicamata-reserve-2025","project_id":"project-chuquicamata","metal_id":"metal-cu","ore_tonnage":1238,"ore_tonnage_unit":"Mt","grade_pct":0.63,"contained_metal_value":7.8,"contained_metal_unit":"Mt Cu","missing_reason":null,"classification":"proved_and_probable_mineral_reserves","ownership_basis":"project_100","production_stage":"in_situ_mineral_reserve","effective_date":"2025-12-31","source_id":"src-codelco-annual-2025"
+    },
+    {
+      "id":"reserve-el-teniente-2025-12-31","observation_id":"static-public-codelco-el-teniente-reserve-2025","project_id":"project-el-teniente","metal_id":"metal-cu","ore_tonnage":928,"ore_tonnage_unit":"Mt","grade_pct":0.77,"contained_metal_value":7.1,"contained_metal_unit":"Mt Cu","missing_reason":null,"classification":"proved_and_probable_mineral_reserves","ownership_basis":"project_100","production_stage":"in_situ_mineral_reserve","effective_date":"2025-12-31","source_id":"src-codelco-annual-2025"
+    },
+    {
+      "id":"reserve-los-bronces-sulphide-2025-12-31","observation_id":"static-public-anglo-los-bronces-reserve-2025","project_id":"project-los-bronces","metal_id":"metal-cu","ore_tonnage":1327.5,"ore_tonnage_unit":"Mt","grade_pct":0.50,"contained_metal_value":6.661,"contained_metal_unit":"Mt Cu","missing_reason":null,"classification":"proved_and_probable_sulphide_flotation_reserves","ownership_basis":"project_100","production_stage":"in_situ_mineral_reserve","effective_date":"2025-12-31","source_id":"src-anglo-rnr-2025"
+    },
+    {
+      "id":"reserve-quellaveco-2025-12-31","observation_id":"static-public-anglo-quellaveco-reserve-2025","project_id":"project-quellaveco","metal_id":"metal-cu","ore_tonnage":1487.8,"ore_tonnage_unit":"Mt","grade_pct":0.49,"contained_metal_value":7.305,"contained_metal_unit":"Mt Cu","missing_reason":null,"classification":"proved_and_probable_sulphide_flotation_including_stockpile","ownership_basis":"project_100","production_stage":"in_situ_mineral_reserve","effective_date":"2025-12-31","source_id":"src-anglo-rnr-2025"
+    },
+    {
+      "id":"reserve-toquepala-2025-12-31","observation_id":"static-public-scc-toquepala-reserve-2025","project_id":"project-toquepala","metal_id":"metal-cu","ore_tonnage":4372.9,"ore_tonnage_unit":"Mt","grade_pct":0.31,"contained_metal_value":13.62088,"contained_metal_unit":"Mt Cu","original_contained_value":30028.9,"original_contained_unit":"million_lb","missing_reason":null,"classification":"proved_and_probable_mill_and_leach_reserves","ownership_basis":"project_100","production_stage":"in_situ_mineral_reserve","effective_date":"2025-12-31","source_id":"src-scc-10k-2025","normalization_note":"30,028.9 million lb × 0.45359237 = 13.620880 Mt"
+    },
+    {
+      "id":"reserve-cuajone-2025-12-31","observation_id":"static-public-scc-cuajone-reserve-2025","project_id":"project-cuajone","metal_id":"metal-cu","ore_tonnage":1481.6,"ore_tonnage_unit":"Mt","grade_pct":0.47,"contained_metal_value":7.029956,"contained_metal_unit":"Mt Cu","original_contained_value":15498.4,"original_contained_unit":"million_lb","missing_reason":null,"classification":"proved_and_probable_mill_and_leach_reserves","ownership_basis":"project_100","production_stage":"in_situ_mineral_reserve","effective_date":"2025-12-31","source_id":"src-scc-10k-2025","normalization_note":"15,498.4 million lb × 0.45359237 = 7.029956 Mt"
+    },
+    {
+      "id":"reserve-sentinel-in-pit-2025-12-31","observation_id":"static-public-fqm-sentinel-in-pit-reserve-2025","project_id":"project-sentinel","metal_id":"metal-cu","ore_tonnage":486.9,"ore_tonnage_unit":"Mt","grade_pct":0.44,"contained_metal_value":null,"contained_metal_unit":"Mt Cu","missing_reason":"contained_metal_not_disclosed","classification":"proved_and_probable_in_pit_mineral_reserves","ownership_basis":"project_100","production_stage":"in_situ_mineral_reserve","effective_date":"2025-12-31","source_id":"src-fqm-aif-2026"
+    },
+    {
+      "id":"reserve-sentinel-stockpile-2025-12-31","observation_id":"static-public-fqm-sentinel-stockpile-reserve-2025","project_id":"project-sentinel","metal_id":"metal-cu","ore_tonnage":54.7,"ore_tonnage_unit":"Mt","grade_pct":0.22,"contained_metal_value":null,"contained_metal_unit":"Mt Cu","missing_reason":"contained_metal_not_disclosed","classification":"probable_stockpile_mineral_reserve","ownership_basis":"project_100","production_stage":"stockpile_mineral_reserve","effective_date":"2025-12-31","source_id":"src-fqm-aif-2026"
+    },
+    {
+      "id":"reserve-salobo-2025-12-31","observation_id":"static-public-vale-salobo-reserve-2025","project_id":"project-salobo","metal_id":"metal-cu","ore_tonnage":921.2,"ore_tonnage_unit":"Mt","grade_pct":0.60,"contained_metal_value":null,"contained_metal_unit":"Mt Cu","missing_reason":"contained_metal_not_disclosed_in_ownership_adjusted_table","classification":"proved_and_probable_mineral_reserves","ownership_basis":"equity_attributable_90_percent","production_stage":"in_situ_mineral_reserve","effective_date":"2025-12-31","source_id":"src-vale-20f-2025"
+    },
+    {
+      "id":"reserve-kcc-2025-12-31","observation_id":"static-public-glencore-kcc-reserve-2025","project_id":"project-kcc","metal_id":"metal-cu","ore_tonnage":137,"ore_tonnage_unit":"Mt","grade_pct":3.83,"contained_metal_value":null,"contained_metal_unit":"Mt Cu","missing_reason":"contained_metal_not_disclosed","classification":"total_ore_reserves","ownership_basis":"project_100_reported_with_70_percent_interest","production_stage":"in_situ_mineral_reserve","effective_date":"2025-12-31","source_id":"src-glencore-rnr-2025"
+    },
+    {
+      "id":"reserve-tfm-2025-12-31","observation_id":"static-public-cmoc-tfm-reserve-2025","project_id":"project-tfm","metal_id":"metal-cu","ore_tonnage":220.4,"ore_tonnage_unit":"Mt","grade_pct":2.88,"contained_metal_value":6.35,"contained_metal_unit":"Mt Cu","original_contained_value":635,"original_contained_unit":"ten_thousand_tonnes","missing_reason":null,"classification":"mineral_reserves","ownership_basis":"project_100","production_stage":"in_situ_mineral_reserve","effective_date":"2025-12-31","source_id":"src-cmoc-annual-2025","normalization_note":"报告单位为 0'000 tonnes（万吨）；635.0 万吨 = 6.350 Mt"
+    },
+    {
+      "id":"resource-tfm-2025-12-31","observation_id":"static-public-cmoc-tfm-resource-2025","project_id":"project-tfm","metal_id":"metal-cu","ore_tonnage":1316,"ore_tonnage_unit":"Mt","grade_pct":2.25,"contained_metal_value":29.573,"contained_metal_unit":"Mt Cu","original_contained_value":2957.3,"original_contained_unit":"ten_thousand_tonnes","missing_reason":null,"classification":"mineral_resources","ownership_basis":"project_100","production_stage":"in_situ_mineral_resource","effective_date":"2025-12-31","source_id":"src-cmoc-annual-2025","normalization_note":"报告单位为 0'000 tonnes（万吨）；2,957.3 万吨 = 29.573 Mt"
     }
   ]
 }

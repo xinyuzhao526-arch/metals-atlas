@@ -4,13 +4,13 @@
   "metal_id": "metal-cu",
   "project_count": 46,
   "mapped_count": 46,
-  "location_precision": { "exact": 0, "approximate": 46, "pending": 0 },
-  "production_project_count": 13,
-  "current_guidance_project_count": 8,
-  "reserve_project_count": 13,
+  "location_precision": { "exact": 1, "approximate": 45, "pending": 0 },
+  "production_project_count": 22,
+  "current_guidance_project_count": 10,
+  "reserve_project_count": 23,
   "recent_event_count_30d": 0,
-  "guidance_coverage_pct": 17.4,
+  "guidance_coverage_pct": 21.7,
   "production_aggregate": null,
   "production_aggregate_missing_reason": "已披露值跨季度/年度、生产环节和所有权口径，不作不兼容汇总",
-  "supply_summary_zh": "当前项目级生产事实覆盖 13 座铜矿；本批次补入 10 座大型矿山的官方产量、储量与可获得的项目指引，并严格保留项目 100%、合并及权益应占口径。"
+  "supply_summary_zh": "当前项目级生产事实覆盖 22 座铜矿、储量或资源量覆盖 23 座；本批次补入 Chuquicamata、El Teniente、Los Bronces、Quellaveco、Toquepala、Cuajone、Sentinel、Salobo、TFM 与 KCC 的官方数据，并严格保留项目 100%、合并及权益应占口径。"
 }
