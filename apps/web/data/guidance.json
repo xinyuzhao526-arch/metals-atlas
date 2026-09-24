@@ -52,6 +52,26 @@
       "guidance_kind": "tightened",
       "effective_date": "2026-07-29",
       "source_id": "src-ivanhoe-kamoa-q2-2026"
+    },
+    {
+      "id":"guidance-escondida-fy2027","observation_id":"static-public-bhp-escondida-guidance-fy2027","project_id":"project-escondida","metal_id":"metal-cu","low":1000,"high":1100,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-07-01","end":"2027-06-30","type":"annual","label":"FY2027"},"calendar_basis":"fiscal_year_june","production_stage":"mine_contained_metal","ownership_basis":"project_100","guidance_kind":"current","effective_date":"2026-06-30","source_id":"src-bhp-operational-review-fy2026"
+    },
+    {
+      "id":"guidance-spence-fy2027","observation_id":"static-public-bhp-spence-guidance-fy2027","project_id":"project-spence","metal_id":"metal-cu","low":210,"high":230,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-07-01","end":"2027-06-30","type":"annual","label":"FY2027"},"calendar_basis":"fiscal_year_june","production_stage":"mine_contained_metal","ownership_basis":"project_100","guidance_kind":"current","effective_date":"2026-06-30","source_id":"src-bhp-operational-review-fy2026"
+    },
+    {
+      "id":"guidance-antamina-fy2027","observation_id":"static-public-bhp-antamina-guidance-fy2027","project_id":"project-antamina","metal_id":"metal-cu","low":120,"high":140,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-07-01","end":"2027-06-30","type":"annual","label":"FY2027"},"calendar_basis":"fiscal_year_june","production_stage":"concentrate_contained_metal","ownership_basis":"equity_attributable_33_75_percent","guidance_kind":"current","effective_date":"2026-06-30","source_id":"src-bhp-operational-review-fy2026"
+    },
+    {
+      "id":"guidance-quebrada-blanca-2026","observation_id":"static-public-teck-qb-guidance-2026","project_id":"project-quebrada-blanca","metal_id":"metal-cu","low":200,"high":235,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-01-01","end":"2026-12-31","type":"annual","label":"2026 全年"},"calendar_basis":"calendar_year","production_stage":"mine_contained_metal","ownership_basis":"consolidated_project_100","guidance_kind":"maintained_after_prior_reduction","effective_date":"2026-06-30","source_id":"src-teck-q2-2026"
+    },
+    {
+      "id":"guidance-los-pelambres-2026","observation_id":"static-public-antofagasta-los-pelambres-guidance-2026","project_id":"project-los-pelambres","metal_id":"metal-cu","low":340,"high":360,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-01-01","end":"2026-12-31","type":"annual","label":"2026 全年"},"calendar_basis":"calendar_year","production_stage":"concentrate_contained_metal","ownership_basis":"project_100","guidance_kind":"maintained","effective_date":"2026-07-15","source_id":"src-antofagasta-q2-2026"
     }
   ]
 }

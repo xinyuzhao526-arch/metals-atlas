@@ -91,6 +91,86 @@
       "ownership_basis": "project_100",
       "effective_date": "2025-12-31",
       "source_id": "src-ivanhoe-kamoa-2025-production"
+    },
+    {
+      "id":"production-escondida-fy2026-q4","observation_id":"static-public-bhp-escondida-fy2026-q4","project_id":"project-escondida","metal_id":"metal-cu","value":311.9,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"FY2026 Q4"},"calendar_basis":"fiscal_year_june","production_stage":"mine_contained_metal","ownership_basis":"project_100","effective_date":"2026-06-30","source_id":"src-bhp-operational-review-fy2026"
+    },
+    {
+      "id":"production-escondida-fy2026","observation_id":"static-public-bhp-escondida-fy2026","project_id":"project-escondida","metal_id":"metal-cu","value":1261.2,"unit":"kt","missing_reason":null,
+      "period":{"start":"2025-07-01","end":"2026-06-30","type":"annual","label":"FY2026"},"calendar_basis":"fiscal_year_june","production_stage":"mine_contained_metal","ownership_basis":"project_100","effective_date":"2026-06-30","source_id":"src-bhp-operational-review-fy2026"
+    },
+    {
+      "id":"production-spence-fy2026-q4","observation_id":"static-public-bhp-spence-fy2026-q4","project_id":"project-spence","metal_id":"metal-cu","value":54.5,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"FY2026 Q4"},"calendar_basis":"fiscal_year_june","production_stage":"mine_contained_metal","ownership_basis":"project_100","effective_date":"2026-06-30","source_id":"src-bhp-operational-review-fy2026"
+    },
+    {
+      "id":"production-spence-fy2026","observation_id":"static-public-bhp-spence-fy2026","project_id":"project-spence","metal_id":"metal-cu","value":212.6,"unit":"kt","missing_reason":null,
+      "period":{"start":"2025-07-01","end":"2026-06-30","type":"annual","label":"FY2026"},"calendar_basis":"fiscal_year_june","production_stage":"mine_contained_metal","ownership_basis":"project_100","effective_date":"2026-06-30","source_id":"src-bhp-operational-review-fy2026"
+    },
+    {
+      "id":"production-antamina-fy2026-q4","observation_id":"static-public-bhp-antamina-fy2026-q4","project_id":"project-antamina","metal_id":"metal-cu","value":35.3,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"FY2026 Q4"},"calendar_basis":"fiscal_year_june","production_stage":"concentrate_contained_metal","ownership_basis":"equity_attributable_33_75_percent","effective_date":"2026-06-30","source_id":"src-bhp-operational-review-fy2026"
+    },
+    {
+      "id":"production-antamina-fy2026","observation_id":"static-public-bhp-antamina-fy2026","project_id":"project-antamina","metal_id":"metal-cu","value":151.5,"unit":"kt","missing_reason":null,
+      "period":{"start":"2025-07-01","end":"2026-06-30","type":"annual","label":"FY2026"},"calendar_basis":"fiscal_year_june","production_stage":"concentrate_contained_metal","ownership_basis":"equity_attributable_33_75_percent","effective_date":"2026-06-30","source_id":"src-bhp-operational-review-fy2026"
+    },
+    {
+      "id":"production-morenci-2026-q2","observation_id":"static-public-fcx-morenci-2026-q2","project_id":"project-morenci","metal_id":"metal-cu","value":53.070307,"unit":"kt","original_value":117,"original_unit":"million_lb","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"2026 Q2"},"calendar_basis":"calendar_year","production_stage":"recoverable_copper","ownership_basis":"equity_attributable_72_percent","effective_date":"2026-06-30","source_id":"src-fcx-q2-2026","normalization_note":"117 million recoverable lb × 0.45359237 = 53.070307 kt"
+    },
+    {
+      "id":"production-morenci-2025-fy","observation_id":"static-public-fcx-morenci-2025-fy","project_id":"project-morenci","metal_id":"metal-cu","value":225.435408,"unit":"kt","original_value":497,"original_unit":"million_lb","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"recoverable_copper","ownership_basis":"equity_attributable_72_percent","effective_date":"2025-12-31","source_id":"src-fcx-10k-2025","normalization_note":"497 million recoverable lb × 0.45359237 = 225.435408 kt"
+    },
+    {
+      "id":"production-cerro-verde-2026-q2","observation_id":"static-public-fcx-cerro-verde-2026-q2","project_id":"project-cerro-verde","metal_id":"metal-cu","value":91.625659,"unit":"kt","original_value":202,"original_unit":"million_lb","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"2026 Q2"},"calendar_basis":"calendar_year","production_stage":"recoverable_copper","ownership_basis":"consolidated_project_100","effective_date":"2026-06-30","source_id":"src-fcx-q2-2026","normalization_note":"202 million recoverable lb × 0.45359237 = 91.625659 kt"
+    },
+    {
+      "id":"production-cerro-verde-2025-fy","observation_id":"static-public-fcx-cerro-verde-2025-fy","project_id":"project-cerro-verde","metal_id":"metal-cu","value":391.450215,"unit":"kt","original_value":863,"original_unit":"million_lb","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"recoverable_copper","ownership_basis":"consolidated_project_100","effective_date":"2025-12-31","source_id":"src-fcx-10k-2025","normalization_note":"863 million recoverable lb × 0.45359237 = 391.450215 kt"
+    },
+    {
+      "id":"production-grasberg-2026-q2","observation_id":"static-public-fcx-grasberg-2026-q2","project_id":"project-grasberg","metal_id":"metal-cu","value":92.986436,"unit":"kt","original_value":205,"original_unit":"million_lb","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"2026 Q2"},"calendar_basis":"calendar_year","production_stage":"recoverable_copper","ownership_basis":"consolidated_project_100","effective_date":"2026-06-30","source_id":"src-fcx-q2-2026","normalization_note":"205 million recoverable lb × 0.45359237 = 92.986436 kt"
+    },
+    {
+      "id":"production-grasberg-2025-fy","observation_id":"static-public-fcx-grasberg-2025-fy","project_id":"project-grasberg","metal_id":"metal-cu","value":460.396256,"unit":"kt","original_value":1015,"original_unit":"million_lb","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"recoverable_copper","ownership_basis":"consolidated_project_100","effective_date":"2025-12-31","source_id":"src-fcx-10k-2025","normalization_note":"1,015 million recoverable lb × 0.45359237 = 460.396256 kt"
+    },
+    {
+      "id":"production-collahuasi-2026-q2","observation_id":"static-public-anglo-collahuasi-2026-q2","project_id":"project-collahuasi","metal_id":"metal-cu","value":42.6,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"2026 Q2"},"calendar_basis":"calendar_year","production_stage":"concentrate_contained_metal","ownership_basis":"equity_attributable_44_percent","effective_date":"2026-06-30","source_id":"src-anglo-q2-2026"
+    },
+    {
+      "id":"production-collahuasi-2025-fy","observation_id":"static-public-anglo-collahuasi-2025-fy","project_id":"project-collahuasi","metal_id":"metal-cu","value":177.8,"unit":"kt","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"concentrate_contained_metal","ownership_basis":"equity_attributable_44_percent","effective_date":"2025-12-31","source_id":"src-anglo-q4-2025"
+    },
+    {
+      "id":"production-buenavista-2026-q2","observation_id":"static-public-scc-buenavista-2026-q2","project_id":"project-buenavista","metal_id":"metal-cu","value":105.596304,"unit":"kt","original_value":232.8,"original_unit":"million_lb","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"2026 Q2"},"calendar_basis":"calendar_year","production_stage":"mine_recoverable_copper","ownership_basis":"project_100","effective_date":"2026-06-30","source_id":"src-scc-q2-2026","normalization_note":"232.8 million lb × 0.45359237 = 105.596304 kt"
+    },
+    {
+      "id":"production-buenavista-2025-fy","observation_id":"static-public-scc-buenavista-2025-fy","project_id":"project-buenavista","metal_id":"metal-cu","value":322.71,"unit":"kt","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"mine_recoverable_copper","ownership_basis":"project_100","effective_date":"2025-12-31","source_id":"src-scc-production-2025"
+    },
+    {
+      "id":"production-quebrada-blanca-2026-q2","observation_id":"static-public-teck-qb-2026-q2","project_id":"project-quebrada-blanca","metal_id":"metal-cu","value":55.8,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"2026 Q2"},"calendar_basis":"calendar_year","production_stage":"mine_contained_metal","ownership_basis":"consolidated_project_100","effective_date":"2026-06-30","source_id":"src-teck-q2-2026"
+    },
+    {
+      "id":"production-quebrada-blanca-2025-fy","observation_id":"static-public-teck-qb-2025-fy","project_id":"project-quebrada-blanca","metal_id":"metal-cu","value":190,"unit":"kt","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"mine_contained_metal","ownership_basis":"consolidated_project_100","effective_date":"2025-12-31","source_id":"src-teck-q2-2026"
+    },
+    {
+      "id":"production-los-pelambres-2026-q2","observation_id":"static-public-antofagasta-los-pelambres-2026-q2","project_id":"project-los-pelambres","metal_id":"metal-cu","value":67.5,"unit":"kt","missing_reason":null,
+      "period":{"start":"2026-04-01","end":"2026-06-30","type":"quarter","label":"2026 Q2"},"calendar_basis":"calendar_year","production_stage":"concentrate_contained_metal","ownership_basis":"project_100","effective_date":"2026-06-30","source_id":"src-antofagasta-q2-2026"
+    },
+    {
+      "id":"production-los-pelambres-2025-fy","observation_id":"static-public-antofagasta-los-pelambres-2025-fy","project_id":"project-los-pelambres","metal_id":"metal-cu","value":295.3,"unit":"kt","missing_reason":null,
+      "period":{"start":"2025-01-01","end":"2025-12-31","type":"annual","label":"2025 全年"},"calendar_basis":"calendar_year","production_stage":"concentrate_contained_metal","ownership_basis":"project_100","effective_date":"2025-12-31","source_id":"src-antofagasta-annual-2025"
     }
   ]
 }

@@ -38,6 +38,30 @@
       "summary_zh": "Ivanhoe 将 Kamoa-Kakula 2026 年项目 100% 口径产量指引由 290–330 kt 收窄至 290–310 kt；口径为阳极铜、粗铜或可销售炉渣精矿中的含铜量。",
       "source_id": "src-ivanhoe-kamoa-q2-2026",
       "source_ids": ["src-ivanhoe-kamoa-q2-2026"]
+    },
+    {
+      "id":"event-grasberg-mud-rush-restart-2025-2026","project_id":"project-grasberg","metal_id":"metal-cu","event_type":"accident_and_restart","severity":"high","status":"ramp_up_in_progress","event_start_date":"2025-09-08","operations_suspended_date":"2025-09-08","operations_resumed_date":"2026-03-31","reported_date":"2026-07-23",
+      "headline_zh":"泥石涌入事故后，Grasberg Block Cave 分阶段复产",
+      "summary_zh":"2025 年 9 月泥石涌入事故影响 Grasberg Block Cave；未受影响的 DMLZ 与 Big Gossan 于 2025 年 10 月恢复。受影响区域的 Block 2/3 在 2026 年 3 月底启动分阶段复产，产能仍处于爬坡过程。",
+      "source_id":"src-fcx-q2-2026","source_ids":["src-fcx-10k-2025","src-fcx-q2-2026"]
+    },
+    {
+      "id":"event-quebrada-blanca-tmf-guidance-2025-10-07","project_id":"project-quebrada-blanca","metal_id":"metal-cu","event_type":"guidance_adjustment","severity":"high","status":"operational_constraints_managed","event_start_date":"2025-10-07","operations_suspended_date":null,"operations_resumed_date":null,"reported_date":"2025-10-07",
+      "headline_zh":"尾矿设施约束下调中期产量展望",
+      "summary_zh":"Teck 完成运营审查后，将 QB 2026 年产量指引更新为 200–235 kt；原因包括尾矿管理设施开发需要持续建设岩石平台并带来额外停机。2026 年二季度指引维持不变。",
+      "source_id":"src-teck-outlook-2025","source_ids":["src-teck-outlook-2025","src-teck-q2-2026"]
+    },
+    {
+      "id":"event-collahuasi-desalination-permit-2026-05-18","project_id":"project-collahuasi","metal_id":"metal-cu","event_type":"regulatory_permit","severity":"medium","status":"alternative_water_supply_in_use","event_start_date":"2026-05-18","operations_suspended_date":null,"operations_resumed_date":null,"reported_date":"2026-07-23",
+      "headline_zh":"海水淡化设施环境许可被撤销，矿山改用既有替代水源",
+      "summary_zh":"智利第二环境法院撤销 Collahuasi 海水淡化设施的环境许可；公司表示矿山继续使用既有替代水源，并与主管机关及利益相关方协调恢复淡化设施。",
+      "source_id":"src-anglo-q2-2026","source_ids":["src-anglo-q2-2026"]
+    },
+    {
+      "id":"event-los-pelambres-weather-restart-2026-07","project_id":"project-los-pelambres","metal_id":"metal-cu","event_type":"weather_shutdown_and_restart","severity":"medium","status":"resolved_operations_resumed","event_start_date":"2026-07-22","operations_suspended_date":"2026-07-22","operations_resumed_date":"2026-07-23","reported_date":"2026-07-24",
+      "headline_zh":"极端降雨后完成有序停产并恢复运营",
+      "summary_zh":"科金博大区遭遇异常强降雨并进入灾害状态后，Los Pelambres 有序停产；公司确认 7 月 23 日恢复运营，当时全年集团产量指引保持不变。",
+      "source_id":"src-antofagasta-los-pelambres-weather-2026","source_ids":["src-antofagasta-los-pelambres-weather-2026"]
     }
   ]
 }

@@ -30,10 +30,10 @@ test("public files do not expose local or administrator secrets", () => {
     assert.equal(serialized.toLowerCase().includes(forbidden.toLowerCase()), false, `does not contain ${forbidden}`);
 });
 
-test("copper atlas contains exactly 44 non-demo projects with valid approximate coordinates", () => {
+test("copper atlas contains 46 verified public projects with valid coordinates", () => {
   const projects = data("projects").items;
-  assert.equal(projects.length, 44);
-  assert.equal(projects.some((item: { slug: string }) => ["escondida", "morenci"].includes(item.slug)), false);
+  assert.equal(projects.length, 46);
+  for (const slug of ["escondida", "morenci"]) assert.ok(projects.some((item: { slug: string }) => item.slug === slug));
   for (const project of projects) {
     assert.ok(project.location.latitude >= -90 && project.location.latitude <= 90, project.slug);
     assert.ok(project.location.longitude >= -180 && project.location.longitude <= 180, project.slug);
@@ -68,13 +68,31 @@ test("inventory records keep definitions, units, dates and licensing state separ
 
 test("coverage metrics match public facts without incompatible aggregation", () => {
   const coverage = data("coverage");
-  assert.equal(coverage.project_count, 44);
-  assert.equal(coverage.mapped_count, 44);
-  assert.deepEqual(coverage.location_precision, { exact: 0, approximate: 44, pending: 0 });
-  assert.equal(coverage.production_project_count, 3);
-  assert.equal(coverage.current_guidance_project_count, 3);
+  assert.equal(coverage.project_count, 46);
+  assert.equal(coverage.mapped_count, 46);
+  assert.deepEqual(coverage.location_precision, { exact: 0, approximate: 46, pending: 0 });
+  assert.equal(coverage.production_project_count, 13);
+  assert.equal(coverage.current_guidance_project_count, 8);
   assert.equal(coverage.production_aggregate, null);
   assert.ok(coverage.production_aggregate_missing_reason);
+});
+
+test("batch 2 projects use verified facts rather than former demo values", () => {
+  const targets = ["escondida", "morenci", "collahuasi", "cerro-verde", "buenavista", "antamina", "grasberg", "quebrada-blanca", "spence", "los-pelambres"];
+  const projects = data("projects").items;
+  const production = data("production").items;
+  const reserves = data("reserves").items;
+  const sources = new Set(data("sources").items.map((item: { id: string }) => item.id));
+  for (const slug of targets) {
+    const project = projects.find((item: { slug: string }) => item.slug === slug);
+    assert.ok(project, slug);
+    assert.equal(project.status, "operating", slug);
+    assert.ok(project.operator, `${slug} operator`);
+    assert.ok(production.some((item: { project_id: string }) => item.project_id === project.id), `${slug} production`);
+    assert.ok(reserves.some((item: { project_id: string }) => item.project_id === project.id), `${slug} reserves`);
+  }
+  for (const item of [...production, ...reserves]) assert.ok(sources.has(item.source_id), item.id);
+  assert.equal(production.some((item: { value: number }) => [123.456, 78.9].includes(item.value)), false);
 });
 
 test("Kamoa-Kakula facts preserve stage, basis, ownership, reserve and resource distinctions", () => {
