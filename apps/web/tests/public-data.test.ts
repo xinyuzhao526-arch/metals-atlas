@@ -53,8 +53,13 @@ test("inventory records keep definitions, units, dates and licensing state separ
     if (item.value === null) assert.ok(item.missing_reason, `${item.id} explains missing value`);
     else assert.ok(item.data_date, `${item.id} numeric value has data_date`);
   }
-  assert.equal(inventories.find((item: { id: string }) => item.id.startsWith("inventory-shfe-weekly")).value, 69280);
-  assert.equal(inventories.find((item: { id: string }) => item.id.startsWith("inventory-lme-total")).value, 254300);
+  const shfeSeries = inventories
+    .filter((item: { exchange: string; inventory_type: string }) => item.exchange === "SHFE" && item.inventory_type === "weekly_inventory")
+    .sort((a: { data_date: string }, b: { data_date: string }) => a.data_date.localeCompare(b.data_date));
+  assert.deepEqual(shfeSeries.map((item: { value: number }) => item.value), [72428, 63000, 54780, 56073]);
+  const lmeTotals = inventories.filter((item: { exchange: string; inventory_type: string }) => item.exchange === "LME" && item.inventory_type === "total");
+  assert.deepEqual(lmeTotals.map((item: { value: number }) => item.value), [252500, 254300]);
+  assert.ok(lmeTotals.every((item: { frequency: string }) => item.frequency === "snapshot"));
   assert.equal(inventories.find((item: { inventory_type: string; exchange: string }) => item.exchange === "LME" && item.inventory_type === "on_warrant").value, 133725);
   assert.equal(inventories.find((item: { inventory_type: string; exchange: string }) => item.exchange === "LME" && item.inventory_type === "cancelled_warrants").value, null);
   const registered = inventories.find((item: { inventory_type: string; exchange: string }) => item.exchange === "COMEX" && item.inventory_type === "registered");
@@ -65,6 +70,9 @@ test("inventory records keep definitions, units, dates and licensing state separ
   assert.equal(total.original_unit, "short_tons");
   assert.ok(Math.abs(total.normalized_value - total.value * 0.90718474) < 0.001);
   assert.equal(total.data_date, "2026-09-22");
+  const comexTotalSeries = inventories.filter((item: { exchange: string; inventory_type: string }) => item.exchange === "COMEX" && item.inventory_type === "total");
+  assert.equal(comexTotalSeries.length, 21);
+  assert.ok(comexTotalSeries.every((item: { original_unit: string; frequency: string }) => item.original_unit === "short_tons" && item.frequency === "daily"));
 });
 
 test("coverage metrics match public facts without incompatible aggregation", () => {

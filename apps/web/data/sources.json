@@ -227,7 +227,31 @@
       "publication_date": "2026-09-18",
       "verification_date": "2026-09-21",
       "url": "https://market.cnal.com/shfe/2026/09-18/1789716721669843.shtml",
-      "locator": "铜 · 单位吨 · 总计：上周库存 72,965 / 本周库存 69,280 / 增减 -3,685",
+      "locator": "铜 · 单位吨 · 总计：上周库存 54,780 / 本周库存 56,073 / 增减 +1,293；注意 69,280 为同页铅库存，不是铜",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-cnal-shfe-inventory-2026-09-11",
+      "tier": "B",
+      "source_type": "secondary_exchange_report_republication",
+      "organization": "世铝网 / 有色宝（原始数据：上海期货交易所）",
+      "title": "9月7日～9月11日上海期货库存周报",
+      "publication_date": "2026-09-11",
+      "verification_date": "2026-09-24",
+      "url": "https://market.cnal.com/shfe/2026/09-11/1789111802669465.shtml",
+      "locator": "铜 · 单位吨 · 总计：上周库存 63,000 / 本周库存 54,780 / 增减 -8,220",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-cnal-shfe-inventory-2026-09-04",
+      "tier": "B",
+      "source_type": "secondary_exchange_report_republication",
+      "organization": "世铝网 / 有色宝（原始数据：上海期货交易所）",
+      "title": "8月31日～9月4日上海期货库存周报",
+      "publication_date": "2026-09-04",
+      "verification_date": "2026-09-24",
+      "url": "https://market.cnal.com/shfe/2026/09-04/1788508502669124.shtml",
+      "locator": "铜 · 单位吨 · 总计：上周库存 72,428 / 本周库存 63,000 / 增减 -9,428",
       "short_excerpt": null
     },
     {
@@ -239,7 +263,19 @@
       "publication_date": "2026-09-22",
       "verification_date": "2026-09-24",
       "url": "https://www.meiyuanhuanliu.com/copper_stocks/",
-      "locator": "2026-09-22 行及 HTML data-*：Registered 478,907、Eligible 290,154、Total 769,061 short tons；官方报告入口 https://www.cmegroup.com/delivery_reports/Copper_Stocks.xls",
+      "locator": "HTML data-* 日度表：2026-08-24 至 2026-09-22 的 Registered、Eligible、Total 原始 short tons；最新行为 478,907 / 290,154 / 769,061；官方报告入口 https://www.cmegroup.com/delivery_reports/Copper_Stocks.xls",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-vaultreport-lme-copper-2026-09-23",
+      "tier": "B",
+      "source_type": "secondary_exchange_report_republication",
+      "organization": "The Vault Report（原始数据：LME）",
+      "title": "LME Copper Warehouse Inventory · September 23, 2026",
+      "publication_date": "2026-09-23",
+      "verification_date": "2026-09-24",
+      "url": "https://thevaultreport.com/charts/lme/copper",
+      "locator": "LME Copper · Total Warehouse Stocks · 2026-09-23 · 252.5K mt；仅作单点快照",
       "short_excerpt": null
     },
     {
