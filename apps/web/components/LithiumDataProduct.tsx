@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { ProjectMap } from "@/components/ProjectMap";
+import { LatestOfficialNews } from "@/components/LatestOfficialNews";
 import { PublicSourceDrawer } from "@/components/PublicSourceDrawer";
 import { downloadCsv, type PublicProject, type PublicSource } from "@/lib/public-data";
 
@@ -102,6 +103,8 @@ export function LithiumDataProduct() {
       <div className="research-actions"><button type="button" onClick={() => setLibraryOpen(true)}>来源索引 <span>{lithiumSources.length}</span></button><button type="button" onClick={exportRows}>导出 CSV</button></div>
       <p className="supply-thesis"><b>口径说明</b>精矿、碳酸锂、氢氧化锂和 LCE 不直接相加；项目 100% 与公司应占数值分开呈现。</p>
     </section>
+
+    <LatestOfficialNews metal="li" />
 
     <section className="supply-workbench lithium-workbench">
       <div className="map-workspace">

@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ProjectMap } from "@/components/ProjectMap";
 import { PublicSourceDrawer } from "@/components/PublicSourceDrawer";
+import { LatestOfficialNews } from "@/components/LatestOfficialNews";
 import {
   downloadCsv,
   formatMissing,
@@ -176,6 +177,8 @@ export function PublicDataProduct() {
         })}
       </div>
     </section>
+
+    <LatestOfficialNews metal="cu" />
 
     <section className="supply-workbench">
       <div className="map-workspace">
