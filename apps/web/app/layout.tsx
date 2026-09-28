@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MetalSwitcher } from "@/components/MetalSwitcher";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,10 +15,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <header className="site-topbar">
           <Link href="/copper" className="site-brand"><span className="site-brand-mark">M/A</span><span>Metals Atlas</span></Link>
-          <span className="site-edition">研究公开版 · 铜</span>
+          <span className="site-edition">研究公开版</span>
+          <MetalSwitcher />
         </header>
         {children}
-        <footer className="site-footer"><span>Metals Atlas · 铜供给研究终端</span><span>缺失值保持 null · 近似坐标明确标注 · 不汇总不兼容口径</span></footer>
+        <footer className="site-footer"><span>Metals Atlas · 金属供给研究终端</span><span>缺失值保持 null · 近似坐标明确标注 · 不汇总不兼容口径</span></footer>
       </body>
     </html>
   );

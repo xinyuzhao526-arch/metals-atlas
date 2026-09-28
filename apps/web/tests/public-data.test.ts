@@ -127,3 +127,12 @@ test("external source action opens a new tab with safe rel attributes", () => {
   assert.match(drawer, /target="_blank"/);
   assert.match(drawer, /rel="noopener noreferrer"/);
 });
+
+test("metal navigation exposes copper and lithium without invented lithium facts", () => {
+  const switcher = readFileSync(new URL("../components/MetalSwitcher.tsx", import.meta.url), "utf8");
+  const lithium = readFileSync(new URL("../components/LithiumDataProduct.tsx", import.meta.url), "utf8");
+  assert.ok(switcher.includes('href: "/copper"'));
+  assert.ok(switcher.includes('href: "/lithium"'));
+  assert.match(lithium, /保持 null/);
+  assert.equal(lithium.includes("<dt>已核验项目</dt><dd>0</dd>"), false);
+});
