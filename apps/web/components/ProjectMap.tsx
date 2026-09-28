@@ -37,11 +37,13 @@ export function ProjectMap({
   selectedProjectId,
   eventProjectIds,
   onSelect,
+  ariaLabel = "全球金属项目地图",
 }: {
   projects: PublicProject[];
   selectedProjectId: string | null;
   eventProjectIds: string[];
   onSelect: (projectId: string) => void;
+  ariaLabel?: string;
 }) {
   const elementRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<LeafletMap | null>(null);
@@ -102,7 +104,7 @@ export function ProjectMap({
 
   return <>
     <Script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" strategy="afterInteractive" onReady={initialize} />
-    <div ref={elementRef} className="terminal-map" aria-label={`全球铜项目地图，共 ${projects.length} 个筛选结果`}>
+    <div ref={elementRef} className="terminal-map" aria-label={`${ariaLabel}，共 ${projects.length} 个筛选结果`}>
       <div className="map-loading">正在加载公开底图…</div>
     </div>
   </>;

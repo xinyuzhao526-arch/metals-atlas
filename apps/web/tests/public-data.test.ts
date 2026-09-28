@@ -136,3 +136,10 @@ test("metal navigation exposes copper and lithium without invented lithium facts
   assert.match(lithium, /保持 null/);
   assert.equal(lithium.includes("<dt>已核验项目</dt><dd>0</dd>"), false);
 });
+
+test("lithium terminal includes map, events, exports, sources and eight static detail routes", () => {
+  const lithium = readFileSync(new URL("../components/LithiumDataProduct.tsx", import.meta.url), "utf8");
+  const detailRoute = readFileSync(new URL("../app/lithium/projects/[slug]/page.tsx", import.meta.url), "utf8");
+  for (const feature of ["ProjectMap", "lithiumEvents", "downloadCsv", "source-library"]) assert.ok(lithium.includes(feature), feature);
+  for (const slug of ["pilgangoora", "greenbushes", "wodgina", "mt-marion", "grota-do-cirilo", "fenix", "rincon", "salar-de-atacama"]) assert.ok(detailRoute.includes(slug), slug);
+});
