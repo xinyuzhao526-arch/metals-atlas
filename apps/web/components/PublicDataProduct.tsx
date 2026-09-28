@@ -32,6 +32,11 @@ const inventoryLabel: Record<string, string> = {
   registered: "Registered",
   eligible: "Eligible",
 };
+const primaryInventoryType: Record<InventoryFact["exchange"], string> = {
+  LME: "total",
+  SHFE: "weekly_inventory",
+  COMEX: "total",
+};
 const eventLabel: Record<string, string> = {
   operational_disruption: "事故 · 停产 · 复产",
   guidance_adjustment: "指引调整",
@@ -123,8 +128,8 @@ export function PublicDataProduct() {
   const mapProjects = filteredRows.map((row) => row.project);
   const selected = publicData.projects.find((item) => item.id === selectedProjectId) ?? null;
   const selectedFacts = selected ? projectFacts(selected.id) : null;
-  const exchangeRecords = publicData.inventories.filter((item) => item.exchange === exchange);
-  const latestInventory = exchangeRecords.find((item) => item.inventory_type === "total" && item.normalized_value !== null)
+  const exchangeRecords = publicData.inventories.filter((item) => item.exchange === exchange).sort((a, b) => (b.data_date ?? "").localeCompare(a.data_date ?? ""));
+  const latestInventory = exchangeRecords.find((item) => item.inventory_type === primaryInventoryType[exchange] && item.normalized_value !== null)
     ?? exchangeRecords.find((item) => item.normalized_value !== null)
     ?? exchangeRecords[0];
   const trendRecords = latestInventory ? exchangeRecords.filter((item) => item.inventory_type === latestInventory.inventory_type) : [];
@@ -165,7 +170,7 @@ export function PublicDataProduct() {
       <div className="inventory-ticker" aria-label="最新三大交易所库存">
         {(["LME","SHFE","COMEX"] as const).map((name) => {
           const records = publicData.inventories.filter((record) => record.exchange === name);
-          const item = records.find((record) => record.inventory_type === "total" && record.normalized_value !== null)
+          const item = records.find((record) => record.inventory_type === primaryInventoryType[name] && record.normalized_value !== null)
             ?? records.find((record) => record.normalized_value !== null);
           return <span key={name}><b>{name}</b>{item ? `${item.normalized_value?.toLocaleString()} t · ${item.data_date}` : "待补 · 授权/获取待确认"}</span>;
         })}
@@ -213,7 +218,7 @@ export function PublicDataProduct() {
     </section>
 
     <section className="inventory-terminal">
-      <div className="section-heading"><div><span>03 / 仓库信号</span><h2>交易所库存，而非“全球库存”</h2></div><p>不同交易所与定义不相加；当前仅展示可追溯快照。</p></div>
+      <div className="section-heading"><div><span>03 / 仓库信号</span><h2>交易所库存，而非“全球库存”</h2></div><p>报告发布后自动核验；不同交易所与定义不相加，缺失日期不插值。</p></div>
       <div className="exchange-tabs">{(["LME","SHFE","COMEX"] as const).map((item) => <button key={item} className={exchange === item ? "active" : ""} type="button" onClick={() => setExchange(item)}>{item}</button>)}</div>
       <div className="inventory-body">
         <div className="inventory-latest"><span>最新可展示值</span><strong>{latestInventory?.normalized_value !== null && latestInventory?.normalized_value !== undefined ? latestInventory.normalized_value.toLocaleString() : "待补"} <small>{latestInventory?.normalized_value !== null ? "metric tonnes" : ""}</small></strong><p>数据日：{latestInventory?.data_date ?? "待补"}<br />环比：{latestInventory?.change_pct !== null && latestInventory?.change_pct !== undefined ? `${latestInventory.change_pct > 0 ? "+" : ""}${latestInventory.change_pct}%` : "待补"}<br />更新：{latestInventory?.published_at ?? "待补"}</p>{latestInventory && <SourceLink id={latestInventory.source_id} onOpen={setSource} />}</div>
