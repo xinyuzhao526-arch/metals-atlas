@@ -781,6 +781,18 @@
       "url": "https://thevaultreport.com/charts/lme/copper",
       "locator": "HTML meta description / latest snapshot：total warehouse stocks 251500 metric tonnes；30 日变化 5.9%",
       "short_excerpt": null
+    },
+    {
+      "id": "src-shfe-daily-warrant-2026-09-28",
+      "tier": "A",
+      "source_type": "official_daily_warehouse_warrant_report",
+      "organization": "上海期货交易所",
+      "title": "上海期货交易所仓单日报 2026-09-28",
+      "publication_date": "2026-09-28",
+      "verification_date": "2026-09-28",
+      "url": "https://www.shfe.com.cn/data/tradedata/future/stockdata/dailystock_20260928/ZH/all.html",
+      "locator": "HTML 铜 / 总计：期货（已制成仓单）13425 吨，较上一报告 -3195 吨",
+      "short_excerpt": null
     }
   ]
 }

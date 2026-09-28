@@ -761,6 +761,25 @@
       "notes": "Eligible 为符合规格但未注册为交割仓单的库存；较上一报告 +2713 short tons。按 1 short ton = 0.90718474 metric tonnes 标准化。",
       "license_status": "secondary_republication_cc_by_nc_4_0_official_download_blocked",
       "missing_reason": null
+    },
+    {
+      "id": "inventory-shfe-warehouse-warrants-2026-09-28",
+      "exchange": "SHFE",
+      "inventory_type": "warehouse_warrants",
+      "value": 13425,
+      "original_unit": "metric_tonnes",
+      "normalized_value": 13425,
+      "normalized_unit": "metric_tonnes",
+      "data_date": "2026-09-28",
+      "published_at": "2026-09-28",
+      "source_id": "src-shfe-daily-warrant-2026-09-28",
+      "source_tier": "A",
+      "frequency": "daily",
+      "change_pct": -19.22,
+      "change_period": "previous_report",
+      "notes": "上期所官方仓单日报铜“期货”总计；较上一报告 -3195 吨。不等同于库存周报。",
+      "license_status": "official_public_report",
+      "missing_reason": null
     }
   ]
 }
