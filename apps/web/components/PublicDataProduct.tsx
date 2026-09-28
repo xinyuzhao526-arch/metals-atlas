@@ -169,7 +169,7 @@ export function PublicDataProduct() {
       <p className="supply-thesis"><b>供给判断</b>{publicData.coverage.supply_summary_zh}</p>
       <div className="inventory-ticker" aria-label="最新三大交易所库存">
         {(["LME","SHFE","COMEX"] as const).map((name) => {
-          const records = publicData.inventories.filter((record) => record.exchange === name);
+          const records = publicData.inventories.filter((record) => record.exchange === name).sort((a, b) => (b.data_date ?? "").localeCompare(a.data_date ?? ""));
           const item = records.find((record) => record.inventory_type === primaryInventoryType[name] && record.normalized_value !== null)
             ?? records.find((record) => record.normalized_value !== null);
           return <span key={name}><b>{name}</b>{item ? `${item.normalized_value?.toLocaleString()} t · ${item.data_date}` : "待补 · 授权/获取待确认"}</span>;
