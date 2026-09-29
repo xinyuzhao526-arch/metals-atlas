@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-09-28",
+  "updated_at": "2026-09-29",
   "items": [
     {
       "id": "src-mmg-q2-2026",
@@ -792,6 +792,42 @@
       "verification_date": "2026-09-28",
       "url": "https://www.shfe.com.cn/data/tradedata/future/stockdata/dailystock_20260928/ZH/all.html",
       "locator": "HTML 铜 / 总计：期货（已制成仓单）13425 吨，较上一报告 -3195 吨",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-vaultreport-lme-copper-2026-09-28",
+      "tier": "B",
+      "source_type": "media_relay_daily_snapshot",
+      "organization": "The Vault Report（转述 LME 报告）",
+      "title": "LME Copper Warehouse Inventory 2026-09-28",
+      "publication_date": "2026-09-28",
+      "verification_date": "2026-09-29",
+      "url": "https://thevaultreport.com/charts/lme/copper",
+      "locator": "HTML meta description / latest snapshot：total warehouse stocks 251400 metric tonnes；30 日变化 7.3%",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-meiyuanhuanliu-comex-copper-2026-09-25",
+      "tier": "B",
+      "source_type": "secondary_warehouse_report_republication",
+      "organization": "美元环流（转录 CME Copper Stocks 报告）",
+      "title": "COMEX 铜仓库库存 2026-09-25",
+      "publication_date": "2026-09-25",
+      "verification_date": "2026-09-29",
+      "url": "https://www.meiyuanhuanliu.com/copper_stocks/",
+      "locator": "HTML 2026-09-25 行；registered 475484、eligible 296921、total 772405 short tons。官方报告入口：https://www.cmegroup.com/delivery_reports/Copper_Stocks.xls",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-shfe-daily-warrant-2026-09-29",
+      "tier": "A",
+      "source_type": "official_daily_warehouse_warrant_report",
+      "organization": "上海期货交易所",
+      "title": "上海期货交易所仓单日报 2026-09-29",
+      "publication_date": "2026-09-29",
+      "verification_date": "2026-09-29",
+      "url": "https://www.shfe.com.cn/data/tradedata/future/stockdata/dailystock_20260929/ZH/all.html",
+      "locator": "HTML 铜 / 总计：期货（已制成仓单）10732 吨，较上一报告 -2693 吨",
       "short_excerpt": null
     }
   ]
