@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { parseComexRows, parseLmeSnapshot, parseShfeDaily, parseShfeWeekly } from "../scripts/update-inventories.mjs";
+import { parseComexRows, parseLmeSnapshot, parseShfeDaily, parseShfeWeekly, summarizeUpdateResults } from "../scripts/update-inventories.mjs";
 
 test("COMEX parser keeps registered, eligible and total definitions separate", () => {
   const html = '<tr data-registered="477102.000" data-eligible="293781.000" data-total="770883.000" data-change="914" data-reg-change="0"><td>2026-09-24</td></tr>';
@@ -17,4 +17,19 @@ test("SHFE parsers select the copper grand total and preserve report definitions
 test("LME parser reads only the dated public latest snapshot", () => {
   const html = '<meta name="description" content="As of September 25, 2026, London Metal Exchange Copper total warehouse stocks stands at 251.5K mt. It has increased by 5.9% over the past 30 days." />';
   assert.deepEqual(parseLmeSnapshot(html), { date: "2026-09-25", value: 251500, change30dPct: 5.9 });
+});
+
+test("inventory refresh preserves successful sources when one source is temporarily unavailable", () => {
+  const outcome = summarizeUpdateResults([
+    { status:"fulfilled", value:2 },
+    { status:"rejected", reason:new Error("HTTP 503") },
+    { status:"fulfilled", value:0 },
+  ]);
+  assert.equal(outcome.summary, "SHFE 2, COMEX unavailable, LME 0");
+  assert.deepEqual(outcome.failures.map((item) => item.label), ["COMEX"]);
+  assert.throws(() => summarizeUpdateResults([
+    { status:"rejected", reason:new Error("one") },
+    { status:"rejected", reason:new Error("two") },
+    { status:"rejected", reason:new Error("three") },
+  ]), /Every inventory source failed/);
 });

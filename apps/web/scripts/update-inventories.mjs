@@ -181,19 +181,27 @@ async function updateLme(inventories, sources) {
   }
   return exists ? 0 : 1;
 }
+export function summarizeUpdateResults(results) {
+  const labels = ["SHFE", "COMEX", "LME"];
+  const successes = results.filter((result) => result.status === "fulfilled");
+  const failures = results.map((result, index) => ({ result, label: labels[index] })).filter(({ result }) => result.status === "rejected");
+  if (!successes.length) throw new Error("Every inventory source failed; refusing to write.");
+  return {
+    failures: failures.map(({ label, result }) => ({ label, reason: result.reason })),
+    summary: results.map((result, index) => `${labels[index]} ${result.status === "fulfilled" ? result.value : "unavailable"}`).join(", "),
+  };
+}
+
 export async function main() {
   const inventories = JSON.parse(await readFile(INVENTORIES_FILE, "utf8")); const sources = JSON.parse(await readFile(SOURCES_FILE, "utf8"));
   const inventoryBefore = JSON.stringify(inventories.items);
   const sourcesBefore = JSON.stringify(sources.items);
   const results = await Promise.allSettled([updateShfe(inventories, sources), updateComex(inventories, sources), updateLme(inventories, sources)]);
-  const failures = results.filter((result) => result.status === "rejected");
-  if (failures.length) {
-    for (const failure of failures) console.error(failure.reason);
-    throw new Error(`${failures.length} inventory source(s) failed; refusing a partial write`);
-  }
+  const outcome = summarizeUpdateResults(results);
+  for (const failure of outcome.failures) console.warn(`${failure.label} temporarily unavailable: ${failure.reason}`);
   if (JSON.stringify(inventories.items) !== inventoryBefore) inventories.updated_at = today();
   if (JSON.stringify(sources.items) !== sourcesBefore) sources.updated_at = today();
   await writeFile(INVENTORIES_FILE, `${JSON.stringify(inventories, null, 2)}\n`); await writeFile(SOURCES_FILE, `${JSON.stringify(sources, null, 2)}\n`);
-  console.log(`Inventory refresh complete: SHFE ${results[0].value}, COMEX ${results[1].value}, LME ${results[2].value}`);
+  console.log(`Inventory refresh complete: ${outcome.summary}`);
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main().catch((error) => { console.error(error); process.exitCode = 1; });

@@ -3,8 +3,8 @@ name: Refresh copper exchange inventories
 on:
   workflow_dispatch:
   schedule:
-    # Poll hourly on exchange business days. Sources are idempotent; only a new report date creates a commit.
-    - cron: "17 * * * 1-5"
+    # Once per exchange business day at 18:17 China Standard Time.
+    - cron: "17 10 * * 1-5"
 
 permissions:
   contents: write
