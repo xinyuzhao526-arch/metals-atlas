@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-09-30",
+  "updated_at": "2026-10-01",
   "items": [
     {
       "id": "src-mmg-q2-2026",
@@ -864,6 +864,18 @@
       "verification_date": "2026-09-30",
       "url": "https://www.shfe.com.cn/data/tradedata/future/stockdata/weeklystock_20260930/ZH/all.html",
       "locator": "HTML 铜 / 总计：上周库存 47147 吨，本周库存 38744 吨；本周期货仓单 10011 吨",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-meiyuanhuanliu-comex-copper-2026-09-29",
+      "tier": "B",
+      "source_type": "secondary_warehouse_report_republication",
+      "organization": "美元环流（转录 CME Copper Stocks 报告）",
+      "title": "COMEX 铜仓库库存 2026-09-29",
+      "publication_date": "2026-09-29",
+      "verification_date": "2026-10-01",
+      "url": "https://www.meiyuanhuanliu.com/copper_stocks/",
+      "locator": "HTML 2026-09-29 行；registered 471428、eligible 304393、total 775821 short tons。官方报告入口：https://www.cmegroup.com/delivery_reports/Copper_Stocks.xls",
       "short_excerpt": null
     }
   ]
