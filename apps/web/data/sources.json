@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-10-05",
+  "updated_at": "2026-10-06",
   "items": [
     {
       "id": "src-mmg-q2-2026",
@@ -900,6 +900,18 @@
       "verification_date": "2026-10-05",
       "url": "https://www.meiyuanhuanliu.com/copper_stocks/",
       "locator": "HTML 2026-10-01 行；registered 471428、eligible 307705、total 779133 short tons。官方报告入口：https://www.cmegroup.com/delivery_reports/Copper_Stocks.xls",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-meiyuanhuanliu-comex-copper-2026-10-02",
+      "tier": "B",
+      "source_type": "secondary_warehouse_report_republication",
+      "organization": "美元环流（转录 CME Copper Stocks 报告）",
+      "title": "COMEX 铜仓库库存 2026-10-02",
+      "publication_date": "2026-10-02",
+      "verification_date": "2026-10-06",
+      "url": "https://www.meiyuanhuanliu.com/copper_stocks/",
+      "locator": "HTML 2026-10-02 行；registered 471428、eligible 309529、total 780957 short tons。官方报告入口：https://www.cmegroup.com/delivery_reports/Copper_Stocks.xls",
       "short_excerpt": null
     }
   ]
