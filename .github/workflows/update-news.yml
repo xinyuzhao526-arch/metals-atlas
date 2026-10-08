@@ -1,4 +1,4 @@
-name: Refresh official copper and lithium news
+name: Refresh copper lithium and nickel supply news
 
 on:
   workflow_dispatch:
@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: official-metals-news-refresh
+  group: metals-supply-news-refresh
   cancel-in-progress: false
 
 jobs:
@@ -30,7 +30,7 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: apps/web/package-lock.json
-      - name: Check official company sources
+      - name: Check industry RSS and official company sources
         id: refresh
         working-directory: apps/web
         run: |
@@ -64,7 +64,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add apps/web/data/news.json
-          git commit -m "data: refresh official metals news"
+          git commit -m "data: refresh metals supply news"
           git push origin main
       - name: Deploy refreshed public site
         id: deployment
