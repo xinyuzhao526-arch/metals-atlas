@@ -3,8 +3,8 @@ name: Refresh copper lithium and nickel supply news
 on:
   workflow_dispatch:
   schedule:
-    # Daily at 09:23 China Standard Time. Only new official materials create a commit and deployment.
-    - cron: "23 1 * * *"
+    # Daily at 09:00 China Standard Time (01:00 UTC). Only new materials create a commit and deployment.
+    - cron: "0 1 * * *"
 
 permissions:
   contents: write
