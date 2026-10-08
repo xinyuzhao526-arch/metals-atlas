@@ -1,11 +1,11 @@
 import newsJson from "@/data/news.json";
 
 type NewsItem = {
-  id: string; metal_id: "metal-cu" | "metal-li" | "metal-ni"; title: string; organization: string;
+  id: string; metal_id: "metal-cu" | "metal-li" | "metal-ni" | "metal-al"; title: string; organization: string;
   material_url: string; publication_date: string; verification_date: string; source_level?: "media"; event_tag?: string;
 };
 
-export function LatestOfficialNews({ metal }: { metal: "cu" | "li" | "ni" }) {
+export function LatestOfficialNews({ metal }: { metal: "cu" | "li" | "ni" | "al" }) {
   const metalId = `metal-${metal}`;
   const items = (newsJson.items as NewsItem[]).filter((item) => item.metal_id === metalId).slice(0, 6);
   return <section className="official-news">

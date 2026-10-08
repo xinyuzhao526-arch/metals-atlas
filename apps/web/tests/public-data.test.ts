@@ -133,12 +133,13 @@ test("external source action opens a new tab with safe rel attributes", () => {
   assert.match(drawer, /rel="noopener noreferrer"/);
 });
 
-test("metal navigation exposes copper, lithium and nickel without invented lithium facts", () => {
+test("metal navigation exposes copper, lithium, nickel and aluminum without invented lithium facts", () => {
   const switcher = readFileSync(new URL("../components/MetalSwitcher.tsx", import.meta.url), "utf8");
   const lithium = readFileSync(new URL("../components/LithiumDataProduct.tsx", import.meta.url), "utf8");
   assert.ok(switcher.includes('href: "/copper"'));
   assert.ok(switcher.includes('href: "/lithium"'));
   assert.ok(switcher.includes('href: "/nickel"'));
+  assert.ok(switcher.includes('href: "/aluminum"'));
   assert.match(lithium, /保持 null/);
   assert.equal(lithium.includes("<dt>已核验项目</dt><dd>0</dd>"), false);
 });
@@ -150,12 +151,19 @@ test("nickel terminal includes product-stage safeguards, map, sources and eight 
   for (const slug of ["onca-puma", "voiseys-bay", "sudbury", "murrin-murrin", "weda-bay", "sorowako", "nova", "western-australia-nickel"]) assert.ok(detailRoute.includes(slug), slug);
 });
 
-test("home page is a shared copper lithium and nickel portal", () => {
+test("home page is a shared copper lithium nickel and aluminum portal", () => {
   const home = readFileSync(new URL("../app/page.tsx", import.meta.url), "utf8");
   const layout = readFileSync(new URL("../app/layout.tsx", import.meta.url), "utf8");
-  for (const href of ["/copper", "/lithium", "/nickel"]) assert.ok(home.includes(`href=\"${href}\"`), href);
+  for (const href of ["/copper", "/lithium", "/nickel", "/aluminum"]) assert.ok(home.includes(`href=\"${href}\"`), href);
   assert.ok(home.includes("一个入口"));
   assert.ok(layout.includes('href="/" className="site-brand"'));
+});
+
+test("aluminum terminal includes stage safeguards, map, sources and eight detail routes", () => {
+  const aluminum = readFileSync(new URL("../components/AluminumDataProduct.tsx", import.meta.url), "utf8");
+  const detailRoute = readFileSync(new URL("../app/aluminum/projects/[slug]/page.tsx", import.meta.url), "utf8");
+  for (const feature of ["ProjectMap", "aluminumEvents", "downloadCsv", "source-library", "铝土矿、氧化铝和原铝"]) assert.ok(aluminum.includes(feature), feature);
+  for (const slug of ["weipa", "gove", "paragominas", "juruti", "worsley", "alunorte", "al-taweelah", "guinea-alumina-corporation"]) assert.ok(detailRoute.includes(slug), slug);
 });
 
 test("lithium terminal includes map, events, exports, sources and eight static detail routes", () => {

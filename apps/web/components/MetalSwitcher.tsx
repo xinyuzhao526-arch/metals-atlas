@@ -7,6 +7,7 @@ const metals = [
   { symbol: "Cu", label: "铜", href: "/copper" },
   { symbol: "Li", label: "锂", href: "/lithium" },
   { symbol: "Ni", label: "镍", href: "/nickel" },
+  { symbol: "Al", label: "铝", href: "/aluminum" },
 ];
 
 export function MetalSwitcher() {

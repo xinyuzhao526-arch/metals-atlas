@@ -19,6 +19,8 @@ export const sources = [
   { organization:"Glencore", metal:"ni", strict:true, url:"https://www.glencore.com/media-and-insights/news", host:"glencore.com" },
   { organization:"Eramet", metal:"ni", strict:true, url:"https://www.eramet.com/en/news/", host:"eramet.com" },
   { organization:"BHP", metal:"ni", strict:true, url:"https://www.bhp.com/news", host:"bhp.com" },
+  { organization:"Norsk Hydro", metal:"al", strict:true, url:"https://www.hydro.com/en/global/media/news/", host:"hydro.com" },
+  { organization:"South32", metal:"al", strict:true, url:"https://www.south32.net/news-media/latest-news", host:"south32.net" },
   { organization:"Ivanhoe Mines", metal:"cu", strict:true, url:"https://www.ivanhoemines.com/", host:"ivanhoemines.com" },
   { organization:"Freeport-McMoRan", metal:"cu", strict:false, url:"https://investors.fcx.com/investors/news-releases/", host:"investors.fcx.com" },
   { organization:"Antofagasta plc", metal:"cu", strict:false, url:"https://www.antofagasta.co.uk/investors/news/", host:"antofagasta.co.uk" },
@@ -28,7 +30,8 @@ export const sources = [
 const copperWords = /(copper|kamoa|kakula|grasberg|freeport|collahuasi|pelambres|centinela|las bambas|teniente)/i;
 const lithiumWords = /(lithium|spodumene|carbonate|hydroxide|pilgangoora|greenbushes|wodgina|marion|rincon|fenix|olaroz)/i;
 const nickelWords = /\b(nickel|on[çc]a puma|voisey|sudbury|murrin murrin|weda bay|sorowako|nova|nickel west|western australia nickel)\b/i;
-const supplyWords = /(production|guidance|output|operations?|restart|suspend|incident|expansion|project|mine|mineral resource|ore reserve|permit|quarter|annual|results?|产量|指引|停产|复产|扩建|储量)/i;
+const aluminumWords = /\b(aluminium|aluminum|alumina|bauxite|weipa|gove|paragominas|juruti|worsley|alunorte|al taweelah)\b/i;
+const supplyWords = /(production|guidance|output|operations?|restart|suspend|incident|expansion|mine|mineral resource|ore reserve|permit|quarter|annual|results?|产量|指引|停产|复产|扩建|储量)/i;
 const excluded = /(careers?|privacy|contact|linkedin|facebook|instagram|subscribe|governance|board|dividend|share price)/i;
 
 const mediaFeeds = [
@@ -43,19 +46,22 @@ const mediaMetals = {
   cu:/\b(copper|codelco|escondida|collahuasi|grasberg|las bambas|kamoa|centinela)\b|铜/i,
   li:/\b(lithium|spodumene|pilgangoora|greenbushes|wodgina|goulamina)\b|碳酸锂|锂辉石|氢氧化锂/i,
   ni:/\b(nickel|laterite|nornickel|ambatovy|saprolite|weda bay|sorowako|murrin murrin)\b|镍/i,
+  al:/\b(aluminium|aluminum|alumina|bauxite|alcoa|rusal|weipa|paragominas|alunorte|worsley)\b|铝土矿|氧化铝|电解铝/i,
 };
 const eventInclude = /\b(halt(?:ed|s)?|suspend(?:ed|s|sion)?|shutdown|shut down|strike|stoppage|force majeure|curtail(?:ment)?|idle[ds]?|accident|fatal|collapse|fire|flood|blockade|landslide|disruption|outage|closure|restart(?:ed)?|resumes operations|guidance cut|production cuts?|expansion|expand(?:ing)?|ramp[- ]up|commission(?:ed|ing)?|first production|commercial production|acquir(?:e|es|ed|ing)|acquisition|merger|takeover|buys?|sells?|sold|sale of|divest(?:ment)?|stake|joint venture|offtake|supply agreement|export ban|export tax|export quota|royalty|tariff|sanction)\b|停产|停工|罢工|事故|减产|复产|扩产|投产|并购|收购|出售|股权|包销|长协|出口|关税|配额|监管/i;
 const eventExclude = /\b(podcast|webinar|opinion|video|newsletter|npv|irr|feasibility study|scoping study|drilling|assay|private placement|funding|financing|loan facility|equipment|software|price forecast|market outlook|emissions|esg|climate|appointment|dividend|conference|award)\b|播客|视频|融资|募资|钻探|可研|估值|设备|价格预测|人事|任命/i;
 
 export function classify(title, configuredMetal = "both", strict = false) {
   if (excluded.test(title) || !supplyWords.test(title)) return null;
-  const copper = copperWords.test(title); const lithium = lithiumWords.test(title); const nickel = nickelWords.test(title);
-  if (configuredMetal === "cu") return copper || (!strict && !lithium && !nickel) ? "cu" : null;
-  if (configuredMetal === "li") return lithium || (!strict && !copper && !nickel) ? "li" : null;
-  if (configuredMetal === "ni") return nickel || (!strict && !copper && !lithium) ? "ni" : null;
-  if (copper && !lithium && !nickel) return "cu";
-  if (lithium && !copper && !nickel) return "li";
-  if (nickel && !copper && !lithium) return "ni";
+  const copper = copperWords.test(title); const lithium = lithiumWords.test(title); const nickel = nickelWords.test(title); const aluminum = aluminumWords.test(title);
+  if (configuredMetal === "cu") return copper || (!strict && !lithium && !nickel && !aluminum) ? "cu" : null;
+  if (configuredMetal === "li") return lithium || (!strict && !copper && !nickel && !aluminum) ? "li" : null;
+  if (configuredMetal === "ni") return nickel || (!strict && !copper && !lithium && !aluminum) ? "ni" : null;
+  if (configuredMetal === "al") return aluminum || (!strict && !copper && !lithium && !nickel) ? "al" : null;
+  if (copper && !lithium && !nickel && !aluminum) return "cu";
+  if (lithium && !copper && !nickel && !aluminum) return "li";
+  if (nickel && !copper && !lithium && !aluminum) return "ni";
+  if (aluminum && !copper && !lithium && !nickel) return "al";
   return null;
 }
 
@@ -93,7 +99,7 @@ export function parseRssItems(xml, feed) {
 async function scanMediaFeed(feed) { return parseRssItems(await fetchText(feed.url), feed); }
 
 export function parsePaiPaiEvents(payload) {
-  const allowed = new Map([["Cu","cu"],["Li","li"],["Ni","ni"]]);
+  const allowed = new Map([["Cu","cu"],["Li","li"],["Ni","ni"],["Al","al"]]);
   const rows = [];
   for (const event of payload?.events ?? []) {
     const url = event?.links?.[0]?.url;
@@ -120,6 +126,8 @@ export function parseOfficialLinks(html, source) {
 }
 
 function publishedDate(html) {
+  const publishedWords = plain(html).match(/Published:?\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(20\d{2})\b/i);
+  if (publishedWords) { const month = new Date(`${publishedWords[1]} 1, 2000`).getMonth()+1; return `${publishedWords[3]}-${String(month).padStart(2,"0")}-${publishedWords[2].padStart(2,"0")}`; }
   const candidates = [
     html.match(/property=["']article:published_time["'][^>]*content=["']([^"']+)/i)?.[1],
     html.match(/name=["']date["'][^>]*content=["']([^"']+)/i)?.[1],
@@ -130,7 +138,10 @@ function publishedDate(html) {
     if (!Number.isNaN(date.valueOf())) return date.toISOString().slice(0, 10);
   }
   const visible = plain(html).match(/(20\d{2})[-/](0?[1-9]|1[0-2])[-/](0?[1-9]|[12]\d|3[01])/);
-  return visible ? `${visible[1]}-${visible[2].padStart(2,"0")}-${visible[3].padStart(2,"0")}` : null;
+  if (visible) return `${visible[1]}-${visible[2].padStart(2,"0")}-${visible[3].padStart(2,"0")}`;
+  const words = plain(html).match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(20\d{2})\b/i);
+  if (words) { const month = new Date(`${words[1]} 1, 2000`).getMonth()+1; return `${words[3]}-${String(month).padStart(2,"0")}-${words[2].padStart(2,"0")}`; }
+  return null;
 }
 
 async function fetchText(url) {
@@ -171,7 +182,7 @@ export async function main({ seed = process.argv.includes("--seed") } = {}) {
         if (!date) { console.warn(`No publication date, skipped: ${item.url}`); continue; }
         news.items.push({
           id:`news-${item.metal}-${createHash("sha1").update(item.url).digest("hex").slice(0,16)}`,
-          metal_id:`metal-${item.metal}`, title:item.title, organization:item.organization,
+          metal_id:`metal-${item.metal}`, title:item.title.slice(0,180), organization:item.organization,
           source_type:"official_company_news", material_url:item.url, publication_date:date,
           effective_date:date, verification_date:today(), discovered_at:now(),
         });

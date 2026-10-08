@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "updated_at": "2026-10-08",
-  "last_checked_at": "2026-10-08T06:57:07.490Z",
+  "last_checked_at": "2026-10-08T07:12:04.177Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances/",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields/",
@@ -49,6 +49,9 @@
     "https://www.australianmining.com.au/aic-mines-moves-to-acquire-mt-cuthbert/",
     "https://www.australianmining.com.au/core-lithium-enters-new-era-as-finniss-restart-gathers-pace/",
     "https://www.australianmining.com.au/global-lithium-agrees-333-million-takeover-by-titan/",
+    "https://www.hydro.com/en/global/media/news/2026/alunorte-ramps-up-alumina-production/",
+    "https://www.hydro.com/en/global/media/news/2026/alunorte-reduces-alumina-production-on-natural-gas-supply-disruptions/",
+    "https://www.hydro.com/en/global/media/news/2026/hydro-joins-siemens-mobility-led-project-to-recycle-aluminium-from-end-of-life-trains/",
     "https://www.igo.com.au/site/investor-center/agm",
     "https://www.igo.com.au/site/investor-center/annual-reports",
     "https://www.igo.com.au/site/investor-center/resources-and-reserves1",
@@ -407,6 +410,30 @@
       "effective_date": "2026-09-21",
       "verification_date": "2026-10-08",
       "discovered_at": "2026-10-08T06:57:07.477Z"
+    },
+    {
+      "id": "news-al-ee12c12fd6f7509b",
+      "metal_id": "metal-al",
+      "title": "Alunorte ramps up alumina production",
+      "organization": "Norsk Hydro",
+      "source_type": "official_company_news",
+      "material_url": "https://www.hydro.com/en/global/media/news/2026/alunorte-ramps-up-alumina-production/",
+      "publication_date": "2026-08-13",
+      "effective_date": "2026-08-13",
+      "verification_date": "2026-10-08",
+      "discovered_at": "2026-10-08T07:12:03.733Z"
+    },
+    {
+      "id": "news-al-005a749fd8dc0f0b",
+      "metal_id": "metal-al",
+      "title": "Alunorte reduces alumina production on natural gas supply disruptions",
+      "organization": "Norsk Hydro",
+      "source_type": "official_company_news",
+      "material_url": "https://www.hydro.com/en/global/media/news/2026/alunorte-reduces-alumina-production-on-natural-gas-supply-disruptions/",
+      "publication_date": "2026-08-11",
+      "effective_date": "2026-08-11",
+      "verification_date": "2026-10-08",
+      "discovered_at": "2026-10-08T07:12:04.166Z"
     }
   ]
 }

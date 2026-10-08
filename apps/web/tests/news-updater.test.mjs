@@ -10,6 +10,7 @@ test("official news classifier keeps supply updates and separates metals", () =>
   assert.equal(classify("Quarterly nickel production results", "li", true), null);
   assert.equal(classify("Quarterly lithium production results", "ni", true), null);
   assert.equal(classify("Open innovation project results", "ni", true), null);
+  assert.equal(classify("Worsley alumina production update", "al", true), "al");
 });
 
 test("RSS parser keeps real supply events and rejects price and financing stories", () => {
