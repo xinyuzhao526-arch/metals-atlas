@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const metals = [
   { symbol: "Cu", label: "铜", href: "/copper" },
   { symbol: "Li", label: "锂", href: "/lithium" },
+  { symbol: "Ni", label: "镍", href: "/nickel" },
 ];
 
 export function MetalSwitcher() {

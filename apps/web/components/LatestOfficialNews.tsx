@@ -1,12 +1,12 @@
 import newsJson from "@/data/news.json";
 
 type NewsItem = {
-  id: string; metal_id: "metal-cu" | "metal-li"; title: string; organization: string;
+  id: string; metal_id: "metal-cu" | "metal-li" | "metal-ni"; title: string; organization: string;
   material_url: string; publication_date: string; verification_date: string;
 };
 
-export function LatestOfficialNews({ metal }: { metal: "cu" | "li" }) {
-  const metalId = metal === "cu" ? "metal-cu" : "metal-li";
+export function LatestOfficialNews({ metal }: { metal: "cu" | "li" | "ni" }) {
+  const metalId = `metal-${metal}`;
   const items = (newsJson.items as NewsItem[]).filter((item) => item.metal_id === metalId).slice(0, 6);
   return <section className="official-news">
     <div className="section-heading"><div><span>DAILY / 官方动态</span><h2>每日供给新闻监测</h2></div><p>每日检查；只有发现新的官方材料才更新发布</p></div>

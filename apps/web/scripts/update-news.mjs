@@ -14,6 +14,10 @@ export const sources = [
   { organization:"IGO Limited", metal:"li", strict:true, url:"https://www.igo.com.au/site/investor-center/ASX-Announcements", host:"igo.com.au" },
   { organization:"Mineral Resources", metal:"li", strict:true, url:"https://www.mineralresources.com.au/news/", host:"mineralresources.com.au" },
   { organization:"Rio Tinto", metal:"both", url:"https://www.riotinto.com/en/news/releases", host:"riotinto.com" },
+  { organization:"Vale", metal:"ni", strict:true, url:"https://vale.com/en/newsroom", host:"vale.com" },
+  { organization:"Glencore", metal:"ni", strict:true, url:"https://www.glencore.com/media-and-insights/news", host:"glencore.com" },
+  { organization:"Eramet", metal:"ni", strict:true, url:"https://www.eramet.com/en/news/", host:"eramet.com" },
+  { organization:"BHP", metal:"ni", strict:true, url:"https://www.bhp.com/news", host:"bhp.com" },
   { organization:"Ivanhoe Mines", metal:"cu", strict:true, url:"https://www.ivanhoemines.com/", host:"ivanhoemines.com" },
   { organization:"Freeport-McMoRan", metal:"cu", strict:false, url:"https://investors.fcx.com/investors/news-releases/", host:"investors.fcx.com" },
   { organization:"Antofagasta plc", metal:"cu", strict:false, url:"https://www.antofagasta.co.uk/investors/news/", host:"antofagasta.co.uk" },
@@ -22,16 +26,19 @@ export const sources = [
 
 const copperWords = /(copper|kamoa|kakula|grasberg|freeport|collahuasi|pelambres|centinela|las bambas|teniente)/i;
 const lithiumWords = /(lithium|spodumene|carbonate|hydroxide|pilgangoora|greenbushes|wodgina|marion|rincon|fenix|olaroz)/i;
+const nickelWords = /(nickel|on[çc]a puma|voisey|sudbury|murrin murrin|weda bay|sorowako|nova|nickel west|western australia nickel)/i;
 const supplyWords = /(production|guidance|output|operations?|restart|suspend|incident|expansion|project|mine|mineral resource|ore reserve|permit|quarter|annual|results?|产量|指引|停产|复产|扩建|储量)/i;
 const excluded = /(careers?|privacy|contact|linkedin|facebook|instagram|subscribe|governance|board|dividend|share price)/i;
 
 export function classify(title, configuredMetal = "both", strict = false) {
   if (excluded.test(title) || !supplyWords.test(title)) return null;
-  const copper = copperWords.test(title); const lithium = lithiumWords.test(title);
-  if (configuredMetal === "cu") return copper || (!strict && !lithium) ? "cu" : null;
-  if (configuredMetal === "li") return lithium || (!strict && !copper) ? "li" : null;
-  if (copper && !lithium) return "cu";
-  if (lithium && !copper) return "li";
+  const copper = copperWords.test(title); const lithium = lithiumWords.test(title); const nickel = nickelWords.test(title);
+  if (configuredMetal === "cu") return copper || (!strict && !lithium && !nickel) ? "cu" : null;
+  if (configuredMetal === "li") return lithium || (!strict && !copper && !nickel) ? "li" : null;
+  if (configuredMetal === "ni") return nickel || (!strict && !copper && !lithium) ? "ni" : null;
+  if (copper && !lithium && !nickel) return "cu";
+  if (lithium && !copper && !nickel) return "li";
+  if (nickel && !copper && !lithium) return "ni";
   return null;
 }
 
@@ -97,7 +104,7 @@ export async function main({ seed = process.argv.includes("--seed") } = {}) {
         if (!date) { console.warn(`No publication date, skipped: ${item.url}`); continue; }
         news.items.push({
           id:`news-${item.metal}-${Buffer.from(item.url).toString("base64url").slice(0,18)}`,
-          metal_id:item.metal === "cu" ? "metal-cu" : "metal-li", title:item.title, organization:item.organization,
+          metal_id:`metal-${item.metal}`, title:item.title, organization:item.organization,
           source_type:"official_company_news", material_url:item.url, publication_date:date,
           effective_date:date, verification_date:today(), discovered_at:now(),
         });

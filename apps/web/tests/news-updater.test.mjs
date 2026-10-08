@@ -5,8 +5,10 @@ import { classify, parseOfficialLinks } from "../scripts/update-news.mjs";
 test("official news classifier keeps supply updates and separates metals", () => {
   assert.equal(classify("Pilgangoora quarterly lithium production results", "li"), "li");
   assert.equal(classify("Kamoa-Kakula copper production guidance update", "cu"), "cu");
+  assert.equal(classify("Murrin Murrin nickel production results", "ni", true), "ni");
   assert.equal(classify("Board dividend announcement", "cu"), null);
   assert.equal(classify("Quarterly nickel production results", "li", true), null);
+  assert.equal(classify("Quarterly lithium production results", "ni", true), null);
 });
 
 test("official link parser accepts only same-host relevant materials", () => {

@@ -133,13 +133,21 @@ test("external source action opens a new tab with safe rel attributes", () => {
   assert.match(drawer, /rel="noopener noreferrer"/);
 });
 
-test("metal navigation exposes copper and lithium without invented lithium facts", () => {
+test("metal navigation exposes copper, lithium and nickel without invented lithium facts", () => {
   const switcher = readFileSync(new URL("../components/MetalSwitcher.tsx", import.meta.url), "utf8");
   const lithium = readFileSync(new URL("../components/LithiumDataProduct.tsx", import.meta.url), "utf8");
   assert.ok(switcher.includes('href: "/copper"'));
   assert.ok(switcher.includes('href: "/lithium"'));
+  assert.ok(switcher.includes('href: "/nickel"'));
   assert.match(lithium, /保持 null/);
   assert.equal(lithium.includes("<dt>已核验项目</dt><dd>0</dd>"), false);
+});
+
+test("nickel terminal includes product-stage safeguards, map, sources and eight detail routes", () => {
+  const nickel = readFileSync(new URL("../components/NickelDataProduct.tsx", import.meta.url), "utf8");
+  const detailRoute = readFileSync(new URL("../app/nickel/projects/[slug]/page.tsx", import.meta.url), "utf8");
+  for (const feature of ["ProjectMap", "nickelEvents", "downloadCsv", "source-library", "矿石、精矿含镍、镍锍、镍铁和精炼镍"]) assert.ok(nickel.includes(feature), feature);
+  for (const slug of ["onca-puma", "voiseys-bay", "sudbury", "murrin-murrin", "weda-bay", "sorowako", "nova", "western-australia-nickel"]) assert.ok(detailRoute.includes(slug), slug);
 });
 
 test("lithium terminal includes map, events, exports, sources and eight static detail routes", () => {
