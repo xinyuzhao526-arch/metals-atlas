@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ProjectMap } from "@/components/ProjectMap";
 import { PublicSourceDrawer } from "@/components/PublicSourceDrawer";
-import { LatestOfficialNews } from "@/components/LatestOfficialNews";
+import { MergedSupplyTimeline } from "@/components/MergedSupplyTimeline";
 import {
   downloadCsv,
   formatMissing,
@@ -178,8 +178,6 @@ export function PublicDataProduct() {
       </div>
     </section>
 
-    <LatestOfficialNews metal="cu" />
-
     <section className="supply-workbench">
       <div className="map-workspace">
         <div className="section-heading"><div><span>01 / 全球项目面</span><h2>矿山分布与数据密度</h2></div><p>点大小固定，不暗示产量；红色外圈代表已核验供给事件。</p></div>
@@ -198,26 +196,7 @@ export function PublicDataProduct() {
         </div>}
       </div>
 
-      <aside className="event-stream">
-        <div className="section-heading"><div><span>02 / 供给动态</span><h2>时间流</h2></div><p>按披露日期倒序</p></div>
-        <div className="event-type-key"><span>事故</span><span>停产</span><span>复产</span><span>指引</span><span>扩产</span><span>许可</span></div>
-        <div className="event-stream-list">
-        {streamEvents.map((event) => {
-          const project = publicData.projects.find((item) => item.id === event.project_id);
-          const active = selectedProjectId === event.project_id;
-          return <article key={event.id} className={`stream-event ${active ? "active" : ""}`} onClick={() => setSelectedProjectId(event.project_id)}>
-            <time>{event.reported_date}</time><div className="event-kind">{eventLabel[event.event_type] ?? event.event_type}</div><h3>{project?.name}</h3><h4>{event.headline_zh}</h4><p>{event.summary_zh}</p>
-            <div className="event-milestones">
-              {event.event_type === "guidance_adjustment" && <span>{event.event_start_date} 指引更新</span>}
-              {event.event_type !== "guidance_adjustment" && <span>{event.event_start_date} 事故</span>}
-              {event.operations_suspended_date && <span>{event.operations_suspended_date} 停产</span>}
-              {event.operations_resumed_date && <span>{event.operations_resumed_date} 复产</span>}
-            </div>
-            <div className="event-sources">{event.source_ids.map((id) => <SourceLink key={id} id={id} onOpen={setSource} />)}</div>
-          </article>;
-        })}
-        </div>
-      </aside>
+      <MergedSupplyTimeline metal="cu" selectedProjectId={selectedProjectId} onSelectProject={setSelectedProjectId} onOpenSource={(id) => { const item=sourceById(id); if(item)setSource(item); }} projects={publicData.projects.map((project) => ({id:project.id,name:project.name}))} curated={streamEvents.map((event) => ({id:event.id,date:event.reported_date,kind:eventLabel[event.event_type] ?? event.event_type,projectId:event.project_id,projectName:publicData.projects.find((project) => project.id===event.project_id)?.name ?? event.project_id,headline:event.headline_zh,summary:event.summary_zh,sourceId:event.source_ids[0]}))} />
     </section>
 
     <section className="inventory-terminal">

@@ -166,6 +166,17 @@ test("aluminum terminal includes stage safeguards, map, sources and eight detail
   for (const slug of ["weipa", "gove", "paragominas", "juruti", "worsley", "alunorte", "al-taweelah", "guinea-alumina-corporation"]) assert.ok(detailRoute.includes(slug), slug);
 });
 
+test("all four metal pages merge daily news into the supply timeline", () => {
+  const files = ["PublicDataProduct.tsx", "LithiumDataProduct.tsx", "NickelDataProduct.tsx", "AluminumDataProduct.tsx"];
+  for (const file of files) {
+    const content = readFileSync(new URL(`../components/${file}`, import.meta.url), "utf8");
+    assert.ok(content.includes("MergedSupplyTimeline"), file);
+    assert.equal(content.includes("LatestOfficialNews"), false, file);
+  }
+  const timeline = readFileSync(new URL("../components/MergedSupplyTimeline.tsx", import.meta.url), "utf8");
+  for (const label of ["全部", "已核验", "媒体快讯", "行业事件", "待回溯"]) assert.ok(timeline.includes(label), label);
+});
+
 test("lithium terminal includes map, events, exports, sources and eight static detail routes", () => {
   const lithium = readFileSync(new URL("../components/LithiumDataProduct.tsx", import.meta.url), "utf8");
   const detailRoute = readFileSync(new URL("../app/lithium/projects/[slug]/page.tsx", import.meta.url), "utf8");

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { ProjectMap } from "@/components/ProjectMap";
-import { LatestOfficialNews } from "@/components/LatestOfficialNews";
+import { MergedSupplyTimeline } from "@/components/MergedSupplyTimeline";
 import { PublicSourceDrawer } from "@/components/PublicSourceDrawer";
 import { downloadCsv, type PublicProject, type PublicSource } from "@/lib/public-data";
 
@@ -104,8 +104,6 @@ export function LithiumDataProduct() {
       <p className="supply-thesis"><b>口径说明</b>精矿、碳酸锂、氢氧化锂和 LCE 不直接相加；项目 100% 与公司应占数值分开呈现。</p>
     </section>
 
-    <LatestOfficialNews metal="li" />
-
     <section className="supply-workbench lithium-workbench">
       <div className="map-workspace">
         <div className="section-heading"><div><span>01 / 全球项目面</span><h2>锂资产分布与生产阶段</h2></div><p>坐标为近似项目中心；点大小不表示产量。</p></div>
@@ -113,7 +111,7 @@ export function LithiumDataProduct() {
         <div className="map-legend"><span><i className="operating" />运营中</span><span><i className="development" />开发中</span><span><i className="event-ring" />有供给事件</span></div>
         <div className="map-selection"><div><span>{selected.country} · {selected.status}</span><h3>{selected.name}</h3><p>{selected.operator} · {selected.stage}</p></div><dl><div><dt>产品</dt><dd>{selected.product}</dd></div><div><dt>产量</dt><dd>{selected.production === null ? "待补" : `${selected.production} ${selected.productionUnit}`}</dd></div><div><dt>产能</dt><dd>{selected.capacity}</dd></div></dl><Link href={`/lithium/projects/${selected.id}`}>打开项目档案 →</Link></div>
       </div>
-      <aside className="event-stream"><div className="section-heading"><div><span>02 / 供给动态</span><h2>时间流</h2></div><p>按披露日期倒序</p></div><div className="event-stream-list">{lithiumEvents.map((event) => <article key={event.projectId} className={`stream-event ${selectedId === event.projectId ? "active" : ""}`} onClick={() => setSelectedId(event.projectId)}><time>{event.date}</time><div className="event-kind">{event.kind}</div><h3>{lithiumProjectBySlug(event.projectId)?.name}</h3><h4>{event.headline}</h4><p>{event.summary}</p><div className="event-sources"><button className="evidence-link" type="button" onClick={(click) => { click.stopPropagation(); openSource(event.sourceId); }}>来源 ↗</button></div></article>)}</div></aside>
+      <MergedSupplyTimeline metal="li" selectedProjectId={selectedId} onSelectProject={setSelectedId} onOpenSource={openSource} projects={lithiumProjects.map((p) => ({id:p.id,name:p.name}))} curated={lithiumEvents.map((event) => ({id:`li-${event.projectId}-${event.date}`,date:event.date,kind:event.kind,projectId:event.projectId,projectName:lithiumProjectBySlug(event.projectId)?.name ?? event.projectId,headline:event.headline,summary:event.summary,sourceId:event.sourceId}))} />
     </section>
 
     <section className="lithium-intro">
