@@ -14,7 +14,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" /></head>
       <body>
         <header className="site-topbar">
-          <Link href="/copper" className="site-brand"><span className="site-brand-mark">M/A</span><span>Metals Atlas</span></Link>
+          <Link href="/" className="site-brand"><span className="site-brand-mark">M/A</span><span>Metals Atlas</span></Link>
           <span className="site-edition">研究公开版</span>
           <MetalSwitcher />
         </header>

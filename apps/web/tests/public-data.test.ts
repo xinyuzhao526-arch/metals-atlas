@@ -150,6 +150,14 @@ test("nickel terminal includes product-stage safeguards, map, sources and eight 
   for (const slug of ["onca-puma", "voiseys-bay", "sudbury", "murrin-murrin", "weda-bay", "sorowako", "nova", "western-australia-nickel"]) assert.ok(detailRoute.includes(slug), slug);
 });
 
+test("home page is a shared copper lithium and nickel portal", () => {
+  const home = readFileSync(new URL("../app/page.tsx", import.meta.url), "utf8");
+  const layout = readFileSync(new URL("../app/layout.tsx", import.meta.url), "utf8");
+  for (const href of ["/copper", "/lithium", "/nickel"]) assert.ok(home.includes(`href=\"${href}\"`), href);
+  assert.ok(home.includes("一个入口"));
+  assert.ok(layout.includes('href="/" className="site-brand"'));
+});
+
 test("lithium terminal includes map, events, exports, sources and eight static detail routes", () => {
   const lithium = readFileSync(new URL("../components/LithiumDataProduct.tsx", import.meta.url), "utf8");
   const detailRoute = readFileSync(new URL("../app/lithium/projects/[slug]/page.tsx", import.meta.url), "utf8");
