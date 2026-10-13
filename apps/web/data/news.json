@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-10-10",
-  "last_checked_at": "2026-10-10T01:10:31.978Z",
+  "updated_at": "2026-10-13",
+  "last_checked_at": "2026-10-13T01:14:36.713Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances/",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields/",
@@ -86,6 +86,7 @@
     "https://www.mining-technology.com/news/bhp-suspends-activities-escondida-mine/",
     "https://www.mining-technology.com/news/blue-moon-to-acquire-turner-deposit/",
     "https://www.mining-technology.com/news/bridge-green-hartree-eight-year-lithium-agreement/",
+    "https://www.mining-technology.com/news/codelco-partially-halts-el-teniente-mine/",
     "https://www.mining-technology.com/news/cotec-copper-intelligence-agreement-drc-tailings/",
     "https://www.mining-technology.com/news/elevra-supply-spodumene-lg-energy/",
     "https://www.mining-technology.com/news/global-lithium-237m-sid-titan-australia-mining/",
@@ -93,6 +94,7 @@
     "https://www.mining-technology.com/news/talisman-acquires-licences-tirzzit-project/",
     "https://www.mining.com/antofagastas-centinela-strike-adds-copper-supply-risk/",
     "https://www.mining.com/copper-holds-above-14400-as-chile-strike-risk-grows/",
+    "https://www.mining.com/energyx-inks-10-year-2b-lithium-offtake-deal-with-trafigura/",
     "https://www.mining.com/eu-puts-kghms-2-4b-copper-projects-on-fast-track/",
     "https://www.mining.com/fatal-accident-reported-at-bhps-escondida-mine/",
     "https://www.mining.com/worker-dies-in-accident-at-codelcos-radomiro-tomic/",
@@ -114,6 +116,34 @@
     "https://www.northernminer.com/news/westwin-to-build-502m-nickel-refinery-in-mississippi/1003895478/"
   ],
   "items": [
+    {
+      "id": "news-cu-fcaef48a378c1960",
+      "metal_id": "metal-cu",
+      "title": "Codelco partially halts El Teniente mine after landslide",
+      "organization": "mining-technology",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.mining-technology.com/news/codelco-partially-halts-el-teniente-mine/",
+      "publication_date": "2026-10-12",
+      "effective_date": "2026-10-12",
+      "verification_date": "2026-10-13",
+      "discovered_at": "2026-10-13T01:14:36.707Z"
+    },
+    {
+      "id": "news-li-e44db1cc5bc3947b",
+      "metal_id": "metal-li",
+      "title": "EnergyX inks 10-year, $2B lithium offtake deal with Trafigura",
+      "organization": "mining.com",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "长协/包销",
+      "material_url": "https://www.mining.com/energyx-inks-10-year-2b-lithium-offtake-deal-with-trafigura/",
+      "publication_date": "2026-10-12",
+      "effective_date": "2026-10-12",
+      "verification_date": "2026-10-13",
+      "discovered_at": "2026-10-13T01:14:36.707Z"
+    },
     {
       "id": "news-cu-9d0603f04549fbf9",
       "metal_id": "metal-cu",
