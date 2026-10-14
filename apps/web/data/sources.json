@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-10-13",
+  "updated_at": "2026-10-14",
   "items": [
     {
       "id": "src-mmg-q2-2026",
@@ -1020,6 +1020,18 @@
       "verification_date": "2026-10-13",
       "url": "https://www.shfe.com.cn/data/tradedata/future/stockdata/dailystock_20261013/ZH/all.html",
       "locator": "HTML 铜 / 总计：期货（已制成仓单）9407 吨，较上一报告 +622 吨",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-meiyuanhuanliu-comex-copper-2026-10-12",
+      "tier": "B",
+      "source_type": "secondary_warehouse_report_republication",
+      "organization": "美元环流（转录 CME Copper Stocks 报告）",
+      "title": "COMEX 铜仓库库存 2026-10-12",
+      "publication_date": "2026-10-12",
+      "verification_date": "2026-10-14",
+      "url": "https://www.meiyuanhuanliu.com/copper_stocks/",
+      "locator": "HTML 2026-10-12 行；registered 471299、eligible 316317、total 787616 short tons。官方报告入口：https://www.cmegroup.com/delivery_reports/Copper_Stocks.xls",
       "short_excerpt": null
     }
   ]
