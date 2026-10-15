@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-10-14",
+  "updated_at": "2026-10-15",
   "items": [
     {
       "id": "src-mmg-q2-2026",
@@ -1032,6 +1032,18 @@
       "verification_date": "2026-10-14",
       "url": "https://www.meiyuanhuanliu.com/copper_stocks/",
       "locator": "HTML 2026-10-12 行；registered 471299、eligible 316317、total 787616 short tons。官方报告入口：https://www.cmegroup.com/delivery_reports/Copper_Stocks.xls",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-shfe-daily-warrant-2026-10-15",
+      "tier": "A",
+      "source_type": "official_daily_warehouse_warrant_report",
+      "organization": "上海期货交易所",
+      "title": "上海期货交易所仓单日报 2026-10-15",
+      "publication_date": "2026-10-15",
+      "verification_date": "2026-10-15",
+      "url": "https://www.shfe.com.cn/data/tradedata/future/stockdata/dailystock_20261015/ZH/all.html",
+      "locator": "HTML 铜 / 总计：期货（已制成仓单）34933 吨，较上一报告 +11476 吨",
       "short_excerpt": null
     }
   ]

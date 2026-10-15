@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-10-14",
+  "updated_at": "2026-10-15",
   "items": [
     {
       "id": "inventory-shfe-weekly-2026-09-18",
@@ -1615,6 +1615,25 @@
       "change_period": "previous_report",
       "notes": "Registered + Eligible；不得与 SHFE 或 LME 直接相加；较上一报告 +818 short tons。按 1 short ton = 0.90718474 metric tonnes 标准化。",
       "license_status": "secondary_republication_cc_by_nc_4_0_official_download_blocked",
+      "missing_reason": null
+    },
+    {
+      "id": "inventory-shfe-warehouse-warrants-2026-10-15",
+      "exchange": "SHFE",
+      "inventory_type": "warehouse_warrants",
+      "value": 34933,
+      "original_unit": "metric_tonnes",
+      "normalized_value": 34933,
+      "normalized_unit": "metric_tonnes",
+      "data_date": "2026-10-15",
+      "published_at": "2026-10-15",
+      "source_id": "src-shfe-daily-warrant-2026-10-15",
+      "source_tier": "A",
+      "frequency": "daily",
+      "change_pct": 48.92,
+      "change_period": "previous_report",
+      "notes": "上期所官方仓单日报铜“期货”总计；较上一报告 +11476 吨。不等同于库存周报。",
+      "license_status": "official_public_report",
       "missing_reason": null
     }
   ]
