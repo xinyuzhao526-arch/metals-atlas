@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-10-14",
-  "last_checked_at": "2026-10-14T01:25:24.260Z",
+  "updated_at": "2026-10-15",
+  "last_checked_at": "2026-10-15T01:24:28.459Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances/",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields/",
@@ -95,6 +95,7 @@
     "https://www.mining-technology.com/news/trafigura-energyx-10-year-lithium-contract/",
     "https://www.mining.com/antofagastas-centinela-strike-adds-copper-supply-risk/",
     "https://www.mining.com/copper-holds-above-14400-as-chile-strike-risk-grows/",
+    "https://www.mining.com/copper-price-forecasts-lifted-for-2026-but-tariff-collapse-still-on-the-table/",
     "https://www.mining.com/energyx-inks-10-year-2b-lithium-offtake-deal-with-trafigura/",
     "https://www.mining.com/eu-puts-kghms-2-4b-copper-projects-on-fast-track/",
     "https://www.mining.com/fatal-accident-reported-at-bhps-escondida-mine/",
@@ -105,6 +106,7 @@
     "https://www.mmg.com/investors/reports-and-presentations/strong-q2-production-drives-confidence-in-full-year-outlook/",
     "https://www.mmg.com/mineral-resources-and-ore-reserves/",
     "https://www.mmg.com/operations/khoemacau/",
+    "https://www.northernminer.com/news/bhp-averts-strike-at-worlds-biggest-copper-mine-2/1003895736/",
     "https://www.northernminer.com/news/bhps-escondida-restart-eases-tight-copper-supply-woes/1003895172/",
     "https://www.northernminer.com/news/brazil-court-order-idles-sigma-lithium-mine/1003895373/",
     "https://www.northernminer.com/news/capstone-sells-mexican-mine-to-luca-for-up-to-385m/1003894997/",
@@ -117,6 +119,34 @@
     "https://www.northernminer.com/news/westwin-to-build-502m-nickel-refinery-in-mississippi/1003895478/"
   ],
   "items": [
+    {
+      "id": "news-cu-4e3e8e7bac9abeae",
+      "metal_id": "metal-cu",
+      "title": "BHP averts strike at world’s biggest copper mine",
+      "organization": "northernminer",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.northernminer.com/news/bhp-averts-strike-at-worlds-biggest-copper-mine-2/1003895736/",
+      "publication_date": "2026-10-14",
+      "effective_date": "2026-10-14",
+      "verification_date": "2026-10-15",
+      "discovered_at": "2026-10-15T01:24:28.452Z"
+    },
+    {
+      "id": "news-cu-ae7c564223d3eeb5",
+      "metal_id": "metal-cu",
+      "title": "Copper price forecasts lifted for 2026 but tariff “collapse” still on the table",
+      "organization": "mining.com",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.mining.com/copper-price-forecasts-lifted-for-2026-but-tariff-collapse-still-on-the-table/",
+      "publication_date": "2026-10-14",
+      "effective_date": "2026-10-14",
+      "verification_date": "2026-10-15",
+      "discovered_at": "2026-10-15T01:24:28.452Z"
+    },
     {
       "id": "news-li-3a4705822048c373",
       "metal_id": "metal-li",
