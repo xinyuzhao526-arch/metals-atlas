@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-10-15",
-  "last_checked_at": "2026-10-15T01:24:28.459Z",
+  "updated_at": "2026-10-16",
+  "last_checked_at": "2026-10-16T01:23:53.236Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances/",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields/",
@@ -46,6 +46,7 @@
     "https://www.antofagasta.co.uk/investors/news/2026/publication-of-2025-annual-reporting-suite-and-2026-notice-of-annual-general-meeting/",
     "https://www.antofagasta.co.uk/investors/news/2026/q1-2026-quarterly-production-report/",
     "https://www.antofagasta.co.uk/investors/news/2026/q2-2026-production-report/",
+    "https://www.antofagasta.co.uk/investors/news/2026/q3-2026-production-report/",
     "https://www.antofagasta.co.uk/investors/news/2026/q4-2025-production-report/",
     "https://www.antofagasta.co.uk/investors/news/2026/qa-video-conference-details-for-2026-half-year-results/",
     "https://www.antofagasta.co.uk/investors/news/2026/results-of-2026-annual-general-meeting/",
@@ -95,10 +96,12 @@
     "https://www.mining-technology.com/news/trafigura-energyx-10-year-lithium-contract/",
     "https://www.mining.com/antofagastas-centinela-strike-adds-copper-supply-risk/",
     "https://www.mining.com/copper-holds-above-14400-as-chile-strike-risk-grows/",
+    "https://www.mining.com/copper-price-falls-for-third-day-as-us-inflation-shock-easing-chile-strike-risk-spur-selloff/",
     "https://www.mining.com/copper-price-forecasts-lifted-for-2026-but-tariff-collapse-still-on-the-table/",
     "https://www.mining.com/energyx-inks-10-year-2b-lithium-offtake-deal-with-trafigura/",
     "https://www.mining.com/eu-puts-kghms-2-4b-copper-projects-on-fast-track/",
     "https://www.mining.com/fatal-accident-reported-at-bhps-escondida-mine/",
+    "https://www.mining.com/tech-giants-come-knocking-for-a-piece-of-anglo-american-as-copper-scarcity-bites-wanblad-tells-ft/",
     "https://www.mining.com/worker-dies-in-accident-at-codelcos-radomiro-tomic/",
     "https://www.mmg.com/%e5%bc%80%e5%8f%91%e9%a1%b9%e7%9b%ae/",
     "https://www.mmg.com/events/2026-third-quarter-production-report-teleconference-date-subject-to-change/",
@@ -119,6 +122,34 @@
     "https://www.northernminer.com/news/westwin-to-build-502m-nickel-refinery-in-mississippi/1003895478/"
   ],
   "items": [
+    {
+      "id": "news-cu-85da62204652947f",
+      "metal_id": "metal-cu",
+      "title": "Tech giants come knocking for a piece of Anglo American as copper scarcity bites, Wanblad tells FT",
+      "organization": "mining.com",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "并购/股权",
+      "material_url": "https://www.mining.com/tech-giants-come-knocking-for-a-piece-of-anglo-american-as-copper-scarcity-bites-wanblad-tells-ft/",
+      "publication_date": "2026-10-15",
+      "effective_date": "2026-10-15",
+      "verification_date": "2026-10-16",
+      "discovered_at": "2026-10-16T01:23:53.229Z"
+    },
+    {
+      "id": "news-cu-ad9de91efe950c74",
+      "metal_id": "metal-cu",
+      "title": "Copper price falls for third day as US inflation shock, easing Chile strike risk spur selloff",
+      "organization": "mining.com",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.mining.com/copper-price-falls-for-third-day-as-us-inflation-shock-easing-chile-strike-risk-spur-selloff/",
+      "publication_date": "2026-10-15",
+      "effective_date": "2026-10-15",
+      "verification_date": "2026-10-16",
+      "discovered_at": "2026-10-16T01:23:53.229Z"
+    },
     {
       "id": "news-cu-4e3e8e7bac9abeae",
       "metal_id": "metal-cu",
