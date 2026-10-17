@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-10-16",
-  "last_checked_at": "2026-10-16T01:23:53.236Z",
+  "updated_at": "2026-10-17",
+  "last_checked_at": "2026-10-17T01:24:46.634Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances/",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields/",
     "https://im-mining.com/2026/10/08/fls-to-deliver-worlds-largest-gyratory-as-part-of-chile-copper-mine-expansion-package/",
     "https://im-mining.com/2026/10/09/fls-wins-another-copper-mine-order-in-chile-for-grinding-tech-including-hpgr-ball-mill/",
+    "https://im-mining.com/2026/10/16/pls-greenlights-p2000-project-as-it-aims-for-2-mt-y-of-spodumene-production-capacity/",
     "https://ivanhoemines.com/operations/kamoa-kakula-mining-complex/",
     "https://www.antofagasta.co.uk/investors/annual-report-2025/",
     "https://www.antofagasta.co.uk/investors/annual-report-library/",
@@ -100,6 +101,7 @@
     "https://www.mining.com/copper-price-forecasts-lifted-for-2026-but-tariff-collapse-still-on-the-table/",
     "https://www.mining.com/energyx-inks-10-year-2b-lithium-offtake-deal-with-trafigura/",
     "https://www.mining.com/eu-puts-kghms-2-4b-copper-projects-on-fast-track/",
+    "https://www.mining.com/exiro-led-group-takes-control-of-vales-manitoba-nickel-complex/",
     "https://www.mining.com/fatal-accident-reported-at-bhps-escondida-mine/",
     "https://www.mining.com/tech-giants-come-knocking-for-a-piece-of-anglo-american-as-copper-scarcity-bites-wanblad-tells-ft/",
     "https://www.mining.com/worker-dies-in-accident-at-codelcos-radomiro-tomic/",
@@ -122,6 +124,34 @@
     "https://www.northernminer.com/news/westwin-to-build-502m-nickel-refinery-in-mississippi/1003895478/"
   ],
   "items": [
+    {
+      "id": "news-li-2be7a00924fbe760",
+      "metal_id": "metal-li",
+      "title": "PLS greenlights P2000 project as it aims for ~2 Mt/y of spodumene production capacity",
+      "organization": "im-mining",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "扩产",
+      "material_url": "https://im-mining.com/2026/10/16/pls-greenlights-p2000-project-as-it-aims-for-2-mt-y-of-spodumene-production-capacity/",
+      "publication_date": "2026-10-16",
+      "effective_date": "2026-10-16",
+      "verification_date": "2026-10-17",
+      "discovered_at": "2026-10-17T01:24:46.627Z"
+    },
+    {
+      "id": "news-ni-260753a3142326ee",
+      "metal_id": "metal-ni",
+      "title": "Exiro-led group takes control of Vale’s Manitoba nickel complex",
+      "organization": "mining.com",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "并购/股权",
+      "material_url": "https://www.mining.com/exiro-led-group-takes-control-of-vales-manitoba-nickel-complex/",
+      "publication_date": "2026-10-16",
+      "effective_date": "2026-10-16",
+      "verification_date": "2026-10-17",
+      "discovered_at": "2026-10-17T01:24:46.627Z"
+    },
     {
       "id": "news-cu-85da62204652947f",
       "metal_id": "metal-cu",
