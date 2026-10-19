@@ -1,13 +1,14 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-10-17",
-  "last_checked_at": "2026-10-17T01:24:46.634Z",
+  "updated_at": "2026-10-19",
+  "last_checked_at": "2026-10-19T05:34:02.549Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances/",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields/",
     "https://im-mining.com/2026/10/08/fls-to-deliver-worlds-largest-gyratory-as-part-of-chile-copper-mine-expansion-package/",
     "https://im-mining.com/2026/10/09/fls-wins-another-copper-mine-order-in-chile-for-grinding-tech-including-hpgr-ball-mill/",
     "https://im-mining.com/2026/10/16/pls-greenlights-p2000-project-as-it-aims-for-2-mt-y-of-spodumene-production-capacity/",
+    "https://im-mining.com/2026/10/19/fortescues-world-first-arsenic-removal-tech-unlocks-new-copper-processing-potential/",
     "https://ivanhoemines.com/operations/kamoa-kakula-mining-complex/",
     "https://www.antofagasta.co.uk/investors/annual-report-2025/",
     "https://www.antofagasta.co.uk/investors/annual-report-library/",
@@ -124,6 +125,20 @@
     "https://www.northernminer.com/news/westwin-to-build-502m-nickel-refinery-in-mississippi/1003895478/"
   ],
   "items": [
+    {
+      "id": "news-cu-d97aead96be5e778",
+      "metal_id": "metal-cu",
+      "title": "Fortescue&#8217;s &#8216;world-first&#8217; arsenic removal tech unlocks new copper processing potential",
+      "organization": "International Mining",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "并购股权",
+      "material_url": "https://im-mining.com/2026/10/19/fortescues-world-first-arsenic-removal-tech-unlocks-new-copper-processing-potential/",
+      "publication_date": "2026-10-19",
+      "effective_date": "2026-10-19",
+      "verification_date": "2026-10-19",
+      "discovered_at": "2026-10-19T05:34:02.542Z"
+    },
     {
       "id": "news-li-2be7a00924fbe760",
       "metal_id": "metal-li",
