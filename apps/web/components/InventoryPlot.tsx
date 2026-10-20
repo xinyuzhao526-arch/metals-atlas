@@ -27,4 +27,3 @@ export function InventoryPlot({ records }: { records: InventoryPoint[] }) {
     <p>{connectSeries ? `按披露日期连接 ${points.length} 个同定义数据点；非交易日不插值。` : "仅显示已核验快照；数据频率或授权不足时不连线。"}</p>
   </div>;
 }
-

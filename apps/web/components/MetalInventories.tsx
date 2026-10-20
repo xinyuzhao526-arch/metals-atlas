@@ -11,7 +11,7 @@ type Observation = {
  id:string;metal_id:string;exchange:string;inventory_type:string;product:string;
  value:number|null;original_unit:string;normalized_value:number|null;data_date:string|null;
  verification_date:string;source_id:string;source_tier:string;frequency:string;
- change_pct:number|null;change_period:string;notes:string;
+ change_pct:number|null;change_period:string;notes:string;precision_tonnes?:number;
 };
 const names={li:"碳酸锂",ni:"精炼镍",al:"原铝"};
 const definitions={
@@ -23,7 +23,7 @@ const changes:Record<string,string>={week_over_week:"周环比",previous_report:
 export function MetalInventories({metal}:{metal:Metal}) {
  const options=definitions[metal];
  const exchanges=[...new Set(options.map(item=>item.exchange))].sort();
- const [exchange,setExchange]=useState(exchanges[0]);
+ const [exchange,setExchange]=useState(exchanges.includes("SHFE")?"SHFE":exchanges[0]);
  const [inventoryType,setInventoryType]=useState<string|null>(null);
  const [source,setSource]=useState<PublicSource|null>(null);
  const exchangeRecords=(dataset.items as Observation[])
@@ -45,7 +45,7 @@ export function MetalInventories({metal}:{metal:Metal}) {
   <div className="section-heading"><div><span>03 / 仓库信号</span><h2>交易所库存，而非“全球库存”</h2></div><p>{names[metal]}产品吨；不同交易所与定义不相加，缺失日期不插值。</p></div>
   <div className="exchange-tabs" aria-label="选择交易所">{exchanges.map(item=><button key={item} className={exchange===item?"active":""} aria-pressed={exchange===item} type="button" onClick={()=>{setExchange(item);setInventoryType(null);}}>{item}</button>)}</div>
   <div className="inventory-body">
-   <div className="inventory-latest"><span>最新可展示值 · {definition?.label.split(" · ").at(-1)}</span><strong>{exchange==="LME"&&latest?.normalized_value!=null?"≈ ":""}{latest?.normalized_value?.toLocaleString()??"待补"} <small>{latest?.normalized_value!=null?"metric tonnes":""}</small></strong>
+   <div className="inventory-latest"><span>最新可展示值 · {definition?.label.split(" · ").at(-1)}</span><strong>{exchange==="LME"&&latest?.normalized_value!=null&&(latest.precision_tonnes??100)>1?"≈ ":""}{latest?.normalized_value?.toLocaleString()??"待补"} <small>{latest?.normalized_value!=null?"metric tonnes":""}</small></strong>
     <p>数据日：{latest?.data_date??"待补"}<br/>{changes[latest?.change_period??""]??"变化"}：{latest?.change_pct!=null?`${latest.change_pct>0?"+":""}${latest.change_pct}%`:"待补"}<br/>核验：{latest?.verification_date??"待补"}</p>
     {latest?sourceLink(latest.source_id):<a className="evidence-link" href={definition?.url} target="_blank" rel="noopener noreferrer">官方报告入口 ↗</a>}
     {status?.ok===false&&<p>最近一次采集未成功{latest?"，保留上次已核验值":"，数值待补"}。</p>}
@@ -56,7 +56,7 @@ export function MetalInventories({metal}:{metal:Metal}) {
     <strong>{item.value===null?"待补":`${item.value.toLocaleString()} ${unit(item.original_unit)}`}</strong><p>{item.data_date} · {item.source_tier} 级来源<br/>{item.notes}</p>{sourceLink(item.source_id)}
    </article>)}{!exchangeRecords.length&&<article><b>待补</b><p>尚未取得可核验的公开报告。</p></article>}</div>
   </div>
-  <p className="inventory-note">{metal==="li"?"碳酸锂仓单按 1 手 = 1 吨产品展示，不等同于社会库存，也不与锂辉石精矿、氢氧化锂或锂金属吨相加。":"精炼产品库存不能替代矿石、精矿或中间品供应；仓单是特定交割状态，不与库存周报及 LME 总库存重复相加。"} 历史数据从实际采集日期积累，缺失日期不补造。</p>
+  <p className="inventory-note">{trendRecords.length>0?`已展示 ${trendRecords.length} 期数据：${trendRecords.at(-1)?.data_date} 至 ${trendRecords[0]?.data_date}。 `:""}{exchange==="LME"?"LME 历史值采用 Westmetall 公开转载表，标为 B 级来源。 ":""}{metal==="li"?"碳酸锂仓单按 1 手 = 1 吨产品展示，不等同于社会库存，也不与锂辉石精矿、氢氧化锂或锂金属吨相加。":"精炼产品库存不能替代矿石、精矿或中间品供应；仓单是特定交割状态，不与库存周报及 LME 总库存重复相加。"} 历史数据来自逐期公开报告，缺失日期不补造。</p>
   <PublicSourceDrawer source={source} onClose={()=>setSource(null)}/>
  </section>;
 }
