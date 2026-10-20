@@ -22,34 +22,41 @@ const definitions={
 const changes:Record<string,string>={week_over_week:"周环比",previous_report:"较上一报告", "30_day":"近 30 日"};
 export function MetalInventories({metal}:{metal:Metal}) {
  const options=definitions[metal];
- const [activeKey,setActiveKey]=useState(options[0].key);
+ const exchanges=[...new Set(options.map(item=>item.exchange))].sort();
+ const [exchange,setExchange]=useState(exchanges[0]);
+ const [inventoryType,setInventoryType]=useState<string|null>(null);
  const [source,setSource]=useState<PublicSource|null>(null);
- const series=options.map(option=>{
-  const records=(dataset.items as Observation[]).filter(x=>x.metal_id===`metal-${metal}`&&x.exchange===option.exchange&&x.inventory_type===option.type).sort((a,b)=>(b.data_date??"").localeCompare(a.data_date??""));
-  return {...option,records,latest:records.find(x=>x.normalized_value!==null)};
- });
- const selected=series.find(x=>x.key===activeKey)??series[0];
- const latest=selected.latest;
- const statusId=selected.exchange==="LME"?`LME-${metal}`:selected.exchange;
- const status=dataset.status.find(x=>x.id===statusId);
- const sourceItem=latest?(dataset.sources as PublicSource[]).find(x=>x.id===latest.source_id):undefined;
- return <section className="inventory-terminal metal-inventories" aria-label={`${names[metal]}交易所库存与仓单`}>
-  <div className="section-heading"><div><span>EXCHANGE / 仓库信号</span><h2>交易所库存与仓单</h2></div><p>{names[metal]}产品吨 · 各交易所、库存与仓单分别阅读</p></div>
-  <div className={`metal-inventory-cards ${metal==="li"?"single":""}`} aria-label="选择库存序列">
-   {series.map(item=><button key={item.key} type="button" aria-pressed={selected.key===item.key} className={selected.key===item.key?"active":""} onClick={()=>setActiveKey(item.key)}>
-    <span>{item.label}</span><strong>{item.exchange==="LME"&&item.latest?"≈ ":""}{item.latest?.normalized_value?.toLocaleString()??"待补"}<small>{item.latest?"吨":""}</small></strong>
-    <time>{item.latest?.data_date??"尚未取得报告"}</time><em>{item.latest?`${item.latest.source_tier} 级来源 · ${item.latest.product}`:"暂无可核验数值"}</em>
-   </button>)}
-  </div>
-  <div className="metal-inventory-detail">
-   <div className="metal-inventory-context"><h3>{selected.label}</h3><p>{latest?.notes??"尚未取得可核验的公开报告；缺失数据不按零处理。"}</p>
-    {latest&&<dl><div><dt>数据日期</dt><dd>{latest.data_date}</dd></div><div><dt>核验日期</dt><dd>{latest.verification_date}</dd></div><div><dt>{changes[latest.change_period]??"变化"}</dt><dd>{latest.change_pct===null?"待补":`${latest.change_pct>0?"+":""}${latest.change_pct}%`}</dd></div></dl>}
-    {sourceItem?<button className="evidence-link" type="button" onClick={()=>setSource(sourceItem)}>查看来源与口径 ↗</button>:<a className="evidence-link" href={selected.url} target="_blank" rel="noopener noreferrer">官方报告入口 ↗</a>}
-    {status?.ok===false&&<p className="inventory-update-note">最近一次采集未成功{latest?"，保留上次已核验值":"，数值待补"}。</p>}
+ const exchangeRecords=(dataset.items as Observation[])
+  .filter(item=>item.metal_id===`metal-${metal}`&&item.exchange===exchange)
+  .sort((a,b)=>(b.data_date??"").localeCompare(a.data_date??""));
+ const type=inventoryType??(exchange==="SHFE"?"weekly_inventory":exchange==="GFEX"?"warehouse_warrants":"total");
+ const trendRecords=exchangeRecords.filter(item=>item.inventory_type===type);
+ const latest=trendRecords.find(item=>item.normalized_value!==null)??trendRecords[0];
+ const status=dataset.status.find(item=>item.id===(exchange==="LME"?`LME-${metal}`:exchange));
+ const definition=options.find(item=>item.exchange===exchange&&item.type===type);
+ const sourceById=(id:string)=>(dataset.sources as PublicSource[]).find(item=>item.id===id);
+ const sourceLink=(id:string)=>{
+  const material=sourceById(id);
+  return material?<button className="evidence-link" type="button" onClick={()=>setSource(material)}>来源 ↗</button>:null;
+ };
+ const label=(item:Observation)=>options.find(option=>option.exchange===item.exchange&&option.type===item.inventory_type)?.label.split(" · ").at(-1)??item.inventory_type;
+ const unit=(value:string)=>({metric_tonnes:"吨",thousand_metric_tonnes:"千吨",lots:"手"}[value]??value);
+ return <section className="inventory-terminal" aria-label={`${names[metal]}交易所库存与仓单`}>
+  <div className="section-heading"><div><span>03 / 仓库信号</span><h2>交易所库存，而非“全球库存”</h2></div><p>{names[metal]}产品吨；不同交易所与定义不相加，缺失日期不插值。</p></div>
+  <div className="exchange-tabs" aria-label="选择交易所">{exchanges.map(item=><button key={item} className={exchange===item?"active":""} aria-pressed={exchange===item} type="button" onClick={()=>{setExchange(item);setInventoryType(null);}}>{item}</button>)}</div>
+  <div className="inventory-body">
+   <div className="inventory-latest"><span>最新可展示值 · {definition?.label.split(" · ").at(-1)}</span><strong>{exchange==="LME"&&latest?.normalized_value!=null?"≈ ":""}{latest?.normalized_value?.toLocaleString()??"待补"} <small>{latest?.normalized_value!=null?"metric tonnes":""}</small></strong>
+    <p>数据日：{latest?.data_date??"待补"}<br/>{changes[latest?.change_period??""]??"变化"}：{latest?.change_pct!=null?`${latest.change_pct>0?"+":""}${latest.change_pct}%`:"待补"}<br/>核验：{latest?.verification_date??"待补"}</p>
+    {latest?sourceLink(latest.source_id):<a className="evidence-link" href={definition?.url} target="_blank" rel="noopener noreferrer">官方报告入口 ↗</a>}
+    {status?.ok===false&&<p>最近一次采集未成功{latest?"，保留上次已核验值":"，数值待补"}。</p>}
    </div>
-   <InventoryPlot records={selected.records}/>
+   <InventoryPlot records={trendRecords}/>
+   <div className="inventory-definitions">{exchangeRecords.map(item=><article key={item.id}>
+    <div><button className="inventory-definition-select" type="button" aria-pressed={type===item.inventory_type} onClick={()=>setInventoryType(item.inventory_type)}><b>{label(item)}</b></button><span>{item.frequency==="weekly"?"周度":"日度"}</span></div>
+    <strong>{item.value===null?"待补":`${item.value.toLocaleString()} ${unit(item.original_unit)}`}</strong><p>{item.data_date} · {item.source_tier} 级来源<br/>{item.notes}</p>{sourceLink(item.source_id)}
+   </article>)}{!exchangeRecords.length&&<article><b>待补</b><p>尚未取得可核验的公开报告。</p></article>}</div>
   </div>
-  <p className="metal-inventory-note">{metal==="li"?"碳酸锂仓单按 1 手 = 1 吨产品展示，不等同于社会库存，也不与锂辉石精矿、氢氧化锂或锂金属吨相加。":"精炼产品库存不能替代矿石、精矿或中间品供应；仓单是特定交割状态，不与库存周报及 LME 总库存重复相加。"} 历史数据从实际采集日期积累，缺失日期不补造。</p>
+  <p className="inventory-note">{metal==="li"?"碳酸锂仓单按 1 手 = 1 吨产品展示，不等同于社会库存，也不与锂辉石精矿、氢氧化锂或锂金属吨相加。":"精炼产品库存不能替代矿石、精矿或中间品供应；仓单是特定交割状态，不与库存周报及 LME 总库存重复相加。"} 历史数据从实际采集日期积累，缺失日期不补造。</p>
   <PublicSourceDrawer source={source} onClose={()=>setSource(null)}/>
  </section>;
 }
