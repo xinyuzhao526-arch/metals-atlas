@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "test:unit": "node --test --experimental-strip-types tests/admin-ui.test.ts tests/public-data.test.ts tests/inventory-updater.test.mjs tests/news-updater.test.mjs",
+    "test:unit": "node --test --experimental-strip-types tests/admin-ui.test.ts tests/public-data.test.ts tests/inventory-updater.test.mjs tests/metal-inventories.test.mjs tests/news-updater.test.mjs",
     "build": "next build",
     "build:pages": "node scripts/build-pages.mjs",
     "update:news": "node scripts/update-news.mjs",

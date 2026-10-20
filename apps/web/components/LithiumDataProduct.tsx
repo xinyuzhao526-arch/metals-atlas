@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { MetalInventories } from "@/components/MetalInventories";
 import { useMemo, useState } from "react";
 import { ProjectMap } from "@/components/ProjectMap";
 import { MergedSupplyTimeline } from "@/components/MergedSupplyTimeline";
@@ -114,6 +115,7 @@ export function LithiumDataProduct() {
       <MergedSupplyTimeline metal="li" selectedProjectId={selectedId} onSelectProject={setSelectedId} onOpenSource={openSource} projects={lithiumProjects.map((p) => ({id:p.id,name:p.name}))} curated={lithiumEvents.map((event) => ({id:`li-${event.projectId}-${event.date}`,date:event.date,kind:event.kind,projectId:event.projectId,projectName:lithiumProjectBySlug(event.projectId)?.name ?? event.projectId,headline:event.headline,summary:event.summary,sourceId:event.sourceId}))} />
     </section>
 
+    <MetalInventories metal="li" />
     <section className="lithium-intro">
       <div><span className="lithium-overline">LI / PHASE 1A</span><h2>矿端与化学品端，<br />按阶段阅读。</h2></div>
       <p>首批覆盖澳大利亚、南美与巴西的八个关键资产。这里只展示能够回到公司官网、年报、监管文件或正式季度报告的事实；没有可靠材料的单元格保持 null，并显示“待补”。</p>

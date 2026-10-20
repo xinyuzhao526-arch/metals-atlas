@@ -59,13 +59,17 @@ export function parseShfeWeekly(html) {
   const result = { date, previousInventory: number(match[1]), previousWarrants: number(match[2]), inventory: number(match[3]), warrants: number(match[4]) };
   assertPlausible(result.inventory, `SHFE weekly inventory ${date}`, 0); return result;
 }
-export function parseLmeSnapshot(html) {
-  const description = decodeHtml(html.match(/<meta\s+name="description"\s+content="([^"]+)"/i)?.[1] ?? "");
-  const match = description.match(/As of ([A-Za-z]+ \d{1,2}, \d{4}), London Metal Exchange Copper total warehouse stocks stands at ([\d.]+)K mt\. It has (increased|decreased) by ([\d.]+)% over the past 30 days/i);
-  if (!match) throw new Error("LME public snapshot description could not be parsed");
+export function parseLmeSnapshot(html, metal = "Copper") {
+  if (!["Copper", "Nickel", "Aluminum"].includes(metal)) throw new Error("Unsupported LME metal");
+  const meta = html.match(/<meta\s+property="og:description"\s+content="([^"]+)"/i)?.[1]
+    ?? html.match(/<meta\s+name="description"\s+content="([^"]+)"/i)?.[1] ?? "";
+  const description = decodeHtml(meta);
+  const grammar = new RegExp(`As of ([A-Za-z]+ \\d{1,2}, \\d{4}), London Metal Exchange ${metal} total warehouse stocks stands at ([\\d.]+)K mt\\. It has (increased|decreased|declined) by ([\\d.]+)% over the past 30 days`, "i");
+  const match = description.match(grammar);
+  if (!match) throw new Error(`LME ${metal} public snapshot description could not be parsed`);
   const parsedDate = new Date(`${match[1]} 00:00:00 UTC`); const value = number(match[2]) * 1000;
   if (Number.isNaN(parsedDate.valueOf())) throw new Error(`Invalid LME date: ${match[1]}`); assertPlausible(value, "LME total stocks");
-  return { date: parsedDate.toISOString().slice(0, 10), value, change30dPct: round(number(match[4]) * (match[3].toLowerCase() === "decreased" ? -1 : 1), 2) };
+  return { date: parsedDate.toISOString().slice(0, 10), value, change30dPct: round(number(match[4]) * (match[3].toLowerCase() === "increased" ? 1 : -1), 2) };
 }
 
 function fact({ id, exchange, type, value, originalUnit, normalizedValue, date, sourceId, tier, frequency, changePct, changePeriod, notes, license }) {

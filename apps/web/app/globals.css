@@ -329,3 +329,16 @@ body { background:var(--mineral); color:var(--graphite); }
 .timeline-empty{padding:24px 12px;color:var(--ink-faint);font-size:12px}
 @media(max-width:1000px){.merged-timeline{display:flex;height:560px;padding:24px 0 0;margin-bottom:24px}}
 @media(max-width:700px){.merged-timeline{height:500px}.merged-timeline .stream-event{padding:12px}.timeline-filters button{min-height:36px}}
+
+/* Shared exchange inventory panels for lithium, nickel and aluminum. */
+.metal-inventory-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}
+.metal-inventory-cards.single{grid-template-columns:minmax(220px,360px)}
+.metal-inventory-cards button{display:flex;flex-direction:column;align-items:flex-start;gap:8px;min-width:0;padding:18px;text-align:left;cursor:pointer;border:1px solid var(--hairline);border-radius:6px;background:transparent;color:var(--graphite)}
+.metal-inventory-cards button.active{border-color:var(--verdigris);background:rgba(53,125,114,.06)}
+.metal-inventory-cards button:focus-visible{outline:2px solid var(--verdigris);outline-offset:3px}
+.metal-inventory-cards span{font-size:11px;font-weight:700}.metal-inventory-cards strong{font:700 30px Georgia,serif}.metal-inventory-cards small{margin-left:6px;font:400 11px sans-serif}.metal-inventory-cards time,.metal-inventory-cards em{color:var(--graphite-soft);font-size:10px;font-style:normal}
+.metal-inventory-detail{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.6fr);gap:24px;border-top:1px solid var(--hairline);padding-top:20px}
+.metal-inventory-context h3{margin:0 0 10px;font-size:14px}.metal-inventory-context p,.metal-inventory-note{color:var(--graphite-soft);font-size:11px;line-height:1.7}
+.metal-inventory-context dl{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.metal-inventory-context dt{font-size:9px;color:var(--ink-faint)}.metal-inventory-context dd{margin:4px 0;font-size:11px;font-weight:700}
+.metal-inventory-note{margin:18px 0 0;font-size:10px}.inventory-update-note{color:var(--terracotta)!important}
+@media(max-width:700px){.metal-inventories{overflow:visible}.metal-inventory-cards,.metal-inventory-cards.single{grid-template-columns:1fr}.metal-inventory-cards button{display:grid;grid-template-columns:1fr auto;padding:14px}.metal-inventory-cards strong{grid-column:2;grid-row:1/4;align-self:center;font-size:26px}.metal-inventory-detail{grid-template-columns:1fr;gap:16px}.metal-inventories .inventory-plot{min-width:0}.metal-inventory-cards em{grid-column:1}}

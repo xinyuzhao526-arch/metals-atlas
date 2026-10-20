@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-10-16",
+  "updated_at": "2026-10-20",
   "items": [
     {
       "id": "src-mmg-q2-2026",
@@ -1092,6 +1092,54 @@
       "verification_date": "2026-10-16",
       "url": "https://www.shfe.com.cn/data/tradedata/future/stockdata/weeklystock_20261016/ZH/all.html",
       "locator": "HTML 铜 / 总计：上周库存 58744 吨，本周库存 73962 吨；本周期货仓单 36386 吨",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-vaultreport-lme-copper-2026-10-19",
+      "tier": "B",
+      "source_type": "media_relay_daily_snapshot",
+      "organization": "The Vault Report（转述 LME 报告）",
+      "title": "LME Copper Warehouse Inventory 2026-10-19",
+      "publication_date": "2026-10-19",
+      "verification_date": "2026-10-20",
+      "url": "https://thevaultreport.com/charts/lme/copper",
+      "locator": "HTML meta description / latest snapshot：total warehouse stocks 232200 metric tonnes；30 日变化 -9%",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-meiyuanhuanliu-comex-copper-2026-10-15",
+      "tier": "B",
+      "source_type": "secondary_warehouse_report_republication",
+      "organization": "美元环流（转录 CME Copper Stocks 报告）",
+      "title": "COMEX 铜仓库库存 2026-10-15",
+      "publication_date": "2026-10-15",
+      "verification_date": "2026-10-20",
+      "url": "https://www.meiyuanhuanliu.com/copper_stocks/",
+      "locator": "HTML 2026-10-15 行；registered 470921、eligible 319465、total 790386 short tons。官方报告入口：https://www.cmegroup.com/delivery_reports/Copper_Stocks.xls",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-meiyuanhuanliu-comex-copper-2026-10-16",
+      "tier": "B",
+      "source_type": "secondary_warehouse_report_republication",
+      "organization": "美元环流（转录 CME Copper Stocks 报告）",
+      "title": "COMEX 铜仓库库存 2026-10-16",
+      "publication_date": "2026-10-16",
+      "verification_date": "2026-10-20",
+      "url": "https://www.meiyuanhuanliu.com/copper_stocks/",
+      "locator": "HTML 2026-10-16 行；registered 470921、eligible 320758、total 791679 short tons。官方报告入口：https://www.cmegroup.com/delivery_reports/Copper_Stocks.xls",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-shfe-daily-warrant-2026-10-20",
+      "tier": "A",
+      "source_type": "official_daily_warehouse_warrant_report",
+      "organization": "上海期货交易所",
+      "title": "上海期货交易所仓单日报 2026-10-20",
+      "publication_date": "2026-10-20",
+      "verification_date": "2026-10-20",
+      "url": "https://www.shfe.com.cn/data/tradedata/future/stockdata/dailystock_20261020/ZH/all.html",
+      "locator": "HTML 铜 / 总计：期货（已制成仓单）32967 吨，较上一报告 -2443 吨",
       "short_excerpt": null
     }
   ]
