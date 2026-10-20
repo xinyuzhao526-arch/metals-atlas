@@ -13065,9 +13065,9 @@
     },
     {
       "id": "SHFE",
-      "ok": true,
+      "ok": false,
       "checked_at": "2026-10-20",
-      "detail": "公开报告读取成功"
+      "detail": "fetch failed"
     }
   ],
   "history": {
