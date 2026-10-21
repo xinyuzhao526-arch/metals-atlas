@@ -140,7 +140,7 @@ test("metal navigation exposes copper, lithium, nickel and aluminum without inve
   assert.ok(switcher.includes('href: "/lithium"'));
   assert.ok(switcher.includes('href: "/nickel"'));
   assert.ok(switcher.includes('href: "/aluminum"'));
-  assert.match(lithium, /保持 null/);
+  assert.match(lithium, /未披露显示“待补”/);
   assert.equal(lithium.includes("<dt>已核验项目</dt><dd>0</dd>"), false);
 });
 

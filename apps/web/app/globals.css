@@ -363,11 +363,6 @@ body { background:var(--mineral); color:var(--graphite); }
 .supply-stock-records{display:flex;flex-wrap:wrap;border-top:1px solid var(--hairline);margin-top:16px}
 .supply-stock-records button{display:grid;gap:6px;min-width:160px;flex:1;text-align:left;padding:14px 18px;border:0;border-right:1px solid var(--hairline);border-bottom:1px solid var(--hairline);background:transparent;cursor:pointer}
 .supply-stock-records time,.supply-stock-records span{font-size:9px;color:var(--ink-faint)}.supply-stock-records b{font-size:13px}
-.supply-chain{padding:42px 0;border-top:1px solid var(--graphite)}
-.supply-chain>.section-heading p{max-width:540px;line-height:1.8}
-.supply-chain>div+div{display:grid;grid-template-columns:repeat(3,1fr)}
-.supply-chain article{padding:24px;border-right:1px solid var(--hairline)}.supply-chain article:first-child{padding-left:0}.supply-chain article:last-child{border-right:0}
-.supply-chain article>span{font:italic 24px Georgia,serif;color:var(--metal-accent)}.supply-chain h3{font:700 21px Georgia,"Songti SC",serif;margin:16px 0 10px}.supply-chain article p{font-size:12px;line-height:1.9;color:var(--graphite-soft);max-width:390px}
 .supply-research .matrix-toolbar{grid-template-columns:2fr 1fr 1fr 1fr auto}
 .supply-matrix-wrap .research-matrix{min-width:1530px}
 .supply-fact b,.supply-fact small{display:block}.supply-fact b{font-size:13px;line-height:1.7}
@@ -383,9 +378,26 @@ body { background:var(--mineral); color:var(--graphite); }
 .supply-detail-events{padding:32px 0}.supply-detail-events article{padding:22px 0;border-top:1px solid var(--hairline)}
 .supply-detail-events time{font-size:10px;color:var(--metal-accent)}.supply-detail-events h3{font:700 23px Georgia,"Songti SC",serif}.supply-detail-events p{font-size:12px;line-height:1.8}
 @media(min-width:1001px){.metal-hub-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:1000px){.supply-chain>div+div{grid-template-columns:1fr}.supply-chain article,.supply-chain article:first-child{padding:20px 0;border-right:0;border-bottom:1px solid var(--hairline)}.supply-research .matrix-toolbar{grid-template-columns:1fr 1fr}.supply-research .matrix-toolbar input{grid-column:1/-1}}
+@media(max-width:1000px){.supply-research .matrix-toolbar{grid-template-columns:1fr 1fr}.supply-research .matrix-toolbar input{grid-column:1/-1}}
 @media(max-width:700px){.supply-section-nav{gap:12px}.supply-section-nav button{margin-left:0}.supply-research .map-selection{display:block}.supply-research .map-selection dl{margin:16px 0;display:grid;grid-template-columns:1fr 1fr;gap:12px}.supply-matrix-wrap{display:none}.supply-mobile-matrix{display:grid;gap:12px;padding:18px 0}.supply-mobile-matrix article{padding:18px;border-top:2px solid var(--metal-accent);background:rgba(255,255,255,.25)}.supply-mobile-matrix h3{font:700 23px Georgia,serif;margin:0}.supply-mobile-matrix p{font-size:11px;line-height:1.8;color:var(--graphite-soft)}.supply-mobile-matrix dl{display:grid;grid-template-columns:1fr 1fr;gap:18px}.supply-mobile-matrix dt{font-size:9px;color:var(--ink-faint)}.supply-mobile-matrix dd{margin:8px 0 0}.supply-detail .detail-factline .supply-fact b{font-size:25px}.supply-stock-records button{min-width:135px}.supply-research .source-library header{gap:12px}}
 
 @media(max-width:700px){.supply-research .inventory-ticker{grid-template-columns:1fr;gap:9px}.supply-research .inventory-body{display:grid;min-width:0;grid-template-columns:1fr;gap:20px}.supply-research .inventory-plot{min-width:0;width:100%}.supply-research .inventory-latest{min-width:0}.supply-research .inventory-definitions{min-width:0;border-top:1px solid var(--hairline)}.supply-research .exchange-tabs{flex-wrap:wrap}.supply-research .exchange-tabs button{flex:1 1 45%;white-space:normal}.supply-detail-history .matrix-table-wrap{display:block;overflow-x:auto}.supply-mobile-matrix dl>div:last-child{grid-column:1/-1}}
 
 .supply-annual-facts>.supply-fact+.supply-fact{border-top:1px solid var(--hairline);margin-top:12px;padding-top:10px}
+
+/* Compact reading guidance before each metal's research matrix. */
+.data-scope-note{border-bottom:1px solid var(--hairline)}
+.data-scope-note>summary{display:flex;align-items:baseline;gap:12px;padding:14px 0;list-style:none;cursor:pointer;color:var(--graphite-soft);font-size:11px;line-height:1.7}
+.data-scope-note>summary::-webkit-details-marker{display:none}
+.data-scope-note>summary:focus-visible{outline:2px solid var(--verdigris);outline-offset:3px}
+.data-scope-note>summary strong{flex-shrink:0;color:var(--verdigris-dark);font-size:11px}
+.data-scope-summary{flex:1;min-width:0}
+.data-scope-toggle{flex-shrink:0;color:var(--verdigris-dark);font-size:10px;white-space:nowrap}
+.data-scope-toggle:after{content:"展开说明 ＋"}
+.data-scope-note[open] .data-scope-toggle:after{content:"收起说明 －"}
+.data-scope-content{padding:12px 0 16px;border-top:1px solid var(--hairline);color:var(--graphite-soft);font-size:11px;line-height:1.8}
+.data-scope-content p,.data-scope-stages{margin:0}
+.data-scope-stages>div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;padding:5px 0}
+.data-scope-stages dt{font-weight:700;color:var(--graphite)}
+.data-scope-stages dd{margin:0}
+@media(max-width:700px){.data-scope-note>summary{display:grid;grid-template-columns:1fr auto;gap:4px 10px;padding:12px 0}.data-scope-summary{grid-column:1/-1;grid-row:2}.data-scope-toggle{grid-column:2;grid-row:1}.data-scope-stages>div{grid-template-columns:1fr;gap:2px;padding:7px 0}}

@@ -1,4 +1,5 @@
 "use client";
+import { DataScopeNote } from "@/components/DataScopeNote";
 
 import Link from "next/link";
 import { MetalInventories } from "@/components/MetalInventories";
@@ -116,10 +117,7 @@ export function LithiumDataProduct() {
     </section>
 
     <MetalInventories metal="li" />
-    <section className="lithium-intro">
-      <div><span className="lithium-overline">LI / PHASE 1A</span><h2>矿端与化学品端，<br />按阶段阅读。</h2></div>
-      <p>首批覆盖澳大利亚、南美与巴西的八个关键资产。这里只展示能够回到公司官网、年报、监管文件或正式季度报告的事实；没有可靠材料的单元格保持 null，并显示“待补”。</p>
-    </section>
+    <DataScopeNote summary="精矿、碳酸锂、氢氧化锂与 LCE 分开列示；期间与权益分别标注，产能不代替产量。"><p>覆盖澳大利亚、南美与巴西的锂资产。各项事实保留公司公告、年报或监管材料来源；未披露显示“待补”。</p></DataScopeNote>
 
     <section className="matrix-section lithium-matrix">
       <div className="section-heading"><div><span>03 / 项目研究矩阵</span><h2>锂资产、产量与产能</h2></div><p>{filtered.length} / {lithiumProjects.length} 个项目</p></div>

@@ -1,4 +1,5 @@
 "use client";
+import { DataScopeNote } from "@/components/DataScopeNote";
 
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -182,6 +183,8 @@ export function PublicDataProduct() {
         <div className="inventory-definitions">{exchangeRecords.map((item) => <article key={item.id}><div><b>{inventoryLabel[item.inventory_type] ?? item.inventory_type}</b><span>{item.frequency}</span></div><strong>{item.value === null ? "待补" : `${item.value.toLocaleString()} ${item.original_unit}`}</strong><p>{item.notes}</p><small>{item.license_status}</small><SourceLink id={item.source_id} onOpen={setSource} /></article>)}</div>
       </div>
     </section>
+
+    <DataScopeNote summary="精矿含铜与精炼铜分阶段列示；季度、累计、全年及项目 100% / 应占口径分别阅读。"><p>同一批铜在矿山与冶炼端的披露不能重复相加；产量、指引、产能、储量与库存分别记录，缺失值显示“待补”。</p></DataScopeNote>
 
     <section className="matrix-section">
       <div className="section-heading"><div><span>04 / 项目研究矩阵</span><h2>把缺口和事实放在同一视野</h2></div><p>{filteredRows.length} / {publicData.projects.length} 个项目</p></div>
