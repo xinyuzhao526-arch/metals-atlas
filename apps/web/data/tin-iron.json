@@ -101,13 +101,13 @@
         "latitude": -21.2,
         "longitude": 14.9,
         "operator": "Andrada Mining",
-        "ownership": "项目披露；未折算母公司应占",
+        "ownership": "Andrada 经 UTMC 持有 Uis 100%（披露时）",
         "stage": "露天采矿 + 选矿",
         "product": "精矿含锡",
         "status": "operating",
-        "profile_source_id": "sn-uis-q226",
-        "profile_as_of": "2025-08-31",
-        "summary": "FY2026 第二财季截至 2025 年 8 月；精矿吨与精矿含锡吨分开。"
+        "profile_source_id": "sn-andrada-mre25",
+        "profile_as_of": "2025-02-06",
+        "summary": "FY2027 H1（2026年3月至8月）含锡产量 576 吨；FY2026 全年 1,036 吨。精矿实物量与含锡金属量分开。"
       }
     ],
     "events": [
@@ -312,16 +312,302 @@
       },
       {
         "id": "lme-stock",
-        "name": "LME · 锡库存",
-        "definition": "LME 指定仓库总库存，与 SHFE 库区和定义独立。",
+        "name": "LME · 锡库存（B级转录）",
+        "definition": "Westmetall 公开转录的 LME Tin stock，原始单位吨、精度1吨；不是 LME 官方直取。与上期所口径分别展示，不相加。",
         "unit": "t",
         "product": "精炼锡",
-        "source_url": "https://www.lme.com/Metals/Non-ferrous/LME-Tin",
-        "missing_reason": {
-          "code": "verified_series_unavailable",
-          "detail": "本批未取得可核验和再分发的报告序列"
-        },
-        "points": []
+        "source_url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash&year=2026",
+        "missing_reason": null,
+        "points": [
+          {
+            "id": "lme-stock-2026-10-01",
+            "source_code": "lme-stock",
+            "record_key": "2026-10-01",
+            "value": 4475,
+            "data_date": "2026-10-01",
+            "source_id": "sn-lme-westmetall-2026-10-01",
+            "source_publication_date": null,
+            "production_stage": "精炼锡交易所仓储",
+            "effective_date": "2026-10-01",
+            "verification_date": "2026-10-21",
+            "missing_reason": null,
+            "source_publication_date_missing_reason": {
+              "code": "publication_date_not_disclosed",
+              "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+            }
+          },
+          {
+            "id": "lme-stock-2026-10-02",
+            "source_code": "lme-stock",
+            "record_key": "2026-10-02",
+            "value": 4475,
+            "data_date": "2026-10-02",
+            "source_id": "sn-lme-westmetall-2026-10-02",
+            "source_publication_date": null,
+            "production_stage": "精炼锡交易所仓储",
+            "effective_date": "2026-10-02",
+            "verification_date": "2026-10-21",
+            "missing_reason": null,
+            "source_publication_date_missing_reason": {
+              "code": "publication_date_not_disclosed",
+              "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+            }
+          },
+          {
+            "id": "lme-stock-2026-10-05",
+            "source_code": "lme-stock",
+            "record_key": "2026-10-05",
+            "value": 4430,
+            "data_date": "2026-10-05",
+            "source_id": "sn-lme-westmetall-2026-10-05",
+            "source_publication_date": null,
+            "production_stage": "精炼锡交易所仓储",
+            "effective_date": "2026-10-05",
+            "verification_date": "2026-10-21",
+            "missing_reason": null,
+            "source_publication_date_missing_reason": {
+              "code": "publication_date_not_disclosed",
+              "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+            }
+          },
+          {
+            "id": "lme-stock-2026-10-06",
+            "source_code": "lme-stock",
+            "record_key": "2026-10-06",
+            "value": 4405,
+            "data_date": "2026-10-06",
+            "source_id": "sn-lme-westmetall-2026-10-06",
+            "source_publication_date": null,
+            "production_stage": "精炼锡交易所仓储",
+            "effective_date": "2026-10-06",
+            "verification_date": "2026-10-21",
+            "missing_reason": null,
+            "source_publication_date_missing_reason": {
+              "code": "publication_date_not_disclosed",
+              "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+            }
+          },
+          {
+            "id": "lme-stock-2026-10-07",
+            "source_code": "lme-stock",
+            "record_key": "2026-10-07",
+            "value": 4325,
+            "data_date": "2026-10-07",
+            "source_id": "sn-lme-westmetall-2026-10-07",
+            "source_publication_date": null,
+            "production_stage": "精炼锡交易所仓储",
+            "effective_date": "2026-10-07",
+            "verification_date": "2026-10-21",
+            "missing_reason": null,
+            "source_publication_date_missing_reason": {
+              "code": "publication_date_not_disclosed",
+              "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+            }
+          },
+          {
+            "id": "lme-stock-2026-10-08",
+            "source_code": "lme-stock",
+            "record_key": "2026-10-08",
+            "value": 4310,
+            "data_date": "2026-10-08",
+            "source_id": "sn-lme-westmetall-2026-10-08",
+            "source_publication_date": null,
+            "production_stage": "精炼锡交易所仓储",
+            "effective_date": "2026-10-08",
+            "verification_date": "2026-10-21",
+            "missing_reason": null,
+            "source_publication_date_missing_reason": {
+              "code": "publication_date_not_disclosed",
+              "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+            }
+          },
+          {
+            "id": "lme-stock-2026-10-09",
+            "source_code": "lme-stock",
+            "record_key": "2026-10-09",
+            "value": 4265,
+            "data_date": "2026-10-09",
+            "source_id": "sn-lme-westmetall-2026-10-09",
+            "source_publication_date": null,
+            "production_stage": "精炼锡交易所仓储",
+            "effective_date": "2026-10-09",
+            "verification_date": "2026-10-21",
+            "missing_reason": null,
+            "source_publication_date_missing_reason": {
+              "code": "publication_date_not_disclosed",
+              "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+            }
+          },
+          {
+            "id": "lme-stock-2026-10-12",
+            "source_code": "lme-stock",
+            "record_key": "2026-10-12",
+            "value": 4250,
+            "data_date": "2026-10-12",
+            "source_id": "sn-lme-westmetall-2026-10-12",
+            "source_publication_date": null,
+            "production_stage": "精炼锡交易所仓储",
+            "effective_date": "2026-10-12",
+            "verification_date": "2026-10-21",
+            "missing_reason": null,
+            "source_publication_date_missing_reason": {
+              "code": "publication_date_not_disclosed",
+              "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+            }
+          },
+          {
+            "id": "lme-stock-2026-10-13",
+            "source_code": "lme-stock",
+            "record_key": "2026-10-13",
+            "value": 4180,
+            "data_date": "2026-10-13",
+            "source_id": "sn-lme-westmetall-2026-10-13",
+            "source_publication_date": null,
+            "production_stage": "精炼锡交易所仓储",
+            "effective_date": "2026-10-13",
+            "verification_date": "2026-10-21",
+            "missing_reason": null,
+            "source_publication_date_missing_reason": {
+              "code": "publication_date_not_disclosed",
+              "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+            }
+          },
+          {
+            "id": "lme-stock-2026-10-14",
+            "source_code": "lme-stock",
+            "record_key": "2026-10-14",
+            "value": 4215,
+            "data_date": "2026-10-14",
+            "source_id": "sn-lme-westmetall-2026-10-14",
+            "source_publication_date": null,
+            "production_stage": "精炼锡交易所仓储",
+            "effective_date": "2026-10-14",
+            "verification_date": "2026-10-21",
+            "missing_reason": null,
+            "source_publication_date_missing_reason": {
+              "code": "publication_date_not_disclosed",
+              "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+            }
+          },
+          {
+            "id": "lme-stock-2026-10-15",
+            "source_code": "lme-stock",
+            "record_key": "2026-10-15",
+            "value": 4205,
+            "data_date": "2026-10-15",
+            "source_id": "sn-lme-westmetall-2026-10-15",
+            "source_publication_date": null,
+            "production_stage": "精炼锡交易所仓储",
+            "effective_date": "2026-10-15",
+            "verification_date": "2026-10-21",
+            "missing_reason": null,
+            "source_publication_date_missing_reason": {
+              "code": "publication_date_not_disclosed",
+              "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+            }
+          },
+          {
+            "id": "lme-stock-2026-10-16",
+            "source_code": "lme-stock",
+            "record_key": "2026-10-16",
+            "value": 4110,
+            "data_date": "2026-10-16",
+            "source_id": "sn-lme-westmetall-2026-10-16",
+            "source_publication_date": null,
+            "production_stage": "精炼锡交易所仓储",
+            "effective_date": "2026-10-16",
+            "verification_date": "2026-10-21",
+            "missing_reason": null,
+            "source_publication_date_missing_reason": {
+              "code": "publication_date_not_disclosed",
+              "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+            }
+          },
+          {
+            "id": "lme-stock-2026-10-19",
+            "source_code": "lme-stock",
+            "record_key": "2026-10-19",
+            "value": 4060,
+            "data_date": "2026-10-19",
+            "source_id": "sn-lme-westmetall-2026-10-19",
+            "source_publication_date": null,
+            "production_stage": "精炼锡交易所仓储",
+            "effective_date": "2026-10-19",
+            "verification_date": "2026-10-21",
+            "missing_reason": null,
+            "source_publication_date_missing_reason": {
+              "code": "publication_date_not_disclosed",
+              "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+            }
+          },
+          {
+            "id": "lme-stock-2026-10-20",
+            "source_code": "lme-stock",
+            "record_key": "2026-10-20",
+            "value": 4035,
+            "data_date": "2026-10-20",
+            "source_id": "sn-lme-westmetall-2026-10-20",
+            "source_publication_date": null,
+            "production_stage": "精炼锡交易所仓储",
+            "effective_date": "2026-10-20",
+            "verification_date": "2026-10-21",
+            "missing_reason": null,
+            "source_publication_date_missing_reason": {
+              "code": "publication_date_not_disclosed",
+              "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+            }
+          }
+        ]
+      },
+      {
+        "id": "shfe-daily-warrant",
+        "name": "SHFE · 锡仓单日报",
+        "definition": "上期所锡仓单日报总计，单位吨。独立于周库存与周报仓单，不重复相加。",
+        "unit": "t",
+        "product": "精炼锡标准仓单",
+        "source_url": "https://www.shfe.com.cn/",
+        "missing_reason": null,
+        "points": [
+          {
+            "id": "shfe-daily-warrant-2026-10-16",
+            "source_code": "shfe-daily-warrant",
+            "record_key": "2026-10-16",
+            "value": 2860,
+            "data_date": "2026-10-16",
+            "source_id": "sn-shfe-daily-2026-10-16",
+            "source_publication_date": "2026-10-16",
+            "production_stage": "精炼锡交割仓单",
+            "effective_date": "2026-10-16",
+            "verification_date": "2026-10-21",
+            "missing_reason": null
+          },
+          {
+            "id": "shfe-daily-warrant-2026-10-19",
+            "source_code": "shfe-daily-warrant",
+            "record_key": "2026-10-19",
+            "value": 2792,
+            "data_date": "2026-10-19",
+            "source_id": "sn-shfe-daily-2026-10-19",
+            "source_publication_date": "2026-10-19",
+            "production_stage": "精炼锡交割仓单",
+            "effective_date": "2026-10-19",
+            "verification_date": "2026-10-21",
+            "missing_reason": null
+          },
+          {
+            "id": "shfe-daily-warrant-2026-10-20",
+            "source_code": "shfe-daily-warrant",
+            "record_key": "2026-10-20",
+            "value": 2584,
+            "data_date": "2026-10-20",
+            "source_id": "sn-shfe-daily-2026-10-20",
+            "source_publication_date": "2026-10-20",
+            "production_stage": "精炼锡交割仓单",
+            "effective_date": "2026-10-20",
+            "verification_date": "2026-10-21",
+            "missing_reason": null
+          }
+        ]
       }
     ],
     "scope": "精矿含锡、尾矿回收含锡与精炼锡分阶段呈现；精矿产品吨不等于含锡金属吨。季度、YTD、全年和权益口径分别保留。",
@@ -411,7 +697,8 @@
         "source_publication_date": "2026-10-06",
         "verification_date": "2026-10-21",
         "missing_reason": null,
-        "note": "约数；截至 2026-10-06 的目标，不是实际产量"
+        "note": "约数；截至 2026-10-06 的目标，不是实际产量",
+        "guidance_kind": "production"
       },
       {
         "source_code": "sn-minsur-2024",
@@ -652,6 +939,513 @@
         "verification_date": "2026-10-21",
         "missing_reason": null,
         "note": ""
+      },
+      {
+        "source_code": "sn-minsur-ar25",
+        "record_key": "san-rafael-production-2025-01-01-2025-12-31-annual",
+        "project_id": "san-rafael",
+        "metric": "production",
+        "value": 26037,
+        "upper": null,
+        "unit": "t Sn",
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "type": "annual",
+          "label": "2025 全年 · 日历年",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "地下采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2025-12-31",
+        "source_id": "sn-minsur-ar25",
+        "source_publication_date": "2026-03-25",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "San Rafael/B2 为精矿含锡；Pisco 为精炼锡，不跨阶段相加。"
+      },
+      {
+        "source_code": "sn-minsur-ar25",
+        "record_key": "b2-production-2025-01-01-2025-12-31-annual",
+        "project_id": "b2",
+        "metric": "production",
+        "value": 7782,
+        "upper": null,
+        "unit": "t Sn",
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "type": "annual",
+          "label": "2025 全年 · 日历年",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "尾矿再处理 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2025-12-31",
+        "source_id": "sn-minsur-ar25",
+        "source_publication_date": "2026-03-25",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "San Rafael/B2 为精矿含锡；Pisco 为精炼锡，不跨阶段相加。"
+      },
+      {
+        "source_code": "sn-minsur-ar25",
+        "record_key": "pisco-production-2025-01-01-2025-12-31-annual",
+        "project_id": "pisco",
+        "metric": "production",
+        "value": 32981,
+        "upper": null,
+        "unit": "t Sn",
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "type": "annual",
+          "label": "2025 全年 · 日历年",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "冶炼 + 精炼",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2025-12-31",
+        "source_id": "sn-minsur-ar25",
+        "source_publication_date": "2026-03-25",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "San Rafael/B2 为精矿含锡；Pisco 为精炼锡，不跨阶段相加。"
+      },
+      {
+        "source_code": "sn-minsur-ar25",
+        "record_key": "san-rafael-reserve-2025-12-31-2025-12-31-as_of",
+        "project_id": "san-rafael",
+        "metric": "reserve",
+        "value": 9.928,
+        "upper": null,
+        "unit": "Mt 原矿",
+        "period": {
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "type": "as_of",
+          "label": "2025 年度储量披露 · 报告期末",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "地下采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2025-12-31",
+        "source_id": "sn-minsur-ar25",
+        "source_publication_date": "2026-03-25",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "Proved + Probable，含库存矿；2.24% Sn，含锡 223 kt。2025 年度披露，基准日取年度报告期末；报告未另列储量估算日。"
+      },
+      {
+        "source_code": "sn-minsur-ar25",
+        "record_key": "b2-reserve-2025-12-31-2025-12-31-as_of",
+        "project_id": "b2",
+        "metric": "reserve",
+        "value": 2.483,
+        "upper": null,
+        "unit": "Mt 尾矿",
+        "period": {
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "type": "as_of",
+          "label": "2025 年度储量披露 · 报告期末",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "尾矿再处理 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2025-12-31",
+        "source_id": "sn-minsur-ar25",
+        "source_publication_date": "2026-03-25",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "Proved + Probable；1.16% Sn，含锡 29 kt。2025 年度披露，基准日取年度报告期末；不等于回收产品吨。"
+      },
+      {
+        "source_code": "sn-minsur-ar25",
+        "record_key": "san-rafael-resource-2025-11-30-2025-11-30-as_of",
+        "project_id": "san-rafael",
+        "metric": "resource",
+        "value": 9.212,
+        "upper": null,
+        "unit": "Mt 原矿",
+        "period": {
+          "start": "2025-11-30",
+          "end": "2025-11-30",
+          "type": "as_of",
+          "label": "2025 资源量 · 测量地形截至 11-30",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "地下采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2025-11-30",
+        "source_id": "sn-minsur-ar25",
+        "source_publication_date": "2026-03-25",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "Measured + Indicated（含储量），3.23% Sn、含锡 298 kt；不可再与储量相加。"
+      },
+      {
+        "source_code": "sn-minsur-ar25",
+        "record_key": "b2-resource-2025-12-31-2025-12-31-as_of",
+        "project_id": "b2",
+        "metric": "resource",
+        "value": 2.54,
+        "upper": null,
+        "unit": "Mt 尾矿",
+        "period": {
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "type": "as_of",
+          "label": "2025 年度资源量披露 · 报告期末",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "尾矿再处理 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2025-12-31",
+        "source_id": "sn-minsur-ar25",
+        "source_publication_date": "2026-03-25",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "Measured + Indicated（含储量），1.13% Sn、含锡 29 kt。"
+      },
+      {
+        "source_code": "sn-minsur-ar25",
+        "record_key": "pisco-reserve-2025-12-31-2025-12-31-as_of",
+        "project_id": "pisco",
+        "metric": "reserve",
+        "value": null,
+        "upper": null,
+        "unit": "Mt 原矿",
+        "period": {
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "type": "as_of",
+          "label": "2025 · 炼厂适用性",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "冶炼 + 精炼",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2025-12-31",
+        "source_id": "sn-minsur-ar25",
+        "source_publication_date": "2026-03-25",
+        "verification_date": "2026-10-21",
+        "missing_reason": {
+          "code": "not_applicable",
+          "detail": "Pisco 是冶炼与精炼设施；矿产储量属于上游矿体，不适用炼厂。"
+        },
+        "note": "独立冶炼/精炼单元，不套用上游矿山储量。"
+      },
+      {
+        "source_code": "sn-minsur-h126",
+        "record_key": "san-rafael-production-2026-04-01-2026-06-30-quarter",
+        "project_id": "san-rafael",
+        "metric": "production",
+        "value": 7359,
+        "upper": null,
+        "unit": "t Sn",
+        "period": {
+          "start": "2026-04-01",
+          "end": "2026-06-30",
+          "type": "quarter",
+          "label": "2026 Q2 · 日历季度",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "地下采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "sn-minsur-h126",
+        "source_publication_date": "2026-08-14",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "精矿含锡与精炼锡分开记录，不相加。"
+      },
+      {
+        "source_code": "sn-minsur-h126",
+        "record_key": "san-rafael-production-2026-01-01-2026-06-30-ytd",
+        "project_id": "san-rafael",
+        "metric": "production",
+        "value": 13455,
+        "upper": null,
+        "unit": "t Sn",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "ytd",
+          "label": "2026 H1 · 日历年累计",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "地下采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "sn-minsur-h126",
+        "source_publication_date": "2026-08-14",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "仅上半年；不是全年产量。"
+      },
+      {
+        "source_code": "sn-minsur-h126",
+        "record_key": "b2-production-2026-04-01-2026-06-30-quarter",
+        "project_id": "b2",
+        "metric": "production",
+        "value": 2152,
+        "upper": null,
+        "unit": "t Sn",
+        "period": {
+          "start": "2026-04-01",
+          "end": "2026-06-30",
+          "type": "quarter",
+          "label": "2026 Q2 · 日历季度",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "尾矿再处理 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "sn-minsur-h126",
+        "source_publication_date": "2026-08-14",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "精矿含锡与精炼锡分开记录，不相加。"
+      },
+      {
+        "source_code": "sn-minsur-h126",
+        "record_key": "b2-production-2026-01-01-2026-06-30-ytd",
+        "project_id": "b2",
+        "metric": "production",
+        "value": 4049,
+        "upper": null,
+        "unit": "t Sn",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "ytd",
+          "label": "2026 H1 · 日历年累计",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "尾矿再处理 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "sn-minsur-h126",
+        "source_publication_date": "2026-08-14",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "仅上半年；不是全年产量。"
+      },
+      {
+        "source_code": "sn-minsur-h126",
+        "record_key": "pisco-production-2026-04-01-2026-06-30-quarter",
+        "project_id": "pisco",
+        "metric": "production",
+        "value": 7034,
+        "upper": null,
+        "unit": "t Sn",
+        "period": {
+          "start": "2026-04-01",
+          "end": "2026-06-30",
+          "type": "quarter",
+          "label": "2026 Q2 · 日历季度",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "冶炼 + 精炼",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "sn-minsur-h126",
+        "source_publication_date": "2026-08-14",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "精矿含锡与精炼锡分开记录，不相加。"
+      },
+      {
+        "source_code": "sn-minsur-h126",
+        "record_key": "pisco-production-2026-01-01-2026-06-30-ytd",
+        "project_id": "pisco",
+        "metric": "production",
+        "value": 15349,
+        "upper": null,
+        "unit": "t Sn",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "ytd",
+          "label": "2026 H1 · 日历年累计",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "冶炼 + 精炼",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "sn-minsur-h126",
+        "source_publication_date": "2026-08-14",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "仅上半年；不是全年产量。"
+      },
+      {
+        "source_code": "sn-mlx-ar25",
+        "record_key": "renison-production-2025-01-01-2025-12-31-annual",
+        "project_id": "renison",
+        "metric": "production",
+        "value": 10748,
+        "upper": null,
+        "unit": "t Sn",
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "type": "annual",
+          "label": "2025 全年 · 日历年",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "地下采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2025-12-31",
+        "source_id": "sn-mlx-ar25",
+        "source_publication_date": "2026-03-25",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "Renison 100% 产量，不是 Metals X 50% 应占。"
+      },
+      {
+        "source_code": "sn-mlx-h126",
+        "record_key": "renison-production-2026-01-01-2026-06-30-ytd",
+        "project_id": "renison",
+        "metric": "production",
+        "value": 5696,
+        "upper": null,
+        "unit": "t Sn",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "ytd",
+          "label": "2026 H1 · 日历年累计",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "地下采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "sn-mlx-h126",
+        "source_publication_date": "2026-08-28",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "Renison 100% 含锡产量；不是半年同比增长率或权益产量。"
+      },
+      {
+        "source_code": "sn-andrada-fy26",
+        "record_key": "uis-production-2025-03-01-2026-02-28-annual",
+        "project_id": "uis",
+        "metric": "production",
+        "value": 1036,
+        "upper": null,
+        "unit": "t Sn",
+        "period": {
+          "start": "2025-03-01",
+          "end": "2026-02-28",
+          "type": "annual",
+          "label": "FY2026 全年 · 3月至次年2月",
+          "calendar_basis": "fiscal"
+        },
+        "production_stage": "露天采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-02-28",
+        "source_id": "sn-andrada-fy26",
+        "source_publication_date": "2026-03-26",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "精矿含锡 1,036t；不把精矿实物量 1,740t 作为金属量。"
+      },
+      {
+        "source_code": "sn-andrada-fy26",
+        "record_key": "uis-production-2025-12-01-2026-02-28-quarter",
+        "project_id": "uis",
+        "metric": "production",
+        "value": 271,
+        "upper": null,
+        "unit": "t Sn",
+        "period": {
+          "start": "2025-12-01",
+          "end": "2026-02-28",
+          "type": "quarter",
+          "label": "FY2026 Q4 · 12月至次年2月",
+          "calendar_basis": "fiscal"
+        },
+        "production_stage": "露天采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-02-28",
+        "source_id": "sn-andrada-fy26",
+        "source_publication_date": "2026-03-26",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": ""
+      },
+      {
+        "source_code": "sn-andrada-h127",
+        "record_key": "uis-production-2026-06-01-2026-08-31-quarter",
+        "project_id": "uis",
+        "metric": "production",
+        "value": 290,
+        "upper": null,
+        "unit": "t Sn",
+        "period": {
+          "start": "2026-06-01",
+          "end": "2026-08-31",
+          "type": "quarter",
+          "label": "FY2027 Q2 · 6月至8月",
+          "calendar_basis": "fiscal"
+        },
+        "production_stage": "露天采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-08-31",
+        "source_id": "sn-andrada-h127",
+        "source_publication_date": "2026-09-28",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "含锡金属量；精矿实物量 482t 不替代此值。"
+      },
+      {
+        "source_code": "sn-andrada-h127",
+        "record_key": "uis-production-2026-03-01-2026-08-31-ytd",
+        "project_id": "uis",
+        "metric": "production",
+        "value": 576,
+        "upper": null,
+        "unit": "t Sn",
+        "period": {
+          "start": "2026-03-01",
+          "end": "2026-08-31",
+          "type": "ytd",
+          "label": "FY2027 H1 · 财年累计",
+          "calendar_basis": "fiscal"
+        },
+        "production_stage": "露天采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-08-31",
+        "source_id": "sn-andrada-h127",
+        "source_publication_date": "2026-09-28",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "3月至8月的半年累计，未年化。"
+      },
+      {
+        "source_code": "sn-andrada-mre25",
+        "record_key": "uis-resource-2024-08-30-2024-08-30-as_of",
+        "project_id": "uis",
+        "metric": "resource",
+        "value": 77.51,
+        "upper": null,
+        "unit": "Mt 原矿",
+        "period": {
+          "start": "2024-08-30",
+          "end": "2024-08-30",
+          "type": "as_of",
+          "label": "2025 MRE · 消耗扣减截至 2024-08-30",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "露天采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2024-08-30",
+        "source_id": "sn-andrada-mre25",
+        "source_publication_date": "2025-02-06",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "JORC 2012，Measured + Indicated + Inferred；0.15% Sn，含锡 118kt。含推断资源；不是储量。Measured + Indicated 单列 44.83Mt。"
       }
     ],
     "sources": [
@@ -786,6 +1580,350 @@
         "url": "https://www.shfe.com.cn/data/tradedata/future/stockdata/weeklystock_20261016/ZH/all.html",
         "locator": "锡 / 总计 / 本周库存、本周期货仓单；单位吨",
         "short_excerpt": null
+      },
+      {
+        "id": "sn-minsur-ar25",
+        "tier": "A",
+        "source_type": "company_results",
+        "organization": "Minsur",
+        "title": "Memoria Integrada 2025",
+        "publication_date": "2026-03-25",
+        "verification_date": "2026-10-21",
+        "url": "https://www.smv.gob.pe/ConsultasP8/temp/Memoria%20Integrada%202025.pdf",
+        "locator": "PDF pp.29–32, tables 4/6/7/8/9/10/11. SMV filing 25-Mar-2026: CartaA20032_4_20260325123635.pdf reports annual audited statements and Memoria.",
+        "short_excerpt": null
+      },
+      {
+        "id": "sn-minsur-h126",
+        "tier": "A",
+        "source_type": "company_results",
+        "organization": "Minsur",
+        "title": "Resultados Consolidados del Segundo Trimestre 2026",
+        "publication_date": "2026-08-14",
+        "verification_date": "2026-10-21",
+        "url": "https://www.smv.gob.pe/ConsultasP8/temp/Minsur%20Consolidado%202T26%20SPA.pdf",
+        "locator": "PDF p.2 report date; p.3 table 2, 2T26 and 6M26 columns; contained vs refined tin.",
+        "short_excerpt": null
+      },
+      {
+        "id": "sn-mlx-ar25",
+        "tier": "A",
+        "source_type": "company_results",
+        "organization": "Metals X",
+        "title": "Annual Report for the Year Ended 31 December 2025",
+        "publication_date": "2026-03-25",
+        "verification_date": "2026-10-21",
+        "url": "https://www.metalsx.com.au/wp-content/uploads/2026/03/MLX-Annual-Report-31-December-2025.pdf",
+        "locator": "PDF p.9 Renison operations: contained tin produced, 100% basis. ASX announcements index: 25-Mar-2026.",
+        "short_excerpt": null
+      },
+      {
+        "id": "sn-mlx-h126",
+        "tier": "A",
+        "source_type": "company_results",
+        "organization": "Metals X",
+        "title": "Appendix 4D and Half-Year Report — 30 June 2026",
+        "publication_date": "2026-08-28",
+        "verification_date": "2026-10-21",
+        "url": "https://www.metalsx.com.au/wp-content/uploads/2026/08/MLX-30-June-2026-Appendix-4D-and-Half-Year-Report.pdf",
+        "locator": "PDF p.7 table 1: Renison contained tin produced for the half-year, 100% basis.",
+        "short_excerpt": null
+      },
+      {
+        "id": "sn-andrada-fy26",
+        "tier": "A",
+        "source_type": "company_results",
+        "organization": "Andrada Mining",
+        "title": "Business Update for the Period Ended 28 February 2026",
+        "publication_date": "2026-03-26",
+        "verification_date": "2026-10-21",
+        "url": "https://andradamining.com/wp-content/uploads/2026/03/Business-update-for-the-period-ended-28-February-2026-.pdf",
+        "locator": "Production table: contained tin, Q4 FY2026 / FY2026; distinguish 1,740t tin concentrate.",
+        "short_excerpt": null
+      },
+      {
+        "id": "sn-andrada-h127",
+        "tier": "A",
+        "source_type": "company_regulatory_announcement",
+        "organization": "Andrada Mining",
+        "title": "Operational Performance for Period Ended 31 August 2026",
+        "publication_date": "2026-09-28",
+        "verification_date": "2026-10-21",
+        "url": "https://www.investegate.co.uk/announcement/rns/andrada-mining-limited-npv--atm/operational-performance-for-period-ended-31-aug-26/9792680",
+        "locator": "Original company regulatory announcement body, contained tin table (not the AI summary). Q2 FY2027 / H1 FY2027.",
+        "short_excerpt": null
+      },
+      {
+        "id": "sn-andrada-mre25",
+        "tier": "A",
+        "source_type": "company_results",
+        "organization": "Andrada Mining",
+        "title": "Updated Mineral Resource Estimate for the Uis Tin Mine V1V2 Pegmatite",
+        "publication_date": "2025-02-06",
+        "verification_date": "2026-10-21",
+        "url": "https://andradamining.com/wp-content/uploads/2025/02/Uis-V1V2-Mineral-Resource-Update.pdf",
+        "locator": "PDF pp.1–3: Table 1 (gross basis); depletion surface as at 30-Aug-2024; Measured + Indicated 44.83Mt, total including inferred 77.51Mt; licence 100% owned.",
+        "short_excerpt": null
+      },
+      {
+        "id": "sn-shfe-daily-2026-10-16",
+        "tier": "A",
+        "source_type": "official_exchange_daily_report",
+        "organization": "上海期货交易所",
+        "title": "锡仓单日报 — 2026-10-16",
+        "publication_date": "2026-10-16",
+        "verification_date": "2026-10-21",
+        "url": "https://www.shfe.com.cn/data/tradedata/future/stockdata/dailystock_20261016/ZH/all.html",
+        "locator": "锡 / 总计 / 期货（吨）；非周库存小计。",
+        "short_excerpt": null
+      },
+      {
+        "id": "sn-shfe-daily-2026-10-19",
+        "tier": "A",
+        "source_type": "official_exchange_daily_report",
+        "organization": "上海期货交易所",
+        "title": "锡仓单日报 — 2026-10-19",
+        "publication_date": "2026-10-19",
+        "verification_date": "2026-10-21",
+        "url": "https://www.shfe.com.cn/data/tradedata/future/stockdata/dailystock_20261019/ZH/all.html",
+        "locator": "锡 / 总计 / 期货（吨）；非周库存小计。",
+        "short_excerpt": null
+      },
+      {
+        "id": "sn-shfe-daily-2026-10-20",
+        "tier": "A",
+        "source_type": "official_exchange_daily_report",
+        "organization": "上海期货交易所",
+        "title": "锡仓单日报 — 2026-10-20",
+        "publication_date": "2026-10-20",
+        "verification_date": "2026-10-21",
+        "url": "https://www.shfe.com.cn/data/tradedata/future/stockdata/dailystock_20261020/ZH/all.html",
+        "locator": "锡 / 总计 / 期货（吨）；非周库存小计。",
+        "short_excerpt": null
+      },
+      {
+        "id": "sn-lme-westmetall-2026-10-20",
+        "tier": "B",
+        "source_type": "secondary_exchange_history_table",
+        "organization": "Westmetall（公开转录 LME 库存）",
+        "title": "LME Tin stock — 2026-10-20",
+        "publication_date": null,
+        "verification_date": "2026-10-21",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash&year=2026",
+        "locator": "2026 history table / date 20. October 2026 / fourth column LME Tin stock (tonnes). Date is the table's daily observation date; no separate first-publication timestamp is supplied.",
+        "short_excerpt": null,
+        "publication_date_missing_reason": {
+          "code": "publication_date_not_disclosed",
+          "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+        }
+      },
+      {
+        "id": "sn-lme-westmetall-2026-10-19",
+        "tier": "B",
+        "source_type": "secondary_exchange_history_table",
+        "organization": "Westmetall（公开转录 LME 库存）",
+        "title": "LME Tin stock — 2026-10-19",
+        "publication_date": null,
+        "verification_date": "2026-10-21",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash&year=2026",
+        "locator": "2026 history table / date 19. October 2026 / fourth column LME Tin stock (tonnes). Date is the table's daily observation date; no separate first-publication timestamp is supplied.",
+        "short_excerpt": null,
+        "publication_date_missing_reason": {
+          "code": "publication_date_not_disclosed",
+          "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+        }
+      },
+      {
+        "id": "sn-lme-westmetall-2026-10-16",
+        "tier": "B",
+        "source_type": "secondary_exchange_history_table",
+        "organization": "Westmetall（公开转录 LME 库存）",
+        "title": "LME Tin stock — 2026-10-16",
+        "publication_date": null,
+        "verification_date": "2026-10-21",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash&year=2026",
+        "locator": "2026 history table / date 16. October 2026 / fourth column LME Tin stock (tonnes). Date is the table's daily observation date; no separate first-publication timestamp is supplied.",
+        "short_excerpt": null,
+        "publication_date_missing_reason": {
+          "code": "publication_date_not_disclosed",
+          "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+        }
+      },
+      {
+        "id": "sn-lme-westmetall-2026-10-15",
+        "tier": "B",
+        "source_type": "secondary_exchange_history_table",
+        "organization": "Westmetall（公开转录 LME 库存）",
+        "title": "LME Tin stock — 2026-10-15",
+        "publication_date": null,
+        "verification_date": "2026-10-21",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash&year=2026",
+        "locator": "2026 history table / date 15. October 2026 / fourth column LME Tin stock (tonnes). Date is the table's daily observation date; no separate first-publication timestamp is supplied.",
+        "short_excerpt": null,
+        "publication_date_missing_reason": {
+          "code": "publication_date_not_disclosed",
+          "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+        }
+      },
+      {
+        "id": "sn-lme-westmetall-2026-10-14",
+        "tier": "B",
+        "source_type": "secondary_exchange_history_table",
+        "organization": "Westmetall（公开转录 LME 库存）",
+        "title": "LME Tin stock — 2026-10-14",
+        "publication_date": null,
+        "verification_date": "2026-10-21",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash&year=2026",
+        "locator": "2026 history table / date 14. October 2026 / fourth column LME Tin stock (tonnes). Date is the table's daily observation date; no separate first-publication timestamp is supplied.",
+        "short_excerpt": null,
+        "publication_date_missing_reason": {
+          "code": "publication_date_not_disclosed",
+          "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+        }
+      },
+      {
+        "id": "sn-lme-westmetall-2026-10-13",
+        "tier": "B",
+        "source_type": "secondary_exchange_history_table",
+        "organization": "Westmetall（公开转录 LME 库存）",
+        "title": "LME Tin stock — 2026-10-13",
+        "publication_date": null,
+        "verification_date": "2026-10-21",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash&year=2026",
+        "locator": "2026 history table / date 13. October 2026 / fourth column LME Tin stock (tonnes). Date is the table's daily observation date; no separate first-publication timestamp is supplied.",
+        "short_excerpt": null,
+        "publication_date_missing_reason": {
+          "code": "publication_date_not_disclosed",
+          "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+        }
+      },
+      {
+        "id": "sn-lme-westmetall-2026-10-12",
+        "tier": "B",
+        "source_type": "secondary_exchange_history_table",
+        "organization": "Westmetall（公开转录 LME 库存）",
+        "title": "LME Tin stock — 2026-10-12",
+        "publication_date": null,
+        "verification_date": "2026-10-21",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash&year=2026",
+        "locator": "2026 history table / date 12. October 2026 / fourth column LME Tin stock (tonnes). Date is the table's daily observation date; no separate first-publication timestamp is supplied.",
+        "short_excerpt": null,
+        "publication_date_missing_reason": {
+          "code": "publication_date_not_disclosed",
+          "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+        }
+      },
+      {
+        "id": "sn-lme-westmetall-2026-10-09",
+        "tier": "B",
+        "source_type": "secondary_exchange_history_table",
+        "organization": "Westmetall（公开转录 LME 库存）",
+        "title": "LME Tin stock — 2026-10-09",
+        "publication_date": null,
+        "verification_date": "2026-10-21",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash&year=2026",
+        "locator": "2026 history table / date 09. October 2026 / fourth column LME Tin stock (tonnes). Date is the table's daily observation date; no separate first-publication timestamp is supplied.",
+        "short_excerpt": null,
+        "publication_date_missing_reason": {
+          "code": "publication_date_not_disclosed",
+          "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+        }
+      },
+      {
+        "id": "sn-lme-westmetall-2026-10-08",
+        "tier": "B",
+        "source_type": "secondary_exchange_history_table",
+        "organization": "Westmetall（公开转录 LME 库存）",
+        "title": "LME Tin stock — 2026-10-08",
+        "publication_date": null,
+        "verification_date": "2026-10-21",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash&year=2026",
+        "locator": "2026 history table / date 08. October 2026 / fourth column LME Tin stock (tonnes). Date is the table's daily observation date; no separate first-publication timestamp is supplied.",
+        "short_excerpt": null,
+        "publication_date_missing_reason": {
+          "code": "publication_date_not_disclosed",
+          "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+        }
+      },
+      {
+        "id": "sn-lme-westmetall-2026-10-07",
+        "tier": "B",
+        "source_type": "secondary_exchange_history_table",
+        "organization": "Westmetall（公开转录 LME 库存）",
+        "title": "LME Tin stock — 2026-10-07",
+        "publication_date": null,
+        "verification_date": "2026-10-21",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash&year=2026",
+        "locator": "2026 history table / date 07. October 2026 / fourth column LME Tin stock (tonnes). Date is the table's daily observation date; no separate first-publication timestamp is supplied.",
+        "short_excerpt": null,
+        "publication_date_missing_reason": {
+          "code": "publication_date_not_disclosed",
+          "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+        }
+      },
+      {
+        "id": "sn-lme-westmetall-2026-10-06",
+        "tier": "B",
+        "source_type": "secondary_exchange_history_table",
+        "organization": "Westmetall（公开转录 LME 库存）",
+        "title": "LME Tin stock — 2026-10-06",
+        "publication_date": null,
+        "verification_date": "2026-10-21",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash&year=2026",
+        "locator": "2026 history table / date 06. October 2026 / fourth column LME Tin stock (tonnes). Date is the table's daily observation date; no separate first-publication timestamp is supplied.",
+        "short_excerpt": null,
+        "publication_date_missing_reason": {
+          "code": "publication_date_not_disclosed",
+          "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+        }
+      },
+      {
+        "id": "sn-lme-westmetall-2026-10-05",
+        "tier": "B",
+        "source_type": "secondary_exchange_history_table",
+        "organization": "Westmetall（公开转录 LME 库存）",
+        "title": "LME Tin stock — 2026-10-05",
+        "publication_date": null,
+        "verification_date": "2026-10-21",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash&year=2026",
+        "locator": "2026 history table / date 05. October 2026 / fourth column LME Tin stock (tonnes). Date is the table's daily observation date; no separate first-publication timestamp is supplied.",
+        "short_excerpt": null,
+        "publication_date_missing_reason": {
+          "code": "publication_date_not_disclosed",
+          "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+        }
+      },
+      {
+        "id": "sn-lme-westmetall-2026-10-02",
+        "tier": "B",
+        "source_type": "secondary_exchange_history_table",
+        "organization": "Westmetall（公开转录 LME 库存）",
+        "title": "LME Tin stock — 2026-10-02",
+        "publication_date": null,
+        "verification_date": "2026-10-21",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash&year=2026",
+        "locator": "2026 history table / date 02. October 2026 / fourth column LME Tin stock (tonnes). Date is the table's daily observation date; no separate first-publication timestamp is supplied.",
+        "short_excerpt": null,
+        "publication_date_missing_reason": {
+          "code": "publication_date_not_disclosed",
+          "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+        }
+      },
+      {
+        "id": "sn-lme-westmetall-2026-10-01",
+        "tier": "B",
+        "source_type": "secondary_exchange_history_table",
+        "organization": "Westmetall（公开转录 LME 库存）",
+        "title": "LME Tin stock — 2026-10-01",
+        "publication_date": null,
+        "verification_date": "2026-10-21",
+        "url": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash&year=2026",
+        "locator": "2026 history table / date 01. October 2026 / fourth column LME Tin stock (tonnes). Date is the table's daily observation date; no separate first-publication timestamp is supplied.",
+        "short_excerpt": null,
+        "publication_date_missing_reason": {
+          "code": "publication_date_not_disclosed",
+          "detail": "Westmetall 历史表仅列数据日，未披露各行首次发布日期；不以数据日或核验日冒充发布日期。"
+        }
       }
     ]
   },
@@ -891,13 +2029,13 @@
         "latitude": -21.2,
         "longitude": 119.4,
         "operator": "Fortescue",
-        "ownership": "项目 100% 发运口径",
+        "ownership": "Fortescue 69%；Formosa 31%（披露时）",
         "stage": "磁铁矿采选",
         "product": "磁铁矿精矿",
         "status": "operating",
-        "profile_source_id": "fe-fmg-2025",
-        "profile_as_of": "2025-06-30",
-        "summary": "有发运及爬坡披露，产量缺口不使用发运量替代。"
+        "profile_source_id": "fe-fmg-fy26",
+        "profile_as_of": "2026-06-30",
+        "summary": "FY2026 精矿发运 9.0Mt，FY2027 发运指引 11–14Mt（项目100%）。独立产量仍待补；处理量与发运量不代替生产。"
       },
       {
         "id": "minas-rio",
@@ -988,13 +2126,83 @@
         "headline": "WAIO 更新 FY2025 生产及后续财年安排",
         "summary": "100% 组合口径，财年与日历年不混算。",
         "sourceId": "fe-bhp-2025"
+      },
+      {
+        "id": "sishen-uhdms-q326",
+        "projectId": "sishen",
+        "date": "2026-10-20",
+        "kind": "检修与扩建",
+        "headline": "UHDMS 接入期间，Sishen 季度产量降至 4.947Mt",
+        "summary": "主 DMS 厂按计划停机接入；全年单矿约22Mt生产目标维持，接入计划在2026年底前完成。",
+        "sourceId": "fe-kumba-q326"
       }
     ],
     "stocks": [
       {
+        "id": "dce-warrant",
+        "name": "DCE · 铁矿石仓单（B级转录）",
+        "definition": "99期货公开转录的大连商品交易所铁矿石仓单日报：铁矿石小计 / 今日仓单量，保留原始单位「手」。不是交易所全部实物库存，也不是中国港口库存；未擅自折算成吨。",
+        "unit": "手",
+        "product": "铁矿石标准仓单",
+        "source_url": "https://www.99qh.com/article/%E9%93%81-1104508",
+        "missing_reason": null,
+        "points": [
+          {
+            "id": "dce-warrant-2026-10-16",
+            "source_code": "dce-warrant",
+            "record_key": "2026-10-16",
+            "value": 2300,
+            "data_date": "2026-10-16",
+            "source_id": "fe-dce-99qh-2026-10-16",
+            "source_publication_date": "2026-10-16",
+            "production_stage": "铁矿石交割仓单",
+            "effective_date": "2026-10-16",
+            "verification_date": "2026-10-21",
+            "missing_reason": null
+          },
+          {
+            "id": "dce-warrant-2026-10-19",
+            "source_code": "dce-warrant",
+            "record_key": "2026-10-19",
+            "value": 2300,
+            "data_date": "2026-10-19",
+            "source_id": "fe-dce-99qh-2026-10-19",
+            "source_publication_date": "2026-10-19",
+            "production_stage": "铁矿石交割仓单",
+            "effective_date": "2026-10-19",
+            "verification_date": "2026-10-21",
+            "missing_reason": null
+          }
+        ]
+      },
+      {
+        "id": "kumba-standalone-finished",
+        "name": "Kumba · 成品库存（公司口径）",
+        "definition": "Kumba 公司报告的成品铁矿石库存，含矿端与 Saldanha Bay 港口。2026-09-30 合计4.8Mt（矿端2.9、港口1.9）；不是中国港口或交易所库存。与 Anglo 集团口径分开，不拼接序列。",
+        "unit": "Mt 湿吨",
+        "product": "成品铁矿石",
+        "source_url": "https://www.angloamericankumba.com/media/press-releases/2026/20-10-2026",
+        "missing_reason": null,
+        "points": [
+          {
+            "id": "kumba-standalone-finished-2026-09-30",
+            "source_code": "kumba-standalone-finished",
+            "record_key": "2026-09-30",
+            "value": 4.8,
+            "data_date": "2026-09-30",
+            "source_id": "fe-kumba-q326",
+            "source_publication_date": "2026-10-20",
+            "production_stage": "成品铁矿石仓储",
+            "effective_date": "2026-09-30",
+            "verification_date": "2026-10-21",
+            "missing_reason": null
+          }
+        ]
+      },
+      {
         "id": "kumba-finished",
-        "name": "Kumba · 成品库存",
-        "definition": "矿区和 Saldanha 港成品库存合计，集团报告湿基；不是中国港口或全球库存。",
+        "name": "Kumba · 成品库存（Anglo口径）",
+        "definition": "矿区和 Saldanha 港成品库存合计，集团报告湿基；不是中国港口或全球库存。 本序列采用 Anglo American 集团报告口径；与 Kumba 单独报告可能因集团内交易而不同。",
         "unit": "Mt 湿产品",
         "product": "块矿与粉矿",
         "source_url": "https://www.angloamerican.com/~/media/Files/A/Anglo-American-Group-v9/PLC/media/press-release/releases/2026pr/q4-2025-production-report.pdf",
@@ -1025,21 +2233,34 @@
             "verification_date": "2026-10-21",
             "missing_reason": null,
             "source_publication_date": "2026-02-05"
+          },
+          {
+            "id": "kumba-finished-2026-03-31",
+            "source_code": "kumba-finished",
+            "record_key": "2026-03-31",
+            "value": 7.3,
+            "data_date": "2026-03-31",
+            "source_id": "fe-anglo-h126",
+            "source_publication_date": "2026-07-23",
+            "production_stage": "成品铁矿石仓储",
+            "effective_date": "2026-03-31",
+            "verification_date": "2026-10-21",
+            "missing_reason": null
+          },
+          {
+            "id": "kumba-finished-2026-06-30",
+            "source_code": "kumba-finished",
+            "record_key": "2026-06-30",
+            "value": 7.0,
+            "data_date": "2026-06-30",
+            "source_id": "fe-anglo-h126",
+            "source_publication_date": "2026-07-23",
+            "production_stage": "成品铁矿石仓储",
+            "effective_date": "2026-06-30",
+            "verification_date": "2026-10-21",
+            "missing_reason": null
           }
         ]
-      },
-      {
-        "id": "dce-warrant",
-        "name": "DCE · 铁矿石仓单",
-        "definition": "大商所标准仓单，须核验原始手数与合约单位，不能当作港口库存。",
-        "unit": "t 产品",
-        "product": "交割铁矿石",
-        "source_url": "https://www.dce.com.cn/",
-        "missing_reason": {
-          "code": "verified_report_unavailable",
-          "detail": "本批尚未录入经单位核验的官方仓单报告"
-        },
-        "points": []
       },
       {
         "id": "china-port",
@@ -1262,7 +2483,8 @@
         "source_publication_date": "2025-07-18",
         "verification_date": "2026-10-21",
         "missing_reason": null,
-        "note": "2025-07-18 披露，报告期已结束，不当作当前预测"
+        "note": "2025-07-18 披露，报告期已结束，不当作当前预测",
+        "guidance_kind": "production"
       },
       {
         "source_code": "fe-vale-2025",
@@ -1433,7 +2655,8 @@
         "source_publication_date": "2025-07-24",
         "verification_date": "2026-10-21",
         "missing_reason": null,
-        "note": "发运目标；非生产，非当前预测"
+        "note": "发运目标；非生产，非当前预测",
+        "guidance_kind": "shipments"
       },
       {
         "source_code": "fe-anglo-2025",
@@ -1553,7 +2776,8 @@
         "source_publication_date": "2026-02-05",
         "verification_date": "2026-10-21",
         "missing_reason": null,
-        "note": "截至 2026-02-05 的生产指引"
+        "note": "截至 2026-02-05 的生产指引",
+        "guidance_kind": "production"
       },
       {
         "source_code": "fe-anglo-reserve",
@@ -1578,6 +2802,664 @@
         "verification_date": "2026-10-21",
         "missing_reason": null,
         "note": "JORC 2012 · Proved + Probable 原矿；不是可销售球团料吨"
+      },
+      {
+        "source_code": "fe-rio-q326",
+        "record_key": "pilbara-production-2026-07-01-2026-09-30-quarter",
+        "project_id": "pilbara",
+        "metric": "production",
+        "value": 83.4,
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-07-01",
+          "end": "2026-09-30",
+          "type": "quarter",
+          "label": "2026 Q3 · 日历季度",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "采矿 + 加工",
+        "ownership_basis": "运营合计 100%",
+        "effective_date": "2026-09-30",
+        "source_id": "fe-rio-q326",
+        "source_publication_date": "2026-10-14",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "可销售产品生产量；IOC 为 Rio 应占，不以持股比例反推项目总量。"
+      },
+      {
+        "source_code": "fe-rio-q326",
+        "record_key": "pilbara-production-2026-01-01-2026-09-30-ytd",
+        "project_id": "pilbara",
+        "metric": "production",
+        "value": 245.7,
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-09-30",
+          "type": "ytd",
+          "label": "2026 9M · 日历年累计",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "采矿 + 加工",
+        "ownership_basis": "运营合计 100%",
+        "effective_date": "2026-09-30",
+        "source_id": "fe-rio-q326",
+        "source_publication_date": "2026-10-14",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "9个月累计，未年化；与项目 100% 销售指引分开。"
+      },
+      {
+        "source_code": "fe-rio-q326",
+        "record_key": "ioc-production-2026-07-01-2026-09-30-quarter",
+        "project_id": "ioc",
+        "metric": "production",
+        "value": 2.236,
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-07-01",
+          "end": "2026-09-30",
+          "type": "quarter",
+          "label": "2026 Q3 · 日历季度",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "选矿 + 球团",
+        "ownership_basis": "Rio Tinto 应占",
+        "effective_date": "2026-09-30",
+        "source_id": "fe-rio-q326",
+        "source_publication_date": "2026-10-14",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "可销售产品生产量；IOC 为 Rio 应占，不以持股比例反推项目总量。"
+      },
+      {
+        "source_code": "fe-rio-q326",
+        "record_key": "ioc-production-2026-01-01-2026-09-30-ytd",
+        "project_id": "ioc",
+        "metric": "production",
+        "value": 5.973,
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-09-30",
+          "type": "ytd",
+          "label": "2026 9M · 日历年累计",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "选矿 + 球团",
+        "ownership_basis": "Rio Tinto 应占",
+        "effective_date": "2026-09-30",
+        "source_id": "fe-rio-q326",
+        "source_publication_date": "2026-10-14",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "9个月累计，未年化；与项目 100% 销售指引分开。"
+      },
+      {
+        "source_code": "fe-rio-q326",
+        "record_key": "pilbara-guidance-2026-01-01-2026-12-31-annual-sales",
+        "project_id": "pilbara",
+        "metric": "guidance",
+        "value": 323,
+        "upper": 338,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-12-31",
+          "type": "annual",
+          "label": "2026 全年 · 销售指引（非生产）",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "采矿 + 加工",
+        "ownership_basis": "运营合计 100%",
+        "effective_date": "2026-10-14",
+        "source_id": "fe-rio-q326",
+        "source_publication_date": "2026-10-14",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "销售口径 100%；不得与生产事实或发运口径直接混用。",
+        "guidance_kind": "sales"
+      },
+      {
+        "source_code": "fe-rio-q326",
+        "record_key": "ioc-guidance-2026-01-01-2026-12-31-annual-sales",
+        "project_id": "ioc",
+        "metric": "guidance",
+        "value": 15,
+        "upper": 18,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-12-31",
+          "type": "annual",
+          "label": "2026 全年 · 销售指引（非生产）",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "选矿 + 球团",
+        "ownership_basis": "运营合计 100%",
+        "effective_date": "2026-10-14",
+        "source_id": "fe-rio-q326",
+        "source_publication_date": "2026-10-14",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "销售口径 100%；不得与生产事实或发运口径直接混用。",
+        "guidance_kind": "sales"
+      },
+      {
+        "source_code": "fe-bhp-fy26",
+        "record_key": "waio-production-2025-07-01-2026-06-30-annual",
+        "project_id": "waio",
+        "metric": "production",
+        "value": 291.2,
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "type": "annual",
+          "label": "FY2026 全年 · 7月至次年6月",
+          "calendar_basis": "fiscal"
+        },
+        "production_stage": "采矿 + 加工",
+        "ownership_basis": "运营合计 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "fe-bhp-fy26",
+        "source_publication_date": "2026-07-16",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": ""
+      },
+      {
+        "source_code": "fe-bhp-fy26",
+        "record_key": "waio-production-2026-04-01-2026-06-30-quarter",
+        "project_id": "waio",
+        "metric": "production",
+        "value": 74.8,
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-04-01",
+          "end": "2026-06-30",
+          "type": "quarter",
+          "label": "FY2026 Q4 · 4月至6月",
+          "calendar_basis": "fiscal"
+        },
+        "production_stage": "采矿 + 加工",
+        "ownership_basis": "运营合计 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "fe-bhp-fy26",
+        "source_publication_date": "2026-07-16",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": ""
+      },
+      {
+        "source_code": "fe-bhp-sep26",
+        "record_key": "waio-production-2026-07-01-2026-09-30-quarter",
+        "project_id": "waio",
+        "metric": "production",
+        "value": 71.9,
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-07-01",
+          "end": "2026-09-30",
+          "type": "quarter",
+          "label": "FY2027 Q1 · 7月至9月",
+          "calendar_basis": "fiscal"
+        },
+        "production_stage": "采矿 + 加工",
+        "ownership_basis": "运营合计 100%",
+        "effective_date": "2026-09-30",
+        "source_id": "fe-bhp-sep26",
+        "source_publication_date": "2026-10-20",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "WAIO 100%；集团铁矿石 66.5Mt 与 WAIO 应占 64.3Mt 均不是此口径。"
+      },
+      {
+        "source_code": "fe-bhp-sep26",
+        "record_key": "waio-guidance-2026-07-01-2027-06-30-annual-production",
+        "project_id": "waio",
+        "metric": "guidance",
+        "value": 286,
+        "upper": 298,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-07-01",
+          "end": "2027-06-30",
+          "type": "annual",
+          "label": "FY2027 全年 · 生产指引",
+          "calendar_basis": "fiscal"
+        },
+        "production_stage": "采矿 + 加工",
+        "ownership_basis": "运营合计 100%",
+        "effective_date": "2026-10-20",
+        "source_id": "fe-bhp-sep26",
+        "source_publication_date": "2026-10-20",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "按 100% 基础；原文应占 253–264Mt 另属权益口径。",
+        "guidance_kind": "production"
+      },
+      {
+        "source_code": "fe-vale-h126",
+        "record_key": "s11d-production-2026-04-01-2026-06-30-quarter",
+        "project_id": "s11d",
+        "metric": "production",
+        "value": 23.426,
+        "upper": null,
+        "unit": "Mt 产品",
+        "period": {
+          "start": "2026-04-01",
+          "end": "2026-06-30",
+          "type": "quarter",
+          "label": "2026 Q2 · 日历季度",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "采矿 + 加工",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "fe-vale-h126",
+        "source_publication_date": "2026-07-21",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "原文千公吨换算为百万公吨；保留项目/矿区范围。"
+      },
+      {
+        "source_code": "fe-vale-h126",
+        "record_key": "s11d-production-2026-01-01-2026-06-30-ytd",
+        "project_id": "s11d",
+        "metric": "production",
+        "value": 43.28,
+        "upper": null,
+        "unit": "Mt 产品",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "ytd",
+          "label": "2026 H1 · 日历年累计",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "采矿 + 加工",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "fe-vale-h126",
+        "source_publication_date": "2026-07-21",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "未将 Vale 集团全年指引分摊到单矿。"
+      },
+      {
+        "source_code": "fe-vale-h126",
+        "record_key": "itabira-production-2026-04-01-2026-06-30-quarter",
+        "project_id": "itabira",
+        "metric": "production",
+        "value": 6.034,
+        "upper": null,
+        "unit": "Mt 产品",
+        "period": {
+          "start": "2026-04-01",
+          "end": "2026-06-30",
+          "type": "quarter",
+          "label": "2026 Q2 · 日历季度",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "fe-vale-h126",
+        "source_publication_date": "2026-07-21",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "原文千公吨换算为百万公吨；保留项目/矿区范围。"
+      },
+      {
+        "source_code": "fe-vale-h126",
+        "record_key": "itabira-production-2026-01-01-2026-06-30-ytd",
+        "project_id": "itabira",
+        "metric": "production",
+        "value": 11.457,
+        "upper": null,
+        "unit": "Mt 产品",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "ytd",
+          "label": "2026 H1 · 日历年累计",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "fe-vale-h126",
+        "source_publication_date": "2026-07-21",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "未将 Vale 集团全年指引分摊到单矿。"
+      },
+      {
+        "source_code": "fe-fmg-fy26",
+        "record_key": "iron-bridge-shipments-2025-07-01-2026-06-30-annual",
+        "project_id": "iron-bridge",
+        "metric": "shipments",
+        "value": 9.0,
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "type": "annual",
+          "label": "FY2026 全年 · 精矿发运（非生产）",
+          "calendar_basis": "fiscal"
+        },
+        "production_stage": "磁铁矿采选",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "fe-fmg-fy26",
+        "source_publication_date": "2026-07-31",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "项目 100%；发运 9.0Mt 不替代产量或处理量。"
+      },
+      {
+        "source_code": "fe-fmg-fy26",
+        "record_key": "iron-bridge-shipments-2026-04-01-2026-06-30-quarter",
+        "project_id": "iron-bridge",
+        "metric": "shipments",
+        "value": 2.7,
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-04-01",
+          "end": "2026-06-30",
+          "type": "quarter",
+          "label": "FY2026 Q4 · 精矿发运（非生产）",
+          "calendar_basis": "fiscal"
+        },
+        "production_stage": "磁铁矿采选",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "fe-fmg-fy26",
+        "source_publication_date": "2026-07-31",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": ""
+      },
+      {
+        "source_code": "fe-fmg-fy26",
+        "record_key": "iron-bridge-production-2025-07-01-2026-06-30-annual",
+        "project_id": "iron-bridge",
+        "metric": "production",
+        "value": null,
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "type": "annual",
+          "label": "FY2026 全年 · 生产口径待补",
+          "calendar_basis": "fiscal"
+        },
+        "production_stage": "磁铁矿采选",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "fe-fmg-fy26",
+        "source_publication_date": "2026-07-31",
+        "verification_date": "2026-10-21",
+        "missing_reason": {
+          "code": "production_not_separately_recorded",
+          "detail": "报告列示处理量与发运量，本批未取得独立精矿产量；不以发运量代替产量。"
+        },
+        "note": "报告另列处理与发运，不以发运量代替产量。"
+      },
+      {
+        "source_code": "fe-fmg-fy26",
+        "record_key": "iron-bridge-guidance-2026-07-01-2027-06-30-annual-shipments",
+        "project_id": "iron-bridge",
+        "metric": "guidance",
+        "value": 11,
+        "upper": 14,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-07-01",
+          "end": "2027-06-30",
+          "type": "annual",
+          "label": "FY2027 全年 · 发运指引（非生产）",
+          "calendar_basis": "fiscal"
+        },
+        "production_stage": "磁铁矿采选",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-07-31",
+        "source_id": "fe-fmg-fy26",
+        "source_publication_date": "2026-07-31",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "Iron Bridge 100% 精矿发运目标，非生产指引。",
+        "guidance_kind": "shipments"
+      },
+      {
+        "source_code": "fe-anglo-h126",
+        "record_key": "minas-rio-production-2026-04-01-2026-06-30-quarter",
+        "project_id": "minas-rio",
+        "metric": "production",
+        "value": 6.548,
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-04-01",
+          "end": "2026-06-30",
+          "type": "quarter",
+          "label": "2026 Q2 · 日历季度",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "fe-anglo-h126",
+        "source_publication_date": "2026-07-23",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "原文千湿吨换算 Mt；资产 100%，包括非控股权益。"
+      },
+      {
+        "source_code": "fe-anglo-h126",
+        "record_key": "minas-rio-production-2026-01-01-2026-06-30-ytd",
+        "project_id": "minas-rio",
+        "metric": "production",
+        "value": 12.914,
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "ytd",
+          "label": "2026 H1 · 日历年累计",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "fe-anglo-h126",
+        "source_publication_date": "2026-07-23",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "半年累计；未与其他矿山相加。"
+      },
+      {
+        "source_code": "fe-anglo-h126",
+        "record_key": "sishen-production-2026-04-01-2026-06-30-quarter",
+        "project_id": "sishen",
+        "metric": "production",
+        "value": 6.479,
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-04-01",
+          "end": "2026-06-30",
+          "type": "quarter",
+          "label": "2026 Q2 · 日历季度",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "fe-anglo-h126",
+        "source_publication_date": "2026-07-23",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "原文千湿吨换算 Mt；资产 100%，包括非控股权益。"
+      },
+      {
+        "source_code": "fe-anglo-h126",
+        "record_key": "sishen-production-2026-01-01-2026-06-30-ytd",
+        "project_id": "sishen",
+        "metric": "production",
+        "value": 12.736,
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "ytd",
+          "label": "2026 H1 · 日历年累计",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-06-30",
+        "source_id": "fe-anglo-h126",
+        "source_publication_date": "2026-07-23",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "半年累计；未与其他矿山相加。"
+      },
+      {
+        "source_code": "fe-anglo-h126",
+        "record_key": "minas-rio-guidance-2026-01-01-2026-12-31-annual-production",
+        "project_id": "minas-rio",
+        "metric": "guidance",
+        "value": 24,
+        "upper": 26,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-12-31",
+          "type": "annual",
+          "label": "2026 全年 · 生产指引",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-07-23",
+        "source_id": "fe-anglo-h126",
+        "source_publication_date": "2026-07-23",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "半年报告维持全年目标。",
+        "guidance_kind": "production"
+      },
+      {
+        "source_code": "fe-kumba-h126",
+        "record_key": "sishen-guidance-2026-01-01-2026-12-31-annual-production",
+        "project_id": "sishen",
+        "metric": "guidance",
+        "value": 22,
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-12-31",
+          "type": "annual",
+          "label": "2026 全年 · 约数生产目标",
+          "calendar_basis": "calendar"
+        },
+        "production_stage": "采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "effective_date": "2026-07-23",
+        "source_id": "fe-kumba-h126",
+        "source_publication_date": "2026-07-23",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "note": "Sishen 单矿约 22Mt；未套用 Kumba 合计 31–33Mt。",
+        "guidance_kind": "production"
+      },
+      {
+        "source_code": "fe-kumba-q326",
+        "project_id": "sishen",
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "production_stage": "采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "source_id": "fe-kumba-q326",
+        "source_publication_date": "2026-10-20",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "metric": "production",
+        "value": 4.947,
+        "record_key": "sishen-production-2026-07-01-2026-09-30-quarter",
+        "effective_date": "2026-09-30",
+        "period": {
+          "start": "2026-07-01",
+          "end": "2026-09-30",
+          "type": "quarter",
+          "label": "2026 Q3 · 日历季度",
+          "calendar_basis": "calendar"
+        },
+        "note": "Sishen 单矿；不套用 Kumba 合计指引。"
+      },
+      {
+        "source_code": "fe-kumba-q326",
+        "project_id": "sishen",
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "production_stage": "采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "source_id": "fe-kumba-q326",
+        "source_publication_date": "2026-10-20",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "metric": "production",
+        "value": 17.683,
+        "record_key": "sishen-production-2026-01-01-2026-09-30-ytd",
+        "effective_date": "2026-09-30",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-09-30",
+          "type": "ytd",
+          "label": "2026 9M · 日历年累计",
+          "calendar_basis": "calendar"
+        },
+        "note": "Sishen 单矿；不套用 Kumba 合计指引。"
+      },
+      {
+        "source_code": "fe-kumba-q326",
+        "project_id": "sishen",
+        "upper": null,
+        "unit": "Mt 湿吨",
+        "production_stage": "采矿 + 选矿",
+        "ownership_basis": "项目 100%",
+        "source_id": "fe-kumba-q326",
+        "source_publication_date": "2026-10-20",
+        "verification_date": "2026-10-21",
+        "missing_reason": null,
+        "metric": "guidance",
+        "value": 22,
+        "record_key": "sishen-guidance-2026-01-01-2026-12-31-annual",
+        "effective_date": "2026-10-20",
+        "period": {
+          "start": "2026-01-01",
+          "end": "2026-12-31",
+          "type": "annual",
+          "label": "2026 全年 · 约数生产目标",
+          "calendar_basis": "calendar"
+        },
+        "note": "Sishen 单矿；不套用 Kumba 合计指引。",
+        "guidance_kind": "production"
       }
     ],
     "sources": [
@@ -1651,6 +3533,126 @@
         "verification_date": "2026-10-21",
         "url": "https://www.angloamerican.com/~/media/Files/A/Anglo-American-Group-v9/PLC/investors/annual-reporting/2025/anglo-american-ore-reserves-and-mineral-resources-report-2025.pdf",
         "locator": "Minas-Rio overview: total Proved + Probable ROM ore reserve; 100% at 31 December 2025",
+        "short_excerpt": null
+      },
+      {
+        "id": "fe-rio-q326",
+        "tier": "A",
+        "source_type": "company_regulatory_announcement",
+        "organization": "Rio Tinto",
+        "title": "Third Quarter Operations Review 2026",
+        "publication_date": "2026-10-14",
+        "verification_date": "2026-10-21",
+        "url": "https://www.investegate.co.uk/index.php/announcement/rns/rio-tinto--rio/third-quarter-production-results/9821323",
+        "locator": "Original company announcement: Pilbara / IOC tables and Rio Tinto operational data; guidance footnote 6. IOC operational data in 000 tonnes; 2,236 and 5,973 converted to Mt.",
+        "short_excerpt": null
+      },
+      {
+        "id": "fe-bhp-fy26",
+        "tier": "A",
+        "source_type": "company_results",
+        "organization": "BHP",
+        "title": "Operational Review for the Year Ended 30 June 2026",
+        "publication_date": "2026-07-16",
+        "verification_date": "2026-10-21",
+        "url": "https://www.bhp.com/-/media/documents/media/reports-and-presentations/2026/260716_bhpoperationalreviewfortheyearended30june2026.pdf",
+        "locator": "WAIO production summary, 100% basis: FY2026 291.2Mt / Q4 FY2026 74.8Mt. Financial year Jul-Jun.",
+        "short_excerpt": null
+      },
+      {
+        "id": "fe-bhp-sep26",
+        "tier": "A",
+        "source_type": "company_regulatory_announcement",
+        "organization": "BHP",
+        "title": "Operational Review for the Quarter Ended 30 September 2026",
+        "publication_date": "2026-10-20",
+        "verification_date": "2026-10-21",
+        "url": "https://br.advfn.com/noticias/LSEG_RNS/2026/artigo/99521322",
+        "locator": "Original LSEG RNS announcement: Production summary / WAIO 100% basis (71.9Mt); FY2027 286–298Mt. Do not use group iron ore 66.5Mt.",
+        "short_excerpt": null
+      },
+      {
+        "id": "fe-vale-h126",
+        "tier": "A",
+        "source_type": "company_regulatory_filing",
+        "organization": "Vale",
+        "title": "Vale's Production and Sales in 2Q26",
+        "publication_date": "2026-07-21",
+        "verification_date": "2026-10-21",
+        "url": "https://www.sec.gov/Archives/edgar/data/917851/000129281426003838/vale20260721_6k1.htm",
+        "locator": "Report dated 21-Jul-2026, Annex 1 production table: S11D / Itabira (Cauê, Conceição and others), 2Q26 and 6M26 in 000 metric tons; converted to Mt.",
+        "short_excerpt": null
+      },
+      {
+        "id": "fe-fmg-fy26",
+        "tier": "A",
+        "source_type": "company_regulatory_announcement",
+        "organization": "Fortescue",
+        "title": "June 2026 Quarterly Production Report",
+        "publication_date": "2026-07-31",
+        "verification_date": "2026-10-21",
+        "url": "https://newswire.iguana2.com/2fee0049d633f441/announcements/fmg.asx/6A1336475/FMG_June_2026_Quarterly_Production_Report.pdf",
+        "locator": "PDF pp.3–4: Iron Bridge ore shipped / 100% basis; FY2027 shipment guidance 11–14Mt. Ore processed is not a production measure.",
+        "short_excerpt": null
+      },
+      {
+        "id": "fe-anglo-h126",
+        "tier": "A",
+        "source_type": "company_results",
+        "organization": "Anglo American",
+        "title": "Q2 2026 Production Report",
+        "publication_date": "2026-07-23",
+        "verification_date": "2026-10-21",
+        "url": "https://www.angloamerican.com/~/media/Files/A/Anglo-American-Group-v9/PLC/media/press-release/releases/2026pr/q2-2026-production-report.pdf",
+        "locator": "PDF p.8: Minas-Rio and Kumba/Sishen production, wet tonnes; Kumba finished stock (Q1/Q2 2026). Figures on 100% basis.",
+        "short_excerpt": null
+      },
+      {
+        "id": "fe-kumba-h126",
+        "tier": "A",
+        "source_type": "company_results",
+        "organization": "Kumba Iron Ore",
+        "title": "Kumba Interim Results for the Six Months Ended 30 June 2026",
+        "publication_date": "2026-07-23",
+        "verification_date": "2026-10-21",
+        "url": "https://www.angloamericankumba.com/media/press-releases/2026/23-07-2026",
+        "locator": "Production guidance: Sishen c.22Mt, Kolomela c.10Mt. Production on 100% basis including non-controlling interests. Finished stocks 7Mt.",
+        "short_excerpt": null
+      },
+      {
+        "id": "fe-dce-99qh-2026-10-16",
+        "tier": "B",
+        "source_type": "secondary_exchange_report",
+        "organization": "99期货（公开转录大连商品交易所仓单日报）",
+        "title": "大连商品交易所铁矿石仓单日报 — 2026-10-16",
+        "publication_date": "2026-10-16",
+        "verification_date": "2026-10-21",
+        "url": "https://www.99qh.com/article/%E9%93%81-1103821",
+        "locator": "铁矿石小计 / 今日仓单量（手）= 2,300。公开转载数据，未取得交易所原站逐期文件；不标为官方直取。",
+        "short_excerpt": null
+      },
+      {
+        "id": "fe-dce-99qh-2026-10-19",
+        "tier": "B",
+        "source_type": "secondary_exchange_report",
+        "organization": "99期货（公开转录大连商品交易所仓单日报）",
+        "title": "大连商品交易所铁矿石仓单日报 — 2026-10-19",
+        "publication_date": "2026-10-19",
+        "verification_date": "2026-10-21",
+        "url": "https://www.99qh.com/article/%E9%93%81-1104508",
+        "locator": "铁矿石小计 / 今日仓单量（手）= 2,300。公开转载数据，未取得交易所原站逐期文件；不标为官方直取。",
+        "short_excerpt": null
+      },
+      {
+        "id": "fe-kumba-q326",
+        "tier": "A",
+        "source_type": "company_results",
+        "organization": "Kumba Iron Ore",
+        "title": "Production and Sales Report for the Third Quarter Ended 30 September 2026",
+        "publication_date": "2026-10-20",
+        "verification_date": "2026-10-21",
+        "url": "https://www.angloamericankumba.com/media/press-releases/2026/20-10-2026",
+        "locator": "Production by mine / Sishen: Q3 4,947kt, YTD 17,683kt. Guidance: c.22Mt. Finished stocks: Kumba standalone 4.8Mt, not Anglo group reporting perimeter.",
         "short_excerpt": null
       }
     ]
