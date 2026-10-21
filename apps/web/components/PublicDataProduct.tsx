@@ -196,7 +196,7 @@ export function PublicDataProduct() {
         <select aria-label="排序" value={sort} onChange={(e) => setSort(e.target.value)}><option value="updated_desc">最新更新时间</option><option value="production_desc">产量</option><option value="country_asc">国家</option><option value="name_asc">项目名</option></select>
         <button type="button" onClick={exportMatrix}>导出当前 CSV</button>
       </div>
-      <div className="matrix-table-wrap"><table className="research-matrix"><thead><tr><th>项目</th><th>国家</th><th>运营方</th><th>最新季度产量</th><th>年度累计 / 全年</th><th>当前指引</th><th>指引状态</th><th>储量</th><th>最新事件</th><th>数据日期</th><th>核验</th></tr></thead><tbody>{filteredRows.map(({ project, quarter, annual, guidance, reserve, event, latestDate, completeness }) => <tr key={project.id} onClick={() => router.push(`/projects/${project.slug}`)}>
+      <div className="matrix-table-wrap"><table className="research-matrix"><thead><tr><th>项目</th><th>国家</th><th>运营方</th><th>最新季度产量</th><th>年度累计 / 全年</th><th>当前指引</th><th>指引状态</th><th>储量</th><th>最新事件</th><th>数据日期</th><th>核验</th></tr></thead><tbody>{filteredRows.map(({ project, quarter, annual, guidance, reserve, event, latestDate, completeness }) => <tr key={project.id} data-map-project={project.id} tabIndex={-1} onClick={() => router.push(`/projects/${project.slug}`)}>
         <td><b>{project.name}</b><span>{statusLabel[project.status]}</span></td><td>{project.country.name_zh}</td><td><FactValue value={project.operator} reason={project.operator_missing_reason} /></td>
         <td><FactValue value={quarter?.value ?? null} suffix={quarter?.unit} /><small>{quarter?.period.label ?? "季度产量尚无已核验来源"}</small>{quarter && <SourceLink id={quarter.source_id} onOpen={setSource} />}</td>
         <td><FactValue value={annual?.value ?? null} suffix={annual?.unit} /><small>{annual?.period.label ?? "年度产量尚无已核验来源"}</small>{annual && <SourceLink id={annual.source_id} onOpen={setSource} />}</td>
@@ -205,7 +205,7 @@ export function PublicDataProduct() {
         <td>{reserve ? <><b>{reserve.ore_tonnage} {reserve.ore_tonnage_unit} @ {reserve.grade_pct}% Cu</b><small>{reserve.classification}</small><SourceLink id={reserve.source_id} onOpen={setSource} /></> : <span className="missing-value">待补 / 储量未录入</span>}</td>
         <td>{event?.headline_zh ?? "待补 / 无近期已核验事件"}{event && <SourceLink id={event.source_id} onOpen={setSource} />}</td><td>{latestDate}</td><td><span className={`coverage-dot ${completeness.production ? "verified" : ""}`}>{completeness.production ? "事实已核验" : "主数据已录入"}</span></td>
       </tr>)}</tbody></table></div>
-      <div className="matrix-cards">{filteredRows.map(({ project, quarter, guidance, reserve, event }) => <article key={project.id} onClick={() => router.push(`/projects/${project.slug}`)}>
+      <div className="matrix-cards">{filteredRows.map(({ project, quarter, guidance, reserve, event }) => <article key={project.id} data-map-project={project.id} tabIndex={-1} onClick={() => router.push(`/projects/${project.slug}`)}>
         <header><div><b>{project.name}</b><span>{project.country.name_zh}</span></div><em>{statusLabel[project.status]}</em></header>
         <p>{project.operator ?? formatMissing(project.operator_missing_reason)}</p>
         <dl><div><dt>季度产量</dt><dd><FactValue value={quarter?.value ?? null} suffix={quarter?.unit} /></dd></div><div><dt>指引</dt><dd>{guidance ? `${guidance.low}–${guidance.high} ${guidance.unit}` : "待补"}</dd></div><div><dt>储量</dt><dd>{reserve ? `${reserve.ore_tonnage} ${reserve.ore_tonnage_unit}` : "待补"}</dd></div></dl>

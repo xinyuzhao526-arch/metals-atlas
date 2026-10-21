@@ -2,6 +2,7 @@
 
 import Script from "next/script";
 import { useCallback, useEffect, useRef } from "react";
+import { focusProjectRecord } from "@/lib/project-navigation";
 import type { PublicProject } from "@/lib/public-data";
 
 type LeafletMap = {
@@ -74,7 +75,13 @@ export function ProjectMap({
         opacity: 1,
       }).addTo(layer)
         .bindTooltip(`<strong>${project.name}</strong><br>${project.country.name_zh} · ${project.location.precision === "approximate" ? "近似定位" : "已定位"}`, { direction: "top" })
-        .on("click", () => onSelect(project.id));
+        .on("click", () => {
+          onSelect(project.id);
+          requestAnimationFrame(() => {
+            const page = elementRef.current?.closest("main");
+            if (page) focusProjectRecord(page, project.id, window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+          });
+        });
     });
     if (selectedProjectId) {
       const selected = projects.find((item) => item.id === selectedProjectId);

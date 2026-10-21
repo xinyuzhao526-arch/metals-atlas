@@ -401,3 +401,9 @@ body { background:var(--mineral); color:var(--graphite); }
 .data-scope-stages dt{font-weight:700;color:var(--graphite)}
 .data-scope-stages dd{margin:0}
 @media(max-width:700px){.data-scope-note>summary{display:grid;grid-template-columns:1fr auto;gap:4px 10px;padding:12px 0}.data-scope-summary{grid-column:1/-1;grid-row:2}.data-scope-toggle{grid-column:2;grid-row:1}.data-scope-stages>div{grid-template-columns:1fr;gap:2px;padding:7px 0}}
+
+/* Map selections point to the visible project record on each screen size. */
+[data-map-project]{scroll-margin-block:96px}
+[data-map-project]:focus{outline:2px solid var(--verdigris);outline-offset:-2px}
+.research-matrix tr[data-map-highlight]>td,article[data-map-highlight]{background:rgba(53,125,114,.13)}
+.research-matrix tr[data-map-highlight]>td:first-child,article[data-map-highlight]{box-shadow:inset 3px 0 0 var(--verdigris)}
