@@ -1,5 +1,5 @@
 "use client";
-import {useEffect,useMemo,useRef,useState,type CSSProperties} from "react";
+import {useMemo,useState} from "react";
 import newsJson from "@/data/news.json";
 
 type NewsItem={id:string;metal_id:string;title:string;organization:string;material_url:string;publication_date:string;source_level?:"media";event_tag?:string};
@@ -7,21 +7,6 @@ export type CuratedTimelineEvent={id:string;date:string;kind:string;projectId:st
 type Props={metal:"cu"|"li"|"ni"|"al"|"sn"|"fe";curated:CuratedTimelineEvent[];projects:{id:string;name:string;aliases?:string[]}[];selectedProjectId?:string|null;onSelectProject?:(id:string)=>void;onOpenSource?:(id:string)=>void};
 
 export function MergedSupplyTimeline({metal,curated,projects,selectedProjectId,onSelectProject,onOpenSource}:Props){
- const panelRef=useRef<HTMLElement>(null);
- const[panelHeight,setPanelHeight]=useState<number>();
- useEffect(()=>{
-  const panel=panelRef.current;
-  const workspace=panel?.parentElement?.querySelector<HTMLElement>(".map-workspace");
-  const map=workspace?.querySelector<HTMLElement>(".terminal-map");
-  if(!panel||!workspace||!map)return;
-  const syncHeight=()=>setPanelHeight(Math.ceil(map.getBoundingClientRect().bottom-workspace.getBoundingClientRect().top));
-  const observer=new ResizeObserver(syncHeight);
-  observer.observe(workspace);
-  observer.observe(map);
-  window.addEventListener("resize",syncHeight);
-  syncHeight();
-  return()=>{observer.disconnect();window.removeEventListener("resize",syncHeight)};
- },[]);
  const[filter,setFilter]=useState<"all"|"verified"|"media">("all");
  const news=(newsJson.items as NewsItem[]).filter(item=>item.metal_id===`metal-${metal}`);
  const merged=useMemo(()=>{
@@ -30,5 +15,5 @@ export function MergedSupplyTimeline({metal,curated,projects,selectedProjectId,o
   return [...verified,...media].sort((a,b)=>b.date.localeCompare(a.date));
  },[curated,news,projects]);
  const shown=merged.filter(item=>filter==="all"||item.level===filter);
- return <aside ref={panelRef} className="event-stream merged-timeline" style={{"--timeline-height":panelHeight?`${panelHeight}px`:undefined} as CSSProperties}><div className="section-heading"><div><span>02 / 供给动态</span><h2>统一时间流</h2></div><p>官方事件与每日快讯 · 日期倒序</p></div><div className="timeline-filters" aria-label="时间流筛选">{([['all','全部'],['verified','已核验'],['media','媒体快讯']] as const).map(([key,label])=><button key={key} type="button" className={filter===key?"active":""} onClick={()=>setFilter(key)}>{label}<span>{merged.filter(x=>key==='all'||x.level===key).length}</span></button>)}</div><p className="timeline-scroll-hint">最新动态优先 · 向下滚动浏览更多</p><div key={filter} className="event-stream-list" tabIndex={0} role="region" aria-label="供给动态，可上下滚动">{shown.length===0&&<p className="timeline-empty">暂无此类动态</p>}{shown.map(item=><article key={`${item.level}-${item.id}`} className={`stream-event ${item.level} ${item.projectId&&selectedProjectId===item.projectId?"active":""}`} onClick={()=>item.projectId&&onSelectProject?.(item.projectId)}><time>{item.date}</time><div className="event-kind">{item.kind}</div><div className={`source-level ${item.level}`}>{item.level==="verified"?"A 级 · 已核验":"媒体 · 待回溯"}</div><h3>{item.projectName}</h3><h4>{item.headline}</h4><p>{item.summary}</p>{item.level==="verified"&&item.sourceId&&<button className="evidence-link" type="button" onClick={e=>{e.stopPropagation();onOpenSource?.(item.sourceId!)}}>官方来源 ↗</button>}{item.level==="media"&&item.url&&<a className="evidence-link" href={item.url} target="_blank" rel="noopener noreferrer" onClick={e=>e.stopPropagation()}>媒体原文 ↗</a>}</article>)}</div></aside>;
+ return <aside className="event-stream merged-timeline"><div className="section-heading"><div><span>02 / 供给动态</span><h2>统一时间流</h2></div><p>官方事件与每日快讯 · 日期倒序</p></div><div className="timeline-filters" aria-label="时间流筛选">{([['all','全部'],['verified','已核验'],['media','媒体快讯']] as const).map(([key,label])=><button key={key} type="button" className={filter===key?"active":""} onClick={()=>setFilter(key)}>{label}<span>{merged.filter(x=>key==='all'||x.level===key).length}</span></button>)}</div><p className="timeline-scroll-hint">最新动态优先 · 向下滚动浏览更多</p><div key={filter} className="event-stream-list" tabIndex={0} role="region" aria-label="供给动态，可上下滚动">{shown.length===0&&<p className="timeline-empty">暂无此类动态</p>}{shown.map(item=><article key={`${item.level}-${item.id}`} className={`stream-event ${item.level} ${item.projectId&&selectedProjectId===item.projectId?"active":""}`} onClick={()=>item.projectId&&onSelectProject?.(item.projectId)}><time>{item.date}</time><div className="event-kind">{item.kind}</div><div className={`source-level ${item.level}`}>{item.level==="verified"?"A 级 · 已核验":"媒体 · 待回溯"}</div><h3>{item.projectName}</h3><h4>{item.headline}</h4><p>{item.summary}</p>{item.level==="verified"&&item.sourceId&&<button className="evidence-link" type="button" onClick={e=>{e.stopPropagation();onOpenSource?.(item.sourceId!)}}>官方来源 ↗</button>}{item.level==="media"&&item.url&&<a className="evidence-link" href={item.url} target="_blank" rel="noopener noreferrer" onClick={e=>e.stopPropagation()}>媒体原文 ↗</a>}</article>)}</div></aside>;
 }

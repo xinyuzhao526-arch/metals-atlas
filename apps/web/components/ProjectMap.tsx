@@ -90,7 +90,7 @@ export function ProjectMap({
   const initialize = useCallback(() => {
     if (!window.L || !elementRef.current) return;
     if (!mapRef.current) {
-      mapRef.current = window.L.map(elementRef.current, { scrollWheelZoom: false, zoomControl: true });
+      mapRef.current = window.L.map(elementRef.current, { scrollWheelZoom: true, zoomControl: true });
       window.L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution: "© OpenStreetMap contributors",
         maxZoom: 18,
@@ -104,7 +104,7 @@ export function ProjectMap({
 
   return <>
     <Script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" strategy="afterInteractive" onReady={initialize} />
-    <div ref={elementRef} className="terminal-map" aria-label={`${ariaLabel}，共 ${projects.length} 个筛选结果`}>
+    <div ref={elementRef} className="terminal-map" aria-label={`${ariaLabel}，共 ${projects.length} 个筛选结果，鼠标滚轮缩放，拖动平移`}>
       <div className="map-loading">正在加载公开底图…</div>
     </div>
   </>;

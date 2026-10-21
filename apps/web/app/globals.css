@@ -315,8 +315,8 @@ body { background:var(--mineral); color:var(--graphite); }
 @media(max-width:700px){.official-news-grid{grid-template-columns:1fr}.official-news-grid>a,.official-news-grid>a:nth-child(3n+2),.official-news-grid>a:nth-child(3n+3){min-height:0;padding:16px 0;border-right:0}.official-news-empty{display:grid;gap:8px}}
 .timeline-filters{display:flex;gap:4px;padding:12px 0;border-bottom:1px solid var(--hairline)}.timeline-filters button{display:flex;gap:6px;align-items:center;padding:6px 9px;border:1px solid var(--hairline);background:transparent;color:var(--graphite-soft);font-size:9px;cursor:pointer}.timeline-filters button.active{background:var(--graphite);color:var(--paper-warm);border-color:var(--graphite)}.timeline-filters span{font-size:8px;opacity:.7}.merged-timeline .stream-event{position:relative}.source-level{position:absolute;top:12px;right:12px;padding:3px 5px;border:1px solid var(--hairline);font-size:7px;font-weight:800;letter-spacing:.06em}.source-level.verified{color:var(--verdigris-dark);border-color:var(--verdigris)}.source-level.media{color:#765229;border-color:#b48b5a}.stream-event.media{background:rgba(180,139,90,.055)}.merged-timeline .evidence-link{display:inline-block;margin-top:8px}
 
-/* Keep the news viewport aligned with the map, independent of feed length. */
-.merged-timeline{height:var(--timeline-height,680px);min-height:0;overflow:hidden;box-sizing:border-box;padding-bottom:0}
+/* The map column sets the desktop row height; the news list fills it and scrolls independently. */
+.merged-timeline{contain:size;align-self:stretch;height:auto;min-height:0;overflow:hidden;box-sizing:border-box;padding-bottom:0}
 .merged-timeline>.section-heading,.merged-timeline>.timeline-filters{flex-shrink:0}
 .timeline-scroll-hint{flex-shrink:0;margin:9px 0;color:var(--ink-faint);font-size:10px}
 .merged-timeline .event-stream-list{display:block;flex:1;min-height:0;overflow-y:auto;overscroll-behavior-y:contain;scrollbar-gutter:stable;scrollbar-width:thin;scrollbar-color:var(--hairline) transparent;padding-right:8px}
@@ -327,7 +327,7 @@ body { background:var(--mineral); color:var(--graphite); }
 .merged-timeline .stream-event p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;margin:6px 0;font-size:10px;line-height:1.6}
 .merged-timeline .stream-event time{display:block;padding-right:96px}
 .timeline-empty{padding:24px 12px;color:var(--ink-faint);font-size:12px}
-@media(max-width:1000px){.merged-timeline{display:flex;height:560px;padding:24px 0 0;margin-bottom:24px}}
+@media(max-width:1000px){.merged-timeline{contain:none;display:flex;height:560px;padding:24px 0 0;margin-bottom:24px}}
 @media(max-width:700px){.merged-timeline{height:500px}.merged-timeline .stream-event{padding:12px}.timeline-filters button{min-height:36px}}
 
 /* Inventory definitions share the copper terminal layout across metals. */
