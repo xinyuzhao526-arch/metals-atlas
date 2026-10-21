@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "updated_at": "2026-10-21",
-  "last_checked_at": "2026-10-21T06:36:10.744Z",
+  "last_checked_at": "2026-10-21T14:33:16.356Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -45,6 +45,7 @@
     "https://www.mineralresources.com.au/news/company-updates/q4-fy26-quarterly-activity-report",
     "https://www.mining-technology.com/analysis/iron-ore-bucks-hormuz-disruption-as-supply-disputes-shift-to-china",
     "https://www.mining-technology.com/news/arrow-to-acquire-turee-creek-project",
+    "https://www.mining-technology.com/news/bhp-decline-q1-fy27-copper",
     "https://www.mining-technology.com/news/bhp-kambalda-nickel-gold-fields",
     "https://www.mining-technology.com/news/bhp-suspends-activities-escondida-mine",
     "https://www.mining-technology.com/news/blue-moon-to-acquire-turner-deposit",
@@ -55,6 +56,7 @@
     "https://www.mining-technology.com/news/elevra-supply-spodumene-lg-energy",
     "https://www.mining-technology.com/news/fortescue-copper-cleaned-arsenic-removal",
     "https://www.mining-technology.com/news/global-lithium-237m-sid-titan-australia-mining",
+    "https://www.mining-technology.com/news/mitsubishi-approval-copper-world-arizona",
     "https://www.mining-technology.com/news/nth-cycle-1bn-recycled-minerals-supply-glencore",
     "https://www.mining-technology.com/news/talisman-acquires-licences-tirzzit-project",
     "https://www.mining-technology.com/news/trafigura-energyx-10-year-lithium-contract",
@@ -87,6 +89,50 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-second-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-3dccbd9706163d50",
+      "metal_id": "metal-cu",
+      "title": "Mitsubishi grants approval for Copper World mine in Arizona",
+      "organization": "Mining Technology",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "政策与供给",
+      "material_url": "https://www.mining-technology.com/news/mitsubishi-approval-copper-world-arizona",
+      "source_listing_url": "https://www.mining-technology.com/feed/",
+      "publication_date": "2026-10-21",
+      "source_publication_date": "2026-10-21",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-21",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-21T14:33:16.356Z"
+    },
+    {
+      "id": "news-cu-6b837d027cae0753",
+      "metal_id": "metal-cu",
+      "title": "BHP reports decline in Q1 FY27 copper production",
+      "organization": "Mining Technology",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "产量与指引",
+      "material_url": "https://www.mining-technology.com/news/bhp-decline-q1-fy27-copper",
+      "source_listing_url": "https://www.mining-technology.com/feed/",
+      "publication_date": "2026-10-21",
+      "source_publication_date": "2026-10-21",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-21",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-21T14:33:16.356Z"
+    },
     {
       "id": "news-cu-e40a7b3a35df3d7e",
       "metal_id": "metal-cu",
