@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-10-20",
-  "last_checked_at": "2026-10-20T05:36:22.343Z",
+  "updated_at": "2026-10-21",
+  "last_checked_at": "2026-10-21T05:36:45.475Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances/",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields/",
@@ -9,6 +9,7 @@
     "https://im-mining.com/2026/10/09/fls-wins-another-copper-mine-order-in-chile-for-grinding-tech-including-hpgr-ball-mill/",
     "https://im-mining.com/2026/10/16/pls-greenlights-p2000-project-as-it-aims-for-2-mt-y-of-spodumene-production-capacity/",
     "https://im-mining.com/2026/10/19/fortescues-world-first-arsenic-removal-tech-unlocks-new-copper-processing-potential/",
+    "https://im-mining.com/2026/10/20/joest-australia-bags-largest-order-in-its-history-for-pilgangoora-expansion/",
     "https://ivanhoemines.com/operations/kamoa-kakula-mining-complex/",
     "https://www.antofagasta.co.uk/investors/annual-report-2025/",
     "https://www.antofagasta.co.uk/investors/annual-report-library/",
@@ -106,6 +107,7 @@
     "https://www.mining.com/eu-puts-kghms-2-4b-copper-projects-on-fast-track/",
     "https://www.mining.com/exiro-led-group-takes-control-of-vales-manitoba-nickel-complex/",
     "https://www.mining.com/fatal-accident-reported-at-bhps-escondida-mine/",
+    "https://www.mining.com/glencore-clears-key-hurdle-for-peru-copper-expansion/",
     "https://www.mining.com/tech-giants-come-knocking-for-a-piece-of-anglo-american-as-copper-scarcity-bites-wanblad-tells-ft/",
     "https://www.mining.com/westwin-elements-traxys-eye-3-9-billion-22-year-nickel-offtake-extension/",
     "https://www.mining.com/worker-dies-in-accident-at-codelcos-radomiro-tomic/",
@@ -129,6 +131,34 @@
     "https://www.northernminer.com/news/westwin-to-build-502m-nickel-refinery-in-mississippi/1003895478/"
   ],
   "items": [
+    {
+      "id": "news-li-d00c1530fe8b4681",
+      "metal_id": "metal-li",
+      "title": "JOEST Australia bags largest order in its history for Pilgangoora expansion",
+      "organization": "International Mining",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "扩产投产",
+      "material_url": "https://im-mining.com/2026/10/20/joest-australia-bags-largest-order-in-its-history-for-pilgangoora-expansion/",
+      "publication_date": "2026-10-20",
+      "effective_date": "2026-10-20",
+      "verification_date": "2026-10-21",
+      "discovered_at": "2026-10-21T05:36:45.468Z"
+    },
+    {
+      "id": "news-cu-ec336b26990df808",
+      "metal_id": "metal-cu",
+      "title": "Glencore clears key hurdle for Peru copper expansion",
+      "organization": "mining.com",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "扩产",
+      "material_url": "https://www.mining.com/glencore-clears-key-hurdle-for-peru-copper-expansion/",
+      "publication_date": "2026-10-20",
+      "effective_date": "2026-10-20",
+      "verification_date": "2026-10-21",
+      "discovered_at": "2026-10-21T05:36:45.468Z"
+    },
     {
       "id": "news-cu-d97aead96be5e778",
       "metal_id": "metal-cu",
