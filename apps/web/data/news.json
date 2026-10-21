@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "updated_at": "2026-10-21",
-  "last_checked_at": "2026-10-21T06:31:16.988Z",
+  "last_checked_at": "2026-10-21T06:36:10.744Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -29,6 +29,7 @@
     "https://www.hydro.com/en/global/media/news/2026/alunorte-ramps-up-alumina-production",
     "https://www.hydro.com/en/global/media/news/2026/alunorte-reduces-alumina-production-on-natural-gas-supply-disruptions",
     "https://www.hydro.com/en/global/media/news/2026/hydro-joins-siemens-mobility-led-project-to-recycle-aluminium-from-end-of-life-trains",
+    "https://www.internationaltin.org/alphamin-focuses-on-exploration-as-q3-output-steady",
     "https://www.internationaltin.org/metals-x-targets-full-takeover-of-first-tin",
     "https://www.internationaltin.org/yunnan-tin-announces-2026-maintenance",
     "https://www.investegate.co.uk/announcement/rns/bhp-group-limited-npv-di---bhp/quarterly-activities-report-/9830537",
@@ -1005,6 +1006,28 @@
       "effective_date": "2026-10-07",
       "verification_date": "2026-10-08",
       "discovered_at": "2026-10-08T06:57:07.476Z"
+    },
+    {
+      "id": "news-sn-2106285453d6f10e",
+      "metal_id": "metal-sn",
+      "title": "Alphamin focuses on exploration as Q3 output steady",
+      "organization": "International Tin Association",
+      "source_type": "industry_association_news",
+      "source_level": "media",
+      "event_tag": "产量与指引",
+      "material_url": "https://www.internationaltin.org/alphamin-focuses-on-exploration-as-q3-output-steady",
+      "source_listing_url": "https://www.internationaltin.org/feed/",
+      "publication_date": "2026-10-07",
+      "source_publication_date": "2026-10-07",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-21",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-21T06:36:10.744Z"
     },
     {
       "id": "news-sn-52098cc4f103053f",
