@@ -335,3 +335,13 @@ body { background:var(--mineral); color:var(--graphite); }
 .inventory-definition-select[aria-pressed="true"]{color:var(--verdigris-dark)}
 .inventory-definition-select:focus-visible{outline:2px solid var(--verdigris);outline-offset:3px}
 .inventory-note{margin:18px 0 0;color:var(--graphite-soft);font-size:10px;line-height:1.7}
+/* Tin and iron keep product stages and ownership bases visible on every screen. */
+.tin-terminal .metal-symbol,.metal-hub-card.tin .metal-hub-symbol{background:#657d7a}
+.iron-terminal .metal-symbol,.metal-hub-card.iron .metal-hub-symbol{background:#895c46}
+.supply-asset-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:24px;padding:24px 0}
+.supply-asset{border-top:2px solid var(--graphite);padding:24px;background:rgba(255,255,255,.2)}
+.supply-asset header>span{font-size:10px;color:var(--ink-faint)}
+.supply-asset h3{font:700 25px Georgia,serif;margin:12px 0}.supply-asset header p{font-size:12px;color:var(--graphite-soft)}
+.supply-asset dl{margin:24px 0}.supply-asset dl>div{border-top:1px solid var(--hairline);padding:12px 0}.supply-asset dt{font-size:10px;color:var(--ink-faint)}.supply-asset dd{margin:6px 0 0;font-size:13px;line-height:1.6}.supply-asset dd.supply-production{font:700 32px Georgia,serif}
+@media(min-width:1001px){.metal-hub-grid{grid-template-columns:repeat(4,1fr)}.metal-hub-card{border-bottom:1px solid var(--hairline);min-height:400px}.metal-hub-card:nth-child(4n){border-right:0}.metal-hub-card:first-child,.metal-hub-card:last-child{padding:30px 28px}}
+@media(max-width:700px){.metal-switcher{flex-wrap:wrap}.metal-switcher a{flex:1 0 20%}.supply-asset{padding:18px}.supply-research .detail-evidence button{overflow-wrap:anywhere}}
