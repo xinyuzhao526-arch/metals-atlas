@@ -407,3 +407,5 @@ body { background:var(--mineral); color:var(--graphite); }
 [data-map-project]:focus{outline:2px solid var(--verdigris);outline-offset:-2px}
 .research-matrix tr[data-map-highlight]>td,article[data-map-highlight]{background:rgba(53,125,114,.13)}
 .research-matrix tr[data-map-highlight]>td:first-child,article[data-map-highlight]{box-shadow:inset 3px 0 0 var(--verdigris)}
+
+.source-level.official{color:#345b7e;border-color:#7590a7}.stream-event.official{background:rgba(52,91,126,.04)}.timeline-filters{flex-wrap:wrap}

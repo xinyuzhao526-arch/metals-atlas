@@ -1,0 +1,779 @@
+{
+  "schema_version": "1.0.0",
+  "last_checked_at": "2026-10-21T06:31:16.988Z",
+  "processed_keys": [
+    "al:https://www.hydro.com/en/global/media/news/2026/alunorte-ramps-up-alumina-production",
+    "al:https://www.hydro.com/en/global/media/news/2026/alunorte-reduces-alumina-production-on-natural-gas-supply-disruptions",
+    "al:https://www.hydro.com/en/global/media/news/2026/hydro-joins-siemens-mobility-led-project-to-recycle-aluminium-from-end-of-life-trains",
+    "al:https://www.investegate.co.uk/announcement/rns/rio-tinto--rio/rio-tinto-2026-half-year-results/9692256",
+    "al:https://www.investegate.co.uk/announcement/rns/rio-tinto--rio/second-quarter-production-results/9668973",
+    "al:https://www.investegate.co.uk/announcement/rns/rio-tinto--rio/third-quarter-production-results/9821323",
+    "al:https://www.investegate.co.uk/announcement/rns/south32-limited-di---s32/quarterly-report-june-2026-/9675778",
+    "al:https://www.investegate.co.uk/announcement/rns/south32-limited-di---s32/quarterly-report-september-2026-/9828255",
+    "cu:https://im-mining.com/2026/10/08/fls-to-deliver-worlds-largest-gyratory-as-part-of-chile-copper-mine-expansion-package",
+    "cu:https://im-mining.com/2026/10/09/fls-wins-another-copper-mine-order-in-chile-for-grinding-tech-including-hpgr-ball-mill",
+    "cu:https://im-mining.com/2026/10/19/fortescues-world-first-arsenic-removal-tech-unlocks-new-copper-processing-potential",
+    "cu:https://im-mining.com/2026/10/20/bhp-reveals-first-block-cave-resource-at-olympic-dam",
+    "cu:https://www.angloamerican.com/media/press-releases/2026/20-10-2026",
+    "cu:https://www.antofagasta.co.uk/investors/news/2026/2026-half-year-results",
+    "cu:https://www.antofagasta.co.uk/investors/news/2026/los-pelambres-operational-update",
+    "cu:https://www.antofagasta.co.uk/investors/news/2026/q2-2026-production-report",
+    "cu:https://www.antofagasta.co.uk/investors/news/2026/q3-2026-production-report",
+    "cu:https://www.australianmining.com.au/aic-mines-moves-to-acquire-mt-cuthbert",
+    "cu:https://www.investegate.co.uk/announcement/rns/bhp-group-limited-npv-di---bhp/quarterly-activities-report-/9830537",
+    "cu:https://www.investegate.co.uk/announcement/rns/bhp-group-limited-npv-di---bhp/quarterly-activities-report/9671198",
+    "cu:https://www.investegate.co.uk/announcement/rns/glencore--glen/first-quarter-2026-production-report/9545193",
+    "cu:https://www.investegate.co.uk/announcement/rns/glencore--glen/half-year-production-report-2026/9692297",
+    "cu:https://www.investegate.co.uk/announcement/rns/rio-tinto--rio/rio-tinto-2026-half-year-results/9692256",
+    "cu:https://www.investegate.co.uk/announcement/rns/rio-tinto--rio/second-quarter-production-results/9668973",
+    "cu:https://www.investegate.co.uk/announcement/rns/rio-tinto--rio/third-quarter-production-results/9821323",
+    "cu:https://www.investegate.co.uk/announcement/rns/south32-limited-di---s32/61-increase-in-sierra-gorda-ore-reserve-estimate/9738518",
+    "cu:https://www.investegate.co.uk/announcement/rns/south32-limited-di---s32/quarterly-report-june-2026-/9675778",
+    "cu:https://www.investegate.co.uk/announcement/rns/south32-limited-di---s32/quarterly-report-september-2026-/9828255",
+    "cu:https://www.mining-technology.com/news/bhp-suspends-activities-escondida-mine",
+    "cu:https://www.mining-technology.com/news/blue-moon-to-acquire-turner-deposit",
+    "cu:https://www.mining-technology.com/news/codelco-partially-halts-el-teniente-mine",
+    "cu:https://www.mining-technology.com/news/cotec-bmr-punitaqui-copper-production",
+    "cu:https://www.mining-technology.com/news/cotec-copper-intelligence-agreement-drc-tailings",
+    "cu:https://www.mining-technology.com/news/fortescue-copper-cleaned-arsenic-removal",
+    "cu:https://www.mining-technology.com/news/talisman-acquires-licences-tirzzit-project",
+    "cu:https://www.mining.com/antofagastas-centinela-strike-adds-copper-supply-risk",
+    "cu:https://www.mining.com/copper-holds-above-14400-as-chile-strike-risk-grows",
+    "cu:https://www.mining.com/copper-hungry-us-buyers-circle-ivanhoe-electric-mine",
+    "cu:https://www.mining.com/copper-price-falls-for-third-day-as-us-inflation-shock-easing-chile-strike-risk-spur-selloff",
+    "cu:https://www.mining.com/copper-price-forecasts-lifted-for-2026-but-tariff-collapse-still-on-the-table",
+    "cu:https://www.mining.com/eu-puts-kghms-2-4b-copper-projects-on-fast-track",
+    "cu:https://www.mining.com/fatal-accident-reported-at-bhps-escondida-mine",
+    "cu:https://www.mining.com/glencore-clears-key-hurdle-for-peru-copper-expansion",
+    "cu:https://www.mining.com/tech-giants-come-knocking-for-a-piece-of-anglo-american-as-copper-scarcity-bites-wanblad-tells-ft",
+    "cu:https://www.mining.com/worker-dies-in-accident-at-codelcos-radomiro-tomic",
+    "cu:https://www.mmg.com/investors/reports-and-presentations/stable-production-in-third-quarter",
+    "cu:https://www.northernminer.com/news/bhp-averts-strike-at-worlds-biggest-copper-mine-2/1003895736",
+    "cu:https://www.northernminer.com/news/bhps-escondida-restart-eases-tight-copper-supply-woes/1003895172",
+    "cu:https://www.northernminer.com/news/capstone-sells-mexican-mine-to-luca-for-up-to-385m/1003894997",
+    "cu:https://www.northernminer.com/news/copper-hungry-us-buyers-circle-ivanhoe-electric-mine/1003895861",
+    "cu:https://www.northernminer.com/news/copper-price-gains-as-chile-strike-threatens-output/1003895558",
+    "cu:https://www.northernminer.com/news/eu-fast-tracks-kghms-3-46b-polish-copper-projects/1003895652",
+    "cu:https://www.northernminer.com/news/glencore-sets-oct-14-for-australian-market-debut/1003895111",
+    "cu:https://www.northernminer.com/news/levack-restart-puts-magna-on-two-mine-path/1003895592",
+    "cu:https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-second-quarter-results-for-2026",
+    "fe:https://www.angloamerican.com/media/press-releases/2026/20-10-2026",
+    "fe:https://www.angloamericankumba.com/media/press-releases/2026/20-10-2026",
+    "fe:https://www.angloamericankumba.com/media/press-releases/2026/23-07-2026",
+    "fe:https://www.angloamericankumba.com/media/press-releases/2026/28-07-2026",
+    "fe:https://www.investegate.co.uk/announcement/rns/bhp-group-limited-npv-di---bhp/quarterly-activities-report-/9830537",
+    "fe:https://www.investegate.co.uk/announcement/rns/bhp-group-limited-npv-di---bhp/quarterly-activities-report/9671198",
+    "fe:https://www.investegate.co.uk/announcement/rns/rio-tinto--rio/rio-tinto-2026-half-year-results/9692256",
+    "fe:https://www.investegate.co.uk/announcement/rns/rio-tinto--rio/second-quarter-production-results/9668973",
+    "fe:https://www.investegate.co.uk/announcement/rns/rio-tinto--rio/third-quarter-production-results/9821323",
+    "fe:https://www.mineralresources.com.au/news/company-updates/q4-fy26-quarterly-activity-report",
+    "fe:https://www.mining-technology.com/analysis/iron-ore-bucks-hormuz-disruption-as-supply-disputes-shift-to-china",
+    "fe:https://www.mining-technology.com/news/arrow-to-acquire-turee-creek-project",
+    "fe:https://www.northernminer.com/news/vale-buys-ligga-iron-ore-stake-for-190m/1003895046",
+    "li:https://im-mining.com/2026/10/16/pls-greenlights-p2000-project-as-it-aims-for-2-mt-y-of-spodumene-production-capacity",
+    "li:https://im-mining.com/2026/10/20/joest-australia-bags-largest-order-in-its-history-for-pilgangoora-expansion",
+    "li:https://www.australianmining.com.au/core-lithium-enters-new-era-as-finniss-restart-gathers-pace",
+    "li:https://www.australianmining.com.au/global-lithium-agrees-333-million-takeover-by-titan",
+    "li:https://www.eramet.com/en/news/centenario-ratones-lithium-plant-expansion-project-3-questions-for-jean-baptiste-hogard-director-of-eramets-lithium-business-unit",
+    "li:https://www.investegate.co.uk/announcement/rns/rio-tinto--rio/rio-tinto-2026-half-year-results/9692256",
+    "li:https://www.investegate.co.uk/announcement/rns/rio-tinto--rio/second-quarter-production-results/9668973",
+    "li:https://www.investegate.co.uk/announcement/rns/rio-tinto--rio/third-quarter-production-results/9821323",
+    "li:https://www.mineralresources.com.au/news/company-updates/q4-fy26-quarterly-activity-report",
+    "li:https://www.mining-technology.com/news/bridge-green-hartree-eight-year-lithium-agreement",
+    "li:https://www.mining-technology.com/news/elevra-supply-spodumene-lg-energy",
+    "li:https://www.mining-technology.com/news/global-lithium-237m-sid-titan-australia-mining",
+    "li:https://www.mining-technology.com/news/nth-cycle-1bn-recycled-minerals-supply-glencore",
+    "li:https://www.mining-technology.com/news/trafigura-energyx-10-year-lithium-contract",
+    "li:https://www.mining.com/energyx-inks-10-year-2b-lithium-offtake-deal-with-trafigura",
+    "li:https://www.northernminer.com/news/brazil-court-order-idles-sigma-lithium-mine/1003895373",
+    "li:https://www.northernminer.com/news/cleantech-lithium-expands-foothold-in-argentina/1003895600",
+    "li:https://www.northernminer.com/news/uk-scientists-turn-to-biology-in-search-for-cleaner-lithium/1003895598",
+    "ni:https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
+    "ni:https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
+    "ni:https://mining.com.au/chinese-nickel-producers-advance-plans-to-cut-indonesian-output",
+    "ni:https://www.angloamerican.com/media/press-releases/2026/20-10-2026",
+    "ni:https://www.investegate.co.uk/announcement/rns/bhp-group-limited-npv-di---bhp/quarterly-activities-report/9671198",
+    "ni:https://www.investegate.co.uk/announcement/rns/glencore--glen/first-quarter-2026-production-report/9545193",
+    "ni:https://www.investegate.co.uk/announcement/rns/glencore--glen/half-year-production-report-2026/9692297",
+    "ni:https://www.mining-technology.com/news/bhp-kambalda-nickel-gold-fields",
+    "ni:https://www.mining.com/exiro-led-group-takes-control-of-vales-manitoba-nickel-complex",
+    "ni:https://www.mining.com/westwin-elements-traxys-eye-3-9-billion-22-year-nickel-offtake-extension",
+    "ni:https://www.northernminer.com/news/levack-restart-puts-magna-on-two-mine-path/1003895592",
+    "ni:https://www.northernminer.com/news/westwin-to-build-502m-nickel-refinery-in-mississippi/1003895478",
+    "pb:https://www.investegate.co.uk/announcement/rns/south32-limited-di---s32/quarterly-report-june-2026-/9675778",
+    "pb:https://www.investegate.co.uk/announcement/rns/south32-limited-di---s32/quarterly-report-september-2026-/9828255",
+    "pb:https://www.mmg.com/investors/reports-and-presentations/stable-production-in-third-quarter",
+    "pb:https://www.northernminer.com/news/capstone-sells-mexican-mine-to-luca-for-up-to-385m/1003894997",
+    "sn:https://www.alphaminresources.com/2026/07/13/alphamin-announces-record-q2-ebitda-guidance-of-us167-million-exploration-update",
+    "sn:https://www.alphaminresources.com/2026/10/06/alphamin-announces-cad0-13-per-share-interim-fy2026-dividend-q3-guidance-exploration-update",
+    "sn:https://www.internationaltin.org/metals-x-targets-full-takeover-of-first-tin",
+    "sn:https://www.internationaltin.org/yunnan-tin-announces-2026-maintenance",
+    "zn:https://www.investegate.co.uk/announcement/rns/glencore--glen/first-quarter-2026-production-report/9545193",
+    "zn:https://www.investegate.co.uk/announcement/rns/glencore--glen/half-year-production-report-2026/9692297",
+    "zn:https://www.investegate.co.uk/announcement/rns/south32-limited-di---s32/quarterly-report-june-2026-/9675778",
+    "zn:https://www.investegate.co.uk/announcement/rns/south32-limited-di---s32/quarterly-report-september-2026-/9828255",
+    "zn:https://www.mmg.com/investors/reports-and-presentations/stable-production-in-third-quarter",
+    "zn:https://www.northernminer.com/news/capstone-sells-mexican-mine-to-luca-for-up-to-385m/1003894997",
+    "zn:https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-second-quarter-results-for-2026"
+  ],
+  "pending": [
+    {
+      "title": "2026 Annual Report",
+      "url": "https://www.investegate.co.uk/announcement/rns/south32-limited-di---s32/2026-annual-report/9742140",
+      "metal": "al",
+      "date": "2026-08-27",
+      "needs_body_metals": true,
+      "organization": "South32",
+      "source_type": "company_regulatory_announcement",
+      "source_url": "https://www.investegate.co.uk/company/S32",
+      "from_feed": false,
+      "metals": [
+        "al",
+        "cu",
+        "zn",
+        "pb"
+      ],
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T06:31:16.988Z",
+      "last_error": "Group report metal coverage could not be confirmed from the article",
+      "next_retry_at": "2026-10-21T08:31:16.988Z"
+    },
+    {
+      "title": "2026 US Annual Report (Form 20-F)",
+      "url": "https://www.investegate.co.uk/announcement/rns/bhp-group-limited-npv-di---bhp/2026-us-annual-report-form-20-f-/9727857",
+      "metal": "cu",
+      "date": "2026-08-18",
+      "needs_body_metals": true,
+      "organization": "BHP",
+      "source_type": "company_regulatory_announcement",
+      "source_url": "https://www.investegate.co.uk/company/BHP",
+      "from_feed": false,
+      "metals": [
+        "cu",
+        "ni",
+        "fe"
+      ],
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T06:31:16.988Z",
+      "last_error": "Group report metal coverage could not be confirmed from the article",
+      "next_retry_at": "2026-10-21T08:31:16.988Z"
+    },
+    {
+      "title": "Notification of publication BHP 2026 Annual Report",
+      "url": "https://www.investegate.co.uk/announcement/rns/bhp-group-limited-npv-di---bhp/notification-of-publication-bhp-2026-annual-report/9726107",
+      "metal": "cu",
+      "date": "2026-08-18",
+      "needs_body_metals": true,
+      "organization": "BHP",
+      "source_type": "company_regulatory_announcement",
+      "source_url": "https://www.investegate.co.uk/company/BHP",
+      "from_feed": false,
+      "metals": [
+        "cu",
+        "ni",
+        "fe"
+      ],
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T06:31:16.988Z",
+      "last_error": "Group report metal coverage could not be confirmed from the article",
+      "next_retry_at": "2026-10-21T08:31:16.988Z"
+    },
+    {
+      "title": "Nova Nickel Operation",
+      "url": "https://www.igo.com.au/site/operations/nova",
+      "metal": "ni",
+      "organization": "IGO Limited",
+      "source_type": "official_company_news",
+      "source_url": "https://www.igo.com.au/site/investor-center/ASX-Announcements",
+      "from_feed": false,
+      "metals": [
+        "ni"
+      ],
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T06:31:16.988Z",
+      "last_error": "Publication date not disclosed in a supported field; will retry",
+      "next_retry_at": "2026-10-21T08:31:16.988Z"
+    },
+    {
+      "title": "Download Eramet: Turnover down in third quarter 2025",
+      "url": "https://www.eramet.com/wp-content/uploads/2025/10/2025-10-30-Eramet-PR-Q3-2025-EN.pdf",
+      "metal": "ni",
+      "needs_body_metals": true,
+      "organization": "Eramet",
+      "source_type": "official_company_news",
+      "source_url": "https://www.eramet.com/en/news/",
+      "from_feed": false,
+      "metals": [
+        "ni",
+        "li"
+      ],
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T06:31:16.988Z",
+      "last_error": "Binary document requires a dated listing",
+      "next_retry_at": "2026-10-21T08:31:16.988Z"
+    },
+    {
+      "title": "Vale's Production and Sales report for 2Q26 is now available 7/21/26",
+      "url": "https://vale.com/en/check-out-the-production-and-sales-in-2q26/-/categories",
+      "metal": "cu",
+      "needs_body_metals": true,
+      "organization": "Vale",
+      "source_type": "official_company_news",
+      "source_url": "https://vale.com/en/vale-now",
+      "from_feed": false,
+      "metals": [
+        "cu",
+        "ni",
+        "fe"
+      ],
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T06:31:16.988Z",
+      "last_error": "Publication date not disclosed in a supported field; will retry",
+      "next_retry_at": "2026-10-21T08:31:16.988Z"
+    },
+    {
+      "title": "Participation Details for 2024 Full Year Results",
+      "url": "https://www.antofagasta.co.uk/investors/news/2025/participation-details-for-2024-full-year-results",
+      "metal": "cu",
+      "organization": "Antofagasta plc",
+      "source_type": "official_company_news",
+      "source_url": "https://www.antofagasta.co.uk/investors/news/",
+      "from_feed": false,
+      "metals": [
+        "cu"
+      ],
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T06:31:16.988Z",
+      "last_error": "Publication date not disclosed in a supported field; will retry",
+      "next_retry_at": "2026-10-21T08:31:16.988Z"
+    },
+    {
+      "title": "Circulars – Revision of Annual Caps for Continuing Connected Transactions in Relation to The CMN Framework Offtake Agreement and Notice of Extraordinary General Meeting",
+      "url": "https://www.mmg.com/investors/news-centre/circulars-revision-of-annual-caps-for-continuing-connected-transactions-in-relation-to-the-cmn-framework-offtake-agreement-and-notice-of-extraordinary-general-meeting",
+      "metal": "cu",
+      "needs_body_metals": true,
+      "organization": "MMG Limited",
+      "source_type": "official_company_news",
+      "source_url": "https://www.mmg.com/investors/news-centre/",
+      "from_feed": false,
+      "metals": [
+        "cu",
+        "zn",
+        "pb"
+      ],
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T06:31:16.988Z",
+      "last_error": "Group report metal coverage could not be confirmed from the article",
+      "next_retry_at": "2026-10-21T08:31:16.988Z"
+    },
+    {
+      "title": "Documents on Display – Revision of Annual Caps for Continuing Connected Transactions in Relation to the CMN Framework Offtake Agreement",
+      "url": "https://www.mmg.com/investors/news-centre/documents-on-display-revision-of-annual-caps-for-continuing-connected-transactions-in-relation-to-the-cmn-framework-offtake-agreement",
+      "metal": "cu",
+      "needs_body_metals": true,
+      "organization": "MMG Limited",
+      "source_type": "official_company_news",
+      "source_url": "https://www.mmg.com/investors/news-centre/",
+      "from_feed": false,
+      "metals": [
+        "cu",
+        "zn",
+        "pb"
+      ],
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T06:31:16.988Z",
+      "last_error": "Group report metal coverage could not be confirmed from the article",
+      "next_retry_at": "2026-10-21T08:31:16.988Z"
+    },
+    {
+      "title": "Announcements and Notices – Third Quarter Production Report for the Three Months Ended 30 September 2026",
+      "url": "https://www.mmg.com/investors/news-centre/announcements-and-notices-third-quarter-production-report-for-the-three-months-ended-30-september-2026",
+      "metal": "cu",
+      "needs_body_metals": true,
+      "organization": "MMG Limited",
+      "source_type": "official_company_news",
+      "source_url": "https://www.mmg.com/investors/news-centre/",
+      "from_feed": false,
+      "metals": [
+        "cu",
+        "zn",
+        "pb"
+      ],
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T06:31:16.988Z",
+      "last_error": "Group report metal coverage could not be confirmed from the article",
+      "next_retry_at": "2026-10-21T08:31:16.988Z"
+    },
+    {
+      "title": "Announcements and Notices – Continuing Connected Transaction – Revision of Annual Caps for Continuing Connected Transactions in relation to the CMN Framework Offtake Agreement",
+      "url": "https://www.mmg.com/investors/news-centre/announcements-and-notices-continuing-connected-transaction-revision-of-annual-caps-for-continuing-connected-transactions-in-relation-to-the-cmn-framework-offtake-agreement",
+      "metal": "cu",
+      "needs_body_metals": true,
+      "organization": "MMG Limited",
+      "source_type": "official_company_news",
+      "source_url": "https://www.mmg.com/investors/news-centre/",
+      "from_feed": false,
+      "metals": [
+        "cu",
+        "zn",
+        "pb"
+      ],
+      "attempts": 1,
+      "last_attempt_at": "2026-10-21T06:31:16.988Z",
+      "last_error": "Group report metal coverage could not be confirmed from the article",
+      "next_retry_at": "2026-10-21T08:31:16.988Z"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pls",
+      "organization": "PLS Limited",
+      "url": "https://www.pls.com/invest/asx-announcements",
+      "status": "error",
+      "candidate_count": 0,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": null,
+      "attempts": [
+        {
+          "url": "https://www.pls.com/invest/asx-announcements",
+          "status": "error",
+          "error": "HTTP 403"
+        },
+        {
+          "url": "https://www.pls.com/news",
+          "status": "error",
+          "error": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "id": "igo",
+      "organization": "IGO Limited",
+      "url": "https://www.igo.com.au/site/investor-center/ASX-Announcements",
+      "status": "ok",
+      "candidate_count": 1,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.igo.com.au/site/investor-center/ASX-Announcements",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "minres",
+      "organization": "Mineral Resources",
+      "url": "https://www.mineralresources.com.au/news/",
+      "status": "ok",
+      "candidate_count": 8,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.mineralresources.com.au/news/",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "rio-rns",
+      "organization": "Rio Tinto",
+      "url": "https://www.investegate.co.uk/company/RIO",
+      "status": "ok",
+      "candidate_count": 16,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.investegate.co.uk/company/RIO",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "vale",
+      "organization": "Vale",
+      "url": "https://vale.com/en/vale-now",
+      "status": "ok",
+      "candidate_count": 3,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://vale.com/en/vale-now",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "glencore-rns",
+      "organization": "Glencore",
+      "url": "https://www.investegate.co.uk/company/GLEN",
+      "status": "ok",
+      "candidate_count": 12,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.investegate.co.uk/company/GLEN",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "eramet",
+      "organization": "Eramet",
+      "url": "https://www.eramet.com/en/news/",
+      "status": "ok",
+      "candidate_count": 5,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.eramet.com/en/news/",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "bhp-rns",
+      "organization": "BHP",
+      "url": "https://www.investegate.co.uk/company/BHP",
+      "status": "ok",
+      "candidate_count": 21,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.investegate.co.uk/company/BHP",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "hydro",
+      "organization": "Norsk Hydro",
+      "url": "https://www.hydro.com/en/global/media/news/",
+      "status": "ok",
+      "candidate_count": 1,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.hydro.com/en/global/media/news/",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "south32-rns",
+      "organization": "South32",
+      "url": "https://www.investegate.co.uk/company/S32",
+      "status": "ok",
+      "candidate_count": 13,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.investegate.co.uk/company/S32",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "ivanhoe",
+      "organization": "Ivanhoe Mines",
+      "url": "https://www.ivanhoemines.com/feed/",
+      "status": "empty",
+      "candidate_count": 0,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": null,
+      "attempts": [
+        {
+          "url": "https://www.ivanhoemines.com/feed/",
+          "status": "empty"
+        },
+        {
+          "url": "https://www.ivanhoemines.com/",
+          "status": "empty"
+        }
+      ]
+    },
+    {
+      "id": "fcx",
+      "organization": "Freeport-McMoRan",
+      "url": "https://investors.fcx.com/investors/news-releases/",
+      "status": "error",
+      "candidate_count": 0,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": null,
+      "attempts": [
+        {
+          "url": "https://investors.fcx.com/investors/news-releases/",
+          "status": "error",
+          "error": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "id": "antofagasta",
+      "organization": "Antofagasta plc",
+      "url": "https://www.antofagasta.co.uk/investors/news/",
+      "status": "ok",
+      "candidate_count": 32,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.antofagasta.co.uk/investors/news/",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "mmg",
+      "organization": "MMG Limited",
+      "url": "https://www.mmg.com/investors/news-centre/",
+      "status": "ok",
+      "candidate_count": 15,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.mmg.com/investors/news-centre/",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "alphamin",
+      "organization": "Alphamin Resources",
+      "url": "https://www.alphaminresources.com/feed/",
+      "status": "ok",
+      "candidate_count": 5,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.alphaminresources.com/feed/",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "andrada-rns",
+      "organization": "Andrada Mining",
+      "url": "https://www.investegate.co.uk/company/ATM",
+      "status": "ok",
+      "candidate_count": 6,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.investegate.co.uk/company/ATM",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "metalsx",
+      "organization": "Metals X",
+      "url": "https://www.metalsx.com.au/asx-announcements/",
+      "status": "error",
+      "candidate_count": 0,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": null,
+      "attempts": [
+        {
+          "url": "https://www.metalsx.com.au/asx-announcements/",
+          "status": "error",
+          "error": "The operation was aborted due to timeout"
+        }
+      ]
+    },
+    {
+      "id": "anglo",
+      "organization": "Anglo American",
+      "url": "https://www.angloamerican.com/media/press-releases",
+      "status": "ok",
+      "candidate_count": 3,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.angloamerican.com/media/press-releases",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "kumba",
+      "organization": "Kumba Iron Ore",
+      "url": "https://www.angloamericankumba.com/media/press-releases",
+      "status": "ok",
+      "candidate_count": 3,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.angloamericankumba.com/media/press-releases",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "fortescue",
+      "organization": "Fortescue",
+      "url": "https://investors.fortescue.com/en/",
+      "status": "empty",
+      "candidate_count": 0,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": null,
+      "attempts": [
+        {
+          "url": "https://investors.fortescue.com/en/",
+          "status": "empty"
+        }
+      ]
+    },
+    {
+      "id": "teck",
+      "organization": "Teck Resources",
+      "url": "https://www.teck.com/news/news-releases/",
+      "status": "ok",
+      "candidate_count": 18,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.teck.com/news/news-releases/",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "mining-technology",
+      "organization": "Mining Technology",
+      "url": "https://www.mining-technology.com/feed/",
+      "status": "ok",
+      "candidate_count": 2,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.mining-technology.com/feed/",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "northern-miner",
+      "organization": "The Northern Miner",
+      "url": "https://www.northernminer.com/feed/",
+      "status": "ok",
+      "candidate_count": 1,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://www.northernminer.com/feed/",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "international-mining",
+      "organization": "International Mining",
+      "url": "https://im-mining.com/feed/",
+      "status": "ok",
+      "candidate_count": 1,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z",
+      "attempts": [
+        {
+          "url": "https://im-mining.com/feed/",
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "id": "ita",
+      "organization": "International Tin Association",
+      "url": "https://www.internationaltin.org/feed/",
+      "status": "empty",
+      "candidate_count": 0,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": null,
+      "attempts": [
+        {
+          "url": "https://www.internationaltin.org/feed/",
+          "status": "error",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "url": "https://www.internationaltin.org/news/",
+          "status": "empty"
+        }
+      ]
+    },
+    {
+      "id": "australian-mining",
+      "organization": "Australian Mining",
+      "url": "https://www.australianmining.com.au/feed/",
+      "status": "error",
+      "candidate_count": 0,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": null,
+      "attempts": [
+        {
+          "url": "https://www.australianmining.com.au/feed/",
+          "status": "error",
+          "error": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "id": "mining-com",
+      "organization": "MINING.COM",
+      "url": "https://www.mining.com/feed/",
+      "status": "error",
+      "candidate_count": 0,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": null,
+      "attempts": [
+        {
+          "url": "https://www.mining.com/feed/",
+          "status": "error",
+          "error": "HTTP 403"
+        }
+      ]
+    },
+    {
+      "id": "paipai",
+      "organization": "PaiPaiMetals",
+      "url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
+      "status": "ok",
+      "candidate_count": 33,
+      "checked_at": "2026-10-21T06:31:16.988Z",
+      "last_success_at": "2026-10-21T06:31:16.988Z"
+    }
+  ],
+  "last_run": {
+    "added": 63,
+    "retained": 110,
+    "detail_fetches": 47,
+    "article_errors": 11,
+    "deferred": 0,
+    "by_metal": {
+      "cu": 45,
+      "li": 18,
+      "ni": 12,
+      "al": 8,
+      "sn": 4,
+      "fe": 12,
+      "zn": 7,
+      "pb": 4
+    }
+  }
+}

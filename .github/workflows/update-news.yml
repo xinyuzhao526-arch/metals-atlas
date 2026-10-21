@@ -1,10 +1,10 @@
-name: Refresh copper lithium and nickel supply news
+name: Refresh metals supply news
 
 on:
   workflow_dispatch:
   schedule:
-    # Daily at 09:00 China Standard Time (01:00 UTC). Only new materials create a commit and deployment.
-    - cron: "0 1 * * *"
+    # China Standard Time: 09:17, 13:17, 17:17 and 21:17; hosted schedules may be delayed.
+    - cron: "17 1,5,9,13 * * *"
 
 permissions:
   contents: write
@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: metals-supply-news-refresh
+  group: pages
   cancel-in-progress: false
 
 jobs:
@@ -20,7 +20,6 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,16 +29,35 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: apps/web/package-lock.json
-      - name: Check industry RSS and official company sources
+      - name: Collect supply news and retain retry state
         id: refresh
         working-directory: apps/web
         run: |
           node scripts/update-news.mjs
+          git add -N data/news-state.json
           if git diff --quiet -- data/news.json; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+          if git diff --quiet -- data/news.json data/news-state.json; then
+            echo "state_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "state_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Report source health and metal coverage
+        working-directory: apps/web
+        run: |
+          node --input-type=module <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          import fs from "node:fs";
+          const s=JSON.parse(fs.readFileSync("data/news-state.json","utf8"));
+          console.log("### Supply news check\n\nChecked: "+s.last_checked_at);
+          console.log("\nImported records: "+s.last_run.added+"; retained: "+s.last_run.retained+"; pending: "+s.pending.length);
+          console.log("\n| Metal | Retained records |\n| --- | ---: |");
+          for(const [metal,count] of Object.entries(s.last_run.by_metal))console.log("| "+metal+" | "+count+" |");
+          console.log("\n| Source | Status | Candidates |\n| --- | --- | ---: |");
+          for(const source of s.sources)console.log("| "+source.organization+" | "+source.status+" | "+source.candidate_count+" |");
+          NODE
       - name: Install dependencies
         if: steps.refresh.outputs.changed == 'true'
         working-directory: apps/web
@@ -52,21 +70,20 @@ jobs:
           npm run typecheck
           npm run build:pages
           test ! -d out/admin
+      - name: Save news and retry state
+        if: steps.refresh.outputs.state_changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps/web/data/news.json apps/web/data/news-state.json
+          git commit -m "data: refresh metals supply news and retry state"
+          git push origin main
       - uses: actions/configure-pages@v5
         if: steps.refresh.outputs.changed == 'true'
       - uses: actions/upload-pages-artifact@v3
         if: steps.refresh.outputs.changed == 'true'
         with:
           path: apps/web/out
-      - name: Commit new official materials
-        if: steps.refresh.outputs.changed == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add apps/web/data/news.json
-          git commit -m "data: refresh metals supply news"
-          git push origin main
       - name: Deploy refreshed public site
-        id: deployment
         if: steps.refresh.outputs.changed == 'true'
         uses: actions/deploy-pages@v4
