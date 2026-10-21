@@ -4,7 +4,7 @@ import newsJson from "@/data/news.json";
 
 type NewsItem={id:string;metal_id:string;title:string;organization:string;material_url:string;publication_date:string;source_level?:"media";event_tag?:string};
 export type CuratedTimelineEvent={id:string;date:string;kind:string;projectId:string;projectName:string;headline:string;summary:string;sourceId?:string};
-type Props={metal:"cu"|"li"|"ni"|"al";curated:CuratedTimelineEvent[];projects:{id:string;name:string;aliases?:string[]}[];selectedProjectId?:string|null;onSelectProject?:(id:string)=>void;onOpenSource?:(id:string)=>void};
+type Props={metal:"cu"|"li"|"ni"|"al"|"sn"|"fe";curated:CuratedTimelineEvent[];projects:{id:string;name:string;aliases?:string[]}[];selectedProjectId?:string|null;onSelectProject?:(id:string)=>void;onOpenSource?:(id:string)=>void};
 
 export function MergedSupplyTimeline({metal,curated,projects,selectedProjectId,onSelectProject,onOpenSource}:Props){
  const panelRef=useRef<HTMLElement>(null);
