@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-10-21",
-  "last_checked_at": "2026-10-21T14:33:16.356Z",
+  "updated_at": "2026-10-22",
+  "last_checked_at": "2026-10-22T06:07:44.898Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -68,6 +68,7 @@
     "https://www.mining.com/eu-puts-kghms-2-4b-copper-projects-on-fast-track",
     "https://www.mining.com/exiro-led-group-takes-control-of-vales-manitoba-nickel-complex",
     "https://www.mining.com/fatal-accident-reported-at-bhps-escondida-mine",
+    "https://www.mining.com/first-quantums-kansanshi-expansion-beats-design-capacity",
     "https://www.mining.com/glencore-clears-key-hurdle-for-peru-copper-expansion",
     "https://www.mining.com/tech-giants-come-knocking-for-a-piece-of-anglo-american-as-copper-scarcity-bites-wanblad-tells-ft",
     "https://www.mining.com/westwin-elements-traxys-eye-3-9-billion-22-year-nickel-offtake-extension",
@@ -83,12 +84,36 @@
     "https://www.northernminer.com/news/eu-fast-tracks-kghms-3-46b-polish-copper-projects/1003895652",
     "https://www.northernminer.com/news/glencore-sets-oct-14-for-australian-market-debut/1003895111",
     "https://www.northernminer.com/news/levack-restart-puts-magna-on-two-mine-path/1003895592",
+    "https://www.northernminer.com/news/summit-video-kodiak-tests-how-much-bigger-mpd-resource-can-get/1003895947",
     "https://www.northernminer.com/news/uk-scientists-turn-to-biology-in-search-for-cleaner-lithium/1003895598",
     "https://www.northernminer.com/news/vale-buys-ligga-iron-ore-stake-for-190m/1003895046",
     "https://www.northernminer.com/news/westwin-to-build-502m-nickel-refinery-in-mississippi/1003895478",
+    "https://www.teck.com/news/news-releases/2026/teck-receives-highland-valley-copper-operations-strike-notice",
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-second-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-339cd9106bc55a51",
+      "metal_id": "metal-cu",
+      "title": "Teck Receives Highland Valley Copper Operations Strike Notice",
+      "organization": "Teck Resources",
+      "source_type": "official_company_news",
+      "source_level": "official",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.teck.com/news/news-releases/2026/teck-receives-highland-valley-copper-operations-strike-notice",
+      "source_listing_url": "https://www.teck.com/news/news-releases/",
+      "publication_date": "2026-10-21",
+      "source_publication_date": "2026-10-21",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-22",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-22T06:07:44.898Z"
+    },
     {
       "id": "news-cu-3dccbd9706163d50",
       "metal_id": "metal-cu",
@@ -132,6 +157,50 @@
       "verification_method": "automated_metadata_check",
       "review_status": "pending",
       "discovered_at": "2026-10-21T14:33:16.356Z"
+    },
+    {
+      "id": "news-cu-39807b75022896eb",
+      "metal_id": "metal-cu",
+      "title": "Summit video: Kodiak tests how much bigger MPD resource can get",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "政策与供给",
+      "material_url": "https://www.northernminer.com/news/summit-video-kodiak-tests-how-much-bigger-mpd-resource-can-get/1003895947",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-10-21",
+      "source_publication_date": "2026-10-21",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-22",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-22T06:07:44.898Z"
+    },
+    {
+      "id": "news-cu-738c379aff5c8fe2",
+      "metal_id": "metal-cu",
+      "title": "First Quantum’s Kansanshi expansion beats design capacity",
+      "organization": "mining.com",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "扩产",
+      "material_url": "https://www.mining.com/first-quantums-kansanshi-expansion-beats-design-capacity",
+      "source_listing_url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
+      "publication_date": "2026-10-21",
+      "source_publication_date": "2026-10-21",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-22",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-22T06:07:44.898Z"
     },
     {
       "id": "news-cu-e40a7b3a35df3d7e",
