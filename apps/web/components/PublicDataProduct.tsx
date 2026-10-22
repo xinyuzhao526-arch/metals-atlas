@@ -155,7 +155,7 @@ export function PublicDataProduct() {
 
     <section className="supply-workbench">
       <div className="map-workspace">
-        <div className="section-heading"><div><span>01 / 全球项目面</span><h2>矿山分布与数据密度</h2></div><p>点大小固定，不暗示产量；红色外圈代表已核验供给事件。</p></div>
+        <div className="section-heading"><div><span>01 / 全球项目</span><h2>铜项目分布</h2></div><p>点大小固定，不暗示产量；红色外圈代表已核验供给事件。</p></div>
         <div className="map-filterbar">
           <select aria-label="地图国家筛选" value={country} onChange={(e) => setCountry(e.target.value)}><option value="all">全部国家</option>{countries.map((item) => <option key={item.iso3} value={item.iso3}>{item.name_zh}</option>)}</select>
           <select aria-label="地图状态筛选" value={status} onChange={(e) => setStatus(e.target.value)}><option value="all">全部状态</option><option value="operating">运营中</option><option value="development">开发中</option><option value="suspended">暂停</option><option value="closed">关闭</option><option value="unknown">待核验</option></select>
@@ -175,7 +175,7 @@ export function PublicDataProduct() {
     </section>
 
     <section className="inventory-terminal">
-      <div className="section-heading"><div><span>03 / 仓库信号</span><h2>交易所库存，而非“全球库存”</h2></div><p>报告发布后自动核验；不同交易所与定义不相加，缺失日期不插值。</p></div>
+      <div className="section-heading"><div><span>03 / 库存数据</span><h2>交易所库存</h2></div><p>报告发布后自动核验；所列交易所库存不代表全球库存。不同交易所与定义不相加，缺失日期不插值。</p></div>
       <div className="exchange-tabs">{(["LME","SHFE","COMEX"] as const).map((item) => <button key={item} className={exchange === item ? "active" : ""} type="button" onClick={() => setExchange(item)}>{item}</button>)}</div>
       <div className="inventory-body">
         <div className="inventory-latest"><span>最新可展示值</span><strong>{latestInventory?.normalized_value !== null && latestInventory?.normalized_value !== undefined ? latestInventory.normalized_value.toLocaleString() : "待补"} <small>{latestInventory?.normalized_value !== null ? "metric tonnes" : ""}</small></strong><p>数据日：{latestInventory?.data_date ?? "待补"}<br />环比：{latestInventory?.change_pct !== null && latestInventory?.change_pct !== undefined ? `${latestInventory.change_pct > 0 ? "+" : ""}${latestInventory.change_pct}%` : "待补"}<br />更新：{latestInventory?.published_at ?? "待补"}</p>{latestInventory && <SourceLink id={latestInventory.source_id} onOpen={setSource} />}</div>
@@ -187,7 +187,7 @@ export function PublicDataProduct() {
     <DataScopeNote summary="精矿含铜与精炼铜分阶段列示；季度、累计、全年及项目 100% / 应占口径分别阅读。"><p>同一批铜在矿山与冶炼端的披露不能重复相加；产量、指引、产能、储量与库存分别记录，缺失值显示“待补”。</p></DataScopeNote>
 
     <section className="matrix-section">
-      <div className="section-heading"><div><span>04 / 项目研究矩阵</span><h2>把缺口和事实放在同一视野</h2></div><p>{filteredRows.length} / {publicData.projects.length} 个项目</p></div>
+      <div className="section-heading"><div><span>04 / 项目数据</span><h2>项目研究矩阵</h2></div><p>{filteredRows.length} / {publicData.projects.length} 个项目</p></div>
       <div className="matrix-toolbar">
         <input aria-label="搜索项目" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="搜索项目、国家或运营方" />
         <select aria-label="国家筛选" value={country} onChange={(e) => setCountry(e.target.value)}><option value="all">全部国家</option>{countries.map((item) => <option key={item.iso3} value={item.iso3}>{item.name_zh}</option>)}</select>
@@ -214,7 +214,7 @@ export function PublicDataProduct() {
     </section>
 
     {libraryOpen && <div className="source-library-backdrop" onClick={() => setLibraryOpen(false)}><section className="source-library" role="dialog" aria-modal="true" aria-label="资料库" onClick={(e) => e.stopPropagation()}>
-      <header><div><span>资料库</span><h2>公开证据索引</h2><p>来源按事实入口打开，不在首页复刻大表。</p></div><button type="button" onClick={() => setLibraryOpen(false)} aria-label="关闭资料库">×</button></header>
+      <header><div><span>资料库</span><h2>来源索引</h2><p>来源按事实入口打开，不在首页复刻大表。</p></div><button type="button" onClick={() => setLibraryOpen(false)} aria-label="关闭资料库">×</button></header>
       <div>{publicData.sources.map((item) => <button key={item.id} type="button" onClick={() => { setLibraryOpen(false); setSource(item); }}><span className={`tier tier-${item.tier.toLowerCase()}`}>{item.tier}</span><div><b>{item.title}</b><small>{item.organization} · {item.publication_date ?? "日期待补"}</small><em>{item.locator}</em></div><i>查看 →</i></button>)}</div>
     </section></div>}
     <PublicSourceDrawer source={source} onClose={() => setSource(null)} />

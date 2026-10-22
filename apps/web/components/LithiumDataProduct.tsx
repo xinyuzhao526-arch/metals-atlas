@@ -108,7 +108,7 @@ export function LithiumDataProduct() {
 
     <section className="supply-workbench lithium-workbench">
       <div className="map-workspace">
-        <div className="section-heading"><div><span>01 / 全球项目面</span><h2>锂资产分布与生产阶段</h2></div><p>坐标为近似项目中心；点大小不表示产量。</p></div>
+        <div className="section-heading"><div><span>01 / 全球项目</span><h2>锂项目分布</h2></div><p>坐标为近似项目中心；点大小不表示产量。</p></div>
         <ProjectMap projects={filteredMapProjects} selectedProjectId={`li-${selectedId}`} eventProjectIds={lithiumEvents.map((event) => `li-${event.projectId}`)} onSelect={(id) => setSelectedId(id.replace(/^li-/,""))} ariaLabel="全球锂项目地图" />
         <div className="map-legend"><span><i className="operating" />运营中</span><span><i className="development" />开发中</span><span><i className="event-ring" />有供给事件</span></div>
         <div className="map-selection"><div><span>{selected.country} · {selected.status}</span><h3>{selected.name}</h3><p>{selected.operator} · {selected.stage}</p></div><dl><div><dt>产品</dt><dd>{selected.product}</dd></div><div><dt>产量</dt><dd>{selected.production === null ? "待补" : `${selected.production} ${selected.productionUnit}`}</dd></div><div><dt>产能</dt><dd>{selected.capacity}</dd></div></dl><Link href={`/lithium/projects/${selected.id}`}>打开项目档案 →</Link></div>
@@ -120,7 +120,7 @@ export function LithiumDataProduct() {
     <DataScopeNote summary="精矿、碳酸锂、氢氧化锂与 LCE 分开列示；期间与权益分别标注，产能不代替产量。"><p>覆盖澳大利亚、南美与巴西的锂资产。各项事实保留公司公告、年报或监管材料来源；未披露显示“待补”。</p></DataScopeNote>
 
     <section className="matrix-section lithium-matrix">
-      <div className="section-heading"><div><span>03 / 项目研究矩阵</span><h2>锂资产、产量与产能</h2></div><p>{filtered.length} / {lithiumProjects.length} 个项目</p></div>
+      <div className="section-heading"><div><span>03 / 项目数据</span><h2>项目研究矩阵</h2></div><p>{filtered.length} / {lithiumProjects.length} 个项目</p></div>
       <div className="matrix-toolbar lithium-toolbar">
         <input aria-label="搜索锂项目" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="搜索项目、国家或运营方" />
         <select aria-label="国家筛选" value={country} onChange={(event) => setCountry(event.target.value)}><option value="all">全部国家</option>{countries.map((item) => <option key={item}>{item}</option>)}</select>
@@ -136,10 +136,10 @@ export function LithiumDataProduct() {
     </section>
 
     <section className="lithium-method">
-      <div className="section-heading"><div><span>04 / 数据边界</span><h2>不同产品、期间与权益口径不混算</h2></div><p>所有事实关联具体来源材料</p></div>
+      <div className="section-heading"><div><span>04 / 数据边界</span><h2>数据口径说明</h2></div><p>所有事实关联具体来源材料</p></div>
       <div className="lithium-method-grid"><article><b>NULL ≠ 0</b><p>无可靠事实时显示“待补”，不会用产能冒充产量。</p></article><article><b>阶段隔离</b><p>锂辉石精矿、碳酸锂、氢氧化锂及 LCE 分开保存。</p></article><article><b>期间明确</b><p>财年、季度、年度产量和长期目标分别标注。</p></article><article><b>权益明确</b><p>项目 100% 与运营商应占数字不会放在同一总计中。</p></article></div>
     </section>
-    {libraryOpen && <div className="source-library-backdrop" onClick={() => setLibraryOpen(false)}><section className="source-library" role="dialog" aria-modal="true" aria-label="锂来源索引" onClick={(event) => event.stopPropagation()}><header><div><span>LI / 资料库</span><h2>锂证据索引</h2><p>8 份公司公告、年报和监管材料。</p></div><button type="button" onClick={() => setLibraryOpen(false)} aria-label="关闭资料库">×</button></header><div>{lithiumSources.map((item) => <button key={item.id} type="button" onClick={() => { setLibraryOpen(false); setSource(item); }}><span className="tier tier-a">A</span><div><b>{item.title}</b><small>{item.organization} · {item.publication_date}</small><em>{item.locator}</em></div><i>查看 →</i></button>)}</div></section></div>}
+    {libraryOpen && <div className="source-library-backdrop" onClick={() => setLibraryOpen(false)}><section className="source-library" role="dialog" aria-modal="true" aria-label="锂来源索引" onClick={(event) => event.stopPropagation()}><header><div><span>LI / 资料库</span><h2>锂来源索引</h2><p>8 份公司公告、年报和监管材料。</p></div><button type="button" onClick={() => setLibraryOpen(false)} aria-label="关闭资料库">×</button></header><div>{lithiumSources.map((item) => <button key={item.id} type="button" onClick={() => { setLibraryOpen(false); setSource(item); }}><span className="tier tier-a">A</span><div><b>{item.title}</b><small>{item.organization} · {item.publication_date}</small><em>{item.locator}</em></div><i>查看 →</i></button>)}</div></section></div>}
     <PublicSourceDrawer source={source} onClose={() => setSource(null)} />
   </main>;
 }

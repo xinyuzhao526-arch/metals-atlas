@@ -42,7 +42,7 @@ export function MetalInventories({metal}:{metal:Metal}) {
  const label=(item:Observation)=>options.find(option=>option.exchange===item.exchange&&option.type===item.inventory_type)?.label.split(" · ").at(-1)??item.inventory_type;
  const unit=(value:string)=>({metric_tonnes:"吨",thousand_metric_tonnes:"千吨",lots:"手"}[value]??value);
  return <section className="inventory-terminal" aria-label={`${names[metal]}交易所库存与仓单`}>
-  <div className="section-heading"><div><span>03 / 仓库信号</span><h2>交易所库存，而非“全球库存”</h2></div><p>{names[metal]}产品吨；不同交易所与定义不相加，缺失日期不插值。</p></div>
+  <div className="section-heading"><div><span>03 / 库存数据</span><h2>交易所库存</h2></div><p>{names[metal]}产品吨；所列交易所库存不代表全球库存。不同交易所与定义不相加，缺失日期不插值。</p></div>
   <div className="exchange-tabs" aria-label="选择交易所">{exchanges.map(item=><button key={item} className={exchange===item?"active":""} aria-pressed={exchange===item} type="button" onClick={()=>{setExchange(item);setInventoryType(null);}}>{item}</button>)}</div>
   <div className="inventory-body">
    <div className="inventory-latest"><span>最新可展示值 · {definition?.label.split(" · ").at(-1)}</span><strong>{exchange==="LME"&&latest?.normalized_value!=null&&(latest.precision_tonnes??100)>1?"≈ ":""}{latest?.normalized_value?.toLocaleString()??"待补"} <small>{latest?.normalized_value!=null?"metric tonnes":""}</small></strong>
