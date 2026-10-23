@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "updated_at": "2026-10-23",
-  "last_checked_at": "2026-10-23T06:02:49.437Z",
+  "last_checked_at": "2026-10-23T14:14:39.672Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -33,6 +33,7 @@
     "https://www.hydro.com/en/global/media/news/2026/hydros-third-quarter-2026-solid-results-and-strong-performance",
     "https://www.internationaltin.org/alphamin-focuses-on-exploration-as-q3-output-steady",
     "https://www.internationaltin.org/metals-x-targets-full-takeover-of-first-tin",
+    "https://www.internationaltin.org/usd181-million-raised-for-south-crofty-restart",
     "https://www.internationaltin.org/yunnan-tin-announces-2026-maintenance",
     "https://www.investegate.co.uk/announcement/rns/bhp-group-limited-npv-di---bhp/quarterly-activities-report-/9830537",
     "https://www.investegate.co.uk/announcement/rns/bhp-group-limited-npv-di---bhp/quarterly-activities-report/9671198",
@@ -184,6 +185,28 @@
       "verification_method": "automated_metadata_check",
       "review_status": "pending",
       "discovered_at": "2026-10-23T06:02:49.437Z"
+    },
+    {
+      "id": "news-sn-cb7450a903c71eca",
+      "metal_id": "metal-sn",
+      "title": "USD181 million raised for South Crofty restart",
+      "organization": "International Tin Association",
+      "source_type": "industry_association_news",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.internationaltin.org/usd181-million-raised-for-south-crofty-restart",
+      "source_listing_url": "https://www.internationaltin.org/feed/",
+      "publication_date": "2026-10-23",
+      "source_publication_date": "2026-10-23",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-23",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-23T14:14:39.672Z"
     },
     {
       "id": "news-cu-ee24ffd262c98511",
