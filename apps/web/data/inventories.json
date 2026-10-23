@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-23",
   "items": [
     {
       "id": "inventory-shfe-weekly-2026-09-18",
@@ -2109,6 +2109,25 @@
       "change_period": "previous_report",
       "notes": "上期所官方仓单日报铜“期货”总计；较上一报告 -3427 吨。不等同于库存周报。",
       "license_status": "official_public_report",
+      "missing_reason": null
+    },
+    {
+      "id": "inventory-lme-total-2026-10-22",
+      "exchange": "LME",
+      "inventory_type": "total",
+      "value": 273000,
+      "original_unit": "metric_tonnes",
+      "normalized_value": 273000,
+      "normalized_unit": "metric_tonnes",
+      "data_date": "2026-10-22",
+      "published_at": "2026-10-22",
+      "source_id": "src-vaultreport-lme-copper-2026-10-22",
+      "source_tier": "B",
+      "frequency": "daily",
+      "change_pct": 7.4,
+      "change_period": "30_day",
+      "notes": "公开页面对 LME 官方仓库报告的当日总库存转述；逐日保存实际观察快照，不批量复制受限历史，不推算缺失日期。",
+      "license_status": "media_relay_observed_daily_snapshot",
       "missing_reason": null
     }
   ]

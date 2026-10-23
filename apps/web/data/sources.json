@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-23",
   "items": [
     {
       "id": "src-mmg-q2-2026",
@@ -1200,6 +1200,18 @@
       "verification_date": "2026-10-22",
       "url": "https://www.shfe.com.cn/data/tradedata/future/stockdata/dailystock_20261022/ZH/all.html",
       "locator": "HTML 铜 / 总计：期货（已制成仓单）23787 吨，较上一报告 -3427 吨",
+      "short_excerpt": null
+    },
+    {
+      "id": "src-vaultreport-lme-copper-2026-10-22",
+      "tier": "B",
+      "source_type": "media_relay_daily_snapshot",
+      "organization": "The Vault Report（转述 LME 报告）",
+      "title": "LME Copper Warehouse Inventory 2026-10-22",
+      "publication_date": "2026-10-22",
+      "verification_date": "2026-10-23",
+      "url": "https://thevaultreport.com/charts/lme/copper",
+      "locator": "HTML meta description / latest snapshot：total warehouse stocks 273000 metric tonnes；30 日变化 7.4%",
       "short_excerpt": null
     }
   ]
