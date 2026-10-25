@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-10-24",
-  "last_checked_at": "2026-10-24T05:53:40.630Z",
+  "updated_at": "2026-10-25",
+  "last_checked_at": "2026-10-25T06:08:21.943Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -97,10 +97,33 @@
     "https://www.northernminer.com/news/uk-scientists-turn-to-biology-in-search-for-cleaner-lithium/1003895598",
     "https://www.northernminer.com/news/vale-buys-ligga-iron-ore-stake-for-190m/1003895046",
     "https://www.northernminer.com/news/westwin-to-build-502m-nickel-refinery-in-mississippi/1003895478",
+    "https://www.teck.com/news/news-releases/2026/teck-provides-update-on-highland-valley-copper-operations",
     "https://www.teck.com/news/news-releases/2026/teck-receives-highland-valley-copper-operations-strike-notice",
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-second-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-14fdeb5899599e03",
+      "metal_id": "metal-cu",
+      "title": "Teck Provides Update on Highland Valley Copper Operations",
+      "organization": "Teck Resources",
+      "source_type": "official_company_news",
+      "source_level": "official",
+      "event_tag": "政策与供给",
+      "material_url": "https://www.teck.com/news/news-releases/2026/teck-provides-update-on-highland-valley-copper-operations",
+      "source_listing_url": "https://www.teck.com/news/news-releases/",
+      "publication_date": "2026-10-24",
+      "source_publication_date": "2026-10-24",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-25",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-25T06:08:21.943Z"
+    },
     {
       "id": "news-li-3e7f0c2211cbf720",
       "metal_id": "metal-li",
