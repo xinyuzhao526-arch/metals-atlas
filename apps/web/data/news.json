@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-10-25",
-  "last_checked_at": "2026-10-25T06:08:21.943Z",
+  "updated_at": "2026-10-26",
+  "last_checked_at": "2026-10-26T16:07:52.694Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -93,6 +93,7 @@
     "https://www.northernminer.com/news/moon-river-lifts-davidson-value-to-1-2b-tungsten-output-jumps/1003896021",
     "https://www.northernminer.com/news/newmont-prices-red-chris-expansion-at-up-to-4-8b/1003896004",
     "https://www.northernminer.com/news/southern-copper-weighs-680m-cuajone-expansion/1003896008",
+    "https://www.northernminer.com/news/strike-curbs-output-at-canadas-largest-copper-mine/1003896047",
     "https://www.northernminer.com/news/summit-video-kodiak-tests-how-much-bigger-mpd-resource-can-get/1003895947",
     "https://www.northernminer.com/news/uk-scientists-turn-to-biology-in-search-for-cleaner-lithium/1003895598",
     "https://www.northernminer.com/news/vale-buys-ligga-iron-ore-stake-for-190m/1003895046",
@@ -102,6 +103,28 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-second-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-6e07fd6823fd195f",
+      "metal_id": "metal-cu",
+      "title": "Strike curbs output at Canada’s largest copper mine",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.northernminer.com/news/strike-curbs-output-at-canadas-largest-copper-mine/1003896047",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-10-26",
+      "source_publication_date": "2026-10-26",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-26",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-26T16:07:52.694Z"
+    },
     {
       "id": "news-cu-14fdeb5899599e03",
       "metal_id": "metal-cu",
