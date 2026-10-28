@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-10-26",
-  "last_checked_at": "2026-10-26T16:07:52.694Z",
+  "updated_at": "2026-10-28",
+  "last_checked_at": "2026-10-28T06:52:02.249Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -26,6 +26,7 @@
     "https://www.australianmining.com.au/aic-mines-moves-to-acquire-mt-cuthbert",
     "https://www.australianmining.com.au/core-lithium-enters-new-era-as-finniss-restart-gathers-pace",
     "https://www.australianmining.com.au/global-lithium-agrees-333-million-takeover-by-titan",
+    "https://www.australianmining.com.au/pls-delivers-record-pilgangoora-lithium-production",
     "https://www.eramet.com/en/news/centenario-ratones-lithium-plant-expansion-project-3-questions-for-jean-baptiste-hogard-director-of-eramets-lithium-business-unit",
     "https://www.hydro.com/en/global/media/news/2026/alunorte-ramps-up-alumina-production",
     "https://www.hydro.com/en/global/media/news/2026/alunorte-reduces-alumina-production-on-natural-gas-supply-disruptions",
@@ -85,6 +86,7 @@
     "https://www.northernminer.com/news/brazil-court-order-idles-sigma-lithium-mine/1003895373",
     "https://www.northernminer.com/news/capstone-sells-mexican-mine-to-luca-for-up-to-385m/1003894997",
     "https://www.northernminer.com/news/cleantech-lithium-expands-foothold-in-argentina/1003895600",
+    "https://www.northernminer.com/news/codelco-copper-mine-blockade-adds-to-supply-concerns/1003896154",
     "https://www.northernminer.com/news/copper-hungry-us-buyers-circle-ivanhoe-electric-mine/1003895861",
     "https://www.northernminer.com/news/copper-price-gains-as-chile-strike-threatens-output/1003895558",
     "https://www.northernminer.com/news/eu-fast-tracks-kghms-3-46b-polish-copper-projects/1003895652",
@@ -103,6 +105,50 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-second-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-li-7f2c9a7808bf1f1a",
+      "metal_id": "metal-li",
+      "title": "PLS delivers record Pilgangoora lithium production",
+      "organization": "australianmining",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.australianmining.com.au/pls-delivers-record-pilgangoora-lithium-production",
+      "source_listing_url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
+      "publication_date": "2026-10-28",
+      "source_publication_date": "2026-10-28",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-28",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-28T06:52:02.249Z"
+    },
+    {
+      "id": "news-cu-ccf1ce43c4d75de7",
+      "metal_id": "metal-cu",
+      "title": "Codelco copper mine blockade adds to supply concerns",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "政策与供给",
+      "material_url": "https://www.northernminer.com/news/codelco-copper-mine-blockade-adds-to-supply-concerns/1003896154",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-10-27",
+      "source_publication_date": "2026-10-27",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-28",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-28T06:52:02.249Z"
+    },
     {
       "id": "news-cu-6e07fd6823fd195f",
       "metal_id": "metal-cu",
