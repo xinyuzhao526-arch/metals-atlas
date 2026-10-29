@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-10-28",
-  "last_checked_at": "2026-10-28T16:02:19.869Z",
+  "updated_at": "2026-10-29",
+  "last_checked_at": "2026-10-29T07:05:31.697Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -34,12 +34,14 @@
     "https://www.hydro.com/en/global/media/news/2026/hydros-third-quarter-2026-solid-results-and-strong-performance",
     "https://www.internationaltin.org/alphamin-focuses-on-exploration-as-q3-output-steady",
     "https://www.internationaltin.org/metals-x-targets-full-takeover-of-first-tin",
+    "https://www.internationaltin.org/renison-output-broadly-steady-rentails-decision-delayed",
     "https://www.internationaltin.org/usd181-million-raised-for-south-crofty-restart",
     "https://www.internationaltin.org/yunnan-tin-announces-2026-maintenance",
     "https://www.investegate.co.uk/announcement/rns/bhp-group-limited-npv-di---bhp/quarterly-activities-report-/9830537",
     "https://www.investegate.co.uk/announcement/rns/bhp-group-limited-npv-di---bhp/quarterly-activities-report/9671198",
     "https://www.investegate.co.uk/announcement/rns/glencore--glen/first-quarter-2026-production-report/9545193",
     "https://www.investegate.co.uk/announcement/rns/glencore--glen/half-year-production-report-2026/9692297",
+    "https://www.investegate.co.uk/announcement/rns/glencore--glen/third-quarter-2026-production-report-/9846861",
     "https://www.investegate.co.uk/announcement/rns/rio-tinto--rio/rio-tinto-2026-half-year-results/9692256",
     "https://www.investegate.co.uk/announcement/rns/rio-tinto--rio/second-quarter-production-results/9668973",
     "https://www.investegate.co.uk/announcement/rns/rio-tinto--rio/third-quarter-production-results/9821323",
@@ -68,6 +70,7 @@
     "https://www.mining-technology.com/news/talisman-acquires-licences-tirzzit-project",
     "https://www.mining-technology.com/news/trafigura-energyx-10-year-lithium-contract",
     "https://www.mining.com/antofagastas-centinela-strike-adds-copper-supply-risk",
+    "https://www.mining.com/codelco-relocates-74-of-workers-as-andes-norte-remains-halted",
     "https://www.mining.com/copper-holds-above-14400-as-chile-strike-risk-grows",
     "https://www.mining.com/copper-price-falls-for-third-day-as-us-inflation-shock-easing-chile-strike-risk-spur-selloff",
     "https://www.mining.com/copper-price-forecasts-lifted-for-2026-but-tariff-collapse-still-on-the-table",
@@ -103,9 +106,120 @@
     "https://www.northernminer.com/news/westwin-to-build-502m-nickel-refinery-in-mississippi/1003895478",
     "https://www.teck.com/news/news-releases/2026/teck-provides-update-on-highland-valley-copper-operations",
     "https://www.teck.com/news/news-releases/2026/teck-receives-highland-valley-copper-operations-strike-notice",
-    "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-second-quarter-results-for-2026"
+    "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-second-quarter-results-for-2026",
+    "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-dd1fd27f022f3df0",
+      "metal_id": "metal-cu",
+      "title": "Third Quarter 2026 Production Report",
+      "organization": "Glencore",
+      "source_type": "company_regulatory_announcement",
+      "source_level": "official",
+      "event_tag": "产量与指引",
+      "material_url": "https://www.investegate.co.uk/announcement/rns/glencore--glen/third-quarter-2026-production-report-/9846861",
+      "source_listing_url": "https://www.investegate.co.uk/company/GLEN",
+      "publication_date": "2026-10-29",
+      "source_publication_date": "2026-10-29",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-29",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-29T07:05:31.697Z"
+    },
+    {
+      "id": "news-ni-dd1fd27f022f3df0",
+      "metal_id": "metal-ni",
+      "title": "Third Quarter 2026 Production Report",
+      "organization": "Glencore",
+      "source_type": "company_regulatory_announcement",
+      "source_level": "official",
+      "event_tag": "产量与指引",
+      "material_url": "https://www.investegate.co.uk/announcement/rns/glencore--glen/third-quarter-2026-production-report-/9846861",
+      "source_listing_url": "https://www.investegate.co.uk/company/GLEN",
+      "publication_date": "2026-10-29",
+      "source_publication_date": "2026-10-29",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-29",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-29T07:05:31.697Z"
+    },
+    {
+      "id": "news-zn-dd1fd27f022f3df0",
+      "metal_id": "metal-zn",
+      "title": "Third Quarter 2026 Production Report",
+      "organization": "Glencore",
+      "source_type": "company_regulatory_announcement",
+      "source_level": "official",
+      "event_tag": "产量与指引",
+      "material_url": "https://www.investegate.co.uk/announcement/rns/glencore--glen/third-quarter-2026-production-report-/9846861",
+      "source_listing_url": "https://www.investegate.co.uk/company/GLEN",
+      "publication_date": "2026-10-29",
+      "source_publication_date": "2026-10-29",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-29",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-29T07:05:31.697Z"
+    },
+    {
+      "id": "news-cu-ee106b215abcff79",
+      "metal_id": "metal-cu",
+      "title": "Teck Reports Unaudited Third Quarter Results for 2026",
+      "organization": "Teck Resources",
+      "source_type": "official_company_news",
+      "source_level": "official",
+      "event_tag": "产量与指引",
+      "material_url": "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026",
+      "source_listing_url": "https://www.teck.com/news/news-releases/",
+      "publication_date": "2026-10-28",
+      "source_publication_date": "2026-10-28",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-29",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-29T07:05:31.697Z"
+    },
+    {
+      "id": "news-zn-ee106b215abcff79",
+      "metal_id": "metal-zn",
+      "title": "Teck Reports Unaudited Third Quarter Results for 2026",
+      "organization": "Teck Resources",
+      "source_type": "official_company_news",
+      "source_level": "official",
+      "event_tag": "产量与指引",
+      "material_url": "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026",
+      "source_listing_url": "https://www.teck.com/news/news-releases/",
+      "publication_date": "2026-10-28",
+      "source_publication_date": "2026-10-28",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-29",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-29T07:05:31.697Z"
+    },
     {
       "id": "news-li-7f2c9a7808bf1f1a",
       "metal_id": "metal-li",
@@ -149,6 +263,50 @@
       "verification_method": "automated_metadata_check",
       "review_status": "pending",
       "discovered_at": "2026-10-28T16:02:19.869Z"
+    },
+    {
+      "id": "news-sn-5bcf4fee14b4a758",
+      "metal_id": "metal-sn",
+      "title": "Renison output broadly steady, Rentails decision delayed",
+      "organization": "International Tin Association",
+      "source_type": "industry_association_news",
+      "source_level": "media",
+      "event_tag": "产量与指引",
+      "material_url": "https://www.internationaltin.org/renison-output-broadly-steady-rentails-decision-delayed",
+      "source_listing_url": "https://www.internationaltin.org/feed/",
+      "publication_date": "2026-10-28",
+      "source_publication_date": "2026-10-28",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-29",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-29T07:05:31.697Z"
+    },
+    {
+      "id": "news-cu-93f2d745b7610cb4",
+      "metal_id": "metal-cu",
+      "title": "Codelco relocates 74% of workers as Andes Norte remains halted",
+      "organization": "mining.com",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.mining.com/codelco-relocates-74-of-workers-as-andes-norte-remains-halted",
+      "source_listing_url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
+      "publication_date": "2026-10-28",
+      "source_publication_date": "2026-10-28",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-29",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-29T07:05:31.697Z"
     },
     {
       "id": "news-cu-ccf1ce43c4d75de7",
