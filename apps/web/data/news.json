@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-10-29",
-  "last_checked_at": "2026-10-29T07:05:31.697Z",
+  "updated_at": "2026-10-30",
+  "last_checked_at": "2026-10-30T15:56:22.545Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -67,6 +67,7 @@
     "https://www.mining-technology.com/news/mitsubishi-approval-copper-world-arizona",
     "https://www.mining-technology.com/news/nth-cycle-1bn-recycled-minerals-supply-glencore",
     "https://www.mining-technology.com/news/questcorp-acquire-final-49-north-island",
+    "https://www.mining-technology.com/news/rio-tinto-argentine-lithium-operations",
     "https://www.mining-technology.com/news/talisman-acquires-licences-tirzzit-project",
     "https://www.mining-technology.com/news/trafigura-energyx-10-year-lithium-contract",
     "https://www.mining.com/antofagastas-centinela-strike-adds-copper-supply-risk",
@@ -110,6 +111,28 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-li-9532d734eecf1698",
+      "metal_id": "metal-li",
+      "title": "Rio Tinto inaugurates $985m Argentine lithium operations",
+      "organization": "Mining Technology",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "政策与供给",
+      "material_url": "https://www.mining-technology.com/news/rio-tinto-argentine-lithium-operations",
+      "source_listing_url": "https://www.mining-technology.com/feed/",
+      "publication_date": "2026-10-30",
+      "source_publication_date": "2026-10-30",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-30",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-30T15:56:22.545Z"
+    },
     {
       "id": "news-cu-dd1fd27f022f3df0",
       "metal_id": "metal-cu",
