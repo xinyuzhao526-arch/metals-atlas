@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-10-30",
-  "last_checked_at": "2026-10-30T15:56:22.545Z",
+  "updated_at": "2026-10-31",
+  "last_checked_at": "2026-10-31T07:00:10.813Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -99,6 +99,7 @@
     "https://www.northernminer.com/news/levack-restart-puts-magna-on-two-mine-path/1003895592",
     "https://www.northernminer.com/news/moon-river-lifts-davidson-value-to-1-2b-tungsten-output-jumps/1003896021",
     "https://www.northernminer.com/news/newmont-prices-red-chris-expansion-at-up-to-4-8b/1003896004",
+    "https://www.northernminer.com/news/rio-begins-oyu-tolgoi-copper-restart-after-rockfall/1003896401",
     "https://www.northernminer.com/news/southern-copper-weighs-680m-cuajone-expansion/1003896008",
     "https://www.northernminer.com/news/strike-curbs-output-at-canadas-largest-copper-mine/1003896047",
     "https://www.northernminer.com/news/summit-video-kodiak-tests-how-much-bigger-mpd-resource-can-get/1003895947",
@@ -132,6 +133,28 @@
       "verification_method": "automated_metadata_check",
       "review_status": "pending",
       "discovered_at": "2026-10-30T15:56:22.545Z"
+    },
+    {
+      "id": "news-cu-f2eb7efaded28616",
+      "metal_id": "metal-cu",
+      "title": "Rio begins Oyu Tolgoi copper restart after rockfall",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.northernminer.com/news/rio-begins-oyu-tolgoi-copper-restart-after-rockfall/1003896401",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-10-30",
+      "source_publication_date": "2026-10-30",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-10-31",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-10-31T07:00:10.813Z"
     },
     {
       "id": "news-cu-dd1fd27f022f3df0",
