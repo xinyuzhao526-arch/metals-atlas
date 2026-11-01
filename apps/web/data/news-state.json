@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "last_checked_at": "2026-10-31T15:19:54.354Z",
+  "last_checked_at": "2026-11-01T07:32:21.045Z",
   "processed_keys": [
     "al:https://im-mining.com/2026/10/23/rio-tinto-to-boost-weipa-operations-with-kangwinan-bauxite-project-development",
     "al:https://www.hydro.com/en/global/media/news/2026/alunorte-ramps-up-alumina-production",
@@ -598,29 +598,10 @@
         "ni",
         "fe"
       ],
-      "attempts": 4,
-      "last_attempt_at": "2026-10-31T15:19:54.354Z",
+      "attempts": 5,
+      "last_attempt_at": "2026-11-01T07:32:21.045Z",
       "last_error": "Publication date not disclosed in a supported field; will retry",
-      "next_retry_at": "2026-11-01T07:19:54.354Z"
-    },
-    {
-      "title": "Check out our Q3 2026 financial results",
-      "url": "https://vale.com/w/check-out-the-financial-results-for-q3-26/-/categories/64940",
-      "metal": "cu",
-      "needs_body_metals": true,
-      "organization": "Vale",
-      "source_type": "official_company_news",
-      "source_url": "https://vale.com/en/vale-now",
-      "from_feed": false,
-      "metals": [
-        "cu",
-        "ni",
-        "fe"
-      ],
-      "attempts": 4,
-      "last_attempt_at": "2026-10-31T15:19:54.354Z",
-      "last_error": "Publication date not disclosed in a supported field; will retry",
-      "next_retry_at": "2026-11-01T07:19:54.354Z"
+      "next_retry_at": "2026-11-02T07:32:21.045Z"
     },
     {
       "title": "3Q26 Quarterly Results 10/30/26",
@@ -636,48 +617,10 @@
         "ni",
         "fe"
       ],
-      "attempts": 3,
-      "last_attempt_at": "2026-10-31T15:19:54.354Z",
+      "attempts": 4,
+      "last_attempt_at": "2026-11-01T07:32:21.045Z",
       "last_error": "Publication date not disclosed in a supported field; will retry",
-      "next_retry_at": "2026-10-31T23:19:54.354Z"
-    },
-    {
-      "title": "3Q26 Quarterly Results 10/30/26",
-      "url": "https://vale.com/en/w/3q26-results-copper-ebitda/-/categories",
-      "metal": "cu",
-      "needs_body_metals": true,
-      "organization": "Vale",
-      "source_type": "official_company_news",
-      "source_url": "https://vale.com/en/vale-now",
-      "from_feed": false,
-      "metals": [
-        "cu",
-        "ni",
-        "fe"
-      ],
-      "attempts": 3,
-      "last_attempt_at": "2026-10-31T15:19:54.354Z",
-      "last_error": "Publication date not disclosed in a supported field; will retry",
-      "next_retry_at": "2026-10-31T23:19:54.354Z"
-    },
-    {
-      "title": "3Q26 Quarterly Results",
-      "url": "https://vale.com/w/3q26-results-copper-ebitda/-/categories/64940",
-      "metal": "cu",
-      "needs_body_metals": true,
-      "organization": "Vale",
-      "source_type": "official_company_news",
-      "source_url": "https://vale.com/en/vale-now",
-      "from_feed": false,
-      "metals": [
-        "cu",
-        "ni",
-        "fe"
-      ],
-      "attempts": 3,
-      "last_attempt_at": "2026-10-31T15:19:54.354Z",
-      "last_error": "Publication date not disclosed in a supported field; will retry",
-      "next_retry_at": "2026-10-31T23:19:54.354Z"
+      "next_retry_at": "2026-11-01T23:32:21.045Z"
     },
     {
       "title": "quarterly reports",
@@ -694,6 +637,63 @@
       "last_attempt_at": "2026-10-31T15:19:54.354Z",
       "last_error": "Publication date not disclosed in a supported field; will retry",
       "next_retry_at": "2026-11-01T15:19:54.354Z"
+    },
+    {
+      "title": "Check out our Q3 2026 financial results",
+      "url": "https://vale.com/w/check-out-the-financial-results-for-q3-26/-/categories/64940",
+      "metal": "cu",
+      "needs_body_metals": true,
+      "organization": "Vale",
+      "source_type": "official_company_news",
+      "source_url": "https://vale.com/en/vale-now",
+      "from_feed": false,
+      "metals": [
+        "cu",
+        "ni",
+        "fe"
+      ],
+      "attempts": 5,
+      "last_attempt_at": "2026-11-01T07:32:21.045Z",
+      "last_error": "Publication date not disclosed in a supported field; will retry",
+      "next_retry_at": "2026-11-02T07:32:21.045Z"
+    },
+    {
+      "title": "3Q26 Quarterly Results 10/30/26",
+      "url": "https://vale.com/en/w/3q26-results-copper-ebitda/-/categories",
+      "metal": "cu",
+      "needs_body_metals": true,
+      "organization": "Vale",
+      "source_type": "official_company_news",
+      "source_url": "https://vale.com/en/vale-now",
+      "from_feed": false,
+      "metals": [
+        "cu",
+        "ni",
+        "fe"
+      ],
+      "attempts": 4,
+      "last_attempt_at": "2026-11-01T07:32:21.045Z",
+      "last_error": "Publication date not disclosed in a supported field; will retry",
+      "next_retry_at": "2026-11-01T23:32:21.045Z"
+    },
+    {
+      "title": "3Q26 Quarterly Results",
+      "url": "https://vale.com/w/3q26-results-copper-ebitda/-/categories/64940",
+      "metal": "cu",
+      "needs_body_metals": true,
+      "organization": "Vale",
+      "source_type": "official_company_news",
+      "source_url": "https://vale.com/en/vale-now",
+      "from_feed": false,
+      "metals": [
+        "cu",
+        "ni",
+        "fe"
+      ],
+      "attempts": 4,
+      "last_attempt_at": "2026-11-01T07:32:21.045Z",
+      "last_error": "Publication date not disclosed in a supported field; will retry",
+      "next_retry_at": "2026-11-01T23:32:21.045Z"
     }
   ],
   "sources": [
@@ -703,7 +703,7 @@
       "url": "https://www.pls.com/invest/asx-announcements",
       "status": "error",
       "candidate_count": 0,
-      "checked_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -724,8 +724,8 @@
       "url": "https://www.igo.com.au/site/investor-center/ASX-Announcements",
       "status": "ok",
       "candidate_count": 5,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.igo.com.au/site/investor-center/ASX-Announcements",
@@ -739,8 +739,8 @@
       "url": "https://www.mineralresources.com.au/news/",
       "status": "ok",
       "candidate_count": 8,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.mineralresources.com.au/news/",
@@ -754,8 +754,8 @@
       "url": "https://www.investegate.co.uk/company/RIO",
       "status": "ok",
       "candidate_count": 16,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.investegate.co.uk/company/RIO",
@@ -769,8 +769,8 @@
       "url": "https://vale.com/en/vale-now",
       "status": "ok",
       "candidate_count": 19,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://vale.com/en/vale-now",
@@ -784,8 +784,8 @@
       "url": "https://www.investegate.co.uk/company/GLEN",
       "status": "ok",
       "candidate_count": 16,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.investegate.co.uk/company/GLEN",
@@ -799,8 +799,8 @@
       "url": "https://www.eramet.com/en/news/",
       "status": "ok",
       "candidate_count": 5,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.eramet.com/en/news/",
@@ -814,8 +814,8 @@
       "url": "https://www.investegate.co.uk/company/BHP",
       "status": "ok",
       "candidate_count": 21,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.investegate.co.uk/company/BHP",
@@ -829,8 +829,8 @@
       "url": "https://www.hydro.com/en/global/media/news/",
       "status": "ok",
       "candidate_count": 2,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.hydro.com/en/global/media/news/",
@@ -844,8 +844,8 @@
       "url": "https://www.investegate.co.uk/company/S32",
       "status": "ok",
       "candidate_count": 13,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.investegate.co.uk/company/S32",
@@ -859,7 +859,7 @@
       "url": "https://www.ivanhoemines.com/feed/",
       "status": "empty",
       "candidate_count": 0,
-      "checked_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -878,7 +878,7 @@
       "url": "https://investors.fcx.com/investors/news-releases/",
       "status": "error",
       "candidate_count": 0,
-      "checked_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -894,8 +894,8 @@
       "url": "https://www.antofagasta.co.uk/investors/news/",
       "status": "ok",
       "candidate_count": 32,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.antofagasta.co.uk/investors/news/",
@@ -909,8 +909,8 @@
       "url": "https://www.mmg.com/investors/news-centre/",
       "status": "ok",
       "candidate_count": 15,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.mmg.com/investors/news-centre/",
@@ -924,8 +924,8 @@
       "url": "https://www.alphaminresources.com/feed/",
       "status": "ok",
       "candidate_count": 5,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.alphaminresources.com/feed/",
@@ -939,8 +939,8 @@
       "url": "https://www.investegate.co.uk/company/ATM",
       "status": "ok",
       "candidate_count": 6,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.investegate.co.uk/company/ATM",
@@ -954,8 +954,8 @@
       "url": "https://www.metalsx.com.au/asx-announcements/",
       "status": "ok",
       "candidate_count": 72,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.metalsx.com.au/asx-announcements/",
@@ -969,8 +969,8 @@
       "url": "https://www.angloamerican.com/media/press-releases",
       "status": "ok",
       "candidate_count": 3,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.angloamerican.com/media/press-releases",
@@ -984,8 +984,8 @@
       "url": "https://www.angloamericankumba.com/media/press-releases",
       "status": "ok",
       "candidate_count": 3,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.angloamericankumba.com/media/press-releases",
@@ -999,7 +999,7 @@
       "url": "https://investors.fortescue.com/en/",
       "status": "empty",
       "candidate_count": 0,
-      "checked_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -1014,8 +1014,8 @@
       "url": "https://www.teck.com/news/news-releases/",
       "status": "ok",
       "candidate_count": 20,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.teck.com/news/news-releases/",
@@ -1029,8 +1029,8 @@
       "url": "https://www.mining-technology.com/feed/",
       "status": "ok",
       "candidate_count": 1,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.mining-technology.com/feed/",
@@ -1044,8 +1044,8 @@
       "url": "https://www.northernminer.com/feed/",
       "status": "ok",
       "candidate_count": 1,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.northernminer.com/feed/",
@@ -1059,7 +1059,7 @@
       "url": "https://im-mining.com/feed/",
       "status": "empty",
       "candidate_count": 0,
-      "checked_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
       "last_success_at": "2026-10-26T16:07:52.694Z",
       "attempts": [
         {
@@ -1074,8 +1074,8 @@
       "url": "https://www.internationaltin.org/feed/",
       "status": "ok",
       "candidate_count": 5,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z",
       "attempts": [
         {
           "url": "https://www.internationaltin.org/feed/",
@@ -1089,7 +1089,7 @@
       "url": "https://www.australianmining.com.au/feed/",
       "status": "error",
       "candidate_count": 0,
-      "checked_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -1105,7 +1105,7 @@
       "url": "https://www.mining.com/feed/",
       "status": "error",
       "candidate_count": 0,
-      "checked_at": "2026-10-31T15:19:54.354Z",
+      "checked_at": "2026-11-01T07:32:21.045Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -1121,15 +1121,15 @@
       "url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
       "status": "ok",
       "candidate_count": 43,
-      "checked_at": "2026-10-31T15:19:54.354Z",
-      "last_success_at": "2026-10-31T15:19:54.354Z"
+      "checked_at": "2026-11-01T07:32:21.045Z",
+      "last_success_at": "2026-11-01T07:32:21.045Z"
     }
   ],
   "last_run": {
     "added": 0,
     "retained": 140,
-    "detail_fetches": 46,
-    "article_errors": 31,
+    "detail_fetches": 20,
+    "article_errors": 5,
     "deferred": 0,
     "by_metal": {
       "cu": 62,
