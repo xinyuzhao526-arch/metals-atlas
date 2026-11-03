@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-02",
-  "last_checked_at": "2026-11-02T19:29:15.918Z",
+  "updated_at": "2026-11-03",
+  "last_checked_at": "2026-11-03T17:02:58.431Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -65,6 +65,7 @@
     "https://www.mining-technology.com/news/elevra-supply-spodumene-lg-energy",
     "https://www.mining-technology.com/news/fortescue-copper-cleaned-arsenic-removal",
     "https://www.mining-technology.com/news/global-lithium-237m-sid-titan-australia-mining",
+    "https://www.mining-technology.com/news/kavango-completes-commissioning-hillside-plant",
     "https://www.mining-technology.com/news/mitsubishi-approval-copper-world-arizona",
     "https://www.mining-technology.com/news/nth-cycle-1bn-recycled-minerals-supply-glencore",
     "https://www.mining-technology.com/news/questcorp-acquire-final-49-north-island",
@@ -102,6 +103,7 @@
     "https://www.northernminer.com/news/newmont-prices-red-chris-expansion-at-up-to-4-8b/1003896004",
     "https://www.northernminer.com/news/rio-begins-oyu-tolgoi-copper-restart-after-rockfall/1003896401",
     "https://www.northernminer.com/news/southern-copper-weighs-680m-cuajone-expansion/1003896008",
+    "https://www.northernminer.com/news/st-barbara-readies-touquoy-gold-restart-in-nova-scotia-amid-review-dispute/1003897330",
     "https://www.northernminer.com/news/strike-curbs-output-at-canadas-largest-copper-mine/1003896047",
     "https://www.northernminer.com/news/summit-video-kodiak-tests-how-much-bigger-mpd-resource-can-get/1003895947",
     "https://www.northernminer.com/news/uk-scientists-turn-to-biology-in-search-for-cleaner-lithium/1003895598",
@@ -113,6 +115,50 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-al-9cd292bf875adceb",
+      "metal_id": "metal-al",
+      "title": "Kavango completes commissioning of Hillside gold plant in Zimbabwe",
+      "organization": "Mining Technology",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "扩产投产",
+      "material_url": "https://www.mining-technology.com/news/kavango-completes-commissioning-hillside-plant",
+      "source_listing_url": "https://www.mining-technology.com/feed/",
+      "publication_date": "2026-11-03",
+      "source_publication_date": "2026-11-03",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-03",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-03T17:02:58.431Z"
+    },
+    {
+      "id": "news-ni-a54cab6644fa0d52",
+      "metal_id": "metal-ni",
+      "title": "St Barbara readies Touquoy gold restart in Nova Scotia amid review dispute",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.northernminer.com/news/st-barbara-readies-touquoy-gold-restart-in-nova-scotia-amid-review-dispute/1003897330",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-11-03",
+      "source_publication_date": "2026-11-03",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-03",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-03T17:02:58.431Z"
+    },
     {
       "id": "news-sn-765fe7969f973a7c",
       "metal_id": "metal-sn",
