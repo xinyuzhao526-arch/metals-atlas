@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-03",
-  "last_checked_at": "2026-11-03T17:02:58.431Z",
+  "updated_at": "2026-11-04",
+  "last_checked_at": "2026-11-04T17:15:09.856Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -12,6 +12,7 @@
     "https://im-mining.com/2026/10/20/bhp-reveals-first-block-cave-resource-at-olympic-dam",
     "https://im-mining.com/2026/10/20/joest-australia-bags-largest-order-in-its-history-for-pilgangoora-expansion",
     "https://im-mining.com/2026/10/23/rio-tinto-to-boost-weipa-operations-with-kangwinan-bauxite-project-development",
+    "https://im-mining.com/2026/11/04/fleet-of-60-electric-trucks-with-eacon-ahs-enter-full-operation-at-5400-m-zhibula-mine",
     "https://mining.com.au/chinese-nickel-producers-advance-plans-to-cut-indonesian-output",
     "https://www.alphaminresources.com/2026/07/13/alphamin-announces-record-q2-ebitda-guidance-of-us167-million-exploration-update",
     "https://www.alphaminresources.com/2026/10/06/alphamin-announces-cad0-13-per-share-interim-fy2026-dividend-q3-guidance-exploration-update",
@@ -97,6 +98,7 @@
     "https://www.northernminer.com/news/copper-hungry-us-buyers-circle-ivanhoe-electric-mine/1003895861",
     "https://www.northernminer.com/news/copper-price-gains-as-chile-strike-threatens-output/1003895558",
     "https://www.northernminer.com/news/eu-fast-tracks-kghms-3-46b-polish-copper-projects/1003895652",
+    "https://www.northernminer.com/news/freeport-approves-4-5b-bagdad-copper-expansion/1003897395",
     "https://www.northernminer.com/news/glencore-sets-oct-14-for-australian-market-debut/1003895111",
     "https://www.northernminer.com/news/levack-restart-puts-magna-on-two-mine-path/1003895592",
     "https://www.northernminer.com/news/moon-river-lifts-davidson-value-to-1-2b-tungsten-output-jumps/1003896021",
@@ -115,6 +117,50 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-c2557aefe55a27c6",
+      "metal_id": "metal-cu",
+      "title": "Freeport approves $4.5B Bagdad copper expansion",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "扩产投产",
+      "material_url": "https://www.northernminer.com/news/freeport-approves-4-5b-bagdad-copper-expansion/1003897395",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-11-04",
+      "source_publication_date": "2026-11-04",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-04",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-04T17:15:09.856Z"
+    },
+    {
+      "id": "news-cu-0c36bc582a329b3d",
+      "metal_id": "metal-cu",
+      "title": "Fleet of 60 electric trucks with EACON AHS enter full operation at 5,400 m Zhibula mine",
+      "organization": "International Mining",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "政策与供给",
+      "material_url": "https://im-mining.com/2026/11/04/fleet-of-60-electric-trucks-with-eacon-ahs-enter-full-operation-at-5400-m-zhibula-mine",
+      "source_listing_url": "https://im-mining.com/feed/",
+      "publication_date": "2026-11-04",
+      "source_publication_date": "2026-11-04",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-04",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-04T17:15:09.856Z"
+    },
     {
       "id": "news-al-9cd292bf875adceb",
       "metal_id": "metal-al",
