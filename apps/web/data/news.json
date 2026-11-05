@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "updated_at": "2026-11-05",
-  "last_checked_at": "2026-11-05T07:54:46.915Z",
+  "last_checked_at": "2026-11-05T17:24:44.584Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -67,6 +67,7 @@
     "https://www.mining-technology.com/news/cotec-copper-intelligence-agreement-drc-tailings",
     "https://www.mining-technology.com/news/elevra-supply-spodumene-lg-energy",
     "https://www.mining-technology.com/news/fortescue-copper-cleaned-arsenic-removal",
+    "https://www.mining-technology.com/news/freeport-4-5bn-bagdad-project-expansion",
     "https://www.mining-technology.com/news/global-lithium-237m-sid-titan-australia-mining",
     "https://www.mining-technology.com/news/kavango-completes-commissioning-hillside-plant",
     "https://www.mining-technology.com/news/mitsubishi-approval-copper-world-arizona",
@@ -140,6 +141,28 @@
       "verification_method": "automated_metadata_check",
       "review_status": "pending",
       "discovered_at": "2026-11-05T07:54:46.915Z"
+    },
+    {
+      "id": "news-cu-b26d7b0e4b17760c",
+      "metal_id": "metal-cu",
+      "title": "Freeport to invest $4.5bn in Bagdad project expansion",
+      "organization": "Mining Technology",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "扩产投产",
+      "material_url": "https://www.mining-technology.com/news/freeport-4-5bn-bagdad-project-expansion",
+      "source_listing_url": "https://www.mining-technology.com/feed/",
+      "publication_date": "2026-11-05",
+      "source_publication_date": "2026-11-05",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-05",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-05T17:24:44.584Z"
     },
     {
       "id": "news-cu-c2557aefe55a27c6",
