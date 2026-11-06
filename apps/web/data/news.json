@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-05",
-  "last_checked_at": "2026-11-05T17:24:44.584Z",
+  "updated_at": "2026-11-06",
+  "last_checked_at": "2026-11-06T07:55:48.503Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -77,6 +77,7 @@
     "https://www.mining-technology.com/news/talisman-acquires-licences-tirzzit-project",
     "https://www.mining-technology.com/news/trafigura-energyx-10-year-lithium-contract",
     "https://www.mining.com/antofagastas-centinela-strike-adds-copper-supply-risk",
+    "https://www.mining.com/codelco-halts-andina-mine-as-tailings-spill-threaten-river",
     "https://www.mining.com/codelco-relocates-74-of-workers-as-andes-norte-remains-halted",
     "https://www.mining.com/copper-holds-above-14400-as-chile-strike-risk-grows",
     "https://www.mining.com/copper-price-falls-for-third-day-as-us-inflation-shock-easing-chile-strike-risk-spur-selloff",
@@ -87,6 +88,7 @@
     "https://www.mining.com/fatal-accident-reported-at-bhps-escondida-mine",
     "https://www.mining.com/first-quantums-kansanshi-expansion-beats-design-capacity",
     "https://www.mining.com/glencore-clears-key-hurdle-for-peru-copper-expansion",
+    "https://www.mining.com/sibanye-cuts-us-output-forecast-after-five-week-strike",
     "https://www.mining.com/southern-copper-weighs-680m-cuajone-mine-expansion",
     "https://www.mining.com/tech-giants-come-knocking-for-a-piece-of-anglo-american-as-copper-scarcity-bites-wanblad-tells-ft",
     "https://www.mining.com/westwin-elements-traxys-eye-3-9-billion-22-year-nickel-offtake-extension",
@@ -163,6 +165,50 @@
       "verification_method": "automated_metadata_check",
       "review_status": "pending",
       "discovered_at": "2026-11-05T17:24:44.584Z"
+    },
+    {
+      "id": "news-cu-d3e551d9a90459bb",
+      "metal_id": "metal-cu",
+      "title": "Codelco halts Andina mine as tailings spill threatens river",
+      "organization": "mining.com",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.mining.com/codelco-halts-andina-mine-as-tailings-spill-threaten-river",
+      "source_listing_url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
+      "publication_date": "2026-11-05",
+      "source_publication_date": "2026-11-05",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-06",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-06T07:55:48.503Z"
+    },
+    {
+      "id": "news-li-736b256910a52052",
+      "metal_id": "metal-li",
+      "title": "Sibanye cuts US output forecast after five-week strike",
+      "organization": "mining.com",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.mining.com/sibanye-cuts-us-output-forecast-after-five-week-strike",
+      "source_listing_url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
+      "publication_date": "2026-11-05",
+      "source_publication_date": "2026-11-05",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-06",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-06T07:55:48.503Z"
     },
     {
       "id": "news-cu-c2557aefe55a27c6",
