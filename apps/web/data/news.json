@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-06",
-  "last_checked_at": "2026-11-06T07:55:48.503Z",
+  "updated_at": "2026-11-07",
+  "last_checked_at": "2026-11-07T07:10:13.221Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -100,6 +100,7 @@
     "https://www.northernminer.com/news/capstone-sells-mexican-mine-to-luca-for-up-to-385m/1003894997",
     "https://www.northernminer.com/news/cleantech-lithium-expands-foothold-in-argentina/1003895600",
     "https://www.northernminer.com/news/codelco-copper-mine-blockade-adds-to-supply-concerns/1003896154",
+    "https://www.northernminer.com/news/codelco-faces-production-scandal-tailings-probe/1003897486",
     "https://www.northernminer.com/news/copper-hungry-us-buyers-circle-ivanhoe-electric-mine/1003895861",
     "https://www.northernminer.com/news/copper-price-gains-as-chile-strike-threatens-output/1003895558",
     "https://www.northernminer.com/news/eu-fast-tracks-kghms-3-46b-polish-copper-projects/1003895652",
@@ -122,6 +123,28 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-d25f52dea2220524",
+      "metal_id": "metal-cu",
+      "title": "Codelco faces production scandal, tailings probe",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "产量与指引",
+      "material_url": "https://www.northernminer.com/news/codelco-faces-production-scandal-tailings-probe/1003897486",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-11-06",
+      "source_publication_date": "2026-11-06",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-07",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-07T07:10:13.221Z"
+    },
     {
       "id": "news-cu-5507a33f5ceff399",
       "metal_id": "metal-cu",
