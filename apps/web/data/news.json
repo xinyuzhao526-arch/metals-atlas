@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-07",
-  "last_checked_at": "2026-11-07T07:10:13.221Z",
+  "updated_at": "2026-11-09",
+  "last_checked_at": "2026-11-09T07:58:20.872Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -15,6 +15,7 @@
     "https://im-mining.com/2026/11/04/fleet-of-60-electric-trucks-with-eacon-ahs-enter-full-operation-at-5400-m-zhibula-mine",
     "https://im-mining.com/2026/11/04/freeport-approves-bagdad-expansion-including-enlarged-ahs-fleet-new-overland-conveyor",
     "https://im-mining.com/2026/11/05/fluor-to-act-as-epcm-contractor-for-new-grinding-line-expansion-at-sierra-gorda",
+    "https://im-mining.com/2026/11/09/igo-concludes-mining-at-nova-nickel-operation-in-western-australia",
     "https://mining.com.au/chinese-nickel-producers-advance-plans-to-cut-indonesian-output",
     "https://www.alphaminresources.com/2026/07/13/alphamin-announces-record-q2-ebitda-guidance-of-us167-million-exploration-update",
     "https://www.alphaminresources.com/2026/10/06/alphamin-announces-cad0-13-per-share-interim-fy2026-dividend-q3-guidance-exploration-update",
@@ -123,6 +124,28 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-ni-1cf3b313ad2c32cb",
+      "metal_id": "metal-ni",
+      "title": "IGO concludes mining at Nova nickel operation in Western Australia",
+      "organization": "International Mining",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "政策与供给",
+      "material_url": "https://im-mining.com/2026/11/09/igo-concludes-mining-at-nova-nickel-operation-in-western-australia",
+      "source_listing_url": "https://im-mining.com/feed/",
+      "publication_date": "2026-11-09",
+      "source_publication_date": "2026-11-09",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-09",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-09T07:58:20.872Z"
+    },
     {
       "id": "news-cu-d25f52dea2220524",
       "metal_id": "metal-cu",
