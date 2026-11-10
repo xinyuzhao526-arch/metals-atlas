@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-09",
-  "last_checked_at": "2026-11-09T19:49:26.040Z",
+  "updated_at": "2026-11-10",
+  "last_checked_at": "2026-11-10T08:25:34.471Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -29,6 +29,7 @@
     "https://www.antofagasta.co.uk/investors/news/2026/q3-2026-production-report",
     "https://www.australianmining.com.au/aic-mines-moves-to-acquire-mt-cuthbert",
     "https://www.australianmining.com.au/core-lithium-enters-new-era-as-finniss-restart-gathers-pace",
+    "https://www.australianmining.com.au/evolution-seals-213m-carnaby-acquisition",
     "https://www.australianmining.com.au/global-lithium-agrees-333-million-takeover-by-titan",
     "https://www.australianmining.com.au/pls-delivers-record-pilgangoora-lithium-production",
     "https://www.eramet.com/en/news/centenario-ratones-lithium-plant-expansion-project-3-questions-for-jean-baptiste-hogard-director-of-eramets-lithium-business-unit",
@@ -102,6 +103,7 @@
     "https://www.northernminer.com/news/cleantech-lithium-expands-foothold-in-argentina/1003895600",
     "https://www.northernminer.com/news/codelco-copper-mine-blockade-adds-to-supply-concerns/1003896154",
     "https://www.northernminer.com/news/codelco-faces-production-scandal-tailings-probe/1003897486",
+    "https://www.northernminer.com/news/codelco-needs-partners-to-halt-copper-decline-chair/1003897573",
     "https://www.northernminer.com/news/codelco-pucobre-win-permit-for-870m-copper-project/1003897549",
     "https://www.northernminer.com/news/copper-hungry-us-buyers-circle-ivanhoe-electric-mine/1003895861",
     "https://www.northernminer.com/news/copper-price-gains-as-chile-strike-threatens-output/1003895558",
@@ -125,6 +127,28 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-56a262b19095ec95",
+      "metal_id": "metal-cu",
+      "title": "Evolution seals $213m Carnaby acquisition",
+      "organization": "australianmining",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "扩产",
+      "material_url": "https://www.australianmining.com.au/evolution-seals-213m-carnaby-acquisition",
+      "source_listing_url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
+      "publication_date": "2026-11-10",
+      "source_publication_date": "2026-11-10",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-10",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-10T08:25:34.471Z"
+    },
     {
       "id": "news-ni-1cf3b313ad2c32cb",
       "metal_id": "metal-ni",
@@ -168,6 +192,28 @@
       "verification_method": "automated_metadata_check",
       "review_status": "pending",
       "discovered_at": "2026-11-09T19:49:26.040Z"
+    },
+    {
+      "id": "news-cu-6923bd78d26a9e37",
+      "metal_id": "metal-cu",
+      "title": "Codelco needs partners to halt copper decline: chair",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.northernminer.com/news/codelco-needs-partners-to-halt-copper-decline-chair/1003897573",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-11-09",
+      "source_publication_date": "2026-11-09",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-10",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-10T08:25:34.471Z"
     },
     {
       "id": "news-cu-d25f52dea2220524",
