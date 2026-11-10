@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "updated_at": "2026-11-10",
-  "last_checked_at": "2026-11-10T08:25:34.471Z",
+  "last_checked_at": "2026-11-10T17:02:12.544Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -16,6 +16,7 @@
     "https://im-mining.com/2026/11/04/freeport-approves-bagdad-expansion-including-enlarged-ahs-fleet-new-overland-conveyor",
     "https://im-mining.com/2026/11/05/fluor-to-act-as-epcm-contractor-for-new-grinding-line-expansion-at-sierra-gorda",
     "https://im-mining.com/2026/11/09/igo-concludes-mining-at-nova-nickel-operation-in-western-australia",
+    "https://im-mining.com/2026/11/10/zoomlion-wide-body-truck-fleet-at-cmocs-kisanfu-mine-in-drc-passes-200",
     "https://mining.com.au/chinese-nickel-producers-advance-plans-to-cut-indonesian-output",
     "https://www.alphaminresources.com/2026/07/13/alphamin-announces-record-q2-ebitda-guidance-of-us167-million-exploration-update",
     "https://www.alphaminresources.com/2026/10/06/alphamin-announces-cad0-13-per-share-interim-fy2026-dividend-q3-guidance-exploration-update",
@@ -57,6 +58,7 @@
     "https://www.mineralresources.com.au/news/company-updates/q1-fy27-quarterly-activity-report",
     "https://www.mineralresources.com.au/news/company-updates/q4-fy26-quarterly-activity-report",
     "https://www.mining-technology.com/analysis/iron-ore-bucks-hormuz-disruption-as-supply-disputes-shift-to-china",
+    "https://www.mining-technology.com/news/arrow-to-acquire-pannawonica-iron-ore",
     "https://www.mining-technology.com/news/arrow-to-acquire-turee-creek-project",
     "https://www.mining-technology.com/news/bhp-decline-q1-fy27-copper",
     "https://www.mining-technology.com/news/bhp-kambalda-nickel-gold-fields",
@@ -148,6 +150,50 @@
       "verification_method": "automated_metadata_check",
       "review_status": "pending",
       "discovered_at": "2026-11-10T08:25:34.471Z"
+    },
+    {
+      "id": "news-fe-cb009bab62e7291b",
+      "metal_id": "metal-fe",
+      "title": "Arrow secures option to acquire Pannawonica iron ore project",
+      "organization": "Mining Technology",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "并购股权",
+      "material_url": "https://www.mining-technology.com/news/arrow-to-acquire-pannawonica-iron-ore",
+      "source_listing_url": "https://www.mining-technology.com/feed/",
+      "publication_date": "2026-11-10",
+      "source_publication_date": "2026-11-10",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-10",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-10T17:02:12.544Z"
+    },
+    {
+      "id": "news-cu-b237dc0b7330e459",
+      "metal_id": "metal-cu",
+      "title": "Zoomlion wide body truck fleet at CMOC’s Kisanfu mine in DRC passes 200",
+      "organization": "International Mining",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "政策与供给",
+      "material_url": "https://im-mining.com/2026/11/10/zoomlion-wide-body-truck-fleet-at-cmocs-kisanfu-mine-in-drc-passes-200",
+      "source_listing_url": "https://im-mining.com/feed/",
+      "publication_date": "2026-11-10",
+      "source_publication_date": "2026-11-10",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-10",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-10T17:02:12.544Z"
     },
     {
       "id": "news-ni-1cf3b313ad2c32cb",
