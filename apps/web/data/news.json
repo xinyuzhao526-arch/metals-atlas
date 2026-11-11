@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-10",
-  "last_checked_at": "2026-11-10T17:02:12.544Z",
+  "updated_at": "2026-11-11",
+  "last_checked_at": "2026-11-11T07:44:42.328Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -115,6 +115,7 @@
     "https://www.northernminer.com/news/levack-restart-puts-magna-on-two-mine-path/1003895592",
     "https://www.northernminer.com/news/moon-river-lifts-davidson-value-to-1-2b-tungsten-output-jumps/1003896021",
     "https://www.northernminer.com/news/newmont-prices-red-chris-expansion-at-up-to-4-8b/1003896004",
+    "https://www.northernminer.com/news/q2-maps-28-year-lithium-operation-at-cisco/1003897652",
     "https://www.northernminer.com/news/rio-begins-oyu-tolgoi-copper-restart-after-rockfall/1003896401",
     "https://www.northernminer.com/news/southern-copper-weighs-680m-cuajone-expansion/1003896008",
     "https://www.northernminer.com/news/st-barbara-readies-touquoy-gold-restart-in-nova-scotia-amid-review-dispute/1003897330",
@@ -194,6 +195,28 @@
       "verification_method": "automated_metadata_check",
       "review_status": "pending",
       "discovered_at": "2026-11-10T17:02:12.544Z"
+    },
+    {
+      "id": "news-li-ab5a7bbe35acd345",
+      "metal_id": "metal-li",
+      "title": "Q2 maps 28-year lithium operation at Cisco",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "政策与供给",
+      "material_url": "https://www.northernminer.com/news/q2-maps-28-year-lithium-operation-at-cisco/1003897652",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-11-10",
+      "source_publication_date": "2026-11-10",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-11",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-11T07:44:42.328Z"
     },
     {
       "id": "news-ni-1cf3b313ad2c32cb",

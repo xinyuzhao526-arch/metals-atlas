@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "last_checked_at": "2026-11-10T17:02:12.544Z",
+  "last_checked_at": "2026-11-11T07:44:42.328Z",
   "processed_keys": [
     "al:https://im-mining.com/2026/10/23/rio-tinto-to-boost-weipa-operations-with-kangwinan-bauxite-project-development",
     "al:https://www.hydro.com/en/global/media/news/2026/alunorte-ramps-up-alumina-production",
@@ -124,6 +124,7 @@
     "li:https://www.mining.com/sibanye-cuts-us-output-forecast-after-five-week-strike",
     "li:https://www.northernminer.com/news/brazil-court-order-idles-sigma-lithium-mine/1003895373",
     "li:https://www.northernminer.com/news/cleantech-lithium-expands-foothold-in-argentina/1003895600",
+    "li:https://www.northernminer.com/news/q2-maps-28-year-lithium-operation-at-cisco/1003897652",
     "li:https://www.northernminer.com/news/uk-scientists-turn-to-biology-in-search-for-cleaner-lithium/1003895598",
     "ni:https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "ni:https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -180,10 +181,10 @@
         "zn",
         "pb"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Group report metal coverage could not be confirmed from the article",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "Notification of publication BHP 2026 Annual Report",
@@ -200,10 +201,10 @@
         "ni",
         "fe"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Group report metal coverage could not be confirmed from the article",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "2026 US Annual Report (Form 20-F)",
@@ -220,10 +221,10 @@
         "ni",
         "fe"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Group report metal coverage could not be confirmed from the article",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "Download Eramet: Turnover down in third quarter 2025",
@@ -238,10 +239,10 @@
         "ni",
         "li"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Binary document requires a dated listing",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "Quarterly Activities Report – 25 July 2025",
@@ -254,10 +255,10 @@
       "metals": [
         "sn"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Binary document requires a dated listing",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "Participation Details for 2024 Full Year Results",
@@ -270,26 +271,10 @@
       "metals": [
         "cu"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Publication date not disclosed in a supported field; will retry",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
-    },
-    {
-      "title": "Nova Nickel Operation",
-      "url": "https://www.igo.com.au/site/operations/nova",
-      "metal": "ni",
-      "organization": "IGO Limited",
-      "source_type": "official_company_news",
-      "source_url": "https://www.igo.com.au/site/investor-center/ASX-Announcements",
-      "from_feed": false,
-      "metals": [
-        "ni"
-      ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
-      "last_error": "Publication date not disclosed in a supported field; will retry",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "2025 Renison Mineral Resource Update – 29 July 2025",
@@ -302,10 +287,26 @@
       "metals": [
         "sn"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Binary document requires a dated listing",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
+    },
+    {
+      "title": "Nova Nickel Operation",
+      "url": "https://www.igo.com.au/site/operations/nova",
+      "metal": "ni",
+      "organization": "IGO Limited",
+      "source_type": "official_company_news",
+      "source_url": "https://www.igo.com.au/site/investor-center/ASX-Announcements",
+      "from_feed": false,
+      "metals": [
+        "ni"
+      ],
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
+      "last_error": "Publication date not disclosed in a supported field; will retry",
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "2026 Renison Mineral Resource Update – 29 June 2026",
@@ -318,10 +319,10 @@
       "metals": [
         "sn"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Binary document requires a dated listing",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "Annual Report – 27 March 2025",
@@ -334,10 +335,10 @@
       "metals": [
         "sn"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Binary document requires a dated listing",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "Operational Update – Renison Bell Bushfire – 20 February 2025",
@@ -350,10 +351,26 @@
       "metals": [
         "sn"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Binary document requires a dated listing",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
+    },
+    {
+      "title": "Quarterly Activities Report – 23 April 2025",
+      "url": "https://www.metalsx.com.au/wp-content/uploads/2025/04/01_MLX_Quarterly-Report_31-March-2025.pdf",
+      "metal": "sn",
+      "organization": "Metals X",
+      "source_type": "official_company_news",
+      "source_url": "https://www.metalsx.com.au/asx-announcements/",
+      "from_feed": false,
+      "metals": [
+        "sn"
+      ],
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
+      "last_error": "Binary document requires a dated listing",
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "Vale's Production and Sales report for 2Q26 is now available 7/21/26",
@@ -369,26 +386,10 @@
         "ni",
         "fe"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Publication date not disclosed in a supported field; will retry",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
-    },
-    {
-      "title": "Quarterly Activities Report – 23 April 2025",
-      "url": "https://www.metalsx.com.au/wp-content/uploads/2025/04/01_MLX_Quarterly-Report_31-March-2025.pdf",
-      "metal": "sn",
-      "organization": "Metals X",
-      "source_type": "official_company_news",
-      "source_url": "https://www.metalsx.com.au/asx-announcements/",
-      "from_feed": false,
-      "metals": [
-        "sn"
-      ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
-      "last_error": "Binary document requires a dated listing",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "2024 Renison Ore Reserve Update – 31 January 2025",
@@ -401,10 +402,10 @@
       "metals": [
         "sn"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Binary document requires a dated listing",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "Vale and ABB form strategic alliance to accelerate digital transformation in iron ore operations in Brazil 8/11/26",
@@ -417,26 +418,10 @@
       "metals": [
         "fe"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Publication date not disclosed in a supported field; will retry",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
-    },
-    {
-      "title": "Quarterly Activities Report – 30 April 2026",
-      "url": "https://www.metalsx.com.au/wp-content/uploads/2026/04/01_MLX_Quarterly-Report_31-March-2026_Final.pdf",
-      "metal": "sn",
-      "organization": "Metals X",
-      "source_type": "official_company_news",
-      "source_url": "https://www.metalsx.com.au/asx-announcements/",
-      "from_feed": false,
-      "metals": [
-        "sn"
-      ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
-      "last_error": "Binary document requires a dated listing",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "2025 Renison Ore Reserve Update – 17 November 2025",
@@ -449,10 +434,26 @@
       "metals": [
         "sn"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Binary document requires a dated listing",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
+    },
+    {
+      "title": "Quarterly Activities Report – 30 April 2026",
+      "url": "https://www.metalsx.com.au/wp-content/uploads/2026/04/01_MLX_Quarterly-Report_31-March-2026_Final.pdf",
+      "metal": "sn",
+      "organization": "Metals X",
+      "source_type": "official_company_news",
+      "source_url": "https://www.metalsx.com.au/asx-announcements/",
+      "from_feed": false,
+      "metals": [
+        "sn"
+      ],
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
+      "last_error": "Binary document requires a dated listing",
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "Annual Report – 25 March 2026",
@@ -465,65 +466,10 @@
       "metals": [
         "sn"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Binary document requires a dated listing",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
-    },
-    {
-      "title": "Vale's production and sales in 1Q26 4/17/26",
-      "url": "https://vale.com/en/w/vales-production-and-sales-in-1q26/-/categories",
-      "metal": "cu",
-      "needs_body_metals": true,
-      "organization": "Vale",
-      "source_type": "official_company_news",
-      "source_url": "https://vale.com/en/vale-now",
-      "from_feed": false,
-      "metals": [
-        "cu",
-        "ni",
-        "fe"
-      ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
-      "last_error": "Publication date not disclosed in a supported field; will retry",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
-    },
-    {
-      "title": "29 Oct 2026 September 2026 Quarterly Activities Report",
-      "url": "https://www.igo.com.au/site/pdf/dd3bde88-4ef3-466d-89c2-ab99d1d66e59/Platform/ListPage/September-2026-Quarterly-Activities-Report.pdf",
-      "metal": "li",
-      "needs_body_metals": true,
-      "organization": "IGO Limited",
-      "source_type": "official_company_news",
-      "source_url": "https://www.igo.com.au/site/investor-center/ASX-Announcements",
-      "from_feed": false,
-      "metals": [
-        "li",
-        "ni"
-      ],
-      "attempts": 13,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
-      "last_error": "Binary document requires a dated listing",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
-    },
-    {
-      "title": "29 Oct 2026 September 2026 Quarterly Presentation",
-      "url": "https://www.igo.com.au/site/pdf/b9d0d845-e359-434f-8b00-734825165318/Platform/ListPage/September-2026-Quarterly-Presentation.pdf",
-      "metal": "li",
-      "needs_body_metals": true,
-      "organization": "IGO Limited",
-      "source_type": "official_company_news",
-      "source_url": "https://www.igo.com.au/site/investor-center/ASX-Announcements",
-      "from_feed": false,
-      "metals": [
-        "li",
-        "ni"
-      ],
-      "attempts": 13,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
-      "last_error": "Binary document requires a dated listing",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "Check out our Q3 2026 financial results 10/29/26",
@@ -545,60 +491,59 @@
       "next_retry_at": "2026-11-11T08:25:34.471Z"
     },
     {
-      "title": "Q3 2026 Financial Results Investor Webcast Wednesday November 4 10:30am EST",
-      "url": "https://www.ivanhoemines.com/webcasts/q3-2026-financial-results-investor-call-and-webcast",
+      "title": "29 Oct 2026 September 2026 Quarterly Activities Report",
+      "url": "https://www.igo.com.au/site/pdf/dd3bde88-4ef3-466d-89c2-ab99d1d66e59/Platform/ListPage/September-2026-Quarterly-Activities-Report.pdf",
+      "metal": "li",
+      "needs_body_metals": true,
+      "organization": "IGO Limited",
+      "source_type": "official_company_news",
+      "source_url": "https://www.igo.com.au/site/investor-center/ASX-Announcements",
+      "from_feed": false,
+      "metals": [
+        "li",
+        "ni"
+      ],
+      "attempts": 14,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
+      "last_error": "Binary document requires a dated listing",
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
+    },
+    {
+      "title": "29 Oct 2026 September 2026 Quarterly Presentation",
+      "url": "https://www.igo.com.au/site/pdf/b9d0d845-e359-434f-8b00-734825165318/Platform/ListPage/September-2026-Quarterly-Presentation.pdf",
+      "metal": "li",
+      "needs_body_metals": true,
+      "organization": "IGO Limited",
+      "source_type": "official_company_news",
+      "source_url": "https://www.igo.com.au/site/investor-center/ASX-Announcements",
+      "from_feed": false,
+      "metals": [
+        "li",
+        "ni"
+      ],
+      "attempts": 14,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
+      "last_error": "Binary document requires a dated listing",
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
+    },
+    {
+      "title": "Vale's production and sales in 1Q26 4/17/26",
+      "url": "https://vale.com/en/w/vales-production-and-sales-in-1q26/-/categories",
       "metal": "cu",
       "needs_body_metals": true,
-      "organization": "Ivanhoe Mines",
+      "organization": "Vale",
       "source_type": "official_company_news",
-      "source_url": "https://www.ivanhoemines.com/",
+      "source_url": "https://vale.com/en/vale-now",
       "from_feed": false,
       "metals": [
         "cu",
-        "zn"
+        "ni",
+        "fe"
       ],
-      "attempts": 8,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Publication date not disclosed in a supported field; will retry",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
-    },
-    {
-      "title": "Circulars – Revision of Annual Caps for Continuing Connected Transactions in Relation to The CMN Framework Offtake Agreement and Notice of Extraordinary General Meeting",
-      "url": "https://www.mmg.com/investors/news-centre/circulars-revision-of-annual-caps-for-continuing-connected-transactions-in-relation-to-the-cmn-framework-offtake-agreement-and-notice-of-extraordinary-general-meeting",
-      "metal": "cu",
-      "needs_body_metals": true,
-      "organization": "MMG Limited",
-      "source_type": "official_company_news",
-      "source_url": "https://www.mmg.com/investors/news-centre/",
-      "from_feed": false,
-      "metals": [
-        "cu",
-        "zn",
-        "pb"
-      ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
-      "last_error": "Group report metal coverage could not be confirmed from the article",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
-    },
-    {
-      "title": "Documents on Display – Revision of Annual Caps for Continuing Connected Transactions in Relation to the CMN Framework Offtake Agreement",
-      "url": "https://www.mmg.com/investors/news-centre/documents-on-display-revision-of-annual-caps-for-continuing-connected-transactions-in-relation-to-the-cmn-framework-offtake-agreement",
-      "metal": "cu",
-      "needs_body_metals": true,
-      "organization": "MMG Limited",
-      "source_type": "official_company_news",
-      "source_url": "https://www.mmg.com/investors/news-centre/",
-      "from_feed": false,
-      "metals": [
-        "cu",
-        "zn",
-        "pb"
-      ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
-      "last_error": "Group report metal coverage could not be confirmed from the article",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "3Q26 Quarterly Results 10/30/26",
@@ -655,27 +600,26 @@
       "next_retry_at": "2026-11-11T08:25:34.471Z"
     },
     {
-      "title": "Announcements and Notices – Continuing Connected Transaction – Revision of Annual Caps for Continuing Connected Transactions in relation to the CMN Framework Offtake Agreement",
-      "url": "https://www.mmg.com/investors/news-centre/announcements-and-notices-continuing-connected-transaction-revision-of-annual-caps-for-continuing-connected-transactions-in-relation-to-the-cmn-framework-offtake-agreement",
+      "title": "Q3 2026 Financial Results Investor Webcast Wednesday November 4 10:30am EST",
+      "url": "https://www.ivanhoemines.com/webcasts/q3-2026-financial-results-investor-call-and-webcast",
       "metal": "cu",
       "needs_body_metals": true,
-      "organization": "MMG Limited",
+      "organization": "Ivanhoe Mines",
       "source_type": "official_company_news",
-      "source_url": "https://www.mmg.com/investors/news-centre/",
+      "source_url": "https://www.ivanhoemines.com/",
       "from_feed": false,
       "metals": [
         "cu",
-        "zn",
-        "pb"
+        "zn"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
-      "last_error": "Group report metal coverage could not be confirmed from the article",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "attempts": 9,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
+      "last_error": "Publication date not disclosed in a supported field; will retry",
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
-      "title": "Announcements and Notices – Third Quarter Production Report for the Three Months Ended 30 September 2026",
-      "url": "https://www.mmg.com/investors/news-centre/announcements-and-notices-third-quarter-production-report-for-the-three-months-ended-30-september-2026",
+      "title": "Circulars – Revision of Annual Caps for Continuing Connected Transactions in Relation to The CMN Framework Offtake Agreement and Notice of Extraordinary General Meeting",
+      "url": "https://www.mmg.com/investors/news-centre/circulars-revision-of-annual-caps-for-continuing-connected-transactions-in-relation-to-the-cmn-framework-offtake-agreement-and-notice-of-extraordinary-general-meeting",
       "metal": "cu",
       "needs_body_metals": true,
       "organization": "MMG Limited",
@@ -687,10 +631,10 @@
         "zn",
         "pb"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
       "last_error": "Group report metal coverage could not be confirmed from the article",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "Check out our Q3 2026 financial results",
@@ -712,20 +656,23 @@
       "next_retry_at": "2026-11-11T08:25:34.471Z"
     },
     {
-      "title": "quarterly reports",
-      "url": "https://www.metalsx.com.au/quarterly-reports",
-      "metal": "sn",
-      "organization": "Metals X",
+      "title": "Documents on Display – Revision of Annual Caps for Continuing Connected Transactions in Relation to the CMN Framework Offtake Agreement",
+      "url": "https://www.mmg.com/investors/news-centre/documents-on-display-revision-of-annual-caps-for-continuing-connected-transactions-in-relation-to-the-cmn-framework-offtake-agreement",
+      "metal": "cu",
+      "needs_body_metals": true,
+      "organization": "MMG Limited",
       "source_type": "official_company_news",
-      "source_url": "https://www.metalsx.com.au/asx-announcements/",
+      "source_url": "https://www.mmg.com/investors/news-centre/",
       "from_feed": false,
       "metals": [
-        "sn"
+        "cu",
+        "zn",
+        "pb"
       ],
-      "attempts": 20,
-      "last_attempt_at": "2026-11-09T19:49:26.040Z",
-      "last_error": "Publication date not disclosed in a supported field; will retry",
-      "next_retry_at": "2026-11-10T19:49:26.040Z"
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
+      "last_error": "Group report metal coverage could not be confirmed from the article",
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     },
     {
       "title": "3Q26 Quarterly Results",
@@ -780,6 +727,60 @@
       "last_attempt_at": "2026-11-10T17:02:12.544Z",
       "last_error": "Binary document requires a dated listing",
       "next_retry_at": "2026-11-11T09:02:12.544Z"
+    },
+    {
+      "title": "Announcements and Notices – Continuing Connected Transaction – Revision of Annual Caps for Continuing Connected Transactions in relation to the CMN Framework Offtake Agreement",
+      "url": "https://www.mmg.com/investors/news-centre/announcements-and-notices-continuing-connected-transaction-revision-of-annual-caps-for-continuing-connected-transactions-in-relation-to-the-cmn-framework-offtake-agreement",
+      "metal": "cu",
+      "needs_body_metals": true,
+      "organization": "MMG Limited",
+      "source_type": "official_company_news",
+      "source_url": "https://www.mmg.com/investors/news-centre/",
+      "from_feed": false,
+      "metals": [
+        "cu",
+        "zn",
+        "pb"
+      ],
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
+      "last_error": "Group report metal coverage could not be confirmed from the article",
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
+    },
+    {
+      "title": "Announcements and Notices – Third Quarter Production Report for the Three Months Ended 30 September 2026",
+      "url": "https://www.mmg.com/investors/news-centre/announcements-and-notices-third-quarter-production-report-for-the-three-months-ended-30-september-2026",
+      "metal": "cu",
+      "needs_body_metals": true,
+      "organization": "MMG Limited",
+      "source_type": "official_company_news",
+      "source_url": "https://www.mmg.com/investors/news-centre/",
+      "from_feed": false,
+      "metals": [
+        "cu",
+        "zn",
+        "pb"
+      ],
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
+      "last_error": "Group report metal coverage could not be confirmed from the article",
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
+    },
+    {
+      "title": "quarterly reports",
+      "url": "https://www.metalsx.com.au/quarterly-reports",
+      "metal": "sn",
+      "organization": "Metals X",
+      "source_type": "official_company_news",
+      "source_url": "https://www.metalsx.com.au/asx-announcements/",
+      "from_feed": false,
+      "metals": [
+        "sn"
+      ],
+      "attempts": 21,
+      "last_attempt_at": "2026-11-11T07:44:42.328Z",
+      "last_error": "Publication date not disclosed in a supported field; will retry",
+      "next_retry_at": "2026-11-12T07:44:42.328Z"
     }
   ],
   "sources": [
@@ -789,7 +790,7 @@
       "url": "https://www.pls.com/invest/asx-announcements",
       "status": "error",
       "candidate_count": 0,
-      "checked_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -810,8 +811,8 @@
       "url": "https://www.igo.com.au/site/investor-center/ASX-Announcements",
       "status": "ok",
       "candidate_count": 6,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.igo.com.au/site/investor-center/ASX-Announcements",
@@ -825,8 +826,8 @@
       "url": "https://www.mineralresources.com.au/news/",
       "status": "ok",
       "candidate_count": 8,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.mineralresources.com.au/news/",
@@ -840,8 +841,8 @@
       "url": "https://www.investegate.co.uk/company/RIO",
       "status": "ok",
       "candidate_count": 12,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.investegate.co.uk/company/RIO",
@@ -855,8 +856,8 @@
       "url": "https://vale.com/en/vale-now",
       "status": "ok",
       "candidate_count": 13,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://vale.com/en/vale-now",
@@ -870,8 +871,8 @@
       "url": "https://www.investegate.co.uk/company/GLEN",
       "status": "ok",
       "candidate_count": 16,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.investegate.co.uk/company/GLEN",
@@ -885,8 +886,8 @@
       "url": "https://www.eramet.com/en/news/",
       "status": "ok",
       "candidate_count": 5,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.eramet.com/en/news/",
@@ -900,8 +901,8 @@
       "url": "https://www.investegate.co.uk/company/BHP",
       "status": "ok",
       "candidate_count": 21,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.investegate.co.uk/company/BHP",
@@ -915,8 +916,8 @@
       "url": "https://www.hydro.com/en/global/media/news/",
       "status": "ok",
       "candidate_count": 1,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.hydro.com/en/global/media/news/",
@@ -930,8 +931,8 @@
       "url": "https://www.investegate.co.uk/company/S32",
       "status": "ok",
       "candidate_count": 8,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.investegate.co.uk/company/S32",
@@ -945,8 +946,8 @@
       "url": "https://www.ivanhoemines.com/",
       "status": "ok",
       "candidate_count": 2,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.ivanhoemines.com/feed/",
@@ -964,7 +965,7 @@
       "url": "https://investors.fcx.com/investors/news-releases/",
       "status": "error",
       "candidate_count": 0,
-      "checked_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -980,8 +981,8 @@
       "url": "https://www.antofagasta.co.uk/investors/news/",
       "status": "ok",
       "candidate_count": 32,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.antofagasta.co.uk/investors/news/",
@@ -995,8 +996,8 @@
       "url": "https://www.mmg.com/investors/news-centre/",
       "status": "ok",
       "candidate_count": 15,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.mmg.com/investors/news-centre/",
@@ -1010,8 +1011,8 @@
       "url": "https://www.alphaminresources.com/feed/",
       "status": "ok",
       "candidate_count": 5,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.alphaminresources.com/feed/",
@@ -1025,8 +1026,8 @@
       "url": "https://www.investegate.co.uk/company/ATM",
       "status": "ok",
       "candidate_count": 6,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.investegate.co.uk/company/ATM",
@@ -1040,8 +1041,8 @@
       "url": "https://www.metalsx.com.au/asx-announcements/",
       "status": "ok",
       "candidate_count": 72,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.metalsx.com.au/asx-announcements/",
@@ -1055,8 +1056,8 @@
       "url": "https://www.angloamerican.com/media/press-releases",
       "status": "ok",
       "candidate_count": 3,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.angloamerican.com/media/press-releases",
@@ -1070,8 +1071,8 @@
       "url": "https://www.angloamericankumba.com/media/press-releases",
       "status": "ok",
       "candidate_count": 3,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.angloamericankumba.com/media/press-releases",
@@ -1085,7 +1086,7 @@
       "url": "https://investors.fortescue.com/en/",
       "status": "empty",
       "candidate_count": 0,
-      "checked_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -1100,8 +1101,8 @@
       "url": "https://www.teck.com/news/news-releases/",
       "status": "ok",
       "candidate_count": 20,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.teck.com/news/news-releases/",
@@ -1115,8 +1116,8 @@
       "url": "https://www.mining-technology.com/feed/",
       "status": "ok",
       "candidate_count": 1,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.mining-technology.com/feed/",
@@ -1130,8 +1131,8 @@
       "url": "https://www.northernminer.com/feed/",
       "status": "ok",
       "candidate_count": 1,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.northernminer.com/feed/",
@@ -1145,8 +1146,8 @@
       "url": "https://im-mining.com/feed/",
       "status": "ok",
       "candidate_count": 1,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://im-mining.com/feed/",
@@ -1160,8 +1161,8 @@
       "url": "https://www.internationaltin.org/feed/",
       "status": "ok",
       "candidate_count": 3,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z",
       "attempts": [
         {
           "url": "https://www.internationaltin.org/feed/",
@@ -1175,7 +1176,7 @@
       "url": "https://www.australianmining.com.au/feed/",
       "status": "error",
       "candidate_count": 0,
-      "checked_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -1191,7 +1192,7 @@
       "url": "https://www.mining.com/feed/",
       "status": "error",
       "candidate_count": 0,
-      "checked_at": "2026-11-10T17:02:12.544Z",
+      "checked_at": "2026-11-11T07:44:42.328Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -1206,20 +1207,20 @@
       "organization": "PaiPaiMetals",
       "url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
       "status": "ok",
-      "candidate_count": 51,
-      "checked_at": "2026-11-10T17:02:12.544Z",
-      "last_success_at": "2026-11-10T17:02:12.544Z"
+      "candidate_count": 52,
+      "checked_at": "2026-11-11T07:44:42.328Z",
+      "last_success_at": "2026-11-11T07:44:42.328Z"
     }
   ],
   "last_run": {
-    "added": 2,
-    "retained": 157,
-    "detail_fetches": 16,
-    "article_errors": 1,
+    "added": 1,
+    "retained": 158,
+    "detail_fetches": 42,
+    "article_errors": 27,
     "deferred": 0,
     "by_metal": {
       "cu": 73,
-      "li": 22,
+      "li": 23,
       "ni": 16,
       "al": 11,
       "sn": 8,
