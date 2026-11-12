@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "updated_at": "2026-11-12",
-  "last_checked_at": "2026-11-12T08:20:03.782Z",
+  "last_checked_at": "2026-11-12T17:36:02.900Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -40,6 +40,7 @@
     "https://www.hydro.com/en/global/media/news/2026/hydros-third-quarter-2026-solid-results-and-strong-performance",
     "https://www.internationaltin.org/alphamin-focuses-on-exploration-as-q3-output-steady",
     "https://www.internationaltin.org/metals-x-targets-full-takeover-of-first-tin",
+    "https://www.internationaltin.org/minsur-q3-production-rises-as-prices-boost-profits",
     "https://www.internationaltin.org/pt-timah-posts-record-profits-as-q3-production-holds-steady",
     "https://www.internationaltin.org/renison-output-broadly-steady-rentails-decision-delayed",
     "https://www.internationaltin.org/usd181-million-raised-for-south-crofty-restart",
@@ -132,6 +133,28 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-sn-b5dccb70d23f9604",
+      "metal_id": "metal-sn",
+      "title": "Minsur Q3 production rises as prices boost profits",
+      "organization": "International Tin Association",
+      "source_type": "industry_association_news",
+      "source_level": "media",
+      "event_tag": "产量与指引",
+      "material_url": "https://www.internationaltin.org/minsur-q3-production-rises-as-prices-boost-profits",
+      "source_listing_url": "https://www.internationaltin.org/feed/",
+      "publication_date": "2026-11-12",
+      "source_publication_date": "2026-11-12",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-12",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-12T17:36:02.900Z"
+    },
     {
       "id": "news-fe-e2a3d4de2c421d8c",
       "metal_id": "metal-fe",
