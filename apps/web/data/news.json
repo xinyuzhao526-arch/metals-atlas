@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-11",
-  "last_checked_at": "2026-11-11T07:44:42.328Z",
+  "updated_at": "2026-11-12",
+  "last_checked_at": "2026-11-12T08:20:03.782Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -88,6 +88,7 @@
     "https://www.mining.com/copper-price-forecasts-lifted-for-2026-but-tariff-collapse-still-on-the-table",
     "https://www.mining.com/energyx-inks-10-year-2b-lithium-offtake-deal-with-trafigura",
     "https://www.mining.com/eu-puts-kghms-2-4b-copper-projects-on-fast-track",
+    "https://www.mining.com/evermetal-acquires-uk-critical-metals-recycler-advanced-alloys",
     "https://www.mining.com/exiro-led-group-takes-control-of-vales-manitoba-nickel-complex",
     "https://www.mining.com/fatal-accident-reported-at-bhps-escondida-mine",
     "https://www.mining.com/first-quantums-kansanshi-expansion-beats-design-capacity",
@@ -117,6 +118,7 @@
     "https://www.northernminer.com/news/newmont-prices-red-chris-expansion-at-up-to-4-8b/1003896004",
     "https://www.northernminer.com/news/q2-maps-28-year-lithium-operation-at-cisco/1003897652",
     "https://www.northernminer.com/news/rio-begins-oyu-tolgoi-copper-restart-after-rockfall/1003896401",
+    "https://www.northernminer.com/news/simandou-targets-full-iron-ore-export-capacity-in-2027/1003897679",
     "https://www.northernminer.com/news/southern-copper-weighs-680m-cuajone-expansion/1003896008",
     "https://www.northernminer.com/news/st-barbara-readies-touquoy-gold-restart-in-nova-scotia-amid-review-dispute/1003897330",
     "https://www.northernminer.com/news/strike-curbs-output-at-canadas-largest-copper-mine/1003896047",
@@ -130,6 +132,50 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-fe-e2a3d4de2c421d8c",
+      "metal_id": "metal-fe",
+      "title": "Simandou targets full iron ore export capacity in 2027",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "政策与供给",
+      "material_url": "https://www.northernminer.com/news/simandou-targets-full-iron-ore-export-capacity-in-2027/1003897679",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-11-11",
+      "source_publication_date": "2026-11-11",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-12",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-12T08:20:03.782Z"
+    },
+    {
+      "id": "news-ni-e36a6ce3db5d24f3",
+      "metal_id": "metal-ni",
+      "title": "EverMetal acquires UK critical metals recycler Advanced Alloys",
+      "organization": "mining.com",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "并购/股权",
+      "material_url": "https://www.mining.com/evermetal-acquires-uk-critical-metals-recycler-advanced-alloys",
+      "source_listing_url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
+      "publication_date": "2026-11-11",
+      "source_publication_date": "2026-11-11",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-12",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-12T08:20:03.782Z"
+    },
     {
       "id": "news-cu-56a262b19095ec95",
       "metal_id": "metal-cu",
