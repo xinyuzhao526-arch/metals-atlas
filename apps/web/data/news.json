@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-12",
-  "last_checked_at": "2026-11-12T17:36:02.900Z",
+  "updated_at": "2026-11-13",
+  "last_checked_at": "2026-11-13T17:13:11.197Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -17,6 +17,7 @@
     "https://im-mining.com/2026/11/05/fluor-to-act-as-epcm-contractor-for-new-grinding-line-expansion-at-sierra-gorda",
     "https://im-mining.com/2026/11/09/igo-concludes-mining-at-nova-nickel-operation-in-western-australia",
     "https://im-mining.com/2026/11/10/zoomlion-wide-body-truck-fleet-at-cmocs-kisanfu-mine-in-drc-passes-200",
+    "https://im-mining.com/2026/11/13/minera-los-pelambres-exceeds-its-mining-tyre-recycling-goal-by-240",
     "https://mining.com.au/chinese-nickel-producers-advance-plans-to-cut-indonesian-output",
     "https://www.alphaminresources.com/2026/07/13/alphamin-announces-record-q2-ebitda-guidance-of-us167-million-exploration-update",
     "https://www.alphaminresources.com/2026/10/06/alphamin-announces-cad0-13-per-share-interim-fy2026-dividend-q3-guidance-exploration-update",
@@ -103,6 +104,7 @@
     "https://www.northernminer.com/news/bhp-averts-strike-at-worlds-biggest-copper-mine-2/1003895736",
     "https://www.northernminer.com/news/bhps-escondida-restart-eases-tight-copper-supply-woes/1003895172",
     "https://www.northernminer.com/news/brazil-court-order-idles-sigma-lithium-mine/1003895373",
+    "https://www.northernminer.com/news/capstone-cuts-copper-outlook-as-restart-slips/1003897784",
     "https://www.northernminer.com/news/capstone-sells-mexican-mine-to-luca-for-up-to-385m/1003894997",
     "https://www.northernminer.com/news/cleantech-lithium-expands-foothold-in-argentina/1003895600",
     "https://www.northernminer.com/news/codelco-copper-mine-blockade-adds-to-supply-concerns/1003896154",
@@ -113,6 +115,7 @@
     "https://www.northernminer.com/news/copper-price-gains-as-chile-strike-threatens-output/1003895558",
     "https://www.northernminer.com/news/eu-fast-tracks-kghms-3-46b-polish-copper-projects/1003895652",
     "https://www.northernminer.com/news/freeport-approves-4-5b-bagdad-copper-expansion/1003897395",
+    "https://www.northernminer.com/news/freeport-strikes-110m-deal-for-bc-copper-stake/1003897770",
     "https://www.northernminer.com/news/glencore-sets-oct-14-for-australian-market-debut/1003895111",
     "https://www.northernminer.com/news/levack-restart-puts-magna-on-two-mine-path/1003895592",
     "https://www.northernminer.com/news/moon-river-lifts-davidson-value-to-1-2b-tungsten-output-jumps/1003896021",
@@ -133,6 +136,72 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-5b6c0d89beb0e7b8",
+      "metal_id": "metal-cu",
+      "title": "Freeport strikes $110M deal for BC copper stake",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.northernminer.com/news/freeport-strikes-110m-deal-for-bc-copper-stake/1003897770",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-11-13",
+      "source_publication_date": "2026-11-13",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-13",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-13T17:13:11.197Z"
+    },
+    {
+      "id": "news-cu-dd4f71343cb1fe30",
+      "metal_id": "metal-cu",
+      "title": "Capstone cuts copper outlook as restart slips",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.northernminer.com/news/capstone-cuts-copper-outlook-as-restart-slips/1003897784",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-11-13",
+      "source_publication_date": "2026-11-13",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-13",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-13T17:13:11.197Z"
+    },
+    {
+      "id": "news-cu-40de9e5a9fb89308",
+      "metal_id": "metal-cu",
+      "title": "Minera Los Pelambres exceeds its mining tyre recycling goal by 240%",
+      "organization": "International Mining",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "政策与供给",
+      "material_url": "https://im-mining.com/2026/11/13/minera-los-pelambres-exceeds-its-mining-tyre-recycling-goal-by-240",
+      "source_listing_url": "https://im-mining.com/feed/",
+      "publication_date": "2026-11-13",
+      "source_publication_date": "2026-11-13",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-13",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-13T17:13:11.197Z"
+    },
     {
       "id": "news-sn-b5dccb70d23f9604",
       "metal_id": "metal-sn",
