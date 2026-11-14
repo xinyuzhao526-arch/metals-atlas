@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-13",
-  "last_checked_at": "2026-11-13T17:13:11.197Z",
+  "updated_at": "2026-11-14",
+  "last_checked_at": "2026-11-14T07:36:54.536Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -130,6 +130,7 @@
     "https://www.northernminer.com/news/uk-scientists-turn-to-biology-in-search-for-cleaner-lithium/1003895598",
     "https://www.northernminer.com/news/vale-buys-ligga-iron-ore-stake-for-190m/1003895046",
     "https://www.northernminer.com/news/westwin-to-build-502m-nickel-refinery-in-mississippi/1003895478",
+    "https://www.northernminer.com/video/sponsored-resource-review-video-krinor-seeks-newfoundlands-next-big-copper-find/1003897818",
     "https://www.teck.com/news/news-releases/2026/teck-provides-update-on-highland-valley-copper-operations",
     "https://www.teck.com/news/news-releases/2026/teck-receives-highland-valley-copper-operations-strike-notice",
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-second-quarter-results-for-2026",
@@ -201,6 +202,28 @@
       "verification_method": "automated_metadata_check",
       "review_status": "pending",
       "discovered_at": "2026-11-13T17:13:11.197Z"
+    },
+    {
+      "id": "news-cu-3b4df5dcfa632468",
+      "metal_id": "metal-cu",
+      "title": "Sponsored Resource Review video: Krinor seeks Newfoundland’s next big copper find",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "政策与供给",
+      "material_url": "https://www.northernminer.com/video/sponsored-resource-review-video-krinor-seeks-newfoundlands-next-big-copper-find/1003897818",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-11-13",
+      "source_publication_date": "2026-11-13",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-14",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-14T07:36:54.536Z"
     },
     {
       "id": "news-sn-b5dccb70d23f9604",
