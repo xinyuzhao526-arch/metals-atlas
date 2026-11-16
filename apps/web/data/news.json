@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-14",
-  "last_checked_at": "2026-11-14T07:36:54.536Z",
+  "updated_at": "2026-11-16",
+  "last_checked_at": "2026-11-16T07:58:40.318Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -18,6 +18,7 @@
     "https://im-mining.com/2026/11/09/igo-concludes-mining-at-nova-nickel-operation-in-western-australia",
     "https://im-mining.com/2026/11/10/zoomlion-wide-body-truck-fleet-at-cmocs-kisanfu-mine-in-drc-passes-200",
     "https://im-mining.com/2026/11/13/minera-los-pelambres-exceeds-its-mining-tyre-recycling-goal-by-240",
+    "https://im-mining.com/2026/11/15/bhp-completes-underground-materials-handling-system-at-prominent-hill-expansion",
     "https://mining.com.au/chinese-nickel-producers-advance-plans-to-cut-indonesian-output",
     "https://www.alphaminresources.com/2026/07/13/alphamin-announces-record-q2-ebitda-guidance-of-us167-million-exploration-update",
     "https://www.alphaminresources.com/2026/10/06/alphamin-announces-cad0-13-per-share-interim-fy2026-dividend-q3-guidance-exploration-update",
@@ -30,6 +31,7 @@
     "https://www.antofagasta.co.uk/investors/news/2026/q2-2026-production-report",
     "https://www.antofagasta.co.uk/investors/news/2026/q3-2026-production-report",
     "https://www.australianmining.com.au/aic-mines-moves-to-acquire-mt-cuthbert",
+    "https://www.australianmining.com.au/austral-gets-green-light-for-hammer-metals-takeover",
     "https://www.australianmining.com.au/core-lithium-enters-new-era-as-finniss-restart-gathers-pace",
     "https://www.australianmining.com.au/evolution-seals-213m-carnaby-acquisition",
     "https://www.australianmining.com.au/global-lithium-agrees-333-million-takeover-by-titan",
@@ -137,6 +139,50 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-8f5d98e94c9c0f53",
+      "metal_id": "metal-cu",
+      "title": "BHP completes underground materials handling system at Prominent Hill expansion",
+      "organization": "International Mining",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "扩产投产",
+      "material_url": "https://im-mining.com/2026/11/15/bhp-completes-underground-materials-handling-system-at-prominent-hill-expansion",
+      "source_listing_url": "https://im-mining.com/feed/",
+      "publication_date": "2026-11-15",
+      "source_publication_date": "2026-11-15",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-16",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-16T07:58:40.318Z"
+    },
+    {
+      "id": "news-cu-ddafc6e2e30d1c3a",
+      "metal_id": "metal-cu",
+      "title": "Austral gets green light for Hammer Metals takeover",
+      "organization": "australianmining",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "扩产",
+      "material_url": "https://www.australianmining.com.au/austral-gets-green-light-for-hammer-metals-takeover",
+      "source_listing_url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
+      "publication_date": "2026-11-15",
+      "source_publication_date": "2026-11-15",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-16",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-16T07:58:40.318Z"
+    },
     {
       "id": "news-cu-5b6c0d89beb0e7b8",
       "metal_id": "metal-cu",
