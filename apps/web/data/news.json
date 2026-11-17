@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-16",
-  "last_checked_at": "2026-11-16T07:58:40.318Z",
+  "updated_at": "2026-11-17",
+  "last_checked_at": "2026-11-17T09:12:56.662Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -30,6 +30,7 @@
     "https://www.antofagasta.co.uk/investors/news/2026/los-pelambres-operational-update",
     "https://www.antofagasta.co.uk/investors/news/2026/q2-2026-production-report",
     "https://www.antofagasta.co.uk/investors/news/2026/q3-2026-production-report",
+    "https://www.australianmining.com.au/29metals-advances-capricorn-copper-restart-plans",
     "https://www.australianmining.com.au/aic-mines-moves-to-acquire-mt-cuthbert",
     "https://www.australianmining.com.au/austral-gets-green-light-for-hammer-metals-takeover",
     "https://www.australianmining.com.au/core-lithium-enters-new-era-as-finniss-restart-gathers-pace",
@@ -139,6 +140,28 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-3be30b55ef1e6a3f",
+      "metal_id": "metal-cu",
+      "title": "29Metals advances Capricorn Copper restart plans",
+      "organization": "australianmining",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.australianmining.com.au/29metals-advances-capricorn-copper-restart-plans",
+      "source_listing_url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
+      "publication_date": "2026-11-17",
+      "source_publication_date": "2026-11-17",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-17",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-17T09:12:56.662Z"
+    },
     {
       "id": "news-cu-8f5d98e94c9c0f53",
       "metal_id": "metal-cu",
