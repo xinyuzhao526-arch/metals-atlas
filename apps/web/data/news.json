@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-18",
-  "last_checked_at": "2026-11-18T18:04:02.625Z",
+  "updated_at": "2026-11-19",
+  "last_checked_at": "2026-11-19T08:48:17.382Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -94,6 +94,7 @@
     "https://www.mining.com/codelco-halts-andina-mine-as-tailings-spill-threaten-river",
     "https://www.mining.com/codelco-relocates-74-of-workers-as-andes-norte-remains-halted",
     "https://www.mining.com/copper-holds-above-14400-as-chile-strike-risk-grows",
+    "https://www.mining.com/copper-price-craters-as-ai-tariff-trades-unwind-and-asia-copper-week-hears-of-recessionary-like-demand",
     "https://www.mining.com/copper-price-falls-for-third-day-as-us-inflation-shock-easing-chile-strike-risk-spur-selloff",
     "https://www.mining.com/copper-price-forecasts-lifted-for-2026-but-tariff-collapse-still-on-the-table",
     "https://www.mining.com/energyx-inks-10-year-2b-lithium-offtake-deal-with-trafigura",
@@ -130,6 +131,7 @@
     "https://www.northernminer.com/news/levack-restart-puts-magna-on-two-mine-path/1003895592",
     "https://www.northernminer.com/news/moon-river-lifts-davidson-value-to-1-2b-tungsten-output-jumps/1003896021",
     "https://www.northernminer.com/news/newmont-prices-red-chris-expansion-at-up-to-4-8b/1003896004",
+    "https://www.northernminer.com/news/phoenix-hits-broad-gold-and-copper-at-old-bc-mine/1003897999",
     "https://www.northernminer.com/news/q2-maps-28-year-lithium-operation-at-cisco/1003897652",
     "https://www.northernminer.com/news/rio-begins-oyu-tolgoi-copper-restart-after-rockfall/1003896401",
     "https://www.northernminer.com/news/simandou-targets-full-iron-ore-export-capacity-in-2027/1003897679",
@@ -191,6 +193,72 @@
       "verification_method": "automated_metadata_check",
       "review_status": "pending",
       "discovered_at": "2026-11-18T18:04:02.625Z"
+    },
+    {
+      "id": "news-pb-31f35d86f004bf17",
+      "metal_id": "metal-pb",
+      "title": "Hindustan Zinc approves $8.5bn expansion to double metal production",
+      "organization": "Mining Technology",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "扩产投产",
+      "material_url": "https://www.mining-technology.com/news/hindustan-zinc-8-5bn-expansion-double-metal",
+      "source_listing_url": "https://www.mining-technology.com/feed/",
+      "publication_date": "2026-11-18",
+      "source_publication_date": "2026-11-18",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-19",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-19T08:48:17.382Z"
+    },
+    {
+      "id": "news-cu-d5188370b85ddebe",
+      "metal_id": "metal-cu",
+      "title": "Phoenix hits broad gold and copper at old BC mine",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "政策与供给",
+      "material_url": "https://www.northernminer.com/news/phoenix-hits-broad-gold-and-copper-at-old-bc-mine/1003897999",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-11-18",
+      "source_publication_date": "2026-11-18",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-19",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-19T08:48:17.382Z"
+    },
+    {
+      "id": "news-cu-98ee262125ac43a9",
+      "metal_id": "metal-cu",
+      "title": "Copper price craters as AI, tariff trades unwind, wiping $186 billion off top producers in a month",
+      "organization": "mining.com",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "政策/监管",
+      "material_url": "https://www.mining.com/copper-price-craters-as-ai-tariff-trades-unwind-and-asia-copper-week-hears-of-recessionary-like-demand",
+      "source_listing_url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
+      "publication_date": "2026-11-18",
+      "source_publication_date": "2026-11-18",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-19",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-19T08:48:17.382Z"
     },
     {
       "id": "news-cu-3be30b55ef1e6a3f",
