@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-19",
-  "last_checked_at": "2026-11-19T08:48:17.382Z",
+  "updated_at": "2026-11-20",
+  "last_checked_at": "2026-11-20T08:32:46.024Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -119,6 +119,7 @@
     "https://www.northernminer.com/news/chile-copper-output-nears-23-year-low/1003897900",
     "https://www.northernminer.com/news/cleantech-lithium-expands-foothold-in-argentina/1003895600",
     "https://www.northernminer.com/news/codelco-copper-mine-blockade-adds-to-supply-concerns/1003896154",
+    "https://www.northernminer.com/news/codelco-faces-dust-charges-at-chilean-mine/1003898058",
     "https://www.northernminer.com/news/codelco-faces-production-scandal-tailings-probe/1003897486",
     "https://www.northernminer.com/news/codelco-needs-partners-to-halt-copper-decline-chair/1003897573",
     "https://www.northernminer.com/news/codelco-pucobre-win-permit-for-870m-copper-project/1003897549",
@@ -150,6 +151,28 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-e81ea40aa87324c3",
+      "metal_id": "metal-cu",
+      "title": "Codelco faces dust charges at Chilean mine",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "政策与供给",
+      "material_url": "https://www.northernminer.com/news/codelco-faces-dust-charges-at-chilean-mine/1003898058",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-11-19",
+      "source_publication_date": "2026-11-19",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-20",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-20T08:32:46.024Z"
+    },
     {
       "id": "news-fe-f713fc4e8c42cff9",
       "metal_id": "metal-fe",
