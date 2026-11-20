@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "updated_at": "2026-11-20",
-  "last_checked_at": "2026-11-20T08:32:46.024Z",
+  "last_checked_at": "2026-11-20T17:47:53.613Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -141,6 +141,7 @@
     "https://www.northernminer.com/news/strike-curbs-output-at-canadas-largest-copper-mine/1003896047",
     "https://www.northernminer.com/news/summit-video-kodiak-tests-how-much-bigger-mpd-resource-can-get/1003895947",
     "https://www.northernminer.com/news/uk-scientists-turn-to-biology-in-search-for-cleaner-lithium/1003895598",
+    "https://www.northernminer.com/news/us-copper-booked-for-china-as-tariff-bet-unwinds/1003898084",
     "https://www.northernminer.com/news/vale-buys-ligga-iron-ore-stake-for-190m/1003895046",
     "https://www.northernminer.com/news/westwin-to-build-502m-nickel-refinery-in-mississippi/1003895478",
     "https://www.northernminer.com/video/sponsored-resource-review-video-iron-bear-pitches-a-44-year-iron-ore-mine/1003897909",
@@ -151,6 +152,28 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-5b5aa6a900150220",
+      "metal_id": "metal-cu",
+      "title": "US copper booked for China as tariff bet unwinds",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "政策与供给",
+      "material_url": "https://www.northernminer.com/news/us-copper-booked-for-china-as-tariff-bet-unwinds/1003898084",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-11-20",
+      "source_publication_date": "2026-11-20",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-20",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-20T17:47:53.613Z"
+    },
     {
       "id": "news-cu-e81ea40aa87324c3",
       "metal_id": "metal-cu",
