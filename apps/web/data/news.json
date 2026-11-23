@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-20",
-  "last_checked_at": "2026-11-20T17:47:53.613Z",
+  "updated_at": "2026-11-23",
+  "last_checked_at": "2026-11-23T21:24:35.970Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -73,6 +73,7 @@
     "https://www.mining-technology.com/news/bridge-green-hartree-eight-year-lithium-agreement",
     "https://www.mining-technology.com/news/centaurus-jaguar-offtake-deals-glencore-cngr",
     "https://www.mining-technology.com/news/codelco-partially-halts-el-teniente-mine",
+    "https://www.mining-technology.com/news/copper-one-to-acquire-quatum-project",
     "https://www.mining-technology.com/news/cotec-bmr-punitaqui-copper-production",
     "https://www.mining-technology.com/news/cotec-copper-intelligence-agreement-drc-tailings",
     "https://www.mining-technology.com/news/elevra-supply-spodumene-lg-energy",
@@ -81,6 +82,7 @@
     "https://www.mining-technology.com/news/global-lithium-237m-sid-titan-australia-mining",
     "https://www.mining-technology.com/news/helix-acquire-five-pilbara-exploration-tenements",
     "https://www.mining-technology.com/news/hindustan-zinc-8-5bn-expansion-double-metal",
+    "https://www.mining-technology.com/news/iea-copper-mineral-supply-shortages",
     "https://www.mining-technology.com/news/kavango-completes-commissioning-hillside-plant",
     "https://www.mining-technology.com/news/mitsubishi-approval-copper-world-arizona",
     "https://www.mining-technology.com/news/nth-cycle-1bn-recycled-minerals-supply-glencore",
@@ -114,6 +116,7 @@
     "https://www.northernminer.com/news/bhps-escondida-restart-eases-tight-copper-supply-woes/1003895172",
     "https://www.northernminer.com/news/brazil-court-order-idles-sigma-lithium-mine/1003895373",
     "https://www.northernminer.com/news/canada-widens-tariff-relief-on-chinese-metals/1003897890",
+    "https://www.northernminer.com/news/canadian-copper-sees-expansion-opportunites-in-new-brunswick/1003898157",
     "https://www.northernminer.com/news/capstone-cuts-copper-outlook-as-restart-slips/1003897784",
     "https://www.northernminer.com/news/capstone-sells-mexican-mine-to-luca-for-up-to-385m/1003894997",
     "https://www.northernminer.com/news/chile-copper-output-nears-23-year-low/1003897900",
@@ -152,6 +155,72 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-ec6165e1fe590644",
+      "metal_id": "metal-cu",
+      "title": "IEA warns copper and mineral supply shortages threaten grid expansion",
+      "organization": "Mining Technology",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "扩产投产",
+      "material_url": "https://www.mining-technology.com/news/iea-copper-mineral-supply-shortages",
+      "source_listing_url": "https://www.mining-technology.com/feed/",
+      "publication_date": "2026-11-23",
+      "source_publication_date": "2026-11-23",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-23",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-23T21:24:35.970Z"
+    },
+    {
+      "id": "news-cu-400351e2293609da",
+      "metal_id": "metal-cu",
+      "title": "Copper One agrees to acquire Quatum project in Canada",
+      "organization": "Mining Technology",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "并购股权",
+      "material_url": "https://www.mining-technology.com/news/copper-one-to-acquire-quatum-project",
+      "source_listing_url": "https://www.mining-technology.com/feed/",
+      "publication_date": "2026-11-23",
+      "source_publication_date": "2026-11-23",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-23",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-23T21:24:35.970Z"
+    },
+    {
+      "id": "news-cu-2f88f6190e0662c9",
+      "metal_id": "metal-cu",
+      "title": "Canadian Copper sees expansion opportunites in New Brunswick",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "扩产投产",
+      "material_url": "https://www.northernminer.com/news/canadian-copper-sees-expansion-opportunites-in-new-brunswick/1003898157",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-11-23",
+      "source_publication_date": "2026-11-23",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-23",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-23T21:24:35.970Z"
+    },
     {
       "id": "news-cu-5b5aa6a900150220",
       "metal_id": "metal-cu",
