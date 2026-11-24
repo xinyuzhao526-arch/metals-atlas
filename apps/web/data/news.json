@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-23",
-  "last_checked_at": "2026-11-23T21:24:35.970Z",
+  "updated_at": "2026-11-24",
+  "last_checked_at": "2026-11-24T10:55:15.806Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -34,6 +34,7 @@
     "https://www.australianmining.com.au/29metals-advances-capricorn-copper-restart-plans",
     "https://www.australianmining.com.au/aic-mines-moves-to-acquire-mt-cuthbert",
     "https://www.australianmining.com.au/austral-gets-green-light-for-hammer-metals-takeover",
+    "https://www.australianmining.com.au/bhp-maps-out-major-copper-sa-expansion-strategy",
     "https://www.australianmining.com.au/core-lithium-enters-new-era-as-finniss-restart-gathers-pace",
     "https://www.australianmining.com.au/evolution-seals-213m-carnaby-acquisition",
     "https://www.australianmining.com.au/global-lithium-agrees-333-million-takeover-by-titan",
@@ -77,6 +78,7 @@
     "https://www.mining-technology.com/news/cotec-bmr-punitaqui-copper-production",
     "https://www.mining-technology.com/news/cotec-copper-intelligence-agreement-drc-tailings",
     "https://www.mining-technology.com/news/elevra-supply-spodumene-lg-energy",
+    "https://www.mining-technology.com/news/empower-lithium-offtake-deal-glencore",
     "https://www.mining-technology.com/news/fortescue-copper-cleaned-arsenic-removal",
     "https://www.mining-technology.com/news/freeport-4-5bn-bagdad-project-expansion",
     "https://www.mining-technology.com/news/global-lithium-237m-sid-titan-australia-mining",
@@ -155,6 +157,50 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-li-40e1510cbe5d9bb9",
+      "metal_id": "metal-li",
+      "title": "Empower signs lithium offtake deal with Glencore",
+      "organization": "Mining Technology",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "长协包销",
+      "material_url": "https://www.mining-technology.com/news/empower-lithium-offtake-deal-glencore",
+      "source_listing_url": "https://www.mining-technology.com/feed/",
+      "publication_date": "2026-11-24",
+      "source_publication_date": "2026-11-24",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-24",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-24T10:55:15.806Z"
+    },
+    {
+      "id": "news-cu-44c0e7b2d138f363",
+      "metal_id": "metal-cu",
+      "title": "BHP maps out major Copper SA expansion strategy",
+      "organization": "australianmining",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "扩产",
+      "material_url": "https://www.australianmining.com.au/bhp-maps-out-major-copper-sa-expansion-strategy",
+      "source_listing_url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
+      "publication_date": "2026-11-24",
+      "source_publication_date": "2026-11-24",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-24",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-24T10:55:15.806Z"
+    },
     {
       "id": "news-cu-ec6165e1fe590644",
       "metal_id": "metal-cu",
