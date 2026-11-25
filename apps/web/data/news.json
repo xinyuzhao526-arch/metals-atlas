@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "updated_at": "2026-11-25",
-  "last_checked_at": "2026-11-25T09:51:13.848Z",
+  "last_checked_at": "2026-11-25T22:32:28.183Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -75,6 +75,7 @@
     "https://www.mining-technology.com/news/bridge-green-hartree-eight-year-lithium-agreement",
     "https://www.mining-technology.com/news/centaurus-jaguar-offtake-deals-glencore-cngr",
     "https://www.mining-technology.com/news/codelco-partially-halts-el-teniente-mine",
+    "https://www.mining-technology.com/news/colibri-acquire-sonora-copper-molybdenum-projects",
     "https://www.mining-technology.com/news/copper-one-to-acquire-quatum-project",
     "https://www.mining-technology.com/news/cotec-bmr-punitaqui-copper-production",
     "https://www.mining-technology.com/news/cotec-copper-intelligence-agreement-drc-tailings",
@@ -159,6 +160,28 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-7e4e2dc0327a8f2b",
+      "metal_id": "metal-cu",
+      "title": "Colibri signs LoI to acquire Sonora copper-molybdenum projects",
+      "organization": "Mining Technology",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "并购股权",
+      "material_url": "https://www.mining-technology.com/news/colibri-acquire-sonora-copper-molybdenum-projects",
+      "source_listing_url": "https://www.mining-technology.com/feed/",
+      "publication_date": "2026-11-25",
+      "source_publication_date": "2026-11-25",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-25",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-25T22:32:28.183Z"
+    },
     {
       "id": "news-li-40e1510cbe5d9bb9",
       "metal_id": "metal-li",
