@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "last_checked_at": "2026-11-24T23:01:15.714Z",
+  "last_checked_at": "2026-11-25T09:51:13.848Z",
   "processed_keys": [
     "al:https://im-mining.com/2026/10/23/rio-tinto-to-boost-weipa-operations-with-kangwinan-bauxite-project-development",
     "al:https://www.hydro.com/en/global/media/news/2026/alunorte-ramps-up-alumina-production",
@@ -124,12 +124,14 @@
     "fe:https://www.mining-technology.com/news/arrow-to-acquire-pannawonica-iron-ore",
     "fe:https://www.mining-technology.com/news/arrow-to-acquire-turee-creek-project",
     "fe:https://www.mining-technology.com/news/helix-acquire-five-pilbara-exploration-tenements",
+    "fe:https://www.mining.com/vale-to-resume-operations-at-viga-iron-ore-mine",
     "fe:https://www.northernminer.com/news/simandou-targets-full-iron-ore-export-capacity-in-2027/1003897679",
     "fe:https://www.northernminer.com/news/vale-buys-ligga-iron-ore-stake-for-190m/1003895046",
     "fe:https://www.northernminer.com/video/sponsored-resource-review-video-iron-bear-pitches-a-44-year-iron-ore-mine/1003897909",
     "li:https://im-mining.com/2026/10/16/pls-greenlights-p2000-project-as-it-aims-for-2-mt-y-of-spodumene-production-capacity",
     "li:https://im-mining.com/2026/10/20/joest-australia-bags-largest-order-in-its-history-for-pilgangoora-expansion",
     "li:https://www.australianmining.com.au/core-lithium-enters-new-era-as-finniss-restart-gathers-pace",
+    "li:https://www.australianmining.com.au/core-lithiums-finniss-restart-delivers-first-spodumene-shipment",
     "li:https://www.australianmining.com.au/global-lithium-agrees-333-million-takeover-by-titan",
     "li:https://www.australianmining.com.au/pls-delivers-record-pilgangoora-lithium-production",
     "li:https://www.eramet.com/en/news/centenario-ratones-lithium-plant-expansion-project-3-questions-for-jean-baptiste-hogard-director-of-eramets-lithium-business-unit",
@@ -196,26 +198,6 @@
   ],
   "pending": [
     {
-      "title": "2026 US Annual Report (Form 20-F)",
-      "url": "https://www.investegate.co.uk/announcement/rns/bhp-group-limited-npv-di---bhp/2026-us-annual-report-form-20-f-/9727857",
-      "metal": "cu",
-      "date": "2026-08-18",
-      "needs_body_metals": true,
-      "organization": "BHP",
-      "source_type": "company_regulatory_announcement",
-      "source_url": "https://www.investegate.co.uk/company/BHP",
-      "from_feed": false,
-      "metals": [
-        "cu",
-        "ni",
-        "fe"
-      ],
-      "attempts": 32,
-      "last_attempt_at": "2026-11-24T23:01:15.714Z",
-      "last_error": "Group report metal coverage could not be confirmed from the article",
-      "next_retry_at": "2026-11-25T23:01:15.714Z"
-    },
-    {
       "title": "2026 Annual Report",
       "url": "https://www.investegate.co.uk/announcement/rns/south32-limited-di---s32/2026-annual-report/9742140",
       "metal": "al",
@@ -230,6 +212,26 @@
         "cu",
         "zn",
         "pb"
+      ],
+      "attempts": 32,
+      "last_attempt_at": "2026-11-24T23:01:15.714Z",
+      "last_error": "Group report metal coverage could not be confirmed from the article",
+      "next_retry_at": "2026-11-25T23:01:15.714Z"
+    },
+    {
+      "title": "2026 US Annual Report (Form 20-F)",
+      "url": "https://www.investegate.co.uk/announcement/rns/bhp-group-limited-npv-di---bhp/2026-us-annual-report-form-20-f-/9727857",
+      "metal": "cu",
+      "date": "2026-08-18",
+      "needs_body_metals": true,
+      "organization": "BHP",
+      "source_type": "company_regulatory_announcement",
+      "source_url": "https://www.investegate.co.uk/company/BHP",
+      "from_feed": false,
+      "metals": [
+        "cu",
+        "ni",
+        "fe"
       ],
       "attempts": 32,
       "last_attempt_at": "2026-11-24T23:01:15.714Z",
@@ -820,7 +822,7 @@
       "url": "https://www.pls.com/invest/asx-announcements",
       "status": "error",
       "candidate_count": 0,
-      "checked_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -841,8 +843,8 @@
       "url": "https://www.igo.com.au/site/investor-center/ASX-Announcements",
       "status": "ok",
       "candidate_count": 6,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.igo.com.au/site/investor-center/ASX-Announcements",
@@ -856,8 +858,8 @@
       "url": "https://www.mineralresources.com.au/news/",
       "status": "ok",
       "candidate_count": 8,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.mineralresources.com.au/news/",
@@ -871,8 +873,8 @@
       "url": "https://www.investegate.co.uk/company/RIO",
       "status": "ok",
       "candidate_count": 12,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.investegate.co.uk/company/RIO",
@@ -886,8 +888,8 @@
       "url": "https://vale.com/en/vale-now",
       "status": "ok",
       "candidate_count": 13,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://vale.com/en/vale-now",
@@ -901,8 +903,8 @@
       "url": "https://www.investegate.co.uk/company/GLEN",
       "status": "ok",
       "candidate_count": 16,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.investegate.co.uk/company/GLEN",
@@ -916,8 +918,8 @@
       "url": "https://www.eramet.com/en/news/",
       "status": "ok",
       "candidate_count": 5,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.eramet.com/en/news/",
@@ -931,8 +933,8 @@
       "url": "https://www.investegate.co.uk/company/BHP",
       "status": "ok",
       "candidate_count": 21,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.investegate.co.uk/company/BHP",
@@ -946,8 +948,8 @@
       "url": "https://www.hydro.com/en/global/media/news/",
       "status": "ok",
       "candidate_count": 1,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.hydro.com/en/global/media/news/",
@@ -961,8 +963,8 @@
       "url": "https://www.investegate.co.uk/company/S32",
       "status": "ok",
       "candidate_count": 4,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.investegate.co.uk/company/S32",
@@ -976,8 +978,8 @@
       "url": "https://www.ivanhoemines.com/",
       "status": "ok",
       "candidate_count": 2,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.ivanhoemines.com/feed/",
@@ -995,7 +997,7 @@
       "url": "https://investors.fcx.com/investors/news-releases/",
       "status": "error",
       "candidate_count": 0,
-      "checked_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -1011,8 +1013,8 @@
       "url": "https://www.antofagasta.co.uk/investors/news/",
       "status": "ok",
       "candidate_count": 32,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.antofagasta.co.uk/investors/news/",
@@ -1026,8 +1028,8 @@
       "url": "https://www.mmg.com/investors/news-centre/",
       "status": "ok",
       "candidate_count": 15,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.mmg.com/investors/news-centre/",
@@ -1041,8 +1043,8 @@
       "url": "https://www.alphaminresources.com/feed/",
       "status": "ok",
       "candidate_count": 4,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.alphaminresources.com/feed/",
@@ -1056,8 +1058,8 @@
       "url": "https://www.investegate.co.uk/company/ATM",
       "status": "ok",
       "candidate_count": 5,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.investegate.co.uk/company/ATM",
@@ -1071,8 +1073,8 @@
       "url": "https://www.metalsx.com.au/asx-announcements/",
       "status": "ok",
       "candidate_count": 72,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.metalsx.com.au/asx-announcements/",
@@ -1086,8 +1088,8 @@
       "url": "https://www.angloamerican.com/media/press-releases",
       "status": "ok",
       "candidate_count": 3,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.angloamerican.com/media/press-releases",
@@ -1101,8 +1103,8 @@
       "url": "https://www.angloamericankumba.com/media/press-releases",
       "status": "ok",
       "candidate_count": 3,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.angloamericankumba.com/media/press-releases",
@@ -1116,7 +1118,7 @@
       "url": "https://investors.fortescue.com/en/",
       "status": "empty",
       "candidate_count": 0,
-      "checked_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -1131,8 +1133,8 @@
       "url": "https://www.teck.com/news/news-releases/",
       "status": "ok",
       "candidate_count": 20,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.teck.com/news/news-releases/",
@@ -1145,9 +1147,9 @@
       "organization": "Mining Technology",
       "url": "https://www.mining-technology.com/feed/",
       "status": "ok",
-      "candidate_count": 3,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "candidate_count": 1,
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.mining-technology.com/feed/",
@@ -1161,8 +1163,8 @@
       "url": "https://www.northernminer.com/feed/",
       "status": "ok",
       "candidate_count": 1,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.northernminer.com/feed/",
@@ -1176,7 +1178,7 @@
       "url": "https://im-mining.com/feed/",
       "status": "empty",
       "candidate_count": 0,
-      "checked_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
       "last_success_at": "2026-11-19T08:48:17.382Z",
       "attempts": [
         {
@@ -1191,8 +1193,8 @@
       "url": "https://www.internationaltin.org/feed/",
       "status": "ok",
       "candidate_count": 3,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z",
       "attempts": [
         {
           "url": "https://www.internationaltin.org/feed/",
@@ -1206,7 +1208,7 @@
       "url": "https://www.australianmining.com.au/feed/",
       "status": "error",
       "candidate_count": 0,
-      "checked_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -1222,7 +1224,7 @@
       "url": "https://www.mining.com/feed/",
       "status": "error",
       "candidate_count": 0,
-      "checked_at": "2026-11-24T23:01:15.714Z",
+      "checked_at": "2026-11-25T09:51:13.848Z",
       "last_success_at": null,
       "attempts": [
         {
@@ -1237,24 +1239,24 @@
       "organization": "PaiPaiMetals",
       "url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
       "status": "ok",
-      "candidate_count": 70,
-      "checked_at": "2026-11-24T23:01:15.714Z",
-      "last_success_at": "2026-11-24T23:01:15.714Z"
+      "candidate_count": 73,
+      "checked_at": "2026-11-25T09:51:13.848Z",
+      "last_success_at": "2026-11-25T09:51:13.848Z"
     }
   ],
   "last_run": {
-    "added": 0,
-    "retained": 187,
-    "detail_fetches": 50,
-    "article_errors": 35,
+    "added": 2,
+    "retained": 189,
+    "detail_fetches": 15,
+    "article_errors": 0,
     "deferred": 0,
     "by_metal": {
       "cu": 90,
-      "li": 24,
+      "li": 25,
       "ni": 18,
       "al": 13,
       "sn": 9,
-      "fe": 18,
+      "fe": 19,
       "zn": 10,
       "pb": 5
     }
