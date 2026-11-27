@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "updated_at": "2026-11-25",
-  "last_checked_at": "2026-11-25T22:32:28.183Z",
+  "updated_at": "2026-11-27",
+  "last_checked_at": "2026-11-27T09:40:58.840Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -110,6 +110,7 @@
     "https://www.mining.com/fatal-accident-reported-at-bhps-escondida-mine",
     "https://www.mining.com/first-quantums-kansanshi-expansion-beats-design-capacity",
     "https://www.mining.com/glencore-clears-key-hurdle-for-peru-copper-expansion",
+    "https://www.mining.com/nyrstar-to-halt-production-at-dutch-zinc-smelter",
     "https://www.mining.com/sibanye-cuts-us-output-forecast-after-five-week-strike",
     "https://www.mining.com/southern-copper-weighs-680m-cuajone-mine-expansion",
     "https://www.mining.com/tech-giants-come-knocking-for-a-piece-of-anglo-american-as-copper-scarcity-bites-wanblad-tells-ft",
@@ -160,6 +161,50 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-pb-e0762be6f512135d",
+      "metal_id": "metal-pb",
+      "title": "Nyrstar to halt production at Dutch zinc smelter",
+      "organization": "mining.com",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.mining.com/nyrstar-to-halt-production-at-dutch-zinc-smelter",
+      "source_listing_url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
+      "publication_date": "2026-11-26",
+      "source_publication_date": "2026-11-26",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-27",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-27T09:40:58.840Z"
+    },
+    {
+      "id": "news-zn-e0762be6f512135d",
+      "metal_id": "metal-zn",
+      "title": "Nyrstar to halt production at Dutch zinc smelter",
+      "organization": "mining.com",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.mining.com/nyrstar-to-halt-production-at-dutch-zinc-smelter",
+      "source_listing_url": "https://xinyuzhao526-arch.github.io/PaiPaiMetals/data/events.json",
+      "publication_date": "2026-11-26",
+      "source_publication_date": "2026-11-26",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-27",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-27T09:40:58.840Z"
+    },
     {
       "id": "news-cu-7e4e2dc0327a8f2b",
       "metal_id": "metal-cu",
