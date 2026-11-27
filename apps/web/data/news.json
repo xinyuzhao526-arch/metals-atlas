@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
   "updated_at": "2026-11-27",
-  "last_checked_at": "2026-11-27T09:40:58.840Z",
+  "last_checked_at": "2026-11-27T21:57:45.986Z",
   "seen_urls": [
     "https://im-mining.com/2026/10/06/atlantic-nickel-record-production-as-underground-transition-advances",
     "https://im-mining.com/2026/10/07/bhp-agrees-to-sell-kambalda-nickel-concentrator-to-gold-fields",
@@ -134,6 +134,7 @@
     "https://www.northernminer.com/news/codelco-pucobre-win-permit-for-870m-copper-project/1003897549",
     "https://www.northernminer.com/news/copper-hungry-us-buyers-circle-ivanhoe-electric-mine/1003895861",
     "https://www.northernminer.com/news/copper-price-gains-as-chile-strike-threatens-output/1003895558",
+    "https://www.northernminer.com/news/ero-copper-halts-brazil-mine-after-water-overflows/1003898359",
     "https://www.northernminer.com/news/eu-fast-tracks-kghms-3-46b-polish-copper-projects/1003895652",
     "https://www.northernminer.com/news/freeport-approves-4-5b-bagdad-copper-expansion/1003897395",
     "https://www.northernminer.com/news/freeport-strikes-110m-deal-for-bc-copper-stake/1003897770",
@@ -141,6 +142,7 @@
     "https://www.northernminer.com/news/levack-restart-puts-magna-on-two-mine-path/1003895592",
     "https://www.northernminer.com/news/moon-river-lifts-davidson-value-to-1-2b-tungsten-output-jumps/1003896021",
     "https://www.northernminer.com/news/newmont-prices-red-chris-expansion-at-up-to-4-8b/1003896004",
+    "https://www.northernminer.com/news/nyrstar-halts-dutch-zinc-smelter-over-energy-costs/1003898353",
     "https://www.northernminer.com/news/phoenix-hits-broad-gold-and-copper-at-old-bc-mine/1003897999",
     "https://www.northernminer.com/news/q2-maps-28-year-lithium-operation-at-cisco/1003897652",
     "https://www.northernminer.com/news/rio-begins-oyu-tolgoi-copper-restart-after-rockfall/1003896401",
@@ -161,6 +163,50 @@
     "https://www.teck.com/news/news-releases/2026/teck-reports-unaudited-third-quarter-results-for-2026"
   ],
   "items": [
+    {
+      "id": "news-cu-c1923a46db1091c7",
+      "metal_id": "metal-cu",
+      "title": "Ero Copper halts Brazil mine after water overflows",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.northernminer.com/news/ero-copper-halts-brazil-mine-after-water-overflows/1003898359",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-11-27",
+      "source_publication_date": "2026-11-27",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-27",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-27T21:57:45.986Z"
+    },
+    {
+      "id": "news-zn-ce6d3f5c7bfc2f05",
+      "metal_id": "metal-zn",
+      "title": "Nyrstar halts Dutch zinc smelter over energy costs",
+      "organization": "The Northern Miner",
+      "source_type": "public_industry_media",
+      "source_level": "media",
+      "event_tag": "供给扰动",
+      "material_url": "https://www.northernminer.com/news/nyrstar-halts-dutch-zinc-smelter-over-energy-costs/1003898353",
+      "source_listing_url": "https://www.northernminer.com/feed/",
+      "publication_date": "2026-11-27",
+      "source_publication_date": "2026-11-27",
+      "effective_date": null,
+      "effective_date_missing_reason": {
+        "code": "event_date_not_extracted",
+        "detail": "新闻发布日期不代表事件生效日；原文事件时间尚待人工核读。"
+      },
+      "verification_date": "2026-11-27",
+      "verification_method": "automated_metadata_check",
+      "review_status": "pending",
+      "discovered_at": "2026-11-27T21:57:45.986Z"
+    },
     {
       "id": "news-pb-e0762be6f512135d",
       "metal_id": "metal-pb",
